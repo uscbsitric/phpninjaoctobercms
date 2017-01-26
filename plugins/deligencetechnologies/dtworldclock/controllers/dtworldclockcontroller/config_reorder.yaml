@@ -1,0 +1,4 @@
+title: DtworldclockController
+modelClass: deligenceTechnologies\Dtworldclock\Models\ClockModel
+toolbar:
+    buttons: reorder_toolbar

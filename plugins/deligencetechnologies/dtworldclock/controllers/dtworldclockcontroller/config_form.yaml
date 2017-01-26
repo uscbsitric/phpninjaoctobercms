@@ -1,0 +1,10 @@
+name: DtworldclockController
+form: $/deligenceTechnologies/dtworldclock/models/clockmodel/fields.yaml
+modelClass: deligenceTechnologies\Dtworldclock\Models\ClockModel
+defaultRedirect: deligenceTechnologies/dtworldclock/dtworldclockcontroller
+create:
+    redirect: 'deligenceTechnologies/dtworldclock/dtworldclockcontroller/update/:id'
+    redirectClose: deligenceTechnologies/dtworldclock/dtworldclockcontroller
+update:
+    redirect: deligenceTechnologies/dtworldclock/dtworldclockcontroller
+    redirectClose: deligenceTechnologies/dtworldclock/dtworldclockcontroller

@@ -1,0 +1,164 @@
+fields:
+    title:
+        label: Title
+        oc.commentPosition: ''
+        span: auto 
+        default: 'Dtworldclock'
+        type: text
+    status:
+        label: 'Status'
+        oc.commentPosition: ''
+        options:
+            1: Published
+            0: Unpublished
+        span: right
+        type: dropdown
+    time_format:
+        label: 'Time format'
+        oc.commentPosition: ''
+        options:
+            12h: 12h
+            24h: 24h
+        span: left
+        type: dropdown
+    clock_layout:
+        label: 'Clock layout'
+        oc.commentPosition: ''
+        options:
+            vertical: Vertical
+            horizontal: Horizontal
+        span: right
+        type: dropdown
+    display_name:
+        label: 'Display the City/Country Name'
+        oc.commentPosition: ''
+        options:
+            'yes': 'Yes'
+            'no': 'No'
+        span: left
+        dependsOn: {  }
+        type: dropdown
+    
+    display_seconds:
+        label: 'Display seconds'
+        oc.commentPosition: ''
+        options:
+            'yes': 'Yes'
+            'no': 'No'
+        span: right
+        type: dropdown
+    leading_zeros:
+        label: 'Use leading zeros'
+        oc.commentPosition: ''
+        options:
+            'yes': 'Yes'
+            nothour: 'Not for hours'
+            'no': 'Not at all'
+        span: left
+        type: dropdown
+    display_date:
+        label: 'Display date'
+        oc.commentPosition: ''
+        options:
+            'no': 'No, don''t display the date'
+            format1: 'Yes. (YYYY-MM-DD)'
+            format2: 'Yes. (YYYY/MM/DD)'
+            format3: 'Yes. (DD/MM/YYYY)'
+            format4: 'Yes. (MM/DD/YYYY)'
+            format5: 'Yes. (16 Jan)'
+            format6: 'Yes. (Wed 16 Jan)'
+            format7: 'Yes. (Jan 16)'
+            format8: 'Yes. (Jan 16, 2013)'
+            format9: 'Yes. (Wed Jan 16)'
+        span: right
+        type: dropdown
+tabs:
+    fields:
+        clock_1:
+            label: 'Show clock 1'
+            oc.commentPosition: ''
+            options:
+                'yes': 'Yes'
+                'no': 'No'
+            span: auto
+            type: dropdown
+            tab: 'Clock 1'
+        c1_timezone:
+            label: Timezone
+            oc.commentPosition: ''
+            span: left
+            type: dropdown
+            tab: 'Clock 1'
+        c1_country:
+            label: 'Enter city/country name'
+            oc.commentPosition: ''
+            span: left
+            default: 'country_1'
+            type: text
+            tab: 'Clock 1'
+        clock_2:
+            label: 'Show clock'
+            oc.commentPosition: ''
+            options:
+                'yes': 'Yes'
+                'no': 'No'
+            span: left
+            type: dropdown
+            tab: 'Clock 2'
+        c2_timezone:
+            label: Timezone
+            oc.commentPosition: ''
+            span: left
+            type: dropdown
+            tab: 'Clock 2'
+        c2_country:
+            label: 'Enter city/country name'
+            oc.commentPosition: ''
+            span: left
+            default: 'country_2'
+            type: text
+            tab: 'Clock 2'
+        clock_3:
+            label: 'Show clock'
+            oc.commentPosition: ''
+            options:
+                'yes': 'Yes'
+                'no': 'No'
+            span: left
+            type: dropdown
+            tab: 'Clock 3'
+        c3_timezone:
+            label: Timezone
+            oc.commentPosition: ''
+            span: left
+            type: dropdown
+            tab: 'Clock 3'
+        c3_country:
+            label: 'Enter city/country name'
+            oc.commentPosition: ''
+            span: left
+            default: 'country_3'
+            type: text
+            tab: 'Clock 3'
+        clock_4:
+            label: 'Show clock'
+            oc.commentPosition: ''
+            options:
+                'yes': 'Yes'
+                'no': 'No'
+            span: left
+            type: dropdown
+            tab: 'Clock 4'
+        c4_timezone:
+            label: Timezone
+            oc.commentPosition: ''
+            span: left
+            type: dropdown
+            tab: 'Clock 4'
+        c4_country:
+            label: 'Enter city/country name'
+            oc.commentPosition: ''
+            span: left
+            default: 'country_4'
+            type: text
+            tab: 'Clock 4'

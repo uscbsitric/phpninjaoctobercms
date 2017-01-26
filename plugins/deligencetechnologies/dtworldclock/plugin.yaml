@@ -1,0 +1,11 @@
+plugin:
+    name: 'deligencetechnologies.dtworldclock::lang.plugin.name'
+    description: Worldclock
+    author: deligenceTechnologies
+    icon: oc-icon-adjust
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: DT World Clock
+        url: deligenceTechnologies/dtworldclock/dtworldclockcontroller/
+        icon: icon-clock-o

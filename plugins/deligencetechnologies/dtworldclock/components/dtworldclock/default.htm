@@ -1,0 +1,169 @@
+{% for params in worldClock.getParams %}
+{% if params.status == 1 %}
+<div class="dt-clock-verticle">
+{% set time1 = worldClock.getTime1 %} 
+{% set time2 = worldClock.getTime2 %}
+{% set time3 = worldClock.getTime3 %}
+{% set time4 = worldClock.getTime4 %}
+{% if params.title %}<h4 class="page-header">{{params.title}}</h4> {% endif %}    
+{% for key , countryData in worldClock.getCountry %} 
+  {% if countryData.show == 'yes' %}
+        {% if params.clock_layout == 'horizontal' %}<div class="dt-clock-horizontal"> {% else %} <div class="dt-clock-verticle-box"> {% endif %}
+        {% if params.display_name == 'yes' %} 
+                  <div id="dtWorldClocksCountry_{{key}}"></div>  
+        {% endif %}
+                 <div id="dtWorldClocksTime_{{key}}"></div>
+        {% if params.display_date != 'no' %} <div id="dtWorldClocksDate_{{key}}"></div> {% endif %}
+      </div>
+<script>  
+	var currentTimes_1 = new Date('{{time1}}');
+	var currentTimes_2 = new Date('{{time2}}');
+	var currentTimes_3 = new Date('{{time3}}');
+	var currentTimes_4 = new Date('{{time4}}');
+	function dtclockUpdate_{{key}}(id){ 
+    var country_id = '{{countryData.country}}';
+	var currentTime_id = currentTimes_{{key}};
+    var date_id = '{{params.display_date}}';
+	var format_id = '{{params.time_format}}'; 
+	var seconds_id = '{{params.display_seconds}}';
+	var leadingZeros_id = '{{params.leading_zeros}}';
+    var currentTimeString_id ;
+    var currentDate_id ;
+    var jstime_id = new Date().getTime()-1000;
+    jstime_id=jstime_id+1000;
+	var jsnow_id = new Date().getTime();
+	var offset_id=jsnow_id-jstime_id;
+	if(offset_id>1000){
+	jstime_id=jstime_id+offset_id;
+	var offsetseconds_id=Math.round(offset_id/1000);
+	currentTime_id.setSeconds(currentTime_id.getSeconds()+offsetseconds_id);
+	}
+	currentTime_id.setSeconds(currentTime_id.getSeconds()+1);
+	var currentHours_id = currentTime_id.getHours();			
+	var currentMinutes_id = currentTime_id.getMinutes();
+	var currentSeconds_id = currentTime_id.getSeconds();
+	// Handles 12h format
+	if(format_id=="12h"){ 	
+	//save a AM/PM variable
+	if(currentHours_id < 12 ){ 
+	var ampm_id = "AM";
+	} else{
+	var ampm_id = "PM";
+	}
+	if(currentHours_id>12){
+	currentHours_id=currentHours_id-12;
+	}
+			 //convert 0 to 12
+	if(currentHours_id==0){
+	currentHours_id=12;
+    }
+	}
+		// Pad the hours, minutes and seconds with leading zeros, if required
+   if(leadingZeros_id=="yes"){
+	currentHours_id = ( currentHours_id < 10 ? "0" : "" ) + currentHours_id; 
+    currentMinutes_id = ( currentMinutes_id < 10 ? "0" : "" ) + currentMinutes_id;
+	currentSeconds_id = ( currentSeconds_id < 10 ? "0" : "" ) + currentSeconds_id;
+	}
+
+    if(leadingZeros_id=="yes" || leadingZeros_id=="nothour"){
+    currentMinutes_id = ( currentMinutes_id < 10 ? "0" : "" ) + currentMinutes_id;
+	currentSeconds_id = ( currentSeconds_id < 10 ? "0" : "" ) + currentSeconds_id;
+	}
+     
+	// Compose the string for display
+	currentTimeString_id = currentHours_id + ":" + currentMinutes_id; 
+	// Add seconds if that has been selected
+	if(seconds_id=="yes"){
+	currentTimeString_id = currentTimeString_id + ":" + currentSeconds_id;
+	}
+		// Add AM/PM if 12h format
+	if(format_id=="12h"){
+	currentTimeString_id = currentTimeString_id + " " + ampm_id;
+	}
+		
+		// Handle date formating
+	if(date_id != "no"){
+	var date_new = currentTime_id.getDate(); 
+	var month = currentTime_id.getMonth()+1;
+	var year = currentTime_id.getFullYear();
+	var day = currentTime_id.getDay();
+	var textMonth = "null";
+	if(day==1){ day="Mon";}
+	if(day==2){ day="Tue";}
+	if(day==3){ day="Wed";}
+	if(day==4){ day="Thu";}
+	if(day==5){ day="Fri";}
+	if(day==6){ day="Sat";}
+	if(day==0){ day="Sun";}
+	if(month=="1"){ textMonth="Jan";}
+	if(month=="2"){ textMonth="Feb";}
+	if(month=="3"){ textMonth="Mar";}
+	if(month=="4"){ textMonth="Apr";}
+	if(month=="5"){ textMonth="May";}
+	if(month=="6"){ textMonth="Jun";}
+	if(month=="7"){ textMonth="Jul";}
+	if(month=="8"){ textMonth="Aug";}
+	if(month=="9"){ textMonth="Sep";}
+	if(month=="10"){ textMonth="Oct";}
+	if(month=="11"){ textMonth="Nov";}
+	if(month=="12"){ textMonth="Dec";}
+	if(leadingZeros_id=="yes"){
+	if(month<10) month="0" + month;
+	if(date_new<10) date_new="0" + date_new;
+	}
+	//Compose date string
+	switch (date_id){ 
+				case "format1":
+					currentDate_id=year + "-" + month + "-" + date_new;
+					break;
+				case "format2":
+					currentDate_id=year + "/" + month + "/" + date_new;
+					break;
+				case "format3":
+					currentDate_id=date_new + "/" + month + "/" + year;
+					break;
+				case "format4":
+					currentDate_id=month + "/" + date_new + "/" + year;
+					break;
+				case "format5":
+					currentDate_id=date_new + " " + textMonth;
+					break;
+				case "format6":
+					currentDate_id=day + " " + date_new + " " +textMonth;
+					break;
+				case "format7":
+					currentDate_id=textMonth + " " + date_new;
+					break;
+				case "format8":
+					currentDate_id=textMonth + " " + date_new + ", " + year;
+					break;
+				case "format9":
+					currentDate_id=day + " " + textMonth + " " + date_new;
+					break;
+                default :
+                    currentDate_id=year + "-" + month + "-" + date_new;
+				
+			} 
+		}  
+		if(document.getElementById('dtWorldClocksTime_'+id)) { document.getElementById('dtWorldClocksTime_'+id).innerHTML = '<b>'+currentTimeString_id+'</b>'; }
+        if(document.getElementById('dtWorldClocksCountry_'+id)) { document.getElementById('dtWorldClocksCountry_'+id).innerHTML = country_id; }
+		if(date_id!="no"){ 
+			if(document.getElementById("dtWorldClocksDate_"+id)) { document.getElementById("dtWorldClocksDate_"+id).innerHTML = currentDate_id;}
+		}
+	}
+	
+	
+</script>   
+{% endif %}        
+{% endfor %} 
+ <script>
+if('{{params.clock_1}}' == 'yes') setInterval(function(){dtclockUpdate_1(1);},1000); 
+if('{{params.clock_2}}' == 'yes') setInterval(function(){dtclockUpdate_2(2);},1000);
+if('{{params.clock_3}}' == 'yes') setInterval(function(){dtclockUpdate_3(3);},1000);
+if('{{params.clock_4}}' == 'yes') setInterval(function(){dtclockUpdate_4(4);},1000);
+</script>
+</div>
+{% endif %}
+{% endfor %} 
+
+
