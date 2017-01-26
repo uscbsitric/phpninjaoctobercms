@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg2"
+   sodipodi:docname="logo.svg"
+   inkscape:export-ydpi="23.040001"
+   inkscape:export-filename="/home/thewizardpp/projects/web/october-microblog/logo/logo.png"
+   viewBox="0 0 250 250"
+   inkscape:export-xdpi="23.040001"
+   version="1.1"
+   inkscape:version="0.91 r">
+  <defs
+     id="defs8" />
+  <sodipodi:namedview
+     id="base"
+     bordercolor="#666666"
+     inkscape:pageshadow="2"
+     inkscape:window-y="93"
+     pagecolor="#ffffff"
+     inkscape:snap-global="true"
+     inkscape:window-maximized="1"
+     inkscape:zoom="1"
+     inkscape:window-x="-2"
+     inkscape:snap-bbox="true"
+     showgrid="false"
+     borderopacity="1.0"
+     inkscape:current-layer="layer1"
+     inkscape:cx="125"
+     inkscape:cy="125"
+     inkscape:window-width="1152"
+     inkscape:window-height="844"
+     inkscape:pageopacity="0.0"
+     inkscape:document-units="px" />
+  <g
+     id="layer1"
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer">
+    <path
+       id="rect2985"
+       sodipodi:nodetypes="cssssssscccccccccccc"
+       style="fill:#223344;stroke:none;stroke-width:2"
+       inkscape:connector-curvature="0"
+       d="m 26,1.0045 c -13.85,0 -25,11.15 -25,25 l 0,198 c 0,13.85 11.15,25 25,25 l 198,0 c 13.85,0 25,-11.15 25,-25 l 0,-198 c 0,-13.85 -11.15,-25 -25,-25 l -52.042,0 -35.031,59.312 31.688,12.219 -37.469,50.438 23.781,7.9375 -57.934,81.406 23.781,-70.594 -26.656,-7.9375 18,-45.375 L 78.243,72.5355 97.712,1.2235 C 74.512,1.2143 38.851,0.9955 26.002,0.9955 Z" />
+  </g>
+  <metadata
+     id="metadata6">
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <cc:license
+           rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+        <dc:publisher>
+          <cc:Agent
+             rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title>Power Icon</dc:title>
+        <dc:date>2011-06-12T15:59:32</dc:date>
+        <dc:description>A lightening bolt in negative space on a dark blue background in a rounded square.  Created as an icon for a power adapter.</dc:description>
+        <dc:source>https://openclipart.org/detail/144799/power-icon-by-llubnek</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>LlubNek</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>dark blue</rdf:li>
+            <rdf:li>electricity</rdf:li>
+            <rdf:li>lightening</rdf:li>
+            <rdf:li>night</rdf:li>
+            <rdf:li>power</rdf:li>
+            <rdf:li>rounded square</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/publicdomain/zero/1.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>

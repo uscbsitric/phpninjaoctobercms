@@ -1,0 +1,38 @@
+<div class="report-widget">
+    <h3><?= e(trans($this->property('widget_title'))) ?></h3>
+
+    <div class="form-elements">
+        <div class="form-group">
+            <label>
+                <?= Thewizardplusplus\Microblog\LangUtils::escape(
+                    'content_editor_label'
+                ) ?>
+            </label>
+            <?= $this->makePartial('markdown_editor') ?>
+        </div>
+
+        <div class="form-group checkbox-field">
+            <div class="checkbox custom-checkbox">
+                <input
+                    id="published"
+                    name="published"
+                    type="checkbox"
+                    checked="checked" />
+                <label for="published">
+                    <?= Thewizardplusplus\Microblog\LangUtils::escape(
+                        'published_flag_label'
+                    ) ?>
+                </label>
+            </div>
+        </div>
+
+        <button
+            class="btn btn-primary"
+            type="button"
+            data-request="<?= $this->getEventHandler('onSave') ?>">
+            <?= Thewizardplusplus\Microblog\LangUtils::escape(
+                'save_button_text'
+            ) ?>
+        </button>
+    </div>
+</div>

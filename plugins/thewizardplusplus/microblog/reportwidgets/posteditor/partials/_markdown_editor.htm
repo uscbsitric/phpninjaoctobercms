@@ -1,0 +1,21 @@
+<?php
+
+$form_widgets_path = '/modules/backend/formwidgets/';
+$markdown_editor_path = "${form_widgets_path}markdowneditor/";
+$markdown_editor_assets_path = "${markdown_editor_path}assets/";
+
+$this->addCss("${markdown_editor_assets_path}css/markdowneditor.css");
+
+$this->addJs("${form_widgets_path}codeeditor/assets/vendor/ace/ace.js");
+$this->addJs("${markdown_editor_assets_path}js/markdowneditor.js");
+
+echo $this->makePartial(
+    "@${markdown_editor_path}partials/_markdowneditor.htm",
+    [
+        'size' => 'small',
+        'stretch' => false,
+        'mode' => 'tab',
+        'name' => 'content',
+        'value' => ''
+    ]
+);
