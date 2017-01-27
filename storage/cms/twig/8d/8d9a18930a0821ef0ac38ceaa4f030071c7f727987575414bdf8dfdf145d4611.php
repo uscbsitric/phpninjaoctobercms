@@ -25,7 +25,7 @@ class __TwigTemplate_1fb9839e7678bd454301ecf073d1497ee97dca2918c1fba599066edb0a2
         echo twig_escape_filter($this->env, twig_date_format_filter($this->env, "now", "Y"), "html", null, true);
         echo " Alexey Bobkov &amp; Samuel Georges.</p>
         -->
-        <p class=\"muted credit\">&copy; 2017 Frederick G. Sandalo &nbsp<span class=\"icon-terminal\"></span><code>ThePHP Ninja</code> </p>
+        <p class=\"muted credit text-center\">&copy; 2017 Frederick G. Sandalo &nbsp<span class=\"icon-terminal\"></span><code>ThePHP Ninja</code> </p>
     </div>
 </div>";
     }
@@ -61,7 +61,7 @@ class __TwigTemplate_1fb9839e7678bd454301ecf073d1497ee97dca2918c1fba599066edb0a2
         <!--
         <p class=\"muted credit\">&copy; 2017 - {{ \"now\"|date(\"Y\") }} Alexey Bobkov &amp; Samuel Georges.</p>
         -->
-        <p class=\"muted credit\">&copy; 2017 Frederick G. Sandalo &nbsp<span class=\"icon-terminal\"></span><code>ThePHP Ninja</code> </p>
+        <p class=\"muted credit text-center\">&copy; 2017 Frederick G. Sandalo &nbsp<span class=\"icon-terminal\"></span><code>ThePHP Ninja</code> </p>
     </div>
 </div>", "/home/vagrant/Code/octobercms/themes/demo/partials/site/ninjaFooter.htm", "");
     }

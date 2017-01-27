@@ -39,25 +39,25 @@ class __TwigTemplate_6fffeab72ac7aeba8988da2bb99c7dd6a08e4b28575f63f30cda2030155
         if (($this->getAttribute($this->getAttribute(($context["this"] ?? null), "page", array()), "id", array()) == "home")) {
             echo "active";
         }
-        echo "\"><a href=\"";
-        echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("home");
-        echo "\">Basic concepts</a></li>
+        echo "\">    <a href=\"";
+        echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("laravel5.2/laravel5.2.htm");
+        echo "\">Laravel 5.2</a></li>
                 <li class=\"";
         // line 17
         if (($this->getAttribute($this->getAttribute(($context["this"] ?? null), "page", array()), "id", array()) == "ajax")) {
             echo "active";
         }
-        echo "\"><a href=\"";
-        echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("ajax");
-        echo "\">AJAX framework</a></li>
+        echo "\">    <a href=\"";
+        echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("laravel1.6");
+        echo "\">Angular 1.6</a></li>
                 <li class=\"";
         // line 18
         if (($this->getAttribute($this->getAttribute(($context["this"] ?? null), "page", array()), "id", array()) == "plugins")) {
             echo "active";
         }
-        echo "\"><a href=\"";
-        echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("plugins");
-        echo "\">Plugin components</a></li>
+        echo "\"> <a href=\"";
+        echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("amazonWebServices");
+        echo "\">Amazon Web Services</a></li>
             </ul>
         </div>
     </div>
@@ -104,9 +104,9 @@ class __TwigTemplate_6fffeab72ac7aeba8988da2bb99c7dd6a08e4b28575f63f30cda2030155
         <div class=\"collapse navbar-collapse navbar-main-collapse\">
             <ul class=\"nav navbar-nav\">
                 <li class=\"separator hidden-xs\"></li>
-                <li class=\"{% if this.page.id == 'home' %}active{% endif %}\"><a href=\"{{ 'home'|page }}\">Basic concepts</a></li>
-                <li class=\"{% if this.page.id == 'ajax' %}active{% endif %}\"><a href=\"{{ 'ajax'|page }}\">AJAX framework</a></li>
-                <li class=\"{% if this.page.id == 'plugins' %}active{% endif %}\"><a href=\"{{ 'plugins'|page }}\">Plugin components</a></li>
+                <li class=\"{% if this.page.id == 'home' %}active{% endif %}\">    <a href=\"{{ 'laravel5.2/laravel5.2.htm'|page }}\">Laravel 5.2</a></li>
+                <li class=\"{% if this.page.id == 'ajax' %}active{% endif %}\">    <a href=\"{{ 'laravel1.6'|page }}\">Angular 1.6</a></li>
+                <li class=\"{% if this.page.id == 'plugins' %}active{% endif %}\"> <a href=\"{{ 'amazonWebServices'|page }}\">Amazon Web Services</a></li>
             </ul>
         </div>
     </div>
