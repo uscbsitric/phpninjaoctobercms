@@ -1,0 +1,19 @@
+1485544490a:1:{s:20:"site/ninjaFooter.htm";a:6:{s:8:"fileName";s:20:"site/ninjaFooter.htm";s:7:"content";s:393:"description = "PHP Ninja's Footer"
+==
+<div id="footer">
+    <div class="container">
+        <hr />
+        <!--
+        <p class="muted credit">&copy; 2017 - {{ "now"|date("Y") }} Alexey Bobkov &amp; Samuel Georges.</p>
+        -->
+        <p class="muted credit">&copy; 2017 Frederick G. Sandalo &nbsp<span class="icon-terminal"></span><code>ThePHP Ninja</code> </p>
+    </div>
+</div>";s:5:"mtime";i:1485543887;s:6:"markup";s:355:"<div id="footer">
+    <div class="container">
+        <hr />
+        <!--
+        <p class="muted credit">&copy; 2017 - {{ "now"|date("Y") }} Alexey Bobkov &amp; Samuel Georges.</p>
+        -->
+        <p class="muted credit">&copy; 2017 Frederick G. Sandalo &nbsp<span class="icon-terminal"></span><code>ThePHP Ninja</code> </p>
+    </div>
+</div>";s:4:"code";N;s:11:"description";s:18:"PHP Ninja's Footer";}}
