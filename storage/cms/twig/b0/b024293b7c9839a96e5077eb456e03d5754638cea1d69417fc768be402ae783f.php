@@ -60,7 +60,7 @@ class __TwigTemplate_90d389ce5eab8cf8cc99e410e449afae8266a0d0adb9bf805ec2213b44b
             ";
         // line 20
         $context['__cms_partial_params'] = [];
-        echo $this->env->getExtension('CMS')->partialFunction("site/header"        , $context['__cms_partial_params']        );
+        echo $this->env->getExtension('CMS')->partialFunction("site/ninjaHeader.htm"        , $context['__cms_partial_params']        );
         unset($context['__cms_partial_params']);
         // line 21
         echo "        </header>
@@ -158,7 +158,7 @@ class __TwigTemplate_90d389ce5eab8cf8cc99e410e449afae8266a0d0adb9bf805ec2213b44b
 
         <!-- Header -->
         <header id=\"layout-header\">
-            {% partial 'site/header' %}
+            {% partial 'site/ninjaHeader.htm' %}
         </header>
 
         <!-- Content -->

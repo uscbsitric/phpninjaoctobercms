@@ -1,4 +1,4 @@
-1485544393a:1:{s:11:"default.htm";a:6:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:1467:"description = "Default layout"
+1485556317a:1:{s:11:"default.htm";a:6:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:1476:"description = "Default layout"
 ==
 <!DOCTYPE html>
 <html>
@@ -19,7 +19,7 @@
 
         <!-- Header -->
         <header id="layout-header">
-            {% partial 'site/header' %}
+            {% partial 'site/ninjaHeader.htm' %}
         </header>
 
         <!-- Content -->
@@ -40,7 +40,7 @@
         {% scripts %}
 
     </body>
-</html>";s:5:"mtime";i:1485543791;s:6:"markup";s:1433:"<!DOCTYPE html>
+</html>";s:5:"mtime";i:1485544150;s:6:"markup";s:1442:"<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -59,7 +59,7 @@
 
         <!-- Header -->
         <header id="layout-header">
-            {% partial 'site/header' %}
+            {% partial 'site/ninjaHeader.htm' %}
         </header>
 
         <!-- Content -->
