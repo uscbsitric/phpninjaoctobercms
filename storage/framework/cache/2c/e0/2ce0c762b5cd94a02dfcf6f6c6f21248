@@ -1,0 +1,39 @@
+1485673328a:1:{s:27:"laravel5.2/templatePage.htm";a:10:{s:8:"fileName";s:27:"laravel5.2/templatePage.htm";s:7:"content";s:656:"title = "TemplatePage"
+url = "/templatepage"
+layout = "default"
+description = "Template Page which contains the following sections: \"Laravel Feature\", \"What Does It Do?\", \"When To Do It?\", \"How To Do It?\""
+is_hidden = 0
+==
+<div class="container-fluid">
+    <div class="row"> <!-- Feature name -->
+
+    </div>            <!-- Feature name -->
+
+    <div class="row"> <!-- What Does It Do? -->
+
+    </div>            <!-- What Does It Do? -->
+
+    <div class="row"> <!-- When To Do It? -->
+
+    </div>            <!-- When To Do It? -->
+
+    <div class="row"> <!-- How To Do It? -->
+
+    </div>            <!-- How To Do It? -->
+</div>";s:5:"mtime";i:1485559643;s:6:"markup";s:425:"<div class="container-fluid">
+    <div class="row"> <!-- Feature name -->
+
+    </div>            <!-- Feature name -->
+
+    <div class="row"> <!-- What Does It Do? -->
+
+    </div>            <!-- What Does It Do? -->
+
+    <div class="row"> <!-- When To Do It? -->
+
+    </div>            <!-- When To Do It? -->
+
+    <div class="row"> <!-- How To Do It? -->
+
+    </div>            <!-- How To Do It? -->
+</div>";s:4:"code";N;s:5:"title";s:12:"TemplatePage";s:3:"url";s:13:"/templatepage";s:6:"layout";s:7:"default";s:11:"description";s:125:"Template Page which contains the following sections: "Laravel Feature", "What Does It Do?", "When To Do It?", "How To Do It?"";s:9:"is_hidden";s:1:"0";}}

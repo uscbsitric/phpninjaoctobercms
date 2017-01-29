@@ -1,11 +1,9 @@
-1485558853a:1:{s:25:"laravel5.2/laravel5.2.htm";a:10:{s:8:"fileName";s:25:"laravel5.2/laravel5.2.htm";s:7:"content";s:173:"title = "Laravel 5.2"
+1485673328a:1:{s:25:"laravel5.2/laravel5.2.htm";a:10:{s:8:"fileName";s:25:"laravel5.2/laravel5.2.htm";s:7:"content";s:155:"title = "Laravel 5.2"
 url = "/laravel5.2"
 layout = "default"
 description = "Laravel 5.2 Experiences"
 is_hidden = 0
 ==
-<div>
-    Laravel 5.2 Experiences and Cookbook
-</div>";s:5:"mtime";i:1485558208;s:6:"markup";s:55:"<div>
-    Laravel 5.2 Experiences and Cookbook
+<div class="container-fluid">
+</div>";s:5:"mtime";i:1485560210;s:6:"markup";s:37:"<div class="container-fluid">
 </div>";s:4:"code";N;s:5:"title";s:11:"Laravel 5.2";s:3:"url";s:11:"/laravel5.2";s:6:"layout";s:7:"default";s:11:"description";s:23:"Laravel 5.2 Experiences";s:9:"is_hidden";s:1:"0";}}
