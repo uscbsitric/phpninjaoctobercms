@@ -7351,44 +7351,133 @@ a .icon-flip-vertical:before {
   background-color: #93D4AC;
 }
 
+.fontColorGreen1{
+  color: #93D4AC;
+}
+
 .green2{
   background-color: #26BF64;
+}
+
+.fontColorGreen2{
+  color: #26BF64;
 }
 
 .green3{
   background-color: #26C667;
 }
 
+.fontColorGreen3{
+  color: #26C667;
+}
+
 .green4{
   background-color: #29AC5E;
+}
+
+.fontColorGreen4{
+  color: #29AC5E;
+}
+
+.green5{
+  background-color: #27845D;
+}
+
+.fontColorGreen5{
+  color: #27845D;
 }
 
 .blue1{
   background-color: #13BBB1;
 }
 
+.fontColorBlue1{
+  color: #13BBB1;
+}
+
 .blue2{
   background-color: #326A67;
+}
+
+.fontColorBlue1{
+  color: #326A67;
 }
 
 .white{
   background-color: #CCD1D1;
 }
 
+.fontColorWhite{
+  color: #CCD1D1;
+}
+
 .grey1{
   background-color: #9FA7A9;
 }
 
-.grey1{
+.fontColorGrey1{
+  color: #9FA7A9;
+}
+
+.grey2{
   background-color: #3E5050;
 }
 
-.grey1{
+.fontColorGrey2{
+  color: #3E5050;
+}
+
+.grey3{
   background-color: #353D3F;
 }
 
-.grey1{
+.fontColorGrey3{
+  color: #353D3F;
+}
+
+.grey4{
   background-color: #2C533C;
 }
+
+.fontColorGrey4{
+  color: #2C533C;
+}
+
+.laravelBackground{
+  background: url('../images/laravel.png') no-repeat;
+  margin-right: -15px;   /* Remove right gap */
+  margin-left: -15px;    /* Remove left gap */
+  padding-bottom: 100%; /* ratio is 16:10 */
+  padding-bottom: 62.5%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.angularJSBackground{
+  background: url('../images/angular.png') no-repeat;
+  margin-right: -15px; /* Remove right gap */
+  margin-left: -15px;  /* Remove left gap */
+  padding-bottom: 100%; /* ratio is 16:10 */
+  padding-bottom: 62.5%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.amazonWebServicesBackground{
+  background: url('../images/aws.png') no-repeat;
+  margin-right: -15px; /* Remove right gap */
+  margin-left: -15px;  /* Remove left gap */
+  padding-bottom: 100%; /* ratio is 16:10 */
+  padding-bottom: 62.5%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.welcomePageThumbnail{
+  height: 200px !important;
+  width: auto !important;
+  display: block !important;
+}
+
 /*************************  Frederick Sandalo configurations 
 *************************/

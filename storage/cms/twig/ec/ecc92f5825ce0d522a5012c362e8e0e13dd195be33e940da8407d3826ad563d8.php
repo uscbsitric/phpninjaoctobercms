@@ -16,8 +16,8 @@ class __TwigTemplate_9ddc58bdc650b3ad8627bc4d34f3b44bfafec68d4234fb83fcf16e79f23
     protected function doDisplay(array $context, array $blocks = array())
     {
         // line 1
-        echo "<div class=\"jumbotron jumbotronPHPNinja\">
-    <div class=\"container\">
+        echo "<div class=\"jumbotron green4\">
+    <div class=\"container-fluid\">
         ";
         // line 3
         $context['__cms_content_params'] = [];
@@ -58,8 +58,8 @@ class __TwigTemplate_9ddc58bdc650b3ad8627bc4d34f3b44bfafec68d4234fb83fcf16e79f23
 
     public function getSourceContext()
     {
-        return new Twig_Source("<div class=\"jumbotron jumbotronPHPNinja\">
-    <div class=\"container\">
+        return new Twig_Source("<div class=\"jumbotron green4\">
+    <div class=\"container-fluid\">
         {% content \"welcome.htm\" %}
     </div>
 </div>
