@@ -1,4 +1,4 @@
-1485923146a:1:{s:25:"laravel5.2/laravel5.2.htm";a:10:{s:8:"fileName";s:25:"laravel5.2/laravel5.2.htm";s:7:"content";s:5146:"title = "Laravel 5.2"
+1485936838a:1:{s:25:"laravel5.2/laravel5.2.htm";a:10:{s:8:"fileName";s:25:"laravel5.2/laravel5.2.htm";s:7:"content";s:7410:"title = "Laravel 5.2"
 url = "/laravel5.2"
 layout = "default"
 description = "Laravel 5.2 Experiences"
@@ -56,9 +56,6 @@ is_hidden = 0
               <a href="">Security</a>
               <ul>
                 <li>
-                  <a href="">JWT Based Authentication</a>
-                </li>
-                <li>
                   <a href="">Middleware</a>
                 </li>
                 <li>
@@ -169,20 +166,93 @@ is_hidden = 0
               </ul>
             </li>
           </ul>
+          <ul class="nav nav-sidebar">
+            <li class="active">
+              <a href="">Performance Improvement</a>
+              <ul>
+                <li>
+                  <a href="">Route Caching</a>
+                </li>
+                <li>
+                  <a href="">Approach2</a>
+                </li>
+                <li>
+                  <a href="">Approach3</a>
+                </li>
+                <li>
+                  <a href="">Approach4</a>
+                </li>
+                <li>
+                  <a href="">Approach5</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li class="active">
+              <a href="">Design Patterns</a>
+              <ul>
+                <li>
+                  <a href="">Repository Pattern</a>
+                </li>
+                <li>
+                  <a href="">Registry Pattern</a>
+                </li>
+                <li>
+                  <a href="">Design Pattern3</a>
+                </li>
+                <li>
+                  <a href="">Design Pattern4</a>
+                </li>
+                <li>
+                  <a href="">Design Pattern5</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li class="active">
+              <a href="">Approach</a>
+              <ul>
+                <li>
+                  <a href="">Jason Web Token(JWT) based Authentication</a>
+                </li>
+                <li>
+                  <a href="">Role Based Permission</a>
+                </li>
+                <li>
+                  <a href="">Approach3</a>
+                </li>
+                <li>
+                  <a href="">Approach4</a>
+                </li>
+                <li>
+                  <a href="">Approach5</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+
     </div>
 
 
     <div class="col-md-9 main">
-      
-      
-      
-      
-      
+      <div class="row"> <!-- Laravel Feature -->
+        <div class="green4">
+          <h1>fasufiyhsdxzckj</h1>
+        </div>
+      </div>            <!-- Laravel Feature -->
+      <div class="row"> <!-- What Does It Do -->
+      </div>            <!-- What Does It Do -->
+      <div class="row"> <!-- When To Do It -->
+      </div>            <!-- When To Do It -->
+      <div class="row"> <!-- How To Do It -->
+      </div>            <!-- How To Do It -->
     </div>
 
 
   </div>            <!-- End of First Row -->
-</div>                        <!-- End of container-fluid -->";s:5:"mtime";i:1485922503;s:6:"markup";s:5028:"<div class="container-fluid"> <!-- Start of container-fluid -->
+</div>                        <!-- End of container-fluid -->";s:5:"mtime";i:1485936237;s:6:"markup";s:7292:"<div class="container-fluid"> <!-- Start of container-fluid -->
   <div class="row"> <!-- Start of First Row -->
     <div class="col-md-3 sidebar">
           <ul class="nav nav-sidebar">
@@ -234,9 +304,6 @@ is_hidden = 0
               <a href="">Security</a>
               <ul>
                 <li>
-                  <a href="">JWT Based Authentication</a>
-                </li>
-                <li>
                   <a href="">Middleware</a>
                 </li>
                 <li>
@@ -347,15 +414,88 @@ is_hidden = 0
               </ul>
             </li>
           </ul>
+          <ul class="nav nav-sidebar">
+            <li class="active">
+              <a href="">Performance Improvement</a>
+              <ul>
+                <li>
+                  <a href="">Route Caching</a>
+                </li>
+                <li>
+                  <a href="">Approach2</a>
+                </li>
+                <li>
+                  <a href="">Approach3</a>
+                </li>
+                <li>
+                  <a href="">Approach4</a>
+                </li>
+                <li>
+                  <a href="">Approach5</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li class="active">
+              <a href="">Design Patterns</a>
+              <ul>
+                <li>
+                  <a href="">Repository Pattern</a>
+                </li>
+                <li>
+                  <a href="">Registry Pattern</a>
+                </li>
+                <li>
+                  <a href="">Design Pattern3</a>
+                </li>
+                <li>
+                  <a href="">Design Pattern4</a>
+                </li>
+                <li>
+                  <a href="">Design Pattern5</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li class="active">
+              <a href="">Approach</a>
+              <ul>
+                <li>
+                  <a href="">Jason Web Token(JWT) based Authentication</a>
+                </li>
+                <li>
+                  <a href="">Role Based Permission</a>
+                </li>
+                <li>
+                  <a href="">Approach3</a>
+                </li>
+                <li>
+                  <a href="">Approach4</a>
+                </li>
+                <li>
+                  <a href="">Approach5</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+
     </div>
 
 
     <div class="col-md-9 main">
-      
-      
-      
-      
-      
+      <div class="row"> <!-- Laravel Feature -->
+        <div class="green4">
+          <h1>fasufiyhsdxzckj</h1>
+        </div>
+      </div>            <!-- Laravel Feature -->
+      <div class="row"> <!-- What Does It Do -->
+      </div>            <!-- What Does It Do -->
+      <div class="row"> <!-- When To Do It -->
+      </div>            <!-- When To Do It -->
+      <div class="row"> <!-- How To Do It -->
+      </div>            <!-- How To Do It -->
     </div>
 
 

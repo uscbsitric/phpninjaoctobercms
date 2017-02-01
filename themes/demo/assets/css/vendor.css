@@ -7492,7 +7492,7 @@ a .icon-flip-vertical:before {
 }
 
 .main{
-  
+  padding: 20px;
 }
 
 .nav-sidebar > .active > a, .nav-sidebar > .active > a:hover, .nav-sidebar > .active > a:focus {

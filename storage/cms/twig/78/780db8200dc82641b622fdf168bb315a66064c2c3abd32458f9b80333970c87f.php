@@ -68,9 +68,6 @@ class __TwigTemplate_a2ccee47f73a63b68b0cdc19383992e1ed5c4f2440dcea4dbac65e5fddd
               <a href=\"\">Security</a>
               <ul>
                 <li>
-                  <a href=\"\">JWT Based Authentication</a>
-                </li>
-                <li>
                   <a href=\"\">Middleware</a>
                 </li>
                 <li>
@@ -181,15 +178,88 @@ class __TwigTemplate_a2ccee47f73a63b68b0cdc19383992e1ed5c4f2440dcea4dbac65e5fddd
               </ul>
             </li>
           </ul>
+          <ul class=\"nav nav-sidebar\">
+            <li class=\"active\">
+              <a href=\"\">Performance Improvement</a>
+              <ul>
+                <li>
+                  <a href=\"\">Route Caching</a>
+                </li>
+                <li>
+                  <a href=\"\">Approach2</a>
+                </li>
+                <li>
+                  <a href=\"\">Approach3</a>
+                </li>
+                <li>
+                  <a href=\"\">Approach4</a>
+                </li>
+                <li>
+                  <a href=\"\">Approach5</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class=\"nav nav-sidebar\">
+            <li class=\"active\">
+              <a href=\"\">Design Patterns</a>
+              <ul>
+                <li>
+                  <a href=\"\">Repository Pattern</a>
+                </li>
+                <li>
+                  <a href=\"\">Registry Pattern</a>
+                </li>
+                <li>
+                  <a href=\"\">Design Pattern3</a>
+                </li>
+                <li>
+                  <a href=\"\">Design Pattern4</a>
+                </li>
+                <li>
+                  <a href=\"\">Design Pattern5</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class=\"nav nav-sidebar\">
+            <li class=\"active\">
+              <a href=\"\">Approach</a>
+              <ul>
+                <li>
+                  <a href=\"\">Jason Web Token(JWT) based Authentication</a>
+                </li>
+                <li>
+                  <a href=\"\">Role Based Permission</a>
+                </li>
+                <li>
+                  <a href=\"\">Approach3</a>
+                </li>
+                <li>
+                  <a href=\"\">Approach4</a>
+                </li>
+                <li>
+                  <a href=\"\">Approach5</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+
     </div>
 
 
     <div class=\"col-md-9 main\">
-      
-      
-      
-      
-      
+      <div class=\"row\"> <!-- Laravel Feature -->
+        <div class=\"green4\">
+          <h1>fasufiyhsdxzckj</h1>
+        </div>
+      </div>            <!-- Laravel Feature -->
+      <div class=\"row\"> <!-- What Does It Do -->
+      </div>            <!-- What Does It Do -->
+      <div class=\"row\"> <!-- When To Do It -->
+      </div>            <!-- When To Do It -->
+      <div class=\"row\"> <!-- How To Do It -->
+      </div>            <!-- How To Do It -->
     </div>
 
 
@@ -269,9 +339,6 @@ class __TwigTemplate_a2ccee47f73a63b68b0cdc19383992e1ed5c4f2440dcea4dbac65e5fddd
               <a href=\"\">Security</a>
               <ul>
                 <li>
-                  <a href=\"\">JWT Based Authentication</a>
-                </li>
-                <li>
                   <a href=\"\">Middleware</a>
                 </li>
                 <li>
@@ -382,15 +449,88 @@ class __TwigTemplate_a2ccee47f73a63b68b0cdc19383992e1ed5c4f2440dcea4dbac65e5fddd
               </ul>
             </li>
           </ul>
+          <ul class=\"nav nav-sidebar\">
+            <li class=\"active\">
+              <a href=\"\">Performance Improvement</a>
+              <ul>
+                <li>
+                  <a href=\"\">Route Caching</a>
+                </li>
+                <li>
+                  <a href=\"\">Approach2</a>
+                </li>
+                <li>
+                  <a href=\"\">Approach3</a>
+                </li>
+                <li>
+                  <a href=\"\">Approach4</a>
+                </li>
+                <li>
+                  <a href=\"\">Approach5</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class=\"nav nav-sidebar\">
+            <li class=\"active\">
+              <a href=\"\">Design Patterns</a>
+              <ul>
+                <li>
+                  <a href=\"\">Repository Pattern</a>
+                </li>
+                <li>
+                  <a href=\"\">Registry Pattern</a>
+                </li>
+                <li>
+                  <a href=\"\">Design Pattern3</a>
+                </li>
+                <li>
+                  <a href=\"\">Design Pattern4</a>
+                </li>
+                <li>
+                  <a href=\"\">Design Pattern5</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class=\"nav nav-sidebar\">
+            <li class=\"active\">
+              <a href=\"\">Approach</a>
+              <ul>
+                <li>
+                  <a href=\"\">Jason Web Token(JWT) based Authentication</a>
+                </li>
+                <li>
+                  <a href=\"\">Role Based Permission</a>
+                </li>
+                <li>
+                  <a href=\"\">Approach3</a>
+                </li>
+                <li>
+                  <a href=\"\">Approach4</a>
+                </li>
+                <li>
+                  <a href=\"\">Approach5</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+
     </div>
 
 
     <div class=\"col-md-9 main\">
-      
-      
-      
-      
-      
+      <div class=\"row\"> <!-- Laravel Feature -->
+        <div class=\"green4\">
+          <h1>fasufiyhsdxzckj</h1>
+        </div>
+      </div>            <!-- Laravel Feature -->
+      <div class=\"row\"> <!-- What Does It Do -->
+      </div>            <!-- What Does It Do -->
+      <div class=\"row\"> <!-- When To Do It -->
+      </div>            <!-- When To Do It -->
+      <div class=\"row\"> <!-- How To Do It -->
+      </div>            <!-- How To Do It -->
     </div>
 
 
