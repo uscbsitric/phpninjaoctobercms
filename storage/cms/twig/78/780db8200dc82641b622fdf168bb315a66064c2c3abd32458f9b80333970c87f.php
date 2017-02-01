@@ -16,24 +16,28 @@ class __TwigTemplate_a2ccee47f73a63b68b0cdc19383992e1ed5c4f2440dcea4dbac65e5fddd
     protected function doDisplay(array $context, array $blocks = array())
     {
         // line 1
-        echo "<div class=\"row\"> <!-- Laravel Feature -->
-  <div class=\"green4\">
-    <h1>Laravel Feature</h1>
+        echo "<div class=\"\"> <!-- Laravel Feature -->
+  <div class=\"green4 tutorialPages\">
+    <h1 class=\"fontColorWhite1 noMargin\">Laravel Feature</h1>
+    <h3 class=\"fontColorGrey3 noMargin\">The subject Feature</h3>
   </div>
 </div>            <!-- Laravel Feature -->
-<div class=\"row\"> <!-- What Does It Do -->
-  <div class=\"green4\">
-    <h1>What Does It Do</h1>
+<div class=\"\"> <!-- What Does It Do -->
+  <div class=\"green4 tutorialPages\">
+    <h1 class=\"noMargin\">What Does It Do</h1>
+    <p class=\"fontColorGrey1 noMargin\">What Does It Do Description</p>
   </div>
 </div>            <!-- What Does It Do -->
-<div class=\"row\"> <!-- When To Do It -->
-  <div class=\"green4\">
-    <h1>When To Do It</h1>
+<div class=\"\"> <!-- When To Do It -->
+  <div class=\"green4 tutorialPages\">
+    <h1 class=\"noMargin\">When To Do It</h1>
+    <p class=\"fontColorWhite2 noMargin\">When To Do It Description</p>
   </div>
 </div>            <!-- When To Do It -->
-<div class=\"row\"> <!-- How To Do It -->
-  <div class=\"green4\">
-    <h1>How To Do It</h1>
+<div class=\"\"> <!-- How To Do It -->
+  <div class=\"green4 tutorialPages\">
+    <h1 class=\"noMargin\">How To Do It</h1>
+    <p class=\"fontColorWhite2 noMargin\">How To Do It Description</p>
   </div>
 </div>            <!-- How To Do It -->";
     }
@@ -58,24 +62,28 @@ class __TwigTemplate_a2ccee47f73a63b68b0cdc19383992e1ed5c4f2440dcea4dbac65e5fddd
 
     public function getSourceContext()
     {
-        return new Twig_Source("<div class=\"row\"> <!-- Laravel Feature -->
-  <div class=\"green4\">
-    <h1>Laravel Feature</h1>
+        return new Twig_Source("<div class=\"\"> <!-- Laravel Feature -->
+  <div class=\"green4 tutorialPages\">
+    <h1 class=\"fontColorWhite1 noMargin\">Laravel Feature</h1>
+    <h3 class=\"fontColorGrey3 noMargin\">The subject Feature</h3>
   </div>
 </div>            <!-- Laravel Feature -->
-<div class=\"row\"> <!-- What Does It Do -->
-  <div class=\"green4\">
-    <h1>What Does It Do</h1>
+<div class=\"\"> <!-- What Does It Do -->
+  <div class=\"green4 tutorialPages\">
+    <h1 class=\"noMargin\">What Does It Do</h1>
+    <p class=\"fontColorGrey1 noMargin\">What Does It Do Description</p>
   </div>
 </div>            <!-- What Does It Do -->
-<div class=\"row\"> <!-- When To Do It -->
-  <div class=\"green4\">
-    <h1>When To Do It</h1>
+<div class=\"\"> <!-- When To Do It -->
+  <div class=\"green4 tutorialPages\">
+    <h1 class=\"noMargin\">When To Do It</h1>
+    <p class=\"fontColorWhite2 noMargin\">When To Do It Description</p>
   </div>
 </div>            <!-- When To Do It -->
-<div class=\"row\"> <!-- How To Do It -->
-  <div class=\"green4\">
-    <h1>How To Do It</h1>
+<div class=\"\"> <!-- How To Do It -->
+  <div class=\"green4 tutorialPages\">
+    <h1 class=\"noMargin\">How To Do It</h1>
+    <p class=\"fontColorWhite2 noMargin\">How To Do It Description</p>
   </div>
 </div>            <!-- How To Do It -->", "/home/vagrant/Code/octobercms/themes/demo/pages/laravel5.2/laravel5.2.htm", "");
     }

@@ -1,4 +1,4 @@
-1485954300a:1:{s:19:"tutorialsLayout.htm";a:6:{s:8:"fileName";s:19:"tutorialsLayout.htm";s:7:"content";s:8916:"description = "Tutorials Layout"
+1485964813a:1:{s:19:"tutorialsLayout.htm";a:6:{s:8:"fileName";s:19:"tutorialsLayout.htm";s:7:"content";s:9024:"description = "Tutorials Layout"
 ==
 <!DOCTYPE html>
 <html>
@@ -13,6 +13,7 @@
         <link rel="icon" type="image/png" href="{{ 'assets/images/Ninja.png'|theme }}">
         <link href="{{ 'assets/css/vendor.css'|theme }}" rel="stylesheet">
         <link href="{{ 'assets/css/theme.css'|theme }}" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
         {% styles %}
     </head>
     <body>
@@ -288,7 +289,7 @@
         {% scripts %}
 
     </body>
-</html>";s:5:"mtime";i:1485953695;s:6:"markup";s:8878:"<!DOCTYPE html>
+</html>";s:5:"mtime";i:1485962844;s:6:"markup";s:8986:"<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -301,6 +302,7 @@
         <link rel="icon" type="image/png" href="{{ 'assets/images/Ninja.png'|theme }}">
         <link href="{{ 'assets/css/vendor.css'|theme }}" rel="stylesheet">
         <link href="{{ 'assets/css/theme.css'|theme }}" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
         {% styles %}
     </head>
     <body>

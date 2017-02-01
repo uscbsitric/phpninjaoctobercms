@@ -47,11 +47,12 @@ class __TwigTemplate_94d8cecab1d15331e86ab37d2f22defb02ff112a8a63bd8c1598df82013
         // line 13
         echo $this->env->getExtension('Cms\Twig\Extension')->themeFilter("assets/css/theme.css");
         echo "\" rel=\"stylesheet\">
+        <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
         ";
-        // line 14
+        // line 15
         echo $this->env->getExtension('CMS')->assetsFunction('css');
         echo $this->env->getExtension('CMS')->displayBlock('styles');
-        // line 15
+        // line 16
         echo "    </head>
     <body>
         <!--
@@ -72,11 +73,11 @@ class __TwigTemplate_94d8cecab1d15331e86ab37d2f22defb02ff112a8a63bd8c1598df82013
         <!-- Header -->
         <header id=\"tutorialsLayout-header\">
             ";
-        // line 34
+        // line 35
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('CMS')->partialFunction("site/ninjaHeader.htm"        , $context['__cms_partial_params']        );
         unset($context['__cms_partial_params']);
-        // line 35
+        // line 36
         echo "        </header>
 
 \t\t<div class=\"container-fluid\">
@@ -314,9 +315,9 @@ class __TwigTemplate_94d8cecab1d15331e86ab37d2f22defb02ff112a8a63bd8c1598df82013
         <!-- Content -->
         <div class=\"col-md-9 main\">
             ";
-        // line 271
-        echo $this->env->getExtension('CMS')->pageFunction();
         // line 272
+        echo $this->env->getExtension('CMS')->pageFunction();
+        // line 273
         echo "        </div>
         <!-- Content -->
         </div>
@@ -324,39 +325,39 @@ class __TwigTemplate_94d8cecab1d15331e86ab37d2f22defb02ff112a8a63bd8c1598df82013
         <!-- Footer -->
         <footer id=\"layout-footer\">
             ";
-        // line 278
+        // line 279
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('CMS')->partialFunction("site/ninjaFooter"        , $context['__cms_partial_params']        );
         unset($context['__cms_partial_params']);
-        // line 279
+        // line 280
         echo "        </footer>
 
         <!-- Scripts -->
         <script src=\"";
-        // line 282
+        // line 283
         echo $this->env->getExtension('Cms\Twig\Extension')->themeFilter("assets/vendor/jquery.js");
         echo "\"></script>
         <script src=\"";
-        // line 283
+        // line 284
         echo $this->env->getExtension('Cms\Twig\Extension')->themeFilter("assets/vendor/bootstrap.js");
         echo "\"></script>
         <script src=\"";
-        // line 284
+        // line 285
         echo $this->env->getExtension('Cms\Twig\Extension')->themeFilter("assets/javascript/app.js");
         echo "\"></script>
         ";
-        // line 285
+        // line 286
         echo '<script src="'. Request::getBasePath()
                 .'/modules/system/assets/js/framework.js"></script>'.PHP_EOL;
         echo '<script src="'. Request::getBasePath()
                     .'/modules/system/assets/js/framework.extras.js"></script>'.PHP_EOL;
         echo '<link rel="stylesheet" property="stylesheet" href="'. Request::getBasePath()
                     .'/modules/system/assets/css/framework.extras.css">'.PHP_EOL;
-        // line 286
+        // line 287
         echo "        ";
         echo $this->env->getExtension('CMS')->assetsFunction('js');
         echo $this->env->getExtension('CMS')->displayBlock('scripts');
-        // line 287
+        // line 288
         echo "
     </body>
 </html>";
@@ -374,7 +375,7 @@ class __TwigTemplate_94d8cecab1d15331e86ab37d2f22defb02ff112a8a63bd8c1598df82013
 
     public function getDebugInfo()
     {
-        return array (  360 => 287,  356 => 286,  349 => 285,  345 => 284,  341 => 283,  337 => 282,  332 => 279,  328 => 278,  320 => 272,  318 => 271,  80 => 35,  76 => 34,  55 => 15,  52 => 14,  48 => 13,  44 => 12,  40 => 11,  33 => 7,  29 => 6,  25 => 5,  19 => 1,);
+        return array (  361 => 288,  357 => 287,  350 => 286,  346 => 285,  342 => 284,  338 => 283,  333 => 280,  329 => 279,  321 => 273,  319 => 272,  81 => 36,  77 => 35,  56 => 16,  53 => 15,  48 => 13,  44 => 12,  40 => 11,  33 => 7,  29 => 6,  25 => 5,  19 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -400,6 +401,7 @@ class __TwigTemplate_94d8cecab1d15331e86ab37d2f22defb02ff112a8a63bd8c1598df82013
         <link rel=\"icon\" type=\"image/png\" href=\"{{ 'assets/images/Ninja.png'|theme }}\">
         <link href=\"{{ 'assets/css/vendor.css'|theme }}\" rel=\"stylesheet\">
         <link href=\"{{ 'assets/css/theme.css'|theme }}\" rel=\"stylesheet\">
+        <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
         {% styles %}
     </head>
     <body>
