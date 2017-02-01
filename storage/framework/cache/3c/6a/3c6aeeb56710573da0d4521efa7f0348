@@ -1,0 +1,579 @@
+1485954300a:1:{s:19:"tutorialsLayout.htm";a:6:{s:8:"fileName";s:19:"tutorialsLayout.htm";s:7:"content";s:8916:"description = "Tutorials Layout"
+==
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>October CMS - {{ this.page.title }}</title>
+        <meta name="description" content="{{ this.page.meta_description }}">
+        <meta name="title" content="{{ this.page.meta_title }}">
+        <meta name="author" content="OctoberCMS">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="generator" content="OctoberCMS">
+        <link rel="icon" type="image/png" href="{{ 'assets/images/Ninja.png'|theme }}">
+        <link href="{{ 'assets/css/vendor.css'|theme }}" rel="stylesheet">
+        <link href="{{ 'assets/css/theme.css'|theme }}" rel="stylesheet">
+        {% styles %}
+    </head>
+    <body>
+        <!--
+        Color Codes:
+          Green (lightest to darkest):
+            #93D4AC #26BF64 #26C667 #29AC5E
+
+          Blue: (lightest to darkest)
+            #13BBB1 #326A67
+
+          White:
+            #CCD1D1
+
+          Grey: (lightest to darkest):
+            #9FA7A9 #3E5050 #353D3F #2C533C
+        -->
+
+        <!-- Header -->
+        <header id="tutorialsLayout-header">
+            {% partial 'site/ninjaHeader.htm' %}
+        </header>
+
+		<div class="container-fluid">
+
+		<!-- SideNav -->
+	    <div class="col-md-3 sidebar">
+	          <ul class="nav nav-sidebar">
+	            <li class="active">
+	              <a href="#">Core Concepts</a>
+	              <ul>
+	                <li>
+	                  <a href="">Service Container</a>
+	                </li>
+	                <li>
+	                  <a href="">Service Provider</a>
+	                </li>
+	                <li>
+	                  <a href="">Facades</a>
+	                </li>
+	                <li>
+	                  <a href="">Contracts</a>
+	                </li>
+	              </ul>
+	            </li>
+	          </ul>
+	          <ul class="nav nav-sidebar">
+	            <li class="active">
+	              <a href="">The HTTP Layer</a>
+	              <ul>
+	                <li>
+	                  <a href="">Routing</a>
+	                </li>
+	                <li>
+	                  <a href="">Middleware</a>
+	                </li>
+	                <li>
+	                  <a href="">Controllers</a>
+	                </li>
+	                <li>
+	                  <a href="">Requests</a>
+	                </li>
+	                 <li>
+	                  <a href="">Responses</a>
+	                </li>
+	                 <li>
+	                  <a href="">Validation</a>
+	                </li>
+	              </ul>
+	            </li>
+	          </ul>
+	          <ul class="nav nav-sidebar">
+	            <li class="active">
+	              <a href="">Security</a>
+	              <ul>
+	                <li>
+	                  <a href="">Middleware</a>
+	                </li>
+	                <li>
+	                  <a href="">Encryption</a>
+	                </li>
+	                <li>
+	                  <a href="">Hashing</a>
+	                </li>
+	              </ul>
+	            </li>
+	          </ul>
+	          <ul class="nav nav-sidebar">
+	            <li class="active">
+	              <a href="">Services</a>
+	              <ul>
+	                <li>
+	                  <a href="">JWT Based Authentication</a>
+	                </li>
+	                <li>
+	                  <a href="">Artisan Console</a>
+	                </li>
+	                <li>
+	                  <a href="">Cache</a>
+	                </li>
+	                <li>
+	                  <a href="">Collections</a>
+	                </li>
+	                <li>
+	                  <a href="">Encryption</a>
+	                </li>
+	                <li>
+	                  <a href="">Events</a>
+	                </li>
+	                <li>
+	                  <a href="">Filesystem / Cloud Storage</a>
+	                </li>
+	                <li>
+	                  <a href="">Hashing</a>
+	                </li>
+	                <li>
+	                  <a href="">Helpers</a>
+	                </li>
+	                <li>
+	                  <a href="">Localization</a>
+	                </li>
+	                <li>
+	                  <a href="">Mail</a>
+	                </li>
+	                <li>
+	                  <a href="">Package Development</a>
+	                </li>
+	                <li>
+	                  <a href="">Pagination</a>
+	                </li>
+	                <li>
+	                  <a href="">Queues</a>
+	                </li>
+	                <li>
+	                  <a href="">Redis</a>
+	                </li>
+	                <li>
+	                  <a href="">Task Scheduling</a>
+	                </li>
+	                <li>
+	                  <a href="">Validation</a>
+	                </li>
+	              </ul>
+	            </li>
+	          </ul>
+	          <ul class="nav nav-sidebar">
+	            <li class="active">
+	              <a href="">Database</a>
+	              <ul>
+	                <li>
+	                  <a href="">Getting Started</a>
+	                </li>
+	                <li>
+	                  <a href="">Query Builder</a>
+	                </li>
+	                <li>
+	                  <a href="">Migrations</a>
+	                </li>
+	                <li>
+	                  <a href="">Seeding</a>
+	                </li>
+	                </ul>
+	            </li>
+	          </ul>
+	          <ul class="nav nav-sidebar">
+	            <li class="active">
+	              <a href="">Eloquent ORM</a>
+	              <ul>
+	                <li>
+	                  <a href="">Getting Started</a>
+	                </li>
+	                <li>
+	                  <a href="">Releationships</a>
+	                </li>
+	                <li>
+	                  <a href="">Collections</a>
+	                </li>
+	                <li>
+	                  <a href="">Mutators</a>
+	                </li>
+	                <li>
+	                  <a href="">Serialization</a>
+	                </li>
+	              </ul>
+	            </li>
+	          </ul>
+	          <ul class="nav nav-sidebar">
+	            <li class="active">
+	              <a href="">Performance Improvement</a>
+	              <ul>
+	                <li>
+	                  <a href="">Route Caching</a>
+	                </li>
+	                <li>
+	                  <a href="">Approach2</a>
+	                </li>
+	                <li>
+	                  <a href="">Approach3</a>
+	                </li>
+	                <li>
+	                  <a href="">Approach4</a>
+	                </li>
+	                <li>
+	                  <a href="">Approach5</a>
+	                </li>
+	              </ul>
+	            </li>
+	          </ul>
+	          <ul class="nav nav-sidebar">
+	            <li class="active">
+	              <a href="">Design Patterns</a>
+	              <ul>
+	                <li>
+	                  <a href="">Repository Pattern</a>
+	                </li>
+	                <li>
+	                  <a href="">Registry Pattern</a>
+	                </li>
+	                <li>
+	                  <a href="">Design Pattern3</a>
+	                </li>
+	                <li>
+	                  <a href="">Design Pattern4</a>
+	                </li>
+	                <li>
+	                  <a href="">Design Pattern5</a>
+	                </li>
+	              </ul>
+	            </li>
+	          </ul>
+	          <ul class="nav nav-sidebar">
+	            <li class="active">
+	              <a href="">Approach</a>
+	              <ul>
+	                <li>
+	                  <a href="">Jason Web Token(JWT) based Authentication</a>
+	                </li>
+	                <li>
+	                  <a href="">Role Based Permission</a>
+	                </li>
+	                <li>
+	                  <a href="">Approach3</a>
+	                </li>
+	                <li>
+	                  <a href="">Approach4</a>
+	                </li>
+	                <li>
+	                  <a href="">Approach5</a>
+	                </li>
+	              </ul>
+	            </li>
+	          </ul>
+	    </div>
+		<!-- SideNav -->
+
+        <!-- Content -->
+        <div class="col-md-9 main">
+            {% page %}
+        </div>
+        <!-- Content -->
+        </div>
+
+        <!-- Footer -->
+        <footer id="layout-footer">
+            {% partial 'site/ninjaFooter' %}
+        </footer>
+
+        <!-- Scripts -->
+        <script src="{{ 'assets/vendor/jquery.js'|theme }}"></script>
+        <script src="{{ 'assets/vendor/bootstrap.js'|theme }}"></script>
+        <script src="{{ 'assets/javascript/app.js'|theme }}"></script>
+        {% framework extras %}
+        {% scripts %}
+
+    </body>
+</html>";s:5:"mtime";i:1485953695;s:6:"markup";s:8878:"<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>October CMS - {{ this.page.title }}</title>
+        <meta name="description" content="{{ this.page.meta_description }}">
+        <meta name="title" content="{{ this.page.meta_title }}">
+        <meta name="author" content="OctoberCMS">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="generator" content="OctoberCMS">
+        <link rel="icon" type="image/png" href="{{ 'assets/images/Ninja.png'|theme }}">
+        <link href="{{ 'assets/css/vendor.css'|theme }}" rel="stylesheet">
+        <link href="{{ 'assets/css/theme.css'|theme }}" rel="stylesheet">
+        {% styles %}
+    </head>
+    <body>
+        <!--
+        Color Codes:
+          Green (lightest to darkest):
+            #93D4AC #26BF64 #26C667 #29AC5E
+
+          Blue: (lightest to darkest)
+            #13BBB1 #326A67
+
+          White:
+            #CCD1D1
+
+          Grey: (lightest to darkest):
+            #9FA7A9 #3E5050 #353D3F #2C533C
+        -->
+
+        <!-- Header -->
+        <header id="tutorialsLayout-header">
+            {% partial 'site/ninjaHeader.htm' %}
+        </header>
+
+		<div class="container-fluid">
+
+		<!-- SideNav -->
+	    <div class="col-md-3 sidebar">
+	          <ul class="nav nav-sidebar">
+	            <li class="active">
+	              <a href="#">Core Concepts</a>
+	              <ul>
+	                <li>
+	                  <a href="">Service Container</a>
+	                </li>
+	                <li>
+	                  <a href="">Service Provider</a>
+	                </li>
+	                <li>
+	                  <a href="">Facades</a>
+	                </li>
+	                <li>
+	                  <a href="">Contracts</a>
+	                </li>
+	              </ul>
+	            </li>
+	          </ul>
+	          <ul class="nav nav-sidebar">
+	            <li class="active">
+	              <a href="">The HTTP Layer</a>
+	              <ul>
+	                <li>
+	                  <a href="">Routing</a>
+	                </li>
+	                <li>
+	                  <a href="">Middleware</a>
+	                </li>
+	                <li>
+	                  <a href="">Controllers</a>
+	                </li>
+	                <li>
+	                  <a href="">Requests</a>
+	                </li>
+	                 <li>
+	                  <a href="">Responses</a>
+	                </li>
+	                 <li>
+	                  <a href="">Validation</a>
+	                </li>
+	              </ul>
+	            </li>
+	          </ul>
+	          <ul class="nav nav-sidebar">
+	            <li class="active">
+	              <a href="">Security</a>
+	              <ul>
+	                <li>
+	                  <a href="">Middleware</a>
+	                </li>
+	                <li>
+	                  <a href="">Encryption</a>
+	                </li>
+	                <li>
+	                  <a href="">Hashing</a>
+	                </li>
+	              </ul>
+	            </li>
+	          </ul>
+	          <ul class="nav nav-sidebar">
+	            <li class="active">
+	              <a href="">Services</a>
+	              <ul>
+	                <li>
+	                  <a href="">JWT Based Authentication</a>
+	                </li>
+	                <li>
+	                  <a href="">Artisan Console</a>
+	                </li>
+	                <li>
+	                  <a href="">Cache</a>
+	                </li>
+	                <li>
+	                  <a href="">Collections</a>
+	                </li>
+	                <li>
+	                  <a href="">Encryption</a>
+	                </li>
+	                <li>
+	                  <a href="">Events</a>
+	                </li>
+	                <li>
+	                  <a href="">Filesystem / Cloud Storage</a>
+	                </li>
+	                <li>
+	                  <a href="">Hashing</a>
+	                </li>
+	                <li>
+	                  <a href="">Helpers</a>
+	                </li>
+	                <li>
+	                  <a href="">Localization</a>
+	                </li>
+	                <li>
+	                  <a href="">Mail</a>
+	                </li>
+	                <li>
+	                  <a href="">Package Development</a>
+	                </li>
+	                <li>
+	                  <a href="">Pagination</a>
+	                </li>
+	                <li>
+	                  <a href="">Queues</a>
+	                </li>
+	                <li>
+	                  <a href="">Redis</a>
+	                </li>
+	                <li>
+	                  <a href="">Task Scheduling</a>
+	                </li>
+	                <li>
+	                  <a href="">Validation</a>
+	                </li>
+	              </ul>
+	            </li>
+	          </ul>
+	          <ul class="nav nav-sidebar">
+	            <li class="active">
+	              <a href="">Database</a>
+	              <ul>
+	                <li>
+	                  <a href="">Getting Started</a>
+	                </li>
+	                <li>
+	                  <a href="">Query Builder</a>
+	                </li>
+	                <li>
+	                  <a href="">Migrations</a>
+	                </li>
+	                <li>
+	                  <a href="">Seeding</a>
+	                </li>
+	                </ul>
+	            </li>
+	          </ul>
+	          <ul class="nav nav-sidebar">
+	            <li class="active">
+	              <a href="">Eloquent ORM</a>
+	              <ul>
+	                <li>
+	                  <a href="">Getting Started</a>
+	                </li>
+	                <li>
+	                  <a href="">Releationships</a>
+	                </li>
+	                <li>
+	                  <a href="">Collections</a>
+	                </li>
+	                <li>
+	                  <a href="">Mutators</a>
+	                </li>
+	                <li>
+	                  <a href="">Serialization</a>
+	                </li>
+	              </ul>
+	            </li>
+	          </ul>
+	          <ul class="nav nav-sidebar">
+	            <li class="active">
+	              <a href="">Performance Improvement</a>
+	              <ul>
+	                <li>
+	                  <a href="">Route Caching</a>
+	                </li>
+	                <li>
+	                  <a href="">Approach2</a>
+	                </li>
+	                <li>
+	                  <a href="">Approach3</a>
+	                </li>
+	                <li>
+	                  <a href="">Approach4</a>
+	                </li>
+	                <li>
+	                  <a href="">Approach5</a>
+	                </li>
+	              </ul>
+	            </li>
+	          </ul>
+	          <ul class="nav nav-sidebar">
+	            <li class="active">
+	              <a href="">Design Patterns</a>
+	              <ul>
+	                <li>
+	                  <a href="">Repository Pattern</a>
+	                </li>
+	                <li>
+	                  <a href="">Registry Pattern</a>
+	                </li>
+	                <li>
+	                  <a href="">Design Pattern3</a>
+	                </li>
+	                <li>
+	                  <a href="">Design Pattern4</a>
+	                </li>
+	                <li>
+	                  <a href="">Design Pattern5</a>
+	                </li>
+	              </ul>
+	            </li>
+	          </ul>
+	          <ul class="nav nav-sidebar">
+	            <li class="active">
+	              <a href="">Approach</a>
+	              <ul>
+	                <li>
+	                  <a href="">Jason Web Token(JWT) based Authentication</a>
+	                </li>
+	                <li>
+	                  <a href="">Role Based Permission</a>
+	                </li>
+	                <li>
+	                  <a href="">Approach3</a>
+	                </li>
+	                <li>
+	                  <a href="">Approach4</a>
+	                </li>
+	                <li>
+	                  <a href="">Approach5</a>
+	                </li>
+	              </ul>
+	            </li>
+	          </ul>
+	    </div>
+		<!-- SideNav -->
+
+        <!-- Content -->
+        <div class="col-md-9 main">
+            {% page %}
+        </div>
+        <!-- Content -->
+        </div>
+
+        <!-- Footer -->
+        <footer id="layout-footer">
+            {% partial 'site/ninjaFooter' %}
+        </footer>
+
+        <!-- Scripts -->
+        <script src="{{ 'assets/vendor/jquery.js'|theme }}"></script>
+        <script src="{{ 'assets/vendor/bootstrap.js'|theme }}"></script>
+        <script src="{{ 'assets/javascript/app.js'|theme }}"></script>
+        {% framework extras %}
+        {% scripts %}
+
+    </body>
+</html>";s:4:"code";N;s:11:"description";s:16:"Tutorials Layout";}}
