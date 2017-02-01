@@ -29,14 +29,14 @@ class __TwigTemplate_6fffeab72ac7aeba8988da2bb99c7dd6a08e4b28575f63f30cda2030155
             <a class=\"navbar-brand\" href=\"";
         // line 11
         echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("home");
-        echo "\">PHP Ninja October</a>
+        echo "\">PHP Ninja OctoberCMS</a>
         </div>
         <div class=\"collapse navbar-collapse navbar-main-collapse\">
             <ul class=\"nav navbar-nav\">
                 <li class=\"separator hidden-xs\"></li>
                 <li class=\"";
         // line 16
-        if (($this->getAttribute($this->getAttribute(($context["this"] ?? null), "page", array()), "id", array()) == "home")) {
+        if (($this->getAttribute($this->getAttribute(($context["this"] ?? null), "page", array()), "id", array()) == "laravel5.2-laravel5.2")) {
             echo "active";
         }
         echo "\">    <a href=\"";
@@ -99,12 +99,12 @@ class __TwigTemplate_6fffeab72ac7aeba8988da2bb99c7dd6a08e4b28575f63f30cda2030155
                 <span class=\"icon-bar\"></span>
                 <span class=\"icon-bar\"></span>
             </button>
-            <a class=\"navbar-brand\" href=\"{{ 'home'|page }}\">PHP Ninja October</a>
+            <a class=\"navbar-brand\" href=\"{{ 'home'|page }}\">PHP Ninja OctoberCMS</a>
         </div>
         <div class=\"collapse navbar-collapse navbar-main-collapse\">
             <ul class=\"nav navbar-nav\">
                 <li class=\"separator hidden-xs\"></li>
-                <li class=\"{% if this.page.id == 'home' %}active{% endif %}\">    <a href=\"{{ 'laravel5.2/laravel5.2.htm'|page }}\">Laravel 5.2</a></li>
+                <li class=\"{% if this.page.id == 'laravel5.2-laravel5.2' %}active{% endif %}\">    <a href=\"{{ 'laravel5.2/laravel5.2.htm'|page }}\">Laravel 5.2</a></li>
                 <li class=\"{% if this.page.id == 'ajax' %}active{% endif %}\">    <a href=\"{{ 'laravel1.6'|page }}\">Angular 1.6</a></li>
                 <li class=\"{% if this.page.id == 'plugins' %}active{% endif %}\"> <a href=\"{{ 'amazonWebServices'|page }}\">Amazon Web Services</a></li>
             </ul>

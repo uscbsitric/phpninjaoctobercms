@@ -1,19 +1,29 @@
-1485757164a:1:{s:11:"welcome.htm";a:6:{s:8:"fileName";s:11:"welcome.htm";s:7:"content";s:1396:"<!-- 
+1485923173a:1:{s:11:"welcome.htm";a:6:{s:8:"fileName";s:11:"welcome.htm";s:7:"content";s:2483:"<!-- 
    Content Type Pages cannot use templating varriables like {{ '...' | app }} or {{ '...' | theme }}
 -->
 
 <div class="row"> <!-- first row -->
   <div class="col-md-4">
 
+    <a href="http://octobercms/laravel5.2" style="text-decoration:none;">
     <div class="thumbnail">
       <img src="/themes/demo/assets/images/laravel.png" alt="Laravel Logo" class="welcomePageThumbnail">
       <div class="caption">
         <h3>Laravel 5.2</h3>
         <p>
-          Features Demonstration, please put more details here, lots of it. <span class="icon-laptop"></span>
+          A free, open-source PHP web framework, created by Taylor Otwell and intended for the development of web applications following the model–view–controller (MVC) architectural pattern.
+          <span class="icon-laptop"></span>
+          <br> 
+          <br> 
+          <br> 
+          <br> 
+          <br> 
+          <br> 
+          <br> 
         </p>
       </div>
     </div>
+    </a>
 
   </div>
 
@@ -24,7 +34,15 @@
       <div class="caption">
         <h3>AngularJS 1.6</h3>
         <p>
-          Features Demonstration, please put more details here, lots of it. <span class="icon-fighter-jet"></span>
+          A complete JavaScript-based open-source front-end web application framework mainly maintained by Google and by a community of individuals and corporations to address many of the challenges 
+          encountered in developing single-page applications.
+          <span class="icon-fighter-jet"></span>
+          <br> 
+          <br> 
+          <br> 
+          <br> 
+          <br> 
+          <br> 
         </p>
       </div>
     </div>
@@ -38,28 +56,42 @@
       <div class="caption">
         <h3>AWS</h3>
         <p>
-          Features Demonstration, please put more details here, lots of it. <span class="icon-money"></span>
+          A subsidiary of Amazon.com,[2] offers a suite of cloud-computing services that make up an on-demand computing platform.
+          They include Amazon Elastic Compute Cloud, also known as "EC2", and Amazon Simple Storage Service, also known as "S3".
+          As of 2016 AWS has more than 70 services, spanning a wide range, including compute, storage, networking, database, analytics, application services, deployment, management, mobile, 
+          developer tools and tools for the Internet of things.
+          <span class="icon-money"></span>
         </p>
       </div>
     </div>
 
   </div>
-</div>                        <!-- first row -->";s:5:"mtime";i:1485755057;s:6:"markup";s:1396:"<!-- 
+</div>                        <!-- first row -->";s:5:"mtime";i:1485827454;s:6:"markup";s:2483:"<!-- 
    Content Type Pages cannot use templating varriables like {{ '...' | app }} or {{ '...' | theme }}
 -->
 
 <div class="row"> <!-- first row -->
   <div class="col-md-4">
 
+    <a href="http://octobercms/laravel5.2" style="text-decoration:none;">
     <div class="thumbnail">
       <img src="/themes/demo/assets/images/laravel.png" alt="Laravel Logo" class="welcomePageThumbnail">
       <div class="caption">
         <h3>Laravel 5.2</h3>
         <p>
-          Features Demonstration, please put more details here, lots of it. <span class="icon-laptop"></span>
+          A free, open-source PHP web framework, created by Taylor Otwell and intended for the development of web applications following the model–view–controller (MVC) architectural pattern.
+          <span class="icon-laptop"></span>
+          <br> 
+          <br> 
+          <br> 
+          <br> 
+          <br> 
+          <br> 
+          <br> 
         </p>
       </div>
     </div>
+    </a>
 
   </div>
 
@@ -70,7 +102,15 @@
       <div class="caption">
         <h3>AngularJS 1.6</h3>
         <p>
-          Features Demonstration, please put more details here, lots of it. <span class="icon-fighter-jet"></span>
+          A complete JavaScript-based open-source front-end web application framework mainly maintained by Google and by a community of individuals and corporations to address many of the challenges 
+          encountered in developing single-page applications.
+          <span class="icon-fighter-jet"></span>
+          <br> 
+          <br> 
+          <br> 
+          <br> 
+          <br> 
+          <br> 
         </p>
       </div>
     </div>
@@ -84,28 +124,42 @@
       <div class="caption">
         <h3>AWS</h3>
         <p>
-          Features Demonstration, please put more details here, lots of it. <span class="icon-money"></span>
+          A subsidiary of Amazon.com,[2] offers a suite of cloud-computing services that make up an on-demand computing platform.
+          They include Amazon Elastic Compute Cloud, also known as "EC2", and Amazon Simple Storage Service, also known as "S3".
+          As of 2016 AWS has more than 70 services, spanning a wide range, including compute, storage, networking, database, analytics, application services, deployment, management, mobile, 
+          developer tools and tools for the Internet of things.
+          <span class="icon-money"></span>
         </p>
       </div>
     </div>
 
   </div>
-</div>                        <!-- first row -->";s:4:"code";N;s:12:"parsedMarkup";s:1396:"<!-- 
+</div>                        <!-- first row -->";s:4:"code";N;s:12:"parsedMarkup";s:2483:"<!-- 
    Content Type Pages cannot use templating varriables like {{ '...' | app }} or {{ '...' | theme }}
 -->
 
 <div class="row"> <!-- first row -->
   <div class="col-md-4">
 
+    <a href="http://octobercms/laravel5.2" style="text-decoration:none;">
     <div class="thumbnail">
       <img src="/themes/demo/assets/images/laravel.png" alt="Laravel Logo" class="welcomePageThumbnail">
       <div class="caption">
         <h3>Laravel 5.2</h3>
         <p>
-          Features Demonstration, please put more details here, lots of it. <span class="icon-laptop"></span>
+          A free, open-source PHP web framework, created by Taylor Otwell and intended for the development of web applications following the model–view–controller (MVC) architectural pattern.
+          <span class="icon-laptop"></span>
+          <br> 
+          <br> 
+          <br> 
+          <br> 
+          <br> 
+          <br> 
+          <br> 
         </p>
       </div>
     </div>
+    </a>
 
   </div>
 
@@ -116,7 +170,15 @@
       <div class="caption">
         <h3>AngularJS 1.6</h3>
         <p>
-          Features Demonstration, please put more details here, lots of it. <span class="icon-fighter-jet"></span>
+          A complete JavaScript-based open-source front-end web application framework mainly maintained by Google and by a community of individuals and corporations to address many of the challenges 
+          encountered in developing single-page applications.
+          <span class="icon-fighter-jet"></span>
+          <br> 
+          <br> 
+          <br> 
+          <br> 
+          <br> 
+          <br> 
         </p>
       </div>
     </div>
@@ -130,7 +192,11 @@
       <div class="caption">
         <h3>AWS</h3>
         <p>
-          Features Demonstration, please put more details here, lots of it. <span class="icon-money"></span>
+          A subsidiary of Amazon.com,[2] offers a suite of cloud-computing services that make up an on-demand computing platform.
+          They include Amazon Elastic Compute Cloud, also known as "EC2", and Amazon Simple Storage Service, also known as "S3".
+          As of 2016 AWS has more than 70 services, spanning a wide range, including compute, storage, networking, database, analytics, application services, deployment, management, mobile, 
+          developer tools and tools for the Internet of things.
+          <span class="icon-money"></span>
         </p>
       </div>
     </div>
