@@ -1,4 +1,4 @@
-1486013163a:1:{s:25:"laravel5.2/laravel5.2.htm";a:10:{s:8:"fileName";s:25:"laravel5.2/laravel5.2.htm";s:7:"content";s:1271:"title = "Laravel 5.2"
+1486019634a:1:{s:25:"laravel5.2/laravel5.2.htm";a:10:{s:8:"fileName";s:25:"laravel5.2/laravel5.2.htm";s:7:"content";s:1271:"title = "Laravel 5.2"
 url = "/laravel5.2"
 layout = "laravel5-2TutorialsLayout"
 description = "Laravel 5.2 Experiences"
@@ -27,7 +27,7 @@ is_hidden = 0
     <h1 class="noMargin fontColorGreen3">How To Do It</h1>
     <p class="fontColorWhite2 noMargin">step-by-step procedures.</p>
   </div>
-</div>            <!-- How To Do It -->";s:5:"mtime";i:1486010127;s:6:"markup";s:1135:"<div class="row"> <!-- Laravel Feature -->
+</div>            <!-- How To Do It -->";s:5:"mtime";i:1486014876;s:6:"markup";s:1135:"<div class="row"> <!-- Laravel Feature -->
   <div class="green4 tutorialPages">
     <h1 class="fontColorWhite1 noMargin">Laravel Feature</h1>
     <h3 class="fontColorGrey3 noMargin">The subject Feature</h3>

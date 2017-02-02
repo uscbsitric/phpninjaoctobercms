@@ -7451,8 +7451,7 @@ a .icon-flip-vertical:before {
   color: #2C533C;
 }
 
-.laravelBackground{
-  background: url('../images/laravel.png') no-repeat;
+.laravelBackground, .angularJSBackground, .amazonWebServicesBackground{
   margin-right: -15px;   /* Remove right gap */
   margin-left: -15px;    /* Remove left gap */
   padding-bottom: 100%; /* ratio is 16:10 */
@@ -7461,24 +7460,16 @@ a .icon-flip-vertical:before {
   background-size: contain;
 }
 
+.laravelBackground{
+  background: url('../images/laravel.png') no-repeat;
+}
+
 .angularJSBackground{
   background: url('../images/angular.png') no-repeat;
-  margin-right: -15px; /* Remove right gap */
-  margin-left: -15px;  /* Remove left gap */
-  padding-bottom: 100%; /* ratio is 16:10 */
-  padding-bottom: 62.5%;
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 
 .amazonWebServicesBackground{
   background: url('../images/aws.png') no-repeat;
-  margin-right: -15px; /* Remove right gap */
-  margin-left: -15px;  /* Remove left gap */
-  padding-bottom: 100%; /* ratio is 16:10 */
-  padding-bottom: 62.5%;
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 
 .welcomePageThumbnail{
@@ -7513,6 +7504,10 @@ ul li a{
   color: #CCD1D1;
 }
 
+ol li{
+  color: #CCD1D1;
+}
+
 .sidebar > ul > li > ul{
   display: block;
   border-top: 1px dashed #CCD1D1;
@@ -7529,6 +7524,7 @@ ul li a{
 .tutorialPages{
   padding-bottom: 25px;
   padding-left: 40px;
+  padding-right: 40px;
 }
 
 .tutorialPages h1{
