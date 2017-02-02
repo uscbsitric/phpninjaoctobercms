@@ -232,6 +232,12 @@ class __TwigTemplate_6d365c650291313f739fd2d224f46922334c95079c02abcd7276f6941b7
 \t\t\t                  <a href=\"\">Getting Started</a>
 \t\t\t                </li>
 \t\t\t                <li>
+\t\t\t                  <a href=\"";
+        // line 187
+        echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("laravel5.2/eloquentORMModels");
+        echo "\">Eloquent ORM Models</a>
+\t\t\t                </li>
+\t\t\t                <li>
 \t\t\t                  <a href=\"\">Releationships</a>
 \t\t\t                </li>
 \t\t\t                <li>
@@ -318,9 +324,9 @@ class __TwigTemplate_6d365c650291313f739fd2d224f46922334c95079c02abcd7276f6941b7
 \t\t        <!-- Content -->
 \t\t        <div class=\"col-md-9 main\">
 \t\t            ";
-        // line 272
+        // line 275
         echo $this->env->getExtension('CMS')->pageFunction();
-        // line 273
+        // line 276
         echo "\t\t        </div>
 \t\t        <!-- Content -->
 \t\t    </div>             <!-- Start of Row1 -->
@@ -329,39 +335,39 @@ class __TwigTemplate_6d365c650291313f739fd2d224f46922334c95079c02abcd7276f6941b7
         <!-- Footer -->
         <footer id=\"layout-footer\">
             ";
-        // line 280
+        // line 283
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('CMS')->partialFunction("site/ninjaFooter"        , $context['__cms_partial_params']        );
         unset($context['__cms_partial_params']);
-        // line 281
+        // line 284
         echo "        </footer>
 
         <!-- Scripts -->
         <script src=\"";
-        // line 284
+        // line 287
         echo $this->env->getExtension('Cms\Twig\Extension')->themeFilter("assets/vendor/jquery.js");
         echo "\"></script>
         <script src=\"";
-        // line 285
+        // line 288
         echo $this->env->getExtension('Cms\Twig\Extension')->themeFilter("assets/vendor/bootstrap.js");
         echo "\"></script>
         <script src=\"";
-        // line 286
+        // line 289
         echo $this->env->getExtension('Cms\Twig\Extension')->themeFilter("assets/javascript/app.js");
         echo "\"></script>
         ";
-        // line 287
+        // line 290
         echo '<script src="'. Request::getBasePath()
                 .'/modules/system/assets/js/framework.js"></script>'.PHP_EOL;
         echo '<script src="'. Request::getBasePath()
                     .'/modules/system/assets/js/framework.extras.js"></script>'.PHP_EOL;
         echo '<link rel="stylesheet" property="stylesheet" href="'. Request::getBasePath()
                     .'/modules/system/assets/css/framework.extras.css">'.PHP_EOL;
-        // line 288
+        // line 291
         echo "        ";
         echo $this->env->getExtension('CMS')->assetsFunction('js');
         echo $this->env->getExtension('CMS')->displayBlock('scripts');
-        // line 289
+        // line 292
         echo "
     </body>
 </html>";
@@ -379,7 +385,7 @@ class __TwigTemplate_6d365c650291313f739fd2d224f46922334c95079c02abcd7276f6941b7
 
     public function getDebugInfo()
     {
-        return array (  365 => 289,  361 => 288,  354 => 287,  350 => 286,  346 => 285,  342 => 284,  337 => 281,  333 => 280,  324 => 273,  322 => 272,  218 => 171,  81 => 36,  77 => 35,  56 => 16,  53 => 15,  48 => 13,  44 => 12,  40 => 11,  33 => 7,  29 => 6,  25 => 5,  19 => 1,);
+        return array (  371 => 292,  367 => 291,  360 => 290,  356 => 289,  352 => 288,  348 => 287,  343 => 284,  339 => 283,  330 => 276,  328 => 275,  237 => 187,  218 => 171,  81 => 36,  77 => 35,  56 => 16,  53 => 15,  48 => 13,  44 => 12,  40 => 11,  33 => 7,  29 => 6,  25 => 5,  19 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -576,6 +582,9 @@ class __TwigTemplate_6d365c650291313f739fd2d224f46922334c95079c02abcd7276f6941b7
 \t\t\t              <ul>
 \t\t\t                <li>
 \t\t\t                  <a href=\"\">Getting Started</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"{{'laravel5.2/eloquentORMModels'|page}}\">Eloquent ORM Models</a>
 \t\t\t                </li>
 \t\t\t                <li>
 \t\t\t                  <a href=\"\">Releationships</a>

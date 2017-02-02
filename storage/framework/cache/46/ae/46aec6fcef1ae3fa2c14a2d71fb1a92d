@@ -1,4 +1,4 @@
-1486017778a:1:{s:11:"welcome.htm";a:6:{s:8:"fileName";s:11:"welcome.htm";s:7:"content";s:2483:"<!-- 
+1486036429a:1:{s:11:"welcome.htm";a:6:{s:8:"fileName";s:11:"welcome.htm";s:7:"content";s:2483:"<!-- 
    Content Type Pages cannot use templating varriables like {{ '...' | app }} or {{ '...' | theme }}
 -->
 
