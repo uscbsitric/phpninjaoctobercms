@@ -81,283 +81,287 @@ class __TwigTemplate_6d365c650291313f739fd2d224f46922334c95079c02abcd7276f6941b7
         echo "        </header>
 
 \t\t<div class=\"container-fluid\">
+            <div class=\"row\">  <!-- Start of Row1 -->
+\t\t\t\t<!-- SideNav -->
+\t\t\t    <div class=\"col-md-3 sidebar\">
+\t\t\t          <ul class=\"nav nav-sidebar\">
+\t\t\t            <li class=\"active\">
+\t\t\t              <a href=\"#\">Core Concepts</a>
+\t\t\t              <ul>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Service Container</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Service Provider</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Facades</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Contracts</a>
+\t\t\t                </li>
+\t\t\t              </ul>
+\t\t\t            </li>
+\t\t\t          </ul>
+\t\t\t          <ul class=\"nav nav-sidebar\">
+\t\t\t            <li class=\"active\">
+\t\t\t              <a href=\"\">The HTTP Layer</a>
+\t\t\t              <ul>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Routing</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Middleware</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Controllers</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Requests</a>
+\t\t\t                </li>
+\t\t\t                 <li>
+\t\t\t                  <a href=\"\">Responses</a>
+\t\t\t                </li>
+\t\t\t                 <li>
+\t\t\t                  <a href=\"\">Validation</a>
+\t\t\t                </li>
+\t\t\t              </ul>
+\t\t\t            </li>
+\t\t\t          </ul>
+\t\t\t          <ul class=\"nav nav-sidebar\">
+\t\t\t            <li class=\"active\">
+\t\t\t              <a href=\"\">Security</a>
+\t\t\t              <ul>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Middleware</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Encryption</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Hashing</a>
+\t\t\t                </li>
+\t\t\t              </ul>
+\t\t\t            </li>
+\t\t\t          </ul>
+\t\t\t          <ul class=\"nav nav-sidebar\">
+\t\t\t            <li class=\"active\">
+\t\t\t              <a href=\"\">Services</a>
+\t\t\t              <ul>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">JWT Based Authentication</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Artisan Console</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Cache</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Collections</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Encryption</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Events</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Filesystem / Cloud Storage</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Hashing</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Helpers</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Localization</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Mail</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Package Development</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Pagination</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Queues</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Redis</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Task Scheduling</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Validation</a>
+\t\t\t                </li>
+\t\t\t              </ul>
+\t\t\t            </li>
+\t\t\t          </ul>
+\t\t\t          <ul class=\"nav nav-sidebar\">
+\t\t\t            <li class=\"active\">
+\t\t\t              <a href=\"\">Database</a>
+\t\t\t              <ul>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Getting Started</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Query Builder</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"";
+        // line 171
+        echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("laravel5.2/databaseMigration");
+        echo "\">Migrations</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Seeding</a>
+\t\t\t                </li>
+\t\t\t                </ul>
+\t\t\t            </li>
+\t\t\t          </ul>
+\t\t\t          <ul class=\"nav nav-sidebar\">
+\t\t\t            <li class=\"active\">
+\t\t\t              <a href=\"\">Eloquent ORM</a>
+\t\t\t              <ul>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Getting Started</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Releationships</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Collections</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Mutators</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Serialization</a>
+\t\t\t                </li>
+\t\t\t              </ul>
+\t\t\t            </li>
+\t\t\t          </ul>
+\t\t\t          <ul class=\"nav nav-sidebar\">
+\t\t\t            <li class=\"active\">
+\t\t\t              <a href=\"\">Performance Improvement</a>
+\t\t\t              <ul>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Route Caching</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Approach2</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Approach3</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Approach4</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Approach5</a>
+\t\t\t                </li>
+\t\t\t              </ul>
+\t\t\t            </li>
+\t\t\t          </ul>
+\t\t\t          <ul class=\"nav nav-sidebar\">
+\t\t\t            <li class=\"active\">
+\t\t\t              <a href=\"\">Design Patterns</a>
+\t\t\t              <ul>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Repository Pattern</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Registry Pattern</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Design Pattern3</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Design Pattern4</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Design Pattern5</a>
+\t\t\t                </li>
+\t\t\t              </ul>
+\t\t\t            </li>
+\t\t\t          </ul>
+\t\t\t          <ul class=\"nav nav-sidebar\">
+\t\t\t            <li class=\"active\">
+\t\t\t              <a href=\"\">Approach</a>
+\t\t\t              <ul>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Jason Web Token(JWT) based Authentication</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Role Based Permission</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Approach3</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Approach4</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Approach5</a>
+\t\t\t                </li>
+\t\t\t              </ul>
+\t\t\t            </li>
+\t\t\t          </ul>
+\t\t\t    </div>
+\t\t\t\t<!-- SideNav -->
 
-\t\t<!-- SideNav -->
-\t    <div class=\"col-md-3 sidebar\">
-\t          <ul class=\"nav nav-sidebar\">
-\t            <li class=\"active\">
-\t              <a href=\"#\">Core Concepts</a>
-\t              <ul>
-\t                <li>
-\t                  <a href=\"\">Service Container</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Service Provider</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Facades</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Contracts</a>
-\t                </li>
-\t              </ul>
-\t            </li>
-\t          </ul>
-\t          <ul class=\"nav nav-sidebar\">
-\t            <li class=\"active\">
-\t              <a href=\"\">The HTTP Layer</a>
-\t              <ul>
-\t                <li>
-\t                  <a href=\"\">Routing</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Middleware</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Controllers</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Requests</a>
-\t                </li>
-\t                 <li>
-\t                  <a href=\"\">Responses</a>
-\t                </li>
-\t                 <li>
-\t                  <a href=\"\">Validation</a>
-\t                </li>
-\t              </ul>
-\t            </li>
-\t          </ul>
-\t          <ul class=\"nav nav-sidebar\">
-\t            <li class=\"active\">
-\t              <a href=\"\">Security</a>
-\t              <ul>
-\t                <li>
-\t                  <a href=\"\">Middleware</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Encryption</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Hashing</a>
-\t                </li>
-\t              </ul>
-\t            </li>
-\t          </ul>
-\t          <ul class=\"nav nav-sidebar\">
-\t            <li class=\"active\">
-\t              <a href=\"\">Services</a>
-\t              <ul>
-\t                <li>
-\t                  <a href=\"\">JWT Based Authentication</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Artisan Console</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Cache</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Collections</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Encryption</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Events</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Filesystem / Cloud Storage</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Hashing</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Helpers</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Localization</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Mail</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Package Development</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Pagination</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Queues</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Redis</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Task Scheduling</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Validation</a>
-\t                </li>
-\t              </ul>
-\t            </li>
-\t          </ul>
-\t          <ul class=\"nav nav-sidebar\">
-\t            <li class=\"active\">
-\t              <a href=\"\">Database</a>
-\t              <ul>
-\t                <li>
-\t                  <a href=\"\">Getting Started</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Query Builder</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Migrations</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Seeding</a>
-\t                </li>
-\t                </ul>
-\t            </li>
-\t          </ul>
-\t          <ul class=\"nav nav-sidebar\">
-\t            <li class=\"active\">
-\t              <a href=\"\">Eloquent ORM</a>
-\t              <ul>
-\t                <li>
-\t                  <a href=\"\">Getting Started</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Releationships</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Collections</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Mutators</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Serialization</a>
-\t                </li>
-\t              </ul>
-\t            </li>
-\t          </ul>
-\t          <ul class=\"nav nav-sidebar\">
-\t            <li class=\"active\">
-\t              <a href=\"\">Performance Improvement</a>
-\t              <ul>
-\t                <li>
-\t                  <a href=\"\">Route Caching</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Approach2</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Approach3</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Approach4</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Approach5</a>
-\t                </li>
-\t              </ul>
-\t            </li>
-\t          </ul>
-\t          <ul class=\"nav nav-sidebar\">
-\t            <li class=\"active\">
-\t              <a href=\"\">Design Patterns</a>
-\t              <ul>
-\t                <li>
-\t                  <a href=\"\">Repository Pattern</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Registry Pattern</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Design Pattern3</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Design Pattern4</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Design Pattern5</a>
-\t                </li>
-\t              </ul>
-\t            </li>
-\t          </ul>
-\t          <ul class=\"nav nav-sidebar\">
-\t            <li class=\"active\">
-\t              <a href=\"\">Approach</a>
-\t              <ul>
-\t                <li>
-\t                  <a href=\"\">Jason Web Token(JWT) based Authentication</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Role Based Permission</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Approach3</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Approach4</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Approach5</a>
-\t                </li>
-\t              </ul>
-\t            </li>
-\t          </ul>
-\t    </div>
-\t\t<!-- SideNav -->
-
-        <!-- Content -->
-        <div class=\"col-md-9 main\">
-            ";
+\t\t        <!-- Content -->
+\t\t        <div class=\"col-md-9 main\">
+\t\t            ";
         // line 272
         echo $this->env->getExtension('CMS')->pageFunction();
         // line 273
-        echo "        </div>
-        <!-- Content -->
+        echo "\t\t        </div>
+\t\t        <!-- Content -->
+\t\t    </div>             <!-- Start of Row1 -->
         </div>
 
         <!-- Footer -->
         <footer id=\"layout-footer\">
             ";
-        // line 279
+        // line 280
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('CMS')->partialFunction("site/ninjaFooter"        , $context['__cms_partial_params']        );
         unset($context['__cms_partial_params']);
-        // line 280
+        // line 281
         echo "        </footer>
 
         <!-- Scripts -->
         <script src=\"";
-        // line 283
+        // line 284
         echo $this->env->getExtension('Cms\Twig\Extension')->themeFilter("assets/vendor/jquery.js");
         echo "\"></script>
         <script src=\"";
-        // line 284
+        // line 285
         echo $this->env->getExtension('Cms\Twig\Extension')->themeFilter("assets/vendor/bootstrap.js");
         echo "\"></script>
         <script src=\"";
-        // line 285
+        // line 286
         echo $this->env->getExtension('Cms\Twig\Extension')->themeFilter("assets/javascript/app.js");
         echo "\"></script>
         ";
-        // line 286
+        // line 287
         echo '<script src="'. Request::getBasePath()
                 .'/modules/system/assets/js/framework.js"></script>'.PHP_EOL;
         echo '<script src="'. Request::getBasePath()
                     .'/modules/system/assets/js/framework.extras.js"></script>'.PHP_EOL;
         echo '<link rel="stylesheet" property="stylesheet" href="'. Request::getBasePath()
                     .'/modules/system/assets/css/framework.extras.css">'.PHP_EOL;
-        // line 287
+        // line 288
         echo "        ";
         echo $this->env->getExtension('CMS')->assetsFunction('js');
         echo $this->env->getExtension('CMS')->displayBlock('scripts');
-        // line 288
+        // line 289
         echo "
     </body>
 </html>";
@@ -375,7 +379,7 @@ class __TwigTemplate_6d365c650291313f739fd2d224f46922334c95079c02abcd7276f6941b7
 
     public function getDebugInfo()
     {
-        return array (  361 => 288,  357 => 287,  350 => 286,  346 => 285,  342 => 284,  338 => 283,  333 => 280,  329 => 279,  321 => 273,  319 => 272,  81 => 36,  77 => 35,  56 => 16,  53 => 15,  48 => 13,  44 => 12,  40 => 11,  33 => 7,  29 => 6,  25 => 5,  19 => 1,);
+        return array (  365 => 289,  361 => 288,  354 => 287,  350 => 286,  346 => 285,  342 => 284,  337 => 281,  333 => 280,  324 => 273,  322 => 272,  218 => 171,  81 => 36,  77 => 35,  56 => 16,  53 => 15,  48 => 13,  44 => 12,  40 => 11,  33 => 7,  29 => 6,  25 => 5,  19 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -426,242 +430,243 @@ class __TwigTemplate_6d365c650291313f739fd2d224f46922334c95079c02abcd7276f6941b7
         </header>
 
 \t\t<div class=\"container-fluid\">
+            <div class=\"row\">  <!-- Start of Row1 -->
+\t\t\t\t<!-- SideNav -->
+\t\t\t    <div class=\"col-md-3 sidebar\">
+\t\t\t          <ul class=\"nav nav-sidebar\">
+\t\t\t            <li class=\"active\">
+\t\t\t              <a href=\"#\">Core Concepts</a>
+\t\t\t              <ul>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Service Container</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Service Provider</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Facades</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Contracts</a>
+\t\t\t                </li>
+\t\t\t              </ul>
+\t\t\t            </li>
+\t\t\t          </ul>
+\t\t\t          <ul class=\"nav nav-sidebar\">
+\t\t\t            <li class=\"active\">
+\t\t\t              <a href=\"\">The HTTP Layer</a>
+\t\t\t              <ul>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Routing</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Middleware</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Controllers</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Requests</a>
+\t\t\t                </li>
+\t\t\t                 <li>
+\t\t\t                  <a href=\"\">Responses</a>
+\t\t\t                </li>
+\t\t\t                 <li>
+\t\t\t                  <a href=\"\">Validation</a>
+\t\t\t                </li>
+\t\t\t              </ul>
+\t\t\t            </li>
+\t\t\t          </ul>
+\t\t\t          <ul class=\"nav nav-sidebar\">
+\t\t\t            <li class=\"active\">
+\t\t\t              <a href=\"\">Security</a>
+\t\t\t              <ul>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Middleware</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Encryption</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Hashing</a>
+\t\t\t                </li>
+\t\t\t              </ul>
+\t\t\t            </li>
+\t\t\t          </ul>
+\t\t\t          <ul class=\"nav nav-sidebar\">
+\t\t\t            <li class=\"active\">
+\t\t\t              <a href=\"\">Services</a>
+\t\t\t              <ul>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">JWT Based Authentication</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Artisan Console</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Cache</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Collections</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Encryption</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Events</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Filesystem / Cloud Storage</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Hashing</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Helpers</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Localization</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Mail</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Package Development</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Pagination</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Queues</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Redis</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Task Scheduling</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Validation</a>
+\t\t\t                </li>
+\t\t\t              </ul>
+\t\t\t            </li>
+\t\t\t          </ul>
+\t\t\t          <ul class=\"nav nav-sidebar\">
+\t\t\t            <li class=\"active\">
+\t\t\t              <a href=\"\">Database</a>
+\t\t\t              <ul>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Getting Started</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Query Builder</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"{{'laravel5.2/databaseMigration'|page}}\">Migrations</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Seeding</a>
+\t\t\t                </li>
+\t\t\t                </ul>
+\t\t\t            </li>
+\t\t\t          </ul>
+\t\t\t          <ul class=\"nav nav-sidebar\">
+\t\t\t            <li class=\"active\">
+\t\t\t              <a href=\"\">Eloquent ORM</a>
+\t\t\t              <ul>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Getting Started</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Releationships</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Collections</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Mutators</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Serialization</a>
+\t\t\t                </li>
+\t\t\t              </ul>
+\t\t\t            </li>
+\t\t\t          </ul>
+\t\t\t          <ul class=\"nav nav-sidebar\">
+\t\t\t            <li class=\"active\">
+\t\t\t              <a href=\"\">Performance Improvement</a>
+\t\t\t              <ul>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Route Caching</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Approach2</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Approach3</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Approach4</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Approach5</a>
+\t\t\t                </li>
+\t\t\t              </ul>
+\t\t\t            </li>
+\t\t\t          </ul>
+\t\t\t          <ul class=\"nav nav-sidebar\">
+\t\t\t            <li class=\"active\">
+\t\t\t              <a href=\"\">Design Patterns</a>
+\t\t\t              <ul>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Repository Pattern</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Registry Pattern</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Design Pattern3</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Design Pattern4</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Design Pattern5</a>
+\t\t\t                </li>
+\t\t\t              </ul>
+\t\t\t            </li>
+\t\t\t          </ul>
+\t\t\t          <ul class=\"nav nav-sidebar\">
+\t\t\t            <li class=\"active\">
+\t\t\t              <a href=\"\">Approach</a>
+\t\t\t              <ul>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Jason Web Token(JWT) based Authentication</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Role Based Permission</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Approach3</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Approach4</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Approach5</a>
+\t\t\t                </li>
+\t\t\t              </ul>
+\t\t\t            </li>
+\t\t\t          </ul>
+\t\t\t    </div>
+\t\t\t\t<!-- SideNav -->
 
-\t\t<!-- SideNav -->
-\t    <div class=\"col-md-3 sidebar\">
-\t          <ul class=\"nav nav-sidebar\">
-\t            <li class=\"active\">
-\t              <a href=\"#\">Core Concepts</a>
-\t              <ul>
-\t                <li>
-\t                  <a href=\"\">Service Container</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Service Provider</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Facades</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Contracts</a>
-\t                </li>
-\t              </ul>
-\t            </li>
-\t          </ul>
-\t          <ul class=\"nav nav-sidebar\">
-\t            <li class=\"active\">
-\t              <a href=\"\">The HTTP Layer</a>
-\t              <ul>
-\t                <li>
-\t                  <a href=\"\">Routing</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Middleware</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Controllers</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Requests</a>
-\t                </li>
-\t                 <li>
-\t                  <a href=\"\">Responses</a>
-\t                </li>
-\t                 <li>
-\t                  <a href=\"\">Validation</a>
-\t                </li>
-\t              </ul>
-\t            </li>
-\t          </ul>
-\t          <ul class=\"nav nav-sidebar\">
-\t            <li class=\"active\">
-\t              <a href=\"\">Security</a>
-\t              <ul>
-\t                <li>
-\t                  <a href=\"\">Middleware</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Encryption</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Hashing</a>
-\t                </li>
-\t              </ul>
-\t            </li>
-\t          </ul>
-\t          <ul class=\"nav nav-sidebar\">
-\t            <li class=\"active\">
-\t              <a href=\"\">Services</a>
-\t              <ul>
-\t                <li>
-\t                  <a href=\"\">JWT Based Authentication</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Artisan Console</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Cache</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Collections</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Encryption</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Events</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Filesystem / Cloud Storage</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Hashing</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Helpers</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Localization</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Mail</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Package Development</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Pagination</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Queues</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Redis</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Task Scheduling</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Validation</a>
-\t                </li>
-\t              </ul>
-\t            </li>
-\t          </ul>
-\t          <ul class=\"nav nav-sidebar\">
-\t            <li class=\"active\">
-\t              <a href=\"\">Database</a>
-\t              <ul>
-\t                <li>
-\t                  <a href=\"\">Getting Started</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Query Builder</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Migrations</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Seeding</a>
-\t                </li>
-\t                </ul>
-\t            </li>
-\t          </ul>
-\t          <ul class=\"nav nav-sidebar\">
-\t            <li class=\"active\">
-\t              <a href=\"\">Eloquent ORM</a>
-\t              <ul>
-\t                <li>
-\t                  <a href=\"\">Getting Started</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Releationships</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Collections</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Mutators</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Serialization</a>
-\t                </li>
-\t              </ul>
-\t            </li>
-\t          </ul>
-\t          <ul class=\"nav nav-sidebar\">
-\t            <li class=\"active\">
-\t              <a href=\"\">Performance Improvement</a>
-\t              <ul>
-\t                <li>
-\t                  <a href=\"\">Route Caching</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Approach2</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Approach3</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Approach4</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Approach5</a>
-\t                </li>
-\t              </ul>
-\t            </li>
-\t          </ul>
-\t          <ul class=\"nav nav-sidebar\">
-\t            <li class=\"active\">
-\t              <a href=\"\">Design Patterns</a>
-\t              <ul>
-\t                <li>
-\t                  <a href=\"\">Repository Pattern</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Registry Pattern</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Design Pattern3</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Design Pattern4</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Design Pattern5</a>
-\t                </li>
-\t              </ul>
-\t            </li>
-\t          </ul>
-\t          <ul class=\"nav nav-sidebar\">
-\t            <li class=\"active\">
-\t              <a href=\"\">Approach</a>
-\t              <ul>
-\t                <li>
-\t                  <a href=\"\">Jason Web Token(JWT) based Authentication</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Role Based Permission</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Approach3</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Approach4</a>
-\t                </li>
-\t                <li>
-\t                  <a href=\"\">Approach5</a>
-\t                </li>
-\t              </ul>
-\t            </li>
-\t          </ul>
-\t    </div>
-\t\t<!-- SideNav -->
-
-        <!-- Content -->
-        <div class=\"col-md-9 main\">
-            {% page %}
-        </div>
-        <!-- Content -->
+\t\t        <!-- Content -->
+\t\t        <div class=\"col-md-9 main\">
+\t\t            {% page %}
+\t\t        </div>
+\t\t        <!-- Content -->
+\t\t    </div>             <!-- Start of Row1 -->
         </div>
 
         <!-- Footer -->

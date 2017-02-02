@@ -1,4 +1,4 @@
-1486008963a:1:{s:29:"laravel5-2TutorialsLayout.htm";a:6:{s:8:"fileName";s:29:"laravel5-2TutorialsLayout.htm";s:7:"content";s:9034:"description = "Laravel 5.2 Tutorials Layout"
+1486013163a:1:{s:29:"laravel5-2TutorialsLayout.htm";a:6:{s:8:"fileName";s:29:"laravel5-2TutorialsLayout.htm";s:7:"content";s:9643:"description = "Laravel 5.2 Tutorials Layout"
 ==
 <!DOCTYPE html>
 <html>
@@ -38,242 +38,243 @@
         </header>
 
 		<div class="container-fluid">
+            <div class="row">  <!-- Start of Row1 -->
+				<!-- SideNav -->
+			    <div class="col-md-3 sidebar">
+			          <ul class="nav nav-sidebar">
+			            <li class="active">
+			              <a href="#">Core Concepts</a>
+			              <ul>
+			                <li>
+			                  <a href="">Service Container</a>
+			                </li>
+			                <li>
+			                  <a href="">Service Provider</a>
+			                </li>
+			                <li>
+			                  <a href="">Facades</a>
+			                </li>
+			                <li>
+			                  <a href="">Contracts</a>
+			                </li>
+			              </ul>
+			            </li>
+			          </ul>
+			          <ul class="nav nav-sidebar">
+			            <li class="active">
+			              <a href="">The HTTP Layer</a>
+			              <ul>
+			                <li>
+			                  <a href="">Routing</a>
+			                </li>
+			                <li>
+			                  <a href="">Middleware</a>
+			                </li>
+			                <li>
+			                  <a href="">Controllers</a>
+			                </li>
+			                <li>
+			                  <a href="">Requests</a>
+			                </li>
+			                 <li>
+			                  <a href="">Responses</a>
+			                </li>
+			                 <li>
+			                  <a href="">Validation</a>
+			                </li>
+			              </ul>
+			            </li>
+			          </ul>
+			          <ul class="nav nav-sidebar">
+			            <li class="active">
+			              <a href="">Security</a>
+			              <ul>
+			                <li>
+			                  <a href="">Middleware</a>
+			                </li>
+			                <li>
+			                  <a href="">Encryption</a>
+			                </li>
+			                <li>
+			                  <a href="">Hashing</a>
+			                </li>
+			              </ul>
+			            </li>
+			          </ul>
+			          <ul class="nav nav-sidebar">
+			            <li class="active">
+			              <a href="">Services</a>
+			              <ul>
+			                <li>
+			                  <a href="">JWT Based Authentication</a>
+			                </li>
+			                <li>
+			                  <a href="">Artisan Console</a>
+			                </li>
+			                <li>
+			                  <a href="">Cache</a>
+			                </li>
+			                <li>
+			                  <a href="">Collections</a>
+			                </li>
+			                <li>
+			                  <a href="">Encryption</a>
+			                </li>
+			                <li>
+			                  <a href="">Events</a>
+			                </li>
+			                <li>
+			                  <a href="">Filesystem / Cloud Storage</a>
+			                </li>
+			                <li>
+			                  <a href="">Hashing</a>
+			                </li>
+			                <li>
+			                  <a href="">Helpers</a>
+			                </li>
+			                <li>
+			                  <a href="">Localization</a>
+			                </li>
+			                <li>
+			                  <a href="">Mail</a>
+			                </li>
+			                <li>
+			                  <a href="">Package Development</a>
+			                </li>
+			                <li>
+			                  <a href="">Pagination</a>
+			                </li>
+			                <li>
+			                  <a href="">Queues</a>
+			                </li>
+			                <li>
+			                  <a href="">Redis</a>
+			                </li>
+			                <li>
+			                  <a href="">Task Scheduling</a>
+			                </li>
+			                <li>
+			                  <a href="">Validation</a>
+			                </li>
+			              </ul>
+			            </li>
+			          </ul>
+			          <ul class="nav nav-sidebar">
+			            <li class="active">
+			              <a href="">Database</a>
+			              <ul>
+			                <li>
+			                  <a href="">Getting Started</a>
+			                </li>
+			                <li>
+			                  <a href="">Query Builder</a>
+			                </li>
+			                <li>
+			                  <a href="{{'laravel5.2/databaseMigration'|page}}">Migrations</a>
+			                </li>
+			                <li>
+			                  <a href="">Seeding</a>
+			                </li>
+			                </ul>
+			            </li>
+			          </ul>
+			          <ul class="nav nav-sidebar">
+			            <li class="active">
+			              <a href="">Eloquent ORM</a>
+			              <ul>
+			                <li>
+			                  <a href="">Getting Started</a>
+			                </li>
+			                <li>
+			                  <a href="">Releationships</a>
+			                </li>
+			                <li>
+			                  <a href="">Collections</a>
+			                </li>
+			                <li>
+			                  <a href="">Mutators</a>
+			                </li>
+			                <li>
+			                  <a href="">Serialization</a>
+			                </li>
+			              </ul>
+			            </li>
+			          </ul>
+			          <ul class="nav nav-sidebar">
+			            <li class="active">
+			              <a href="">Performance Improvement</a>
+			              <ul>
+			                <li>
+			                  <a href="">Route Caching</a>
+			                </li>
+			                <li>
+			                  <a href="">Approach2</a>
+			                </li>
+			                <li>
+			                  <a href="">Approach3</a>
+			                </li>
+			                <li>
+			                  <a href="">Approach4</a>
+			                </li>
+			                <li>
+			                  <a href="">Approach5</a>
+			                </li>
+			              </ul>
+			            </li>
+			          </ul>
+			          <ul class="nav nav-sidebar">
+			            <li class="active">
+			              <a href="">Design Patterns</a>
+			              <ul>
+			                <li>
+			                  <a href="">Repository Pattern</a>
+			                </li>
+			                <li>
+			                  <a href="">Registry Pattern</a>
+			                </li>
+			                <li>
+			                  <a href="">Design Pattern3</a>
+			                </li>
+			                <li>
+			                  <a href="">Design Pattern4</a>
+			                </li>
+			                <li>
+			                  <a href="">Design Pattern5</a>
+			                </li>
+			              </ul>
+			            </li>
+			          </ul>
+			          <ul class="nav nav-sidebar">
+			            <li class="active">
+			              <a href="">Approach</a>
+			              <ul>
+			                <li>
+			                  <a href="">Jason Web Token(JWT) based Authentication</a>
+			                </li>
+			                <li>
+			                  <a href="">Role Based Permission</a>
+			                </li>
+			                <li>
+			                  <a href="">Approach3</a>
+			                </li>
+			                <li>
+			                  <a href="">Approach4</a>
+			                </li>
+			                <li>
+			                  <a href="">Approach5</a>
+			                </li>
+			              </ul>
+			            </li>
+			          </ul>
+			    </div>
+				<!-- SideNav -->
 
-		<!-- SideNav -->
-	    <div class="col-md-3 sidebar">
-	          <ul class="nav nav-sidebar">
-	            <li class="active">
-	              <a href="#">Core Concepts</a>
-	              <ul>
-	                <li>
-	                  <a href="">Service Container</a>
-	                </li>
-	                <li>
-	                  <a href="">Service Provider</a>
-	                </li>
-	                <li>
-	                  <a href="">Facades</a>
-	                </li>
-	                <li>
-	                  <a href="">Contracts</a>
-	                </li>
-	              </ul>
-	            </li>
-	          </ul>
-	          <ul class="nav nav-sidebar">
-	            <li class="active">
-	              <a href="">The HTTP Layer</a>
-	              <ul>
-	                <li>
-	                  <a href="">Routing</a>
-	                </li>
-	                <li>
-	                  <a href="">Middleware</a>
-	                </li>
-	                <li>
-	                  <a href="">Controllers</a>
-	                </li>
-	                <li>
-	                  <a href="">Requests</a>
-	                </li>
-	                 <li>
-	                  <a href="">Responses</a>
-	                </li>
-	                 <li>
-	                  <a href="">Validation</a>
-	                </li>
-	              </ul>
-	            </li>
-	          </ul>
-	          <ul class="nav nav-sidebar">
-	            <li class="active">
-	              <a href="">Security</a>
-	              <ul>
-	                <li>
-	                  <a href="">Middleware</a>
-	                </li>
-	                <li>
-	                  <a href="">Encryption</a>
-	                </li>
-	                <li>
-	                  <a href="">Hashing</a>
-	                </li>
-	              </ul>
-	            </li>
-	          </ul>
-	          <ul class="nav nav-sidebar">
-	            <li class="active">
-	              <a href="">Services</a>
-	              <ul>
-	                <li>
-	                  <a href="">JWT Based Authentication</a>
-	                </li>
-	                <li>
-	                  <a href="">Artisan Console</a>
-	                </li>
-	                <li>
-	                  <a href="">Cache</a>
-	                </li>
-	                <li>
-	                  <a href="">Collections</a>
-	                </li>
-	                <li>
-	                  <a href="">Encryption</a>
-	                </li>
-	                <li>
-	                  <a href="">Events</a>
-	                </li>
-	                <li>
-	                  <a href="">Filesystem / Cloud Storage</a>
-	                </li>
-	                <li>
-	                  <a href="">Hashing</a>
-	                </li>
-	                <li>
-	                  <a href="">Helpers</a>
-	                </li>
-	                <li>
-	                  <a href="">Localization</a>
-	                </li>
-	                <li>
-	                  <a href="">Mail</a>
-	                </li>
-	                <li>
-	                  <a href="">Package Development</a>
-	                </li>
-	                <li>
-	                  <a href="">Pagination</a>
-	                </li>
-	                <li>
-	                  <a href="">Queues</a>
-	                </li>
-	                <li>
-	                  <a href="">Redis</a>
-	                </li>
-	                <li>
-	                  <a href="">Task Scheduling</a>
-	                </li>
-	                <li>
-	                  <a href="">Validation</a>
-	                </li>
-	              </ul>
-	            </li>
-	          </ul>
-	          <ul class="nav nav-sidebar">
-	            <li class="active">
-	              <a href="">Database</a>
-	              <ul>
-	                <li>
-	                  <a href="">Getting Started</a>
-	                </li>
-	                <li>
-	                  <a href="">Query Builder</a>
-	                </li>
-	                <li>
-	                  <a href="">Migrations</a>
-	                </li>
-	                <li>
-	                  <a href="">Seeding</a>
-	                </li>
-	                </ul>
-	            </li>
-	          </ul>
-	          <ul class="nav nav-sidebar">
-	            <li class="active">
-	              <a href="">Eloquent ORM</a>
-	              <ul>
-	                <li>
-	                  <a href="">Getting Started</a>
-	                </li>
-	                <li>
-	                  <a href="">Releationships</a>
-	                </li>
-	                <li>
-	                  <a href="">Collections</a>
-	                </li>
-	                <li>
-	                  <a href="">Mutators</a>
-	                </li>
-	                <li>
-	                  <a href="">Serialization</a>
-	                </li>
-	              </ul>
-	            </li>
-	          </ul>
-	          <ul class="nav nav-sidebar">
-	            <li class="active">
-	              <a href="">Performance Improvement</a>
-	              <ul>
-	                <li>
-	                  <a href="">Route Caching</a>
-	                </li>
-	                <li>
-	                  <a href="">Approach2</a>
-	                </li>
-	                <li>
-	                  <a href="">Approach3</a>
-	                </li>
-	                <li>
-	                  <a href="">Approach4</a>
-	                </li>
-	                <li>
-	                  <a href="">Approach5</a>
-	                </li>
-	              </ul>
-	            </li>
-	          </ul>
-	          <ul class="nav nav-sidebar">
-	            <li class="active">
-	              <a href="">Design Patterns</a>
-	              <ul>
-	                <li>
-	                  <a href="">Repository Pattern</a>
-	                </li>
-	                <li>
-	                  <a href="">Registry Pattern</a>
-	                </li>
-	                <li>
-	                  <a href="">Design Pattern3</a>
-	                </li>
-	                <li>
-	                  <a href="">Design Pattern4</a>
-	                </li>
-	                <li>
-	                  <a href="">Design Pattern5</a>
-	                </li>
-	              </ul>
-	            </li>
-	          </ul>
-	          <ul class="nav nav-sidebar">
-	            <li class="active">
-	              <a href="">Approach</a>
-	              <ul>
-	                <li>
-	                  <a href="">Jason Web Token(JWT) based Authentication</a>
-	                </li>
-	                <li>
-	                  <a href="">Role Based Permission</a>
-	                </li>
-	                <li>
-	                  <a href="">Approach3</a>
-	                </li>
-	                <li>
-	                  <a href="">Approach4</a>
-	                </li>
-	                <li>
-	                  <a href="">Approach5</a>
-	                </li>
-	              </ul>
-	            </li>
-	          </ul>
-	    </div>
-		<!-- SideNav -->
-
-        <!-- Content -->
-        <div class="col-md-9 main">
-            {% page %}
-        </div>
-        <!-- Content -->
+		        <!-- Content -->
+		        <div class="col-md-9 main">
+		            {% page %}
+		        </div>
+		        <!-- Content -->
+		    </div>             <!-- Start of Row1 -->
         </div>
 
         <!-- Footer -->
@@ -289,7 +290,7 @@
         {% scripts %}
 
     </body>
-</html>";s:5:"mtime";i:1486008335;s:6:"markup";s:8986:"<!DOCTYPE html>
+</html>";s:5:"mtime";i:1486012557;s:6:"markup";s:9595:"<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -327,242 +328,243 @@
         </header>
 
 		<div class="container-fluid">
+            <div class="row">  <!-- Start of Row1 -->
+				<!-- SideNav -->
+			    <div class="col-md-3 sidebar">
+			          <ul class="nav nav-sidebar">
+			            <li class="active">
+			              <a href="#">Core Concepts</a>
+			              <ul>
+			                <li>
+			                  <a href="">Service Container</a>
+			                </li>
+			                <li>
+			                  <a href="">Service Provider</a>
+			                </li>
+			                <li>
+			                  <a href="">Facades</a>
+			                </li>
+			                <li>
+			                  <a href="">Contracts</a>
+			                </li>
+			              </ul>
+			            </li>
+			          </ul>
+			          <ul class="nav nav-sidebar">
+			            <li class="active">
+			              <a href="">The HTTP Layer</a>
+			              <ul>
+			                <li>
+			                  <a href="">Routing</a>
+			                </li>
+			                <li>
+			                  <a href="">Middleware</a>
+			                </li>
+			                <li>
+			                  <a href="">Controllers</a>
+			                </li>
+			                <li>
+			                  <a href="">Requests</a>
+			                </li>
+			                 <li>
+			                  <a href="">Responses</a>
+			                </li>
+			                 <li>
+			                  <a href="">Validation</a>
+			                </li>
+			              </ul>
+			            </li>
+			          </ul>
+			          <ul class="nav nav-sidebar">
+			            <li class="active">
+			              <a href="">Security</a>
+			              <ul>
+			                <li>
+			                  <a href="">Middleware</a>
+			                </li>
+			                <li>
+			                  <a href="">Encryption</a>
+			                </li>
+			                <li>
+			                  <a href="">Hashing</a>
+			                </li>
+			              </ul>
+			            </li>
+			          </ul>
+			          <ul class="nav nav-sidebar">
+			            <li class="active">
+			              <a href="">Services</a>
+			              <ul>
+			                <li>
+			                  <a href="">JWT Based Authentication</a>
+			                </li>
+			                <li>
+			                  <a href="">Artisan Console</a>
+			                </li>
+			                <li>
+			                  <a href="">Cache</a>
+			                </li>
+			                <li>
+			                  <a href="">Collections</a>
+			                </li>
+			                <li>
+			                  <a href="">Encryption</a>
+			                </li>
+			                <li>
+			                  <a href="">Events</a>
+			                </li>
+			                <li>
+			                  <a href="">Filesystem / Cloud Storage</a>
+			                </li>
+			                <li>
+			                  <a href="">Hashing</a>
+			                </li>
+			                <li>
+			                  <a href="">Helpers</a>
+			                </li>
+			                <li>
+			                  <a href="">Localization</a>
+			                </li>
+			                <li>
+			                  <a href="">Mail</a>
+			                </li>
+			                <li>
+			                  <a href="">Package Development</a>
+			                </li>
+			                <li>
+			                  <a href="">Pagination</a>
+			                </li>
+			                <li>
+			                  <a href="">Queues</a>
+			                </li>
+			                <li>
+			                  <a href="">Redis</a>
+			                </li>
+			                <li>
+			                  <a href="">Task Scheduling</a>
+			                </li>
+			                <li>
+			                  <a href="">Validation</a>
+			                </li>
+			              </ul>
+			            </li>
+			          </ul>
+			          <ul class="nav nav-sidebar">
+			            <li class="active">
+			              <a href="">Database</a>
+			              <ul>
+			                <li>
+			                  <a href="">Getting Started</a>
+			                </li>
+			                <li>
+			                  <a href="">Query Builder</a>
+			                </li>
+			                <li>
+			                  <a href="{{'laravel5.2/databaseMigration'|page}}">Migrations</a>
+			                </li>
+			                <li>
+			                  <a href="">Seeding</a>
+			                </li>
+			                </ul>
+			            </li>
+			          </ul>
+			          <ul class="nav nav-sidebar">
+			            <li class="active">
+			              <a href="">Eloquent ORM</a>
+			              <ul>
+			                <li>
+			                  <a href="">Getting Started</a>
+			                </li>
+			                <li>
+			                  <a href="">Releationships</a>
+			                </li>
+			                <li>
+			                  <a href="">Collections</a>
+			                </li>
+			                <li>
+			                  <a href="">Mutators</a>
+			                </li>
+			                <li>
+			                  <a href="">Serialization</a>
+			                </li>
+			              </ul>
+			            </li>
+			          </ul>
+			          <ul class="nav nav-sidebar">
+			            <li class="active">
+			              <a href="">Performance Improvement</a>
+			              <ul>
+			                <li>
+			                  <a href="">Route Caching</a>
+			                </li>
+			                <li>
+			                  <a href="">Approach2</a>
+			                </li>
+			                <li>
+			                  <a href="">Approach3</a>
+			                </li>
+			                <li>
+			                  <a href="">Approach4</a>
+			                </li>
+			                <li>
+			                  <a href="">Approach5</a>
+			                </li>
+			              </ul>
+			            </li>
+			          </ul>
+			          <ul class="nav nav-sidebar">
+			            <li class="active">
+			              <a href="">Design Patterns</a>
+			              <ul>
+			                <li>
+			                  <a href="">Repository Pattern</a>
+			                </li>
+			                <li>
+			                  <a href="">Registry Pattern</a>
+			                </li>
+			                <li>
+			                  <a href="">Design Pattern3</a>
+			                </li>
+			                <li>
+			                  <a href="">Design Pattern4</a>
+			                </li>
+			                <li>
+			                  <a href="">Design Pattern5</a>
+			                </li>
+			              </ul>
+			            </li>
+			          </ul>
+			          <ul class="nav nav-sidebar">
+			            <li class="active">
+			              <a href="">Approach</a>
+			              <ul>
+			                <li>
+			                  <a href="">Jason Web Token(JWT) based Authentication</a>
+			                </li>
+			                <li>
+			                  <a href="">Role Based Permission</a>
+			                </li>
+			                <li>
+			                  <a href="">Approach3</a>
+			                </li>
+			                <li>
+			                  <a href="">Approach4</a>
+			                </li>
+			                <li>
+			                  <a href="">Approach5</a>
+			                </li>
+			              </ul>
+			            </li>
+			          </ul>
+			    </div>
+				<!-- SideNav -->
 
-		<!-- SideNav -->
-	    <div class="col-md-3 sidebar">
-	          <ul class="nav nav-sidebar">
-	            <li class="active">
-	              <a href="#">Core Concepts</a>
-	              <ul>
-	                <li>
-	                  <a href="">Service Container</a>
-	                </li>
-	                <li>
-	                  <a href="">Service Provider</a>
-	                </li>
-	                <li>
-	                  <a href="">Facades</a>
-	                </li>
-	                <li>
-	                  <a href="">Contracts</a>
-	                </li>
-	              </ul>
-	            </li>
-	          </ul>
-	          <ul class="nav nav-sidebar">
-	            <li class="active">
-	              <a href="">The HTTP Layer</a>
-	              <ul>
-	                <li>
-	                  <a href="">Routing</a>
-	                </li>
-	                <li>
-	                  <a href="">Middleware</a>
-	                </li>
-	                <li>
-	                  <a href="">Controllers</a>
-	                </li>
-	                <li>
-	                  <a href="">Requests</a>
-	                </li>
-	                 <li>
-	                  <a href="">Responses</a>
-	                </li>
-	                 <li>
-	                  <a href="">Validation</a>
-	                </li>
-	              </ul>
-	            </li>
-	          </ul>
-	          <ul class="nav nav-sidebar">
-	            <li class="active">
-	              <a href="">Security</a>
-	              <ul>
-	                <li>
-	                  <a href="">Middleware</a>
-	                </li>
-	                <li>
-	                  <a href="">Encryption</a>
-	                </li>
-	                <li>
-	                  <a href="">Hashing</a>
-	                </li>
-	              </ul>
-	            </li>
-	          </ul>
-	          <ul class="nav nav-sidebar">
-	            <li class="active">
-	              <a href="">Services</a>
-	              <ul>
-	                <li>
-	                  <a href="">JWT Based Authentication</a>
-	                </li>
-	                <li>
-	                  <a href="">Artisan Console</a>
-	                </li>
-	                <li>
-	                  <a href="">Cache</a>
-	                </li>
-	                <li>
-	                  <a href="">Collections</a>
-	                </li>
-	                <li>
-	                  <a href="">Encryption</a>
-	                </li>
-	                <li>
-	                  <a href="">Events</a>
-	                </li>
-	                <li>
-	                  <a href="">Filesystem / Cloud Storage</a>
-	                </li>
-	                <li>
-	                  <a href="">Hashing</a>
-	                </li>
-	                <li>
-	                  <a href="">Helpers</a>
-	                </li>
-	                <li>
-	                  <a href="">Localization</a>
-	                </li>
-	                <li>
-	                  <a href="">Mail</a>
-	                </li>
-	                <li>
-	                  <a href="">Package Development</a>
-	                </li>
-	                <li>
-	                  <a href="">Pagination</a>
-	                </li>
-	                <li>
-	                  <a href="">Queues</a>
-	                </li>
-	                <li>
-	                  <a href="">Redis</a>
-	                </li>
-	                <li>
-	                  <a href="">Task Scheduling</a>
-	                </li>
-	                <li>
-	                  <a href="">Validation</a>
-	                </li>
-	              </ul>
-	            </li>
-	          </ul>
-	          <ul class="nav nav-sidebar">
-	            <li class="active">
-	              <a href="">Database</a>
-	              <ul>
-	                <li>
-	                  <a href="">Getting Started</a>
-	                </li>
-	                <li>
-	                  <a href="">Query Builder</a>
-	                </li>
-	                <li>
-	                  <a href="">Migrations</a>
-	                </li>
-	                <li>
-	                  <a href="">Seeding</a>
-	                </li>
-	                </ul>
-	            </li>
-	          </ul>
-	          <ul class="nav nav-sidebar">
-	            <li class="active">
-	              <a href="">Eloquent ORM</a>
-	              <ul>
-	                <li>
-	                  <a href="">Getting Started</a>
-	                </li>
-	                <li>
-	                  <a href="">Releationships</a>
-	                </li>
-	                <li>
-	                  <a href="">Collections</a>
-	                </li>
-	                <li>
-	                  <a href="">Mutators</a>
-	                </li>
-	                <li>
-	                  <a href="">Serialization</a>
-	                </li>
-	              </ul>
-	            </li>
-	          </ul>
-	          <ul class="nav nav-sidebar">
-	            <li class="active">
-	              <a href="">Performance Improvement</a>
-	              <ul>
-	                <li>
-	                  <a href="">Route Caching</a>
-	                </li>
-	                <li>
-	                  <a href="">Approach2</a>
-	                </li>
-	                <li>
-	                  <a href="">Approach3</a>
-	                </li>
-	                <li>
-	                  <a href="">Approach4</a>
-	                </li>
-	                <li>
-	                  <a href="">Approach5</a>
-	                </li>
-	              </ul>
-	            </li>
-	          </ul>
-	          <ul class="nav nav-sidebar">
-	            <li class="active">
-	              <a href="">Design Patterns</a>
-	              <ul>
-	                <li>
-	                  <a href="">Repository Pattern</a>
-	                </li>
-	                <li>
-	                  <a href="">Registry Pattern</a>
-	                </li>
-	                <li>
-	                  <a href="">Design Pattern3</a>
-	                </li>
-	                <li>
-	                  <a href="">Design Pattern4</a>
-	                </li>
-	                <li>
-	                  <a href="">Design Pattern5</a>
-	                </li>
-	              </ul>
-	            </li>
-	          </ul>
-	          <ul class="nav nav-sidebar">
-	            <li class="active">
-	              <a href="">Approach</a>
-	              <ul>
-	                <li>
-	                  <a href="">Jason Web Token(JWT) based Authentication</a>
-	                </li>
-	                <li>
-	                  <a href="">Role Based Permission</a>
-	                </li>
-	                <li>
-	                  <a href="">Approach3</a>
-	                </li>
-	                <li>
-	                  <a href="">Approach4</a>
-	                </li>
-	                <li>
-	                  <a href="">Approach5</a>
-	                </li>
-	              </ul>
-	            </li>
-	          </ul>
-	    </div>
-		<!-- SideNav -->
-
-        <!-- Content -->
-        <div class="col-md-9 main">
-            {% page %}
-        </div>
-        <!-- Content -->
+		        <!-- Content -->
+		        <div class="col-md-9 main">
+		            {% page %}
+		        </div>
+		        <!-- Content -->
+		    </div>             <!-- Start of Row1 -->
         </div>
 
         <!-- Footer -->

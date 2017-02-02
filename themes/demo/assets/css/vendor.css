@@ -7535,6 +7535,14 @@ ul li a{
   font-weight: 600 !important;
 }
 
+.withBorderBottom{
+  border-bottom: 1px solid #353D3F;
+}
+
+.nav-sidebar a:hover{
+  text-decoration: none;
+  color: #26C667;
+}
 
 /*************************  Frederick Sandalo configurations 
 *************************/

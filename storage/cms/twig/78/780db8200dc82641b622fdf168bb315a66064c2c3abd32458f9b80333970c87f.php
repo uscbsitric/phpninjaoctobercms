@@ -16,25 +16,25 @@ class __TwigTemplate_a2ccee47f73a63b68b0cdc19383992e1ed5c4f2440dcea4dbac65e5fddd
     protected function doDisplay(array $context, array $blocks = array())
     {
         // line 1
-        echo "<div class=\"\"> <!-- Laravel Feature -->
+        echo "<div class=\"row\"> <!-- Laravel Feature -->
   <div class=\"green4 tutorialPages\">
     <h1 class=\"fontColorWhite1 noMargin\">Laravel Feature</h1>
     <h3 class=\"fontColorGrey3 noMargin\">The subject Feature</h3>
   </div>
 </div>            <!-- Laravel Feature -->
-<div class=\"\"> <!-- What Does It Do -->
-  <div class=\"grey2 tutorialPages\">
+<div class=\"row\"> <!-- What Does It Do -->
+  <div class=\"grey2 tutorialPages withBorderBottom\">
     <h1 class=\"noMargin fontColorGreen3\">What Does It Do</h1>
     <p class=\"fontColorWhite2 noMargin\">exactly what does it do?</p>
   </div>
 </div>            <!-- What Does It Do -->
-<div class=\"\"> <!-- When To Do It -->
-  <div class=\"grey2 tutorialPages\">
+<div class=\"row\"> <!-- When To Do It -->
+  <div class=\"grey2 tutorialPages withBorderBottom\">
     <h1 class=\"noMargin fontColorGreen3\">When To Do It</h1>
     <p class=\"fontColorWhite2 noMargin\">just because you know what it does, doesn't mean you can go trigger happy.</p>
   </div>
 </div>            <!-- When To Do It -->
-<div class=\"\"> <!-- How To Do It -->
+<div class=\"row\"> <!-- How To Do It -->
   <div class=\"grey2 tutorialPages\">
     <h1 class=\"noMargin fontColorGreen3\">How To Do It</h1>
     <p class=\"fontColorWhite2 noMargin\">step-by-step procedures.</p>
@@ -62,25 +62,25 @@ class __TwigTemplate_a2ccee47f73a63b68b0cdc19383992e1ed5c4f2440dcea4dbac65e5fddd
 
     public function getSourceContext()
     {
-        return new Twig_Source("<div class=\"\"> <!-- Laravel Feature -->
+        return new Twig_Source("<div class=\"row\"> <!-- Laravel Feature -->
   <div class=\"green4 tutorialPages\">
     <h1 class=\"fontColorWhite1 noMargin\">Laravel Feature</h1>
     <h3 class=\"fontColorGrey3 noMargin\">The subject Feature</h3>
   </div>
 </div>            <!-- Laravel Feature -->
-<div class=\"\"> <!-- What Does It Do -->
-  <div class=\"grey2 tutorialPages\">
+<div class=\"row\"> <!-- What Does It Do -->
+  <div class=\"grey2 tutorialPages withBorderBottom\">
     <h1 class=\"noMargin fontColorGreen3\">What Does It Do</h1>
     <p class=\"fontColorWhite2 noMargin\">exactly what does it do?</p>
   </div>
 </div>            <!-- What Does It Do -->
-<div class=\"\"> <!-- When To Do It -->
-  <div class=\"grey2 tutorialPages\">
+<div class=\"row\"> <!-- When To Do It -->
+  <div class=\"grey2 tutorialPages withBorderBottom\">
     <h1 class=\"noMargin fontColorGreen3\">When To Do It</h1>
     <p class=\"fontColorWhite2 noMargin\">just because you know what it does, doesn't mean you can go trigger happy.</p>
   </div>
 </div>            <!-- When To Do It -->
-<div class=\"\"> <!-- How To Do It -->
+<div class=\"row\"> <!-- How To Do It -->
   <div class=\"grey2 tutorialPages\">
     <h1 class=\"noMargin fontColorGreen3\">How To Do It</h1>
     <p class=\"fontColorWhite2 noMargin\">step-by-step procedures.</p>
