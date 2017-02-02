@@ -1,4 +1,4 @@
-1486019814a:1:{s:32:"laravel5.2/databaseMigration.htm";a:10:{s:8:"fileName";s:32:"laravel5.2/databaseMigration.htm";s:7:"content";s:4938:"title = "Database Migration"
+1486022136a:1:{s:32:"laravel5.2/databaseMigration.htm";a:10:{s:8:"fileName";s:32:"laravel5.2/databaseMigration.htm";s:7:"content";s:5358:"title = "Database Migration"
 url = "/database-migration"
 layout = "laravel5-2TutorialsLayout"
 description = "Laravel Feature: Database Migration"
@@ -7,7 +7,7 @@ is_hidden = 0
 <div class="row"> <!-- Laravel Feature -->
   <div class="green4 tutorialPages">
     <h1 class="fontColorWhite1 noMargin">Laravel Feature</h1>
-    <h3 class="fontColorGrey3 noMargin">Database Migrations</h3>
+    <h3 class="fontColorGrey3 noMargin"> <span class="icon-tasks icon-2x"></span> Database Migrations</h3>
   </div>
 </div>            <!-- Laravel Feature -->
 
@@ -24,7 +24,7 @@ is_hidden = 0
 
 <div class="row"> <!-- Note -->
   <div class="grey2 tutorialPages withBorderBottom">
-    <h1 class="noMargin fontColorGreen3">NOTE:</h1>
+    <h1 class="noMargin fontColorGreen3">NOTE: <span class="icon-warning-sign icon-1x"></span></h1>
     <div class="well">
       I don't personally prefer this because this does not practice my MySQL programming skills.
     </div>
@@ -46,7 +46,7 @@ is_hidden = 0
     <p class="fontColorWhite2 noMargin">
       <ol>
         <li>
-          In the terminal: <span class="icon-terminal"></span>
+          In the terminal, in the root directory of the project: <span class="icon-terminal"></span>
           <code> php artisan make:migration create_tasks_table --create=tasks </code>
           <div class="well">
             <code>
@@ -83,42 +83,46 @@ is_hidden = 0
         <li>
           Configure the logic inside the <code>up()</code> method.
           <pre>
-          <code>
-              &lt;?php
-              use Illuminate\Database\Schema\BluePrint;
-              use Illuminate\Database\Migrations\Migration;
-              
-              class CreateTasksTable extends Migration
-              {
-                //Rune the migrations
-                public function up()
-                {
-                    Schema::create( 'tasks', function(Blueprint $table)
-                                             {
-                                               $table->increments('id');
-                                               $table->string('name');
-                                               $table->timestamp();
-                                             }
-                                  );
-                }
-                
-                //Reverse the migrations
-                public function down()
-                {
-                    Schema::drop('tasks');
-                }
-              }
-              ?&gt;
-          </code>
+              <code>
+                  &lt;?php
+                  use Illuminate\Database\Schema\BluePrint;
+                  use Illuminate\Database\Migrations\Migration;
+                  
+                  class CreateTasksTable extends Migration
+                  {
+                    //Rune the migrations
+                    public function up()
+                    {
+                        Schema::create( 'tasks', function(Blueprint $table)
+                                                 {
+                                                   $table->increments('id');
+                                                   $table->string('name');
+                                                   $table->timestamp();
+                                                 }
+                                      );
+                    }
+                    
+                    //Reverse the migrations
+                    public function down()
+                    {
+                        Schema::drop('tasks');
+                    }
+                  }
+                  ?&gt;
+              </code>
           </pre>
+        </li>
+        
+        <li>
+          Step 4: In the terminal, in the root directory of the project: <span class="icon-terminal"></span> <code> php artisan migrate </code>
         </li>
       </ol>
     </p>
   </div>
-</div>            <!-- How To Do It -->";s:5:"mtime";i:1486019212;s:6:"markup";s:4775:"<div class="row"> <!-- Laravel Feature -->
+</div>            <!-- How To Do It -->";s:5:"mtime";i:1486021535;s:6:"markup";s:5195:"<div class="row"> <!-- Laravel Feature -->
   <div class="green4 tutorialPages">
     <h1 class="fontColorWhite1 noMargin">Laravel Feature</h1>
-    <h3 class="fontColorGrey3 noMargin">Database Migrations</h3>
+    <h3 class="fontColorGrey3 noMargin"> <span class="icon-tasks icon-2x"></span> Database Migrations</h3>
   </div>
 </div>            <!-- Laravel Feature -->
 
@@ -135,7 +139,7 @@ is_hidden = 0
 
 <div class="row"> <!-- Note -->
   <div class="grey2 tutorialPages withBorderBottom">
-    <h1 class="noMargin fontColorGreen3">NOTE:</h1>
+    <h1 class="noMargin fontColorGreen3">NOTE: <span class="icon-warning-sign icon-1x"></span></h1>
     <div class="well">
       I don't personally prefer this because this does not practice my MySQL programming skills.
     </div>
@@ -157,7 +161,7 @@ is_hidden = 0
     <p class="fontColorWhite2 noMargin">
       <ol>
         <li>
-          In the terminal: <span class="icon-terminal"></span>
+          In the terminal, in the root directory of the project: <span class="icon-terminal"></span>
           <code> php artisan make:migration create_tasks_table --create=tasks </code>
           <div class="well">
             <code>
@@ -194,34 +198,38 @@ is_hidden = 0
         <li>
           Configure the logic inside the <code>up()</code> method.
           <pre>
-          <code>
-              &lt;?php
-              use Illuminate\Database\Schema\BluePrint;
-              use Illuminate\Database\Migrations\Migration;
-              
-              class CreateTasksTable extends Migration
-              {
-                //Rune the migrations
-                public function up()
-                {
-                    Schema::create( 'tasks', function(Blueprint $table)
-                                             {
-                                               $table->increments('id');
-                                               $table->string('name');
-                                               $table->timestamp();
-                                             }
-                                  );
-                }
-                
-                //Reverse the migrations
-                public function down()
-                {
-                    Schema::drop('tasks');
-                }
-              }
-              ?&gt;
-          </code>
+              <code>
+                  &lt;?php
+                  use Illuminate\Database\Schema\BluePrint;
+                  use Illuminate\Database\Migrations\Migration;
+                  
+                  class CreateTasksTable extends Migration
+                  {
+                    //Rune the migrations
+                    public function up()
+                    {
+                        Schema::create( 'tasks', function(Blueprint $table)
+                                                 {
+                                                   $table->increments('id');
+                                                   $table->string('name');
+                                                   $table->timestamp();
+                                                 }
+                                      );
+                    }
+                    
+                    //Reverse the migrations
+                    public function down()
+                    {
+                        Schema::drop('tasks');
+                    }
+                  }
+                  ?&gt;
+              </code>
           </pre>
+        </li>
+        
+        <li>
+          Step 4: In the terminal, in the root directory of the project: <span class="icon-terminal"></span> <code> php artisan migrate </code>
         </li>
       </ol>
     </p>

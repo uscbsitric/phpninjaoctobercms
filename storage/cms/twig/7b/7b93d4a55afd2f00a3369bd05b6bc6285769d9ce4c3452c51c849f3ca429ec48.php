@@ -19,7 +19,7 @@ class __TwigTemplate_a218c5a8d42505e8df9c09aaecf04de9ec5666ed0a634e7c7aeb0cecce0
         echo "<div class=\"row\"> <!-- Laravel Feature -->
   <div class=\"green4 tutorialPages\">
     <h1 class=\"fontColorWhite1 noMargin\">Laravel Feature</h1>
-    <h3 class=\"fontColorGrey3 noMargin\">Database Migrations</h3>
+    <h3 class=\"fontColorGrey3 noMargin\"> <span class=\"icon-tasks icon-2x\"></span> Database Migrations</h3>
   </div>
 </div>            <!-- Laravel Feature -->
 
@@ -36,7 +36,7 @@ class __TwigTemplate_a218c5a8d42505e8df9c09aaecf04de9ec5666ed0a634e7c7aeb0cecce0
 
 <div class=\"row\"> <!-- Note -->
   <div class=\"grey2 tutorialPages withBorderBottom\">
-    <h1 class=\"noMargin fontColorGreen3\">NOTE:</h1>
+    <h1 class=\"noMargin fontColorGreen3\">NOTE: <span class=\"icon-warning-sign icon-1x\"></span></h1>
     <div class=\"well\">
       I don't personally prefer this because this does not practice my MySQL programming skills.
     </div>
@@ -58,7 +58,7 @@ class __TwigTemplate_a218c5a8d42505e8df9c09aaecf04de9ec5666ed0a634e7c7aeb0cecce0
     <p class=\"fontColorWhite2 noMargin\">
       <ol>
         <li>
-          In the terminal: <span class=\"icon-terminal\"></span>
+          In the terminal, in the root directory of the project: <span class=\"icon-terminal\"></span>
           <code> php artisan make:migration create_tasks_table --create=tasks </code>
           <div class=\"well\">
             <code>
@@ -95,34 +95,38 @@ class __TwigTemplate_a218c5a8d42505e8df9c09aaecf04de9ec5666ed0a634e7c7aeb0cecce0
         <li>
           Configure the logic inside the <code>up()</code> method.
           <pre>
-          <code>
-              &lt;?php
-              use Illuminate\\Database\\Schema\\BluePrint;
-              use Illuminate\\Database\\Migrations\\Migration;
-              
-              class CreateTasksTable extends Migration
-              {
-                //Rune the migrations
-                public function up()
-                {
-                    Schema::create( 'tasks', function(Blueprint \$table)
-                                             {
-                                               \$table->increments('id');
-                                               \$table->string('name');
-                                               \$table->timestamp();
-                                             }
-                                  );
-                }
-                
-                //Reverse the migrations
-                public function down()
-                {
-                    Schema::drop('tasks');
-                }
-              }
-              ?&gt;
-          </code>
+              <code>
+                  &lt;?php
+                  use Illuminate\\Database\\Schema\\BluePrint;
+                  use Illuminate\\Database\\Migrations\\Migration;
+                  
+                  class CreateTasksTable extends Migration
+                  {
+                    //Rune the migrations
+                    public function up()
+                    {
+                        Schema::create( 'tasks', function(Blueprint \$table)
+                                                 {
+                                                   \$table->increments('id');
+                                                   \$table->string('name');
+                                                   \$table->timestamp();
+                                                 }
+                                      );
+                    }
+                    
+                    //Reverse the migrations
+                    public function down()
+                    {
+                        Schema::drop('tasks');
+                    }
+                  }
+                  ?&gt;
+              </code>
           </pre>
+        </li>
+        
+        <li>
+          Step 4: In the terminal, in the root directory of the project: <span class=\"icon-terminal\"></span> <code> php artisan migrate </code>
         </li>
       </ol>
     </p>
@@ -153,7 +157,7 @@ class __TwigTemplate_a218c5a8d42505e8df9c09aaecf04de9ec5666ed0a634e7c7aeb0cecce0
         return new Twig_Source("<div class=\"row\"> <!-- Laravel Feature -->
   <div class=\"green4 tutorialPages\">
     <h1 class=\"fontColorWhite1 noMargin\">Laravel Feature</h1>
-    <h3 class=\"fontColorGrey3 noMargin\">Database Migrations</h3>
+    <h3 class=\"fontColorGrey3 noMargin\"> <span class=\"icon-tasks icon-2x\"></span> Database Migrations</h3>
   </div>
 </div>            <!-- Laravel Feature -->
 
@@ -170,7 +174,7 @@ class __TwigTemplate_a218c5a8d42505e8df9c09aaecf04de9ec5666ed0a634e7c7aeb0cecce0
 
 <div class=\"row\"> <!-- Note -->
   <div class=\"grey2 tutorialPages withBorderBottom\">
-    <h1 class=\"noMargin fontColorGreen3\">NOTE:</h1>
+    <h1 class=\"noMargin fontColorGreen3\">NOTE: <span class=\"icon-warning-sign icon-1x\"></span></h1>
     <div class=\"well\">
       I don't personally prefer this because this does not practice my MySQL programming skills.
     </div>
@@ -192,7 +196,7 @@ class __TwigTemplate_a218c5a8d42505e8df9c09aaecf04de9ec5666ed0a634e7c7aeb0cecce0
     <p class=\"fontColorWhite2 noMargin\">
       <ol>
         <li>
-          In the terminal: <span class=\"icon-terminal\"></span>
+          In the terminal, in the root directory of the project: <span class=\"icon-terminal\"></span>
           <code> php artisan make:migration create_tasks_table --create=tasks </code>
           <div class=\"well\">
             <code>
@@ -229,34 +233,38 @@ class __TwigTemplate_a218c5a8d42505e8df9c09aaecf04de9ec5666ed0a634e7c7aeb0cecce0
         <li>
           Configure the logic inside the <code>up()</code> method.
           <pre>
-          <code>
-              &lt;?php
-              use Illuminate\\Database\\Schema\\BluePrint;
-              use Illuminate\\Database\\Migrations\\Migration;
-              
-              class CreateTasksTable extends Migration
-              {
-                //Rune the migrations
-                public function up()
-                {
-                    Schema::create( 'tasks', function(Blueprint \$table)
-                                             {
-                                               \$table->increments('id');
-                                               \$table->string('name');
-                                               \$table->timestamp();
-                                             }
-                                  );
-                }
-                
-                //Reverse the migrations
-                public function down()
-                {
-                    Schema::drop('tasks');
-                }
-              }
-              ?&gt;
-          </code>
+              <code>
+                  &lt;?php
+                  use Illuminate\\Database\\Schema\\BluePrint;
+                  use Illuminate\\Database\\Migrations\\Migration;
+                  
+                  class CreateTasksTable extends Migration
+                  {
+                    //Rune the migrations
+                    public function up()
+                    {
+                        Schema::create( 'tasks', function(Blueprint \$table)
+                                                 {
+                                                   \$table->increments('id');
+                                                   \$table->string('name');
+                                                   \$table->timestamp();
+                                                 }
+                                      );
+                    }
+                    
+                    //Reverse the migrations
+                    public function down()
+                    {
+                        Schema::drop('tasks');
+                    }
+                  }
+                  ?&gt;
+              </code>
           </pre>
+        </li>
+        
+        <li>
+          Step 4: In the terminal, in the root directory of the project: <span class=\"icon-terminal\"></span> <code> php artisan migrate </code>
         </li>
       </ol>
     </p>

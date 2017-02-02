@@ -7,7 +7,7 @@ is_hidden = 0
 <div class="row"> <!-- Laravel Feature -->
   <div class="green4 tutorialPages">
     <h1 class="fontColorWhite1 noMargin">Laravel Feature</h1>
-    <h3 class="fontColorGrey3 noMargin">Database Migrations</h3>
+    <h3 class="fontColorGrey3 noMargin"> <span class="icon-tasks icon-2x"></span> Database Migrations</h3>
   </div>
 </div>            <!-- Laravel Feature -->
 
@@ -24,7 +24,7 @@ is_hidden = 0
 
 <div class="row"> <!-- Note -->
   <div class="grey2 tutorialPages withBorderBottom">
-    <h1 class="noMargin fontColorGreen3">NOTE:</h1>
+    <h1 class="noMargin fontColorGreen3">NOTE: <span class="icon-warning-sign icon-1x"></span></h1>
     <div class="well">
       I don't personally prefer this because this does not practice my MySQL programming skills.
     </div>
@@ -46,7 +46,7 @@ is_hidden = 0
     <p class="fontColorWhite2 noMargin">
       <ol>
         <li>
-          In the terminal: <span class="icon-terminal"></span>
+          In the terminal, in the root directory of the project: <span class="icon-terminal"></span>
           <code> php artisan make:migration create_tasks_table --create=tasks </code>
           <div class="well">
             <code>
@@ -111,6 +111,10 @@ is_hidden = 0
                   ?&gt;
               </code>
           </pre>
+        </li>
+        
+        <li>
+          Step 4: In the terminal, in the root directory of the project: <span class="icon-terminal"></span> <code> php artisan migrate </code>
         </li>
       </ol>
     </p>
