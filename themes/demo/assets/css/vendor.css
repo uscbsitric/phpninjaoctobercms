@@ -7495,7 +7495,7 @@ a .icon-flip-vertical:before {
   padding: 20px;
   overflow-x: hidden;
   overflow-y: auto;
-  background-color: #CCD1D1;
+  background-color: #3E5050;
   border-right: 1px solid #eee;
 }
 
@@ -7510,12 +7510,12 @@ a .icon-flip-vertical:before {
 }
 
 ul li a{
-  color: #2C533C;
+  color: #CCD1D1;
 }
 
 .sidebar > ul > li > ul{
   display: block;
-  border-top: 1px dashed rgba(0, 0, 0, 0.0980392);
+  border-top: 1px dashed #CCD1D1;
   list-style: none;
   margin: 0.5em 35px 0px;
   padding: 0.5em 0px 0px;
