@@ -1,0 +1,126 @@
+title = "Authorization"
+url = "/authorization"
+layout = "laravel5-2TutorialsLayout"
+description = "Authorization"
+is_hidden = 0
+==
+<div class="row"> <!-- Laravel Feature -->
+  <div class="green4 tutorialPages">
+    <h1 class="fontColorWhite1 noMargin">Laravel Feature</h1>
+    <h3 class="fontColorGrey3 noMargin"> <span class="icon-tasks icon-2x"> Authorization </h3>
+  </div>
+</div>            <!-- Laravel Feature -->
+
+<div class="row"> <!-- What Does It Do -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">What Does It Do</h1>
+    <p class="fontColorWhite2 noMargin">
+      Laravel's authorization capabilites makes sure that the authenticated user actually owns the Model instance that was injected into the route.
+    </p>
+  </div>
+</div>            <!-- What Does It Do -->
+
+<div class="row"> <!-- Note -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">NOTE: <span class="icon-warning-sign icon-1x"></span></h1>
+    <div class="well">
+      None
+    </div>
+  </div>
+</div>            <!-- Note -->
+
+<div class="row"> <!-- When To Do It -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">When To Do It</h1>
+    <p class="fontColorWhite2 noMargin">
+      When you want to make sure that the authenticated user has authority over a Model instance and its function that will be invoked.
+    </p>
+  </div>
+</div>            <!-- When To Do It -->
+
+<div class="row"> <!-- How To Do It -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">How To Do It</h1>
+    <p class="fontColorWhite2 noMargin">
+      <ol>
+        <li>
+          Make a policy in the terminal in the root project directory run: <span class="icon-terminal"></span> <code>php artisan make:policy TaskPolicy</code>
+        </li>
+
+        <li>
+          It will generate a file: <code>RootProjectDirectory/app/Policies/TaskPolicy.php</code>
+        </li>
+
+        <li>
+          In the <code>TaskPolicy class</code>, add a method that will represent the operation to check authorization against.
+          
+          <pre>
+            <code>
+            &lt;?php
+            namespace App\Policies;
+            
+            use App\User;
+            use App\Task;
+            use Illuminate\Auth\Access\HandleAuthorization;
+            
+            class TaskPolicy
+            {
+                use HandlesAuthorization;
+                
+                public function destroy(User $user, Task, $task) // one of the functions to check authorization against
+                {
+                    return $user->id === $task->user_id;
+                }
+            }
+            ?&gt;
+            </code>
+          </pre>
+        </li>
+
+        <li>
+		  Associate the model to the policy. In the app/Providers/AuthServiceProvider.php file's $policies property, add the association.  
+		  This will inform Laravel 5.2.29 which policy should be used whenever we try to authorize an action on the model instance.
+		  
+		  <pre>
+		    <code>
+		      &lt;?php
+		      //...
+		      class AuthServiceProvider extends ServiceProvider
+		      {
+		        // ...
+		        // policy mappings for the application
+		        protected $policies = ['App\Task' => 'App\Policies\TaskPolicy']; // telling Laravel that our task 
+		                                                                         // model corresponds to the TaskPolicy
+		        // ...
+		      }
+		      ?&gt;
+		    </code>
+		  </pre>
+        </li>
+
+        <li>
+		  Authorizing the action (a controllers action).  All Laravel 5.2.29 controllers may call an <code>authorize</code> method which is exposed by the
+		  <code>AuthorizesRequests trait</code>.
+		  example: in the <code>TasksController->destroy() method</code>
+		  
+		  <pre>
+		    <code>
+		      &lt;?php
+		      class TasksController extends Controller
+		      {
+		        //...
+		        public function destroy(Request $request, Task $task)
+		        {
+		          $result = $this->authorize('destroy', // name of the Task policy method we wish to call
+		                                     $task      // the model instance that is our current concern
+		                                    );
+		        }
+		      }
+		      ?&gt;
+		    </code>
+		  </pre>
+        </li>
+      </ol>
+    </p>
+  </div>
+</div>            <!-- How To Do It -->
