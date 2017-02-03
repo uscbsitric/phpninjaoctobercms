@@ -19,7 +19,7 @@ class __TwigTemplate_a27d8c24978d8351fdfbfcc1c19f85f51b07e23af211a7de1d3622b6f17
         echo "<div class=\"row\"> <!-- Laravel Feature -->
   <div class=\"green4 tutorialPages\">
     <h1 class=\"fontColorWhite1 noMargin\">Laravel Feature</h1>
-    <h3 class=\"fontColorGrey3 noMargin\"> <span class=\"icon-tasks icon-2x\"> Authorization </h3>
+    <h3 class=\"fontColorGrey3 noMargin\"> <span class=\"icon-tasks icon-2x\"></span> Authorization </h3>
   </div>
 </div>            <!-- Laravel Feature -->
 
@@ -112,7 +112,7 @@ class __TwigTemplate_a27d8c24978d8351fdfbfcc1c19f85f51b07e23af211a7de1d3622b6f17
 
         <li>
 \t\t  Authorizing the action (a controllers action).  All Laravel 5.2.29 controllers may call an <code>authorize</code> method which is exposed by the
-\t\t  <code>AuthorizesRequest trait</code>.
+\t\t  <code>AuthorizesRequests trait</code>.
 \t\t  example: in the <code>TasksController->destroy() method</code>
 \t\t  
 \t\t  <pre>
@@ -161,7 +161,7 @@ class __TwigTemplate_a27d8c24978d8351fdfbfcc1c19f85f51b07e23af211a7de1d3622b6f17
         return new Twig_Source("<div class=\"row\"> <!-- Laravel Feature -->
   <div class=\"green4 tutorialPages\">
     <h1 class=\"fontColorWhite1 noMargin\">Laravel Feature</h1>
-    <h3 class=\"fontColorGrey3 noMargin\"> <span class=\"icon-tasks icon-2x\"> Authorization </h3>
+    <h3 class=\"fontColorGrey3 noMargin\"> <span class=\"icon-tasks icon-2x\"></span> Authorization </h3>
   </div>
 </div>            <!-- Laravel Feature -->
 
@@ -254,7 +254,7 @@ class __TwigTemplate_a27d8c24978d8351fdfbfcc1c19f85f51b07e23af211a7de1d3622b6f17
 
         <li>
 \t\t  Authorizing the action (a controllers action).  All Laravel 5.2.29 controllers may call an <code>authorize</code> method which is exposed by the
-\t\t  <code>AuthorizesRequest trait</code>.
+\t\t  <code>AuthorizesRequests trait</code>.
 \t\t  example: in the <code>TasksController->destroy() method</code>
 \t\t  
 \t\t  <pre>

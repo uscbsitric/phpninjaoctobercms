@@ -1,4 +1,4 @@
-1486117033a:1:{s:36:"laravel5.2/eloquentRelationships.htm";a:10:{s:8:"fileName";s:36:"laravel5.2/eloquentRelationships.htm";s:7:"content";s:6020:"title = "Eloquent Relationships"
+1486164538a:1:{s:36:"laravel5.2/eloquentRelationships.htm";a:10:{s:8:"fileName";s:36:"laravel5.2/eloquentRelationships.htm";s:7:"content";s:6027:"title = "Eloquent Relationships"
 url = "/eloquent-relationships"
 layout = "laravel5-2TutorialsLayout"
 description = "Eloquent Relationship"
@@ -7,7 +7,7 @@ is_hidden = 0
 <div class="row"> <!-- Laravel Feature -->
   <div class="green4 tutorialPages">
     <h1 class="fontColorWhite1 noMargin">Laravel Feature</h1>
-    <h3 class="fontColorGrey3 noMargin"> <span class="icon-tasks icon-2x"> Eloquent Relationships </h3>
+    <h3 class="fontColorGrey3 noMargin"> <span class="icon-tasks icon-2x"></span> Eloquent Relationships </h3>
   </div>
 </div>            <!-- Laravel Feature -->
 
@@ -144,10 +144,10 @@ is_hidden = 0
       </ol>
     </p>
   </div>
-</div>            <!-- How To Do It -->";s:5:"mtime";i:1486098495;s:6:"markup";s:5863:"<div class="row"> <!-- Laravel Feature -->
+</div>            <!-- How To Do It -->";s:5:"mtime";i:1486163881;s:6:"markup";s:5870:"<div class="row"> <!-- Laravel Feature -->
   <div class="green4 tutorialPages">
     <h1 class="fontColorWhite1 noMargin">Laravel Feature</h1>
-    <h3 class="fontColorGrey3 noMargin"> <span class="icon-tasks icon-2x"> Eloquent Relationships </h3>
+    <h3 class="fontColorGrey3 noMargin"> <span class="icon-tasks icon-2x"></span> Eloquent Relationships </h3>
   </div>
 </div>            <!-- Laravel Feature -->
 

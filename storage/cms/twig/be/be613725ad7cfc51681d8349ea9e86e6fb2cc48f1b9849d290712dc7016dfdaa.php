@@ -19,7 +19,7 @@ class __TwigTemplate_c4926b244c77a03573ee78b5f0172a3c9e34d43f9637234ab6393a72afc
         echo "<div class=\"row\"> <!-- Laravel Feature -->
   <div class=\"green4 tutorialPages\">
     <h1 class=\"fontColorWhite1 noMargin\">Laravel Feature</h1>
-    <h3 class=\"fontColorGrey3 noMargin\"> <span class=\"icon-tasks icon-2x\"> Eloquent Relationships </h3>
+    <h3 class=\"fontColorGrey3 noMargin\"> <span class=\"icon-tasks icon-2x\"></span> Eloquent Relationships </h3>
   </div>
 </div>            <!-- Laravel Feature -->
 
@@ -88,7 +88,7 @@ class __TwigTemplate_c4926b244c77a03573ee78b5f0172a3c9e34d43f9637234ab6393a72afc
                                  }
                                 );
                 }
-                
+
                 //Reverse the migration
                 public function down()
                 {
@@ -101,7 +101,7 @@ class __TwigTemplate_c4926b244c77a03573ee78b5f0172a3c9e34d43f9637234ab6393a72afc
         </li>
 
         <li>
-          Run the migration, in the project root directory terminal, run <span class=\"icon-terminal\"></span> <code>php artisan migrate</code>
+          Run the migration, in the project root directory terminal, run: <span class=\"icon-terminal\"></span> <code>php artisan migrate</code>
         </li>
 
         <li>
@@ -141,7 +141,7 @@ class __TwigTemplate_c4926b244c77a03573ee78b5f0172a3c9e34d43f9637234ab6393a72afc
         <li>
           To use the relationship or retrieve data by the given relationship:
           A similar logic will be done in places like the controller, in my case, I tested this out inside Tinker, for quick testing purposes, no need to hit the browser and inspect.
-          In the root project directory run <span class=\"icon-terminal\"></span>: <code>php artisan tinker</code>
+          In the root project directory run: <span class=\"icon-terminal\"></span>: <code>php artisan tinker</code>
           Once inside, I did the following:
           <pre>
             <code>
@@ -182,7 +182,7 @@ class __TwigTemplate_c4926b244c77a03573ee78b5f0172a3c9e34d43f9637234ab6393a72afc
         return new Twig_Source("<div class=\"row\"> <!-- Laravel Feature -->
   <div class=\"green4 tutorialPages\">
     <h1 class=\"fontColorWhite1 noMargin\">Laravel Feature</h1>
-    <h3 class=\"fontColorGrey3 noMargin\"> <span class=\"icon-tasks icon-2x\"> Eloquent Relationships </h3>
+    <h3 class=\"fontColorGrey3 noMargin\"> <span class=\"icon-tasks icon-2x\"></span> Eloquent Relationships </h3>
   </div>
 </div>            <!-- Laravel Feature -->
 
@@ -251,7 +251,7 @@ class __TwigTemplate_c4926b244c77a03573ee78b5f0172a3c9e34d43f9637234ab6393a72afc
                                  }
                                 );
                 }
-                
+
                 //Reverse the migration
                 public function down()
                 {
@@ -264,7 +264,7 @@ class __TwigTemplate_c4926b244c77a03573ee78b5f0172a3c9e34d43f9637234ab6393a72afc
         </li>
 
         <li>
-          Run the migration, in the project root directory terminal, run <span class=\"icon-terminal\"></span> <code>php artisan migrate</code>
+          Run the migration, in the project root directory terminal, run: <span class=\"icon-terminal\"></span> <code>php artisan migrate</code>
         </li>
 
         <li>
@@ -304,7 +304,7 @@ class __TwigTemplate_c4926b244c77a03573ee78b5f0172a3c9e34d43f9637234ab6393a72afc
         <li>
           To use the relationship or retrieve data by the given relationship:
           A similar logic will be done in places like the controller, in my case, I tested this out inside Tinker, for quick testing purposes, no need to hit the browser and inspect.
-          In the root project directory run <span class=\"icon-terminal\"></span>: <code>php artisan tinker</code>
+          In the root project directory run: <span class=\"icon-terminal\"></span>: <code>php artisan tinker</code>
           Once inside, I did the following:
           <pre>
             <code>

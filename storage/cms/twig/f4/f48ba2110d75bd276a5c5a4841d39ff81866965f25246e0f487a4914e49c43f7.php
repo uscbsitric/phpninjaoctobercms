@@ -19,7 +19,7 @@ class __TwigTemplate_00401dafcffdb973df01fa3759a6c97f8579bc3ddc047ba56f32bdb2879
         echo "<div class=\"row\"> <!-- Laravel Feature -->
   <div class=\"green4 tutorialPages\">
     <h1 class=\"fontColorWhite1 noMargin\">Laravel Feature</h1>
-    <h3 class=\"fontColorGrey3 noMargin\"> <span class=\"icon-tasks icon-2x\"> Middlewares </h3>
+    <h3 class=\"fontColorGrey3 noMargin\"> <span class=\"icon-tasks icon-2x\"></span> Middlewares </h3>
   </div>
 </div>            <!-- Laravel Feature -->
 
@@ -260,7 +260,7 @@ class __TwigTemplate_00401dafcffdb973df01fa3759a6c97f8579bc3ddc047ba56f32bdb2879
         return new Twig_Source("<div class=\"row\"> <!-- Laravel Feature -->
   <div class=\"green4 tutorialPages\">
     <h1 class=\"fontColorWhite1 noMargin\">Laravel Feature</h1>
-    <h3 class=\"fontColorGrey3 noMargin\"> <span class=\"icon-tasks icon-2x\"> Middlewares </h3>
+    <h3 class=\"fontColorGrey3 noMargin\"> <span class=\"icon-tasks icon-2x\"></span> Middlewares </h3>
   </div>
 </div>            <!-- Laravel Feature -->
 

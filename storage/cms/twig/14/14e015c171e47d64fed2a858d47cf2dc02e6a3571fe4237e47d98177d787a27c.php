@@ -19,7 +19,7 @@ class __TwigTemplate_855e4deef61db81b1565bce774c5d0a3223ac8a79185d4d5d8952b7655c
         echo "<div class=\"row\"> <!-- Laravel Feature -->
   <div class=\"green4 tutorialPages\">
     <h1 class=\"fontColorWhite1 noMargin\">Design Pattern</h1>
-    <h3 class=\"fontColorGrey3 noMargin\"> <span class=\"icon-lightbulb icon-2x\"> Repository Pattern </h3>
+    <h3 class=\"fontColorGrey3 noMargin\"> <span class=\"icon-lightbulb icon-2x\"></span> Repository Pattern </h3>
   </div>
 </div>            <!-- Laravel Feature -->
 
@@ -179,7 +179,7 @@ class __TwigTemplate_855e4deef61db81b1565bce774c5d0a3223ac8a79185d4d5d8952b7655c
         return new Twig_Source("<div class=\"row\"> <!-- Laravel Feature -->
   <div class=\"green4 tutorialPages\">
     <h1 class=\"fontColorWhite1 noMargin\">Design Pattern</h1>
-    <h3 class=\"fontColorGrey3 noMargin\"> <span class=\"icon-lightbulb icon-2x\"> Repository Pattern </h3>
+    <h3 class=\"fontColorGrey3 noMargin\"> <span class=\"icon-lightbulb icon-2x\"></span> Repository Pattern </h3>
   </div>
 </div>            <!-- Laravel Feature -->
 

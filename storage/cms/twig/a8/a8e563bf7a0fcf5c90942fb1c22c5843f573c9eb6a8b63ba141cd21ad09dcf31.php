@@ -83,7 +83,7 @@ class __TwigTemplate_6d365c650291313f739fd2d224f46922334c95079c02abcd7276f6941b7
 \t\t<div class=\"container-fluid\">
             <div class=\"row\">  <!-- Start of Row1 -->
 \t\t\t\t<!-- SideNav -->
-\t\t\t    <div class=\"col-md-3 sidebar\">
+\t\t\t    <div class=\"col-md-2 sidebar\">
 \t\t\t          <ul class=\"nav nav-sidebar\">
 \t\t\t            <li class=\"active\">
 \t\t\t              <a>Core Concepts</a>
@@ -336,15 +336,43 @@ class __TwigTemplate_6d365c650291313f739fd2d224f46922334c95079c02abcd7276f6941b7
 \t\t\t              </ul>
 \t\t\t            </li>
 \t\t\t          </ul>
+\t\t\t          <ul class=\"nav nav-sidebar\">
+\t\t\t            <li class=\"active\">
+\t\t\t              <a>Other Topcis I Cant Categorize</a>
+\t\t\t              <ul>
+\t\t\t                <li>
+\t\t\t                  <a href=\"";
+        // line 278
+        echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("laravel5.2/routeModelBinding");
+        echo "\">Route Model Binding</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"";
+        // line 281
+        echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("laravel5.2/namingResourceRouteParameters");
+        echo "\">Naming Resource Route Parameters</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Other Topic3</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Other Topic4</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Other Topic5</a>
+\t\t\t                </li>
+\t\t\t              </ul>
+\t\t\t            </li>
+\t\t\t          </ul>
 \t\t\t    </div>
 \t\t\t\t<!-- SideNav -->
 
 \t\t        <!-- Content -->
-\t\t        <div class=\"col-md-9 main\">
+\t\t        <div class=\"col-md-10 main\">
 \t\t            ";
-        // line 278
+        // line 300
         echo $this->env->getExtension('CMS')->pageFunction();
-        // line 279
+        // line 301
         echo "\t\t        </div>
 \t\t        <!-- Content -->
 \t\t    </div>             <!-- Start of Row1 -->
@@ -353,39 +381,39 @@ class __TwigTemplate_6d365c650291313f739fd2d224f46922334c95079c02abcd7276f6941b7
         <!-- Footer -->
         <footer id=\"layout-footer\">
             ";
-        // line 286
+        // line 308
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('CMS')->partialFunction("site/ninjaFooter"        , $context['__cms_partial_params']        );
         unset($context['__cms_partial_params']);
-        // line 287
+        // line 309
         echo "        </footer>
 
         <!-- Scripts -->
         <script src=\"";
-        // line 290
+        // line 312
         echo $this->env->getExtension('Cms\Twig\Extension')->themeFilter("assets/vendor/jquery.js");
         echo "\"></script>
         <script src=\"";
-        // line 291
+        // line 313
         echo $this->env->getExtension('Cms\Twig\Extension')->themeFilter("assets/vendor/bootstrap.js");
         echo "\"></script>
         <script src=\"";
-        // line 292
+        // line 314
         echo $this->env->getExtension('Cms\Twig\Extension')->themeFilter("assets/javascript/app.js");
         echo "\"></script>
         ";
-        // line 293
+        // line 315
         echo '<script src="'. Request::getBasePath()
                 .'/modules/system/assets/js/framework.js"></script>'.PHP_EOL;
         echo '<script src="'. Request::getBasePath()
                     .'/modules/system/assets/js/framework.extras.js"></script>'.PHP_EOL;
         echo '<link rel="stylesheet" property="stylesheet" href="'. Request::getBasePath()
                     .'/modules/system/assets/css/framework.extras.css">'.PHP_EOL;
-        // line 294
+        // line 316
         echo "        ";
         echo $this->env->getExtension('CMS')->assetsFunction('js');
         echo $this->env->getExtension('CMS')->displayBlock('scripts');
-        // line 295
+        // line 317
         echo "
     </body>
 </html>";
@@ -403,7 +431,7 @@ class __TwigTemplate_6d365c650291313f739fd2d224f46922334c95079c02abcd7276f6941b7
 
     public function getDebugInfo()
     {
-        return array (  389 => 295,  385 => 294,  378 => 293,  374 => 292,  370 => 291,  366 => 290,  361 => 287,  357 => 286,  348 => 279,  346 => 278,  299 => 234,  255 => 193,  249 => 190,  230 => 174,  160 => 107,  119 => 69,  113 => 66,  81 => 36,  77 => 35,  56 => 16,  53 => 15,  48 => 13,  44 => 12,  40 => 11,  33 => 7,  29 => 6,  25 => 5,  19 => 1,);
+        return array (  417 => 317,  413 => 316,  406 => 315,  402 => 314,  398 => 313,  394 => 312,  389 => 309,  385 => 308,  376 => 301,  374 => 300,  352 => 281,  346 => 278,  299 => 234,  255 => 193,  249 => 190,  230 => 174,  160 => 107,  119 => 69,  113 => 66,  81 => 36,  77 => 35,  56 => 16,  53 => 15,  48 => 13,  44 => 12,  40 => 11,  33 => 7,  29 => 6,  25 => 5,  19 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -456,7 +484,7 @@ class __TwigTemplate_6d365c650291313f739fd2d224f46922334c95079c02abcd7276f6941b7
 \t\t<div class=\"container-fluid\">
             <div class=\"row\">  <!-- Start of Row1 -->
 \t\t\t\t<!-- SideNav -->
-\t\t\t    <div class=\"col-md-3 sidebar\">
+\t\t\t    <div class=\"col-md-2 sidebar\">
 \t\t\t          <ul class=\"nav nav-sidebar\">
 \t\t\t            <li class=\"active\">
 \t\t\t              <a>Core Concepts</a>
@@ -688,11 +716,33 @@ class __TwigTemplate_6d365c650291313f739fd2d224f46922334c95079c02abcd7276f6941b7
 \t\t\t              </ul>
 \t\t\t            </li>
 \t\t\t          </ul>
+\t\t\t          <ul class=\"nav nav-sidebar\">
+\t\t\t            <li class=\"active\">
+\t\t\t              <a>Other Topcis I Cant Categorize</a>
+\t\t\t              <ul>
+\t\t\t                <li>
+\t\t\t                  <a href=\"{{'laravel5.2/routeModelBinding'|page}}\">Route Model Binding</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"{{'laravel5.2/namingResourceRouteParameters'|page}}\">Naming Resource Route Parameters</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Other Topic3</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Other Topic4</a>
+\t\t\t                </li>
+\t\t\t                <li>
+\t\t\t                  <a href=\"\">Other Topic5</a>
+\t\t\t                </li>
+\t\t\t              </ul>
+\t\t\t            </li>
+\t\t\t          </ul>
 \t\t\t    </div>
 \t\t\t\t<!-- SideNav -->
 
 \t\t        <!-- Content -->
-\t\t        <div class=\"col-md-9 main\">
+\t\t        <div class=\"col-md-10 main\">
 \t\t            {% page %}
 \t\t        </div>
 \t\t        <!-- Content -->
