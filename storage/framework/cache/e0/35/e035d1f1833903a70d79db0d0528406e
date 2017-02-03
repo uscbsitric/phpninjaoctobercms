@@ -1,4 +1,4 @@
-1486044111a:1:{s:29:"laravel5-2TutorialsLayout.htm";a:6:{s:8:"fileName";s:29:"laravel5-2TutorialsLayout.htm";s:7:"content";s:9790:"description = "Laravel 5.2 Tutorials Layout"
+1486107290a:1:{s:29:"laravel5-2TutorialsLayout.htm";a:6:{s:8:"fileName";s:29:"laravel5-2TutorialsLayout.htm";s:7:"content";s:9822:"description = "Laravel 5.2 Tutorials Layout"
 ==
 <!DOCTYPE html>
 <html>
@@ -43,7 +43,7 @@
 			    <div class="col-md-3 sidebar">
 			          <ul class="nav nav-sidebar">
 			            <li class="active">
-			              <a href="#">Core Concepts</a>
+			              <a>Core Concepts</a>
 			              <ul>
 			                <li>
 			                  <a href="">Service Container</a>
@@ -62,13 +62,13 @@
 			          </ul>
 			          <ul class="nav nav-sidebar">
 			            <li class="active">
-			              <a href="">The HTTP Layer</a>
+			              <a>The HTTP Layer</a>
 			              <ul>
 			                <li>
-			                  <a href="">Routing</a>
+			                  <a href="{{'laravel5.2/routing'|page}}">Routing</a>
 			                </li>
 			                <li>
-			                  <a href="">Middleware</a>
+			                  <a href="{{'laravel5.2/middlewares'|page}}">Middleware</a>
 			                </li>
 			                <li>
 			                  <a href="">Controllers</a>
@@ -87,7 +87,7 @@
 			          </ul>
 			          <ul class="nav nav-sidebar">
 			            <li class="active">
-			              <a href="">Security</a>
+			              <a>Security</a>
 			              <ul>
 			                <li>
 			                  <a href="">Middleware</a>
@@ -103,7 +103,7 @@
 			          </ul>
 			          <ul class="nav nav-sidebar">
 			            <li class="active">
-			              <a href="">Services</a>
+			              <a>Services</a>
 			              <ul>
 			                <li>
 			                  <a href="">JWT Based Authentication</a>
@@ -161,7 +161,7 @@
 			          </ul>
 			          <ul class="nav nav-sidebar">
 			            <li class="active">
-			              <a href="">Database</a>
+			              <a>Database</a>
 			              <ul>
 			                <li>
 			                  <a href="">Getting Started</a>
@@ -180,7 +180,7 @@
 			          </ul>
 			          <ul class="nav nav-sidebar">
 			            <li class="active">
-			              <a href="">Eloquent ORM</a>
+			              <a>Eloquent ORM</a>
 			              <ul>
 			                <li>
 			                  <a href="">Getting Started</a>
@@ -189,7 +189,7 @@
 			                  <a href="{{'laravel5.2/eloquentORMModels'|page}}">Eloquent ORM Models</a>
 			                </li>
 			                <li>
-			                  <a href="">Releationships</a>
+			                  <a href="{{'laravel5.2/eloquentRelationships'|page}}">Releationships</a>
 			                </li>
 			                <li>
 			                  <a href="">Collections</a>
@@ -205,7 +205,7 @@
 			          </ul>
 			          <ul class="nav nav-sidebar">
 			            <li class="active">
-			              <a href="">Performance Improvement</a>
+			              <a>Performance Improvement</a>
 			              <ul>
 			                <li>
 			                  <a href="">Route Caching</a>
@@ -227,7 +227,7 @@
 			          </ul>
 			          <ul class="nav nav-sidebar">
 			            <li class="active">
-			              <a href="">Design Patterns</a>
+			              <a>Design Patterns</a>
 			              <ul>
 			                <li>
 			                  <a href="">Repository Pattern</a>
@@ -249,7 +249,7 @@
 			          </ul>
 			          <ul class="nav nav-sidebar">
 			            <li class="active">
-			              <a href="">Approach</a>
+			              <a>Approach</a>
 			              <ul>
 			                <li>
 			                  <a href="">Jason Web Token(JWT) based Authentication</a>
@@ -293,7 +293,7 @@
         {% scripts %}
 
     </body>
-</html>";s:5:"mtime";i:1486043458;s:6:"markup";s:9742:"<!DOCTYPE html>
+</html>";s:5:"mtime";i:1486094466;s:6:"markup";s:9774:"<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -336,7 +336,7 @@
 			    <div class="col-md-3 sidebar">
 			          <ul class="nav nav-sidebar">
 			            <li class="active">
-			              <a href="#">Core Concepts</a>
+			              <a>Core Concepts</a>
 			              <ul>
 			                <li>
 			                  <a href="">Service Container</a>
@@ -355,13 +355,13 @@
 			          </ul>
 			          <ul class="nav nav-sidebar">
 			            <li class="active">
-			              <a href="">The HTTP Layer</a>
+			              <a>The HTTP Layer</a>
 			              <ul>
 			                <li>
-			                  <a href="">Routing</a>
+			                  <a href="{{'laravel5.2/routing'|page}}">Routing</a>
 			                </li>
 			                <li>
-			                  <a href="">Middleware</a>
+			                  <a href="{{'laravel5.2/middlewares'|page}}">Middleware</a>
 			                </li>
 			                <li>
 			                  <a href="">Controllers</a>
@@ -380,7 +380,7 @@
 			          </ul>
 			          <ul class="nav nav-sidebar">
 			            <li class="active">
-			              <a href="">Security</a>
+			              <a>Security</a>
 			              <ul>
 			                <li>
 			                  <a href="">Middleware</a>
@@ -396,7 +396,7 @@
 			          </ul>
 			          <ul class="nav nav-sidebar">
 			            <li class="active">
-			              <a href="">Services</a>
+			              <a>Services</a>
 			              <ul>
 			                <li>
 			                  <a href="">JWT Based Authentication</a>
@@ -454,7 +454,7 @@
 			          </ul>
 			          <ul class="nav nav-sidebar">
 			            <li class="active">
-			              <a href="">Database</a>
+			              <a>Database</a>
 			              <ul>
 			                <li>
 			                  <a href="">Getting Started</a>
@@ -473,7 +473,7 @@
 			          </ul>
 			          <ul class="nav nav-sidebar">
 			            <li class="active">
-			              <a href="">Eloquent ORM</a>
+			              <a>Eloquent ORM</a>
 			              <ul>
 			                <li>
 			                  <a href="">Getting Started</a>
@@ -482,7 +482,7 @@
 			                  <a href="{{'laravel5.2/eloquentORMModels'|page}}">Eloquent ORM Models</a>
 			                </li>
 			                <li>
-			                  <a href="">Releationships</a>
+			                  <a href="{{'laravel5.2/eloquentRelationships'|page}}">Releationships</a>
 			                </li>
 			                <li>
 			                  <a href="">Collections</a>
@@ -498,7 +498,7 @@
 			          </ul>
 			          <ul class="nav nav-sidebar">
 			            <li class="active">
-			              <a href="">Performance Improvement</a>
+			              <a>Performance Improvement</a>
 			              <ul>
 			                <li>
 			                  <a href="">Route Caching</a>
@@ -520,7 +520,7 @@
 			          </ul>
 			          <ul class="nav nav-sidebar">
 			            <li class="active">
-			              <a href="">Design Patterns</a>
+			              <a>Design Patterns</a>
 			              <ul>
 			                <li>
 			                  <a href="">Repository Pattern</a>
@@ -542,7 +542,7 @@
 			          </ul>
 			          <ul class="nav nav-sidebar">
 			            <li class="active">
-			              <a href="">Approach</a>
+			              <a>Approach</a>
 			              <ul>
 			                <li>
 			                  <a href="">Jason Web Token(JWT) based Authentication</a>

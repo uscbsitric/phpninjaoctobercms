@@ -1,7 +1,7 @@
 <?php
 
-/* /home/vagrant/Code/octobercms/themes/demo/pages/laravel5.2/eloquentORMModels.htm */
-class __TwigTemplate_93ab9f3f8723545e79b4c453b4c580d961e46bb6390f2a8ce6a276a89d30f526 extends Twig_Template
+/* /home/vagrant/Code/octobercms/themes/demo/pages/404.htm */
+class __TwigTemplate_e3fd9f3a71377485079f2e0d6abd8fab3cfae435ae46e291fa222be5602a47e5 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -16,12 +16,17 @@ class __TwigTemplate_93ab9f3f8723545e79b4c453b4c580d961e46bb6390f2a8ce6a276a89d3
     protected function doDisplay(array $context, array $blocks = array())
     {
         // line 1
-        echo "Eloquent ORM Models";
+        echo "<div class=\"jumbotron\">
+    <div class=\"container\">
+        <h1>Page not found</h1>
+        <p>We're sorry, but the page you requested cannot be found.</p>
+    </div>
+</div>";
     }
 
     public function getTemplateName()
     {
-        return "/home/vagrant/Code/octobercms/themes/demo/pages/laravel5.2/eloquentORMModels.htm";
+        return "/home/vagrant/Code/octobercms/themes/demo/pages/404.htm";
     }
 
     public function getDebugInfo()
@@ -39,6 +44,11 @@ class __TwigTemplate_93ab9f3f8723545e79b4c453b4c580d961e46bb6390f2a8ce6a276a89d3
 
     public function getSourceContext()
     {
-        return new Twig_Source("Eloquent ORM Models", "/home/vagrant/Code/octobercms/themes/demo/pages/laravel5.2/eloquentORMModels.htm", "");
+        return new Twig_Source("<div class=\"jumbotron\">
+    <div class=\"container\">
+        <h1>Page not found</h1>
+        <p>We're sorry, but the page you requested cannot be found.</p>
+    </div>
+</div>", "/home/vagrant/Code/octobercms/themes/demo/pages/404.htm", "");
     }
 }

@@ -1,7 +1,7 @@
 <?php
 
-/* /home/vagrant/Code/octobercms/themes/demo/layouts/thePhpNinja.htm */
-class __TwigTemplate_d448a4ea7f631e4b6d63f0354330a75bcded5fc36cee6df3bce5edaac202c841 extends Twig_Template
+/* /home/vagrant/Code/octobercms/themes/demo/layouts/default.htm */
+class __TwigTemplate_90d389ce5eab8cf8cc99e410e449afae8266a0d0adb9bf805ec2213b44b6948f extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -37,7 +37,7 @@ class __TwigTemplate_d448a4ea7f631e4b6d63f0354330a75bcded5fc36cee6df3bce5edaac20
         <meta name=\"generator\" content=\"OctoberCMS\">
         <link rel=\"icon\" type=\"image/png\" href=\"";
         // line 11
-        echo $this->env->getExtension('Cms\Twig\Extension')->themeFilter("assets/images/Ninja.png");
+        echo $this->env->getExtension('Cms\Twig\Extension')->themeFilter("assets/images/october.png");
         echo "\">
         <link href=\"";
         // line 12
@@ -54,75 +54,61 @@ class __TwigTemplate_d448a4ea7f631e4b6d63f0354330a75bcded5fc36cee6df3bce5edaac20
         // line 15
         echo "    </head>
     <body>
-        <!--
-        Color Codes:
-          Green (lightest to darkest):
-            #93D4AC #26BF64 #26C667 #29AC5E
-
-          Blue: (lightest to darkest)
-            #13BBB1 #326A67
-
-          White:
-            #CCD1D1
-
-          Grey: (lightest to darkest):
-            #9FA7A9 #3E5050 #353D3F #2C533C
-        -->
 
         <!-- Header -->
         <header id=\"layout-header\">
             ";
-        // line 34
+        // line 20
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('CMS')->partialFunction("site/ninjaHeader.htm"        , $context['__cms_partial_params']        );
         unset($context['__cms_partial_params']);
-        // line 35
+        // line 21
         echo "        </header>
 
         <!-- Content -->
         <section id=\"layout-content\">
             ";
-        // line 39
+        // line 25
         echo $this->env->getExtension('CMS')->pageFunction();
-        // line 40
+        // line 26
         echo "        </section>
 
         <!-- Footer -->
         <footer id=\"layout-footer\">
             ";
-        // line 44
+        // line 30
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('CMS')->partialFunction("site/ninjaFooter"        , $context['__cms_partial_params']        );
         unset($context['__cms_partial_params']);
-        // line 45
+        // line 31
         echo "        </footer>
 
         <!-- Scripts -->
         <script src=\"";
-        // line 48
+        // line 34
         echo $this->env->getExtension('Cms\Twig\Extension')->themeFilter("assets/vendor/jquery.js");
         echo "\"></script>
         <script src=\"";
-        // line 49
+        // line 35
         echo $this->env->getExtension('Cms\Twig\Extension')->themeFilter("assets/vendor/bootstrap.js");
         echo "\"></script>
         <script src=\"";
-        // line 50
+        // line 36
         echo $this->env->getExtension('Cms\Twig\Extension')->themeFilter("assets/javascript/app.js");
         echo "\"></script>
         ";
-        // line 51
+        // line 37
         echo '<script src="'. Request::getBasePath()
                 .'/modules/system/assets/js/framework.js"></script>'.PHP_EOL;
         echo '<script src="'. Request::getBasePath()
                     .'/modules/system/assets/js/framework.extras.js"></script>'.PHP_EOL;
         echo '<link rel="stylesheet" property="stylesheet" href="'. Request::getBasePath()
                     .'/modules/system/assets/css/framework.extras.css">'.PHP_EOL;
-        // line 52
+        // line 38
         echo "        ";
         echo $this->env->getExtension('CMS')->assetsFunction('js');
         echo $this->env->getExtension('CMS')->displayBlock('scripts');
-        // line 53
+        // line 39
         echo "
     </body>
 </html>";
@@ -130,7 +116,7 @@ class __TwigTemplate_d448a4ea7f631e4b6d63f0354330a75bcded5fc36cee6df3bce5edaac20
 
     public function getTemplateName()
     {
-        return "/home/vagrant/Code/octobercms/themes/demo/layouts/thePhpNinja.htm";
+        return "/home/vagrant/Code/octobercms/themes/demo/layouts/default.htm";
     }
 
     public function isTraitable()
@@ -140,7 +126,7 @@ class __TwigTemplate_d448a4ea7f631e4b6d63f0354330a75bcded5fc36cee6df3bce5edaac20
 
     public function getDebugInfo()
     {
-        return array (  126 => 53,  122 => 52,  115 => 51,  111 => 50,  107 => 49,  103 => 48,  98 => 45,  94 => 44,  88 => 40,  86 => 39,  80 => 35,  76 => 34,  55 => 15,  52 => 14,  48 => 13,  44 => 12,  40 => 11,  33 => 7,  29 => 6,  25 => 5,  19 => 1,);
+        return array (  112 => 39,  108 => 38,  101 => 37,  97 => 36,  93 => 35,  89 => 34,  84 => 31,  80 => 30,  74 => 26,  72 => 25,  66 => 21,  62 => 20,  55 => 15,  52 => 14,  48 => 13,  44 => 12,  40 => 11,  33 => 7,  29 => 6,  25 => 5,  19 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -163,26 +149,12 @@ class __TwigTemplate_d448a4ea7f631e4b6d63f0354330a75bcded5fc36cee6df3bce5edaac20
         <meta name=\"author\" content=\"OctoberCMS\">
         <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
         <meta name=\"generator\" content=\"OctoberCMS\">
-        <link rel=\"icon\" type=\"image/png\" href=\"{{ 'assets/images/Ninja.png'|theme }}\">
+        <link rel=\"icon\" type=\"image/png\" href=\"{{ 'assets/images/october.png'|theme }}\">
         <link href=\"{{ 'assets/css/vendor.css'|theme }}\" rel=\"stylesheet\">
         <link href=\"{{ 'assets/css/theme.css'|theme }}\" rel=\"stylesheet\">
         {% styles %}
     </head>
     <body>
-        <!--
-        Color Codes:
-          Green (lightest to darkest):
-            #93D4AC #26BF64 #26C667 #29AC5E
-
-          Blue: (lightest to darkest)
-            #13BBB1 #326A67
-
-          White:
-            #CCD1D1
-
-          Grey: (lightest to darkest):
-            #9FA7A9 #3E5050 #353D3F #2C533C
-        -->
 
         <!-- Header -->
         <header id=\"layout-header\">
@@ -207,6 +179,6 @@ class __TwigTemplate_d448a4ea7f631e4b6d63f0354330a75bcded5fc36cee6df3bce5edaac20
         {% scripts %}
 
     </body>
-</html>", "/home/vagrant/Code/octobercms/themes/demo/layouts/thePhpNinja.htm", "");
+</html>", "/home/vagrant/Code/octobercms/themes/demo/layouts/default.htm", "");
     }
 }

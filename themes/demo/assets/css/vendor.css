@@ -7540,5 +7540,10 @@ ol li{
   color: #26C667;
 }
 
+.main a{
+  text-decoration: none !important;
+  color: #26C667;
+}
+
 /*************************  Frederick Sandalo configurations 
 *************************/

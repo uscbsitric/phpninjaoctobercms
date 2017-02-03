@@ -1,4 +1,4 @@
-1486044111a:1:{s:27:"laravel5.2/templatePage.htm";a:10:{s:8:"fileName";s:27:"laravel5.2/templatePage.htm";s:7:"content";s:1862:"title = "TemplatePage"
+1486107290a:1:{s:27:"laravel5.2/templatePage.htm";a:10:{s:8:"fileName";s:27:"laravel5.2/templatePage.htm";s:7:"content";s:1854:"title = "TemplatePage"
 url = "/templatepage"
 layout = "default"
 description = "Template Page which contains the following sections: \"Laravel Feature\", \"What Does It Do?\", \"When To Do It?\", \"How To Do It?\""
@@ -7,7 +7,7 @@ is_hidden = 0
 <div class="row"> <!-- Laravel Feature -->
   <div class="green4 tutorialPages">
     <h1 class="fontColorWhite1 noMargin">Laravel Feature</h1>
-    <h3 class="fontColorGrey3 noMargin"> <span class="icon-tasks icon-2x"> The Feature </h3>
+    <h3 class="fontColorGrey3 noMargin"> <span class="icon-tasks icon-2x"> Middlewares </h3>
   </div>
 </div>            <!-- Laravel Feature -->
 
@@ -24,7 +24,7 @@ is_hidden = 0
   <div class="grey2 tutorialPages withBorderBottom">
     <h1 class="noMargin fontColorGreen3">NOTE: <span class="icon-warning-sign icon-1x"></span></h1>
     <div class="well">
-      Note 1
+      None
     </div>
   </div>
 </div>            <!-- Note -->
@@ -33,7 +33,7 @@ is_hidden = 0
   <div class="grey2 tutorialPages withBorderBottom">
     <h1 class="noMargin fontColorGreen3">When To Do It</h1>
     <p class="fontColorWhite2 noMargin">
-            The Details 2
+      The Details 2
     </p>
   </div>
 </div>            <!-- When To Do It -->
@@ -61,10 +61,10 @@ is_hidden = 0
       </ol>
     </p>
   </div>
-</div>            <!-- How To Do It -->";s:5:"mtime";i:1486021617;s:6:"markup";s:1631:"<div class="row"> <!-- Laravel Feature -->
+</div>            <!-- How To Do It -->";s:5:"mtime";i:1486098198;s:6:"markup";s:1623:"<div class="row"> <!-- Laravel Feature -->
   <div class="green4 tutorialPages">
     <h1 class="fontColorWhite1 noMargin">Laravel Feature</h1>
-    <h3 class="fontColorGrey3 noMargin"> <span class="icon-tasks icon-2x"> The Feature </h3>
+    <h3 class="fontColorGrey3 noMargin"> <span class="icon-tasks icon-2x"> Middlewares </h3>
   </div>
 </div>            <!-- Laravel Feature -->
 
@@ -81,7 +81,7 @@ is_hidden = 0
   <div class="grey2 tutorialPages withBorderBottom">
     <h1 class="noMargin fontColorGreen3">NOTE: <span class="icon-warning-sign icon-1x"></span></h1>
     <div class="well">
-      Note 1
+      None
     </div>
   </div>
 </div>            <!-- Note -->
@@ -90,7 +90,7 @@ is_hidden = 0
   <div class="grey2 tutorialPages withBorderBottom">
     <h1 class="noMargin fontColorGreen3">When To Do It</h1>
     <p class="fontColorWhite2 noMargin">
-            The Details 2
+      The Details 2
     </p>
   </div>
 </div>            <!-- When To Do It -->

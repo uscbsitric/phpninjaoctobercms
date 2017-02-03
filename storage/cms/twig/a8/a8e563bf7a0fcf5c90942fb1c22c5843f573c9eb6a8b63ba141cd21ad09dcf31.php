@@ -86,7 +86,7 @@ class __TwigTemplate_6d365c650291313f739fd2d224f46922334c95079c02abcd7276f6941b7
 \t\t\t    <div class=\"col-md-3 sidebar\">
 \t\t\t          <ul class=\"nav nav-sidebar\">
 \t\t\t            <li class=\"active\">
-\t\t\t              <a href=\"#\">Core Concepts</a>
+\t\t\t              <a>Core Concepts</a>
 \t\t\t              <ul>
 \t\t\t                <li>
 \t\t\t                  <a href=\"\">Service Container</a>
@@ -105,13 +105,19 @@ class __TwigTemplate_6d365c650291313f739fd2d224f46922334c95079c02abcd7276f6941b7
 \t\t\t          </ul>
 \t\t\t          <ul class=\"nav nav-sidebar\">
 \t\t\t            <li class=\"active\">
-\t\t\t              <a href=\"\">The HTTP Layer</a>
+\t\t\t              <a>The HTTP Layer</a>
 \t\t\t              <ul>
 \t\t\t                <li>
-\t\t\t                  <a href=\"\">Routing</a>
+\t\t\t                  <a href=\"";
+        // line 66
+        echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("laravel5.2/routing");
+        echo "\">Routing</a>
 \t\t\t                </li>
 \t\t\t                <li>
-\t\t\t                  <a href=\"\">Middleware</a>
+\t\t\t                  <a href=\"";
+        // line 69
+        echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("laravel5.2/middlewares");
+        echo "\">Middleware</a>
 \t\t\t                </li>
 \t\t\t                <li>
 \t\t\t                  <a href=\"\">Controllers</a>
@@ -130,7 +136,7 @@ class __TwigTemplate_6d365c650291313f739fd2d224f46922334c95079c02abcd7276f6941b7
 \t\t\t          </ul>
 \t\t\t          <ul class=\"nav nav-sidebar\">
 \t\t\t            <li class=\"active\">
-\t\t\t              <a href=\"\">Security</a>
+\t\t\t              <a>Security</a>
 \t\t\t              <ul>
 \t\t\t                <li>
 \t\t\t                  <a href=\"\">Middleware</a>
@@ -146,7 +152,7 @@ class __TwigTemplate_6d365c650291313f739fd2d224f46922334c95079c02abcd7276f6941b7
 \t\t\t          </ul>
 \t\t\t          <ul class=\"nav nav-sidebar\">
 \t\t\t            <li class=\"active\">
-\t\t\t              <a href=\"\">Services</a>
+\t\t\t              <a>Services</a>
 \t\t\t              <ul>
 \t\t\t                <li>
 \t\t\t                  <a href=\"\">JWT Based Authentication</a>
@@ -204,7 +210,7 @@ class __TwigTemplate_6d365c650291313f739fd2d224f46922334c95079c02abcd7276f6941b7
 \t\t\t          </ul>
 \t\t\t          <ul class=\"nav nav-sidebar\">
 \t\t\t            <li class=\"active\">
-\t\t\t              <a href=\"\">Database</a>
+\t\t\t              <a>Database</a>
 \t\t\t              <ul>
 \t\t\t                <li>
 \t\t\t                  <a href=\"\">Getting Started</a>
@@ -226,7 +232,7 @@ class __TwigTemplate_6d365c650291313f739fd2d224f46922334c95079c02abcd7276f6941b7
 \t\t\t          </ul>
 \t\t\t          <ul class=\"nav nav-sidebar\">
 \t\t\t            <li class=\"active\">
-\t\t\t              <a href=\"\">Eloquent ORM</a>
+\t\t\t              <a>Eloquent ORM</a>
 \t\t\t              <ul>
 \t\t\t                <li>
 \t\t\t                  <a href=\"\">Getting Started</a>
@@ -238,7 +244,10 @@ class __TwigTemplate_6d365c650291313f739fd2d224f46922334c95079c02abcd7276f6941b7
         echo "\">Eloquent ORM Models</a>
 \t\t\t                </li>
 \t\t\t                <li>
-\t\t\t                  <a href=\"\">Releationships</a>
+\t\t\t                  <a href=\"";
+        // line 190
+        echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("laravel5.2/eloquentRelationships");
+        echo "\">Releationships</a>
 \t\t\t                </li>
 \t\t\t                <li>
 \t\t\t                  <a href=\"\">Collections</a>
@@ -254,7 +263,7 @@ class __TwigTemplate_6d365c650291313f739fd2d224f46922334c95079c02abcd7276f6941b7
 \t\t\t          </ul>
 \t\t\t          <ul class=\"nav nav-sidebar\">
 \t\t\t            <li class=\"active\">
-\t\t\t              <a href=\"\">Performance Improvement</a>
+\t\t\t              <a>Performance Improvement</a>
 \t\t\t              <ul>
 \t\t\t                <li>
 \t\t\t                  <a href=\"\">Route Caching</a>
@@ -276,7 +285,7 @@ class __TwigTemplate_6d365c650291313f739fd2d224f46922334c95079c02abcd7276f6941b7
 \t\t\t          </ul>
 \t\t\t          <ul class=\"nav nav-sidebar\">
 \t\t\t            <li class=\"active\">
-\t\t\t              <a href=\"\">Design Patterns</a>
+\t\t\t              <a>Design Patterns</a>
 \t\t\t              <ul>
 \t\t\t                <li>
 \t\t\t                  <a href=\"\">Repository Pattern</a>
@@ -298,7 +307,7 @@ class __TwigTemplate_6d365c650291313f739fd2d224f46922334c95079c02abcd7276f6941b7
 \t\t\t          </ul>
 \t\t\t          <ul class=\"nav nav-sidebar\">
 \t\t\t            <li class=\"active\">
-\t\t\t              <a href=\"\">Approach</a>
+\t\t\t              <a>Approach</a>
 \t\t\t              <ul>
 \t\t\t                <li>
 \t\t\t                  <a href=\"\">Jason Web Token(JWT) based Authentication</a>
@@ -385,7 +394,7 @@ class __TwigTemplate_6d365c650291313f739fd2d224f46922334c95079c02abcd7276f6941b7
 
     public function getDebugInfo()
     {
-        return array (  371 => 292,  367 => 291,  360 => 290,  356 => 289,  352 => 288,  348 => 287,  343 => 284,  339 => 283,  330 => 276,  328 => 275,  237 => 187,  218 => 171,  81 => 36,  77 => 35,  56 => 16,  53 => 15,  48 => 13,  44 => 12,  40 => 11,  33 => 7,  29 => 6,  25 => 5,  19 => 1,);
+        return array (  380 => 292,  376 => 291,  369 => 290,  365 => 289,  361 => 288,  357 => 287,  352 => 284,  348 => 283,  339 => 276,  337 => 275,  249 => 190,  243 => 187,  224 => 171,  119 => 69,  113 => 66,  81 => 36,  77 => 35,  56 => 16,  53 => 15,  48 => 13,  44 => 12,  40 => 11,  33 => 7,  29 => 6,  25 => 5,  19 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -441,7 +450,7 @@ class __TwigTemplate_6d365c650291313f739fd2d224f46922334c95079c02abcd7276f6941b7
 \t\t\t    <div class=\"col-md-3 sidebar\">
 \t\t\t          <ul class=\"nav nav-sidebar\">
 \t\t\t            <li class=\"active\">
-\t\t\t              <a href=\"#\">Core Concepts</a>
+\t\t\t              <a>Core Concepts</a>
 \t\t\t              <ul>
 \t\t\t                <li>
 \t\t\t                  <a href=\"\">Service Container</a>
@@ -460,13 +469,13 @@ class __TwigTemplate_6d365c650291313f739fd2d224f46922334c95079c02abcd7276f6941b7
 \t\t\t          </ul>
 \t\t\t          <ul class=\"nav nav-sidebar\">
 \t\t\t            <li class=\"active\">
-\t\t\t              <a href=\"\">The HTTP Layer</a>
+\t\t\t              <a>The HTTP Layer</a>
 \t\t\t              <ul>
 \t\t\t                <li>
-\t\t\t                  <a href=\"\">Routing</a>
+\t\t\t                  <a href=\"{{'laravel5.2/routing'|page}}\">Routing</a>
 \t\t\t                </li>
 \t\t\t                <li>
-\t\t\t                  <a href=\"\">Middleware</a>
+\t\t\t                  <a href=\"{{'laravel5.2/middlewares'|page}}\">Middleware</a>
 \t\t\t                </li>
 \t\t\t                <li>
 \t\t\t                  <a href=\"\">Controllers</a>
@@ -485,7 +494,7 @@ class __TwigTemplate_6d365c650291313f739fd2d224f46922334c95079c02abcd7276f6941b7
 \t\t\t          </ul>
 \t\t\t          <ul class=\"nav nav-sidebar\">
 \t\t\t            <li class=\"active\">
-\t\t\t              <a href=\"\">Security</a>
+\t\t\t              <a>Security</a>
 \t\t\t              <ul>
 \t\t\t                <li>
 \t\t\t                  <a href=\"\">Middleware</a>
@@ -501,7 +510,7 @@ class __TwigTemplate_6d365c650291313f739fd2d224f46922334c95079c02abcd7276f6941b7
 \t\t\t          </ul>
 \t\t\t          <ul class=\"nav nav-sidebar\">
 \t\t\t            <li class=\"active\">
-\t\t\t              <a href=\"\">Services</a>
+\t\t\t              <a>Services</a>
 \t\t\t              <ul>
 \t\t\t                <li>
 \t\t\t                  <a href=\"\">JWT Based Authentication</a>
@@ -559,7 +568,7 @@ class __TwigTemplate_6d365c650291313f739fd2d224f46922334c95079c02abcd7276f6941b7
 \t\t\t          </ul>
 \t\t\t          <ul class=\"nav nav-sidebar\">
 \t\t\t            <li class=\"active\">
-\t\t\t              <a href=\"\">Database</a>
+\t\t\t              <a>Database</a>
 \t\t\t              <ul>
 \t\t\t                <li>
 \t\t\t                  <a href=\"\">Getting Started</a>
@@ -578,7 +587,7 @@ class __TwigTemplate_6d365c650291313f739fd2d224f46922334c95079c02abcd7276f6941b7
 \t\t\t          </ul>
 \t\t\t          <ul class=\"nav nav-sidebar\">
 \t\t\t            <li class=\"active\">
-\t\t\t              <a href=\"\">Eloquent ORM</a>
+\t\t\t              <a>Eloquent ORM</a>
 \t\t\t              <ul>
 \t\t\t                <li>
 \t\t\t                  <a href=\"\">Getting Started</a>
@@ -587,7 +596,7 @@ class __TwigTemplate_6d365c650291313f739fd2d224f46922334c95079c02abcd7276f6941b7
 \t\t\t                  <a href=\"{{'laravel5.2/eloquentORMModels'|page}}\">Eloquent ORM Models</a>
 \t\t\t                </li>
 \t\t\t                <li>
-\t\t\t                  <a href=\"\">Releationships</a>
+\t\t\t                  <a href=\"{{'laravel5.2/eloquentRelationships'|page}}\">Releationships</a>
 \t\t\t                </li>
 \t\t\t                <li>
 \t\t\t                  <a href=\"\">Collections</a>
@@ -603,7 +612,7 @@ class __TwigTemplate_6d365c650291313f739fd2d224f46922334c95079c02abcd7276f6941b7
 \t\t\t          </ul>
 \t\t\t          <ul class=\"nav nav-sidebar\">
 \t\t\t            <li class=\"active\">
-\t\t\t              <a href=\"\">Performance Improvement</a>
+\t\t\t              <a>Performance Improvement</a>
 \t\t\t              <ul>
 \t\t\t                <li>
 \t\t\t                  <a href=\"\">Route Caching</a>
@@ -625,7 +634,7 @@ class __TwigTemplate_6d365c650291313f739fd2d224f46922334c95079c02abcd7276f6941b7
 \t\t\t          </ul>
 \t\t\t          <ul class=\"nav nav-sidebar\">
 \t\t\t            <li class=\"active\">
-\t\t\t              <a href=\"\">Design Patterns</a>
+\t\t\t              <a>Design Patterns</a>
 \t\t\t              <ul>
 \t\t\t                <li>
 \t\t\t                  <a href=\"\">Repository Pattern</a>
@@ -647,7 +656,7 @@ class __TwigTemplate_6d365c650291313f739fd2d224f46922334c95079c02abcd7276f6941b7
 \t\t\t          </ul>
 \t\t\t          <ul class=\"nav nav-sidebar\">
 \t\t\t            <li class=\"active\">
-\t\t\t              <a href=\"\">Approach</a>
+\t\t\t              <a>Approach</a>
 \t\t\t              <ul>
 \t\t\t                <li>
 \t\t\t                  <a href=\"\">Jason Web Token(JWT) based Authentication</a>
