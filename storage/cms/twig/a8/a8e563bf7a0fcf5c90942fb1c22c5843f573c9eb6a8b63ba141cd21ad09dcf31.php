@@ -139,9 +139,6 @@ class __TwigTemplate_6d365c650291313f739fd2d224f46922334c95079c02abcd7276f6941b7
 \t\t\t              <a>Security</a>
 \t\t\t              <ul>
 \t\t\t                <li>
-\t\t\t                  <a href=\"\">Middleware</a>
-\t\t\t                </li>
-\t\t\t                <li>
 \t\t\t                  <a href=\"\">Encryption</a>
 \t\t\t                </li>
 \t\t\t                <li>
@@ -156,7 +153,7 @@ class __TwigTemplate_6d365c650291313f739fd2d224f46922334c95079c02abcd7276f6941b7
 \t\t\t              <ul>
 \t\t\t                <li>
 \t\t\t                  <a href=\"";
-        // line 107
+        // line 104
         echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("laravel5.2/authorization");
         echo "\">Authorization</a>
 \t\t\t                </li>
@@ -226,7 +223,7 @@ class __TwigTemplate_6d365c650291313f739fd2d224f46922334c95079c02abcd7276f6941b7
 \t\t\t                </li>
 \t\t\t                <li>
 \t\t\t                  <a href=\"";
-        // line 174
+        // line 171
         echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("laravel5.2/databaseMigration");
         echo "\">Migrations</a>
 \t\t\t                </li>
@@ -245,13 +242,13 @@ class __TwigTemplate_6d365c650291313f739fd2d224f46922334c95079c02abcd7276f6941b7
 \t\t\t                </li>
 \t\t\t                <li>
 \t\t\t                  <a href=\"";
-        // line 190
+        // line 187
         echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("laravel5.2/eloquentORMModels");
         echo "\">Eloquent ORM Models</a>
 \t\t\t                </li>
 \t\t\t                <li>
 \t\t\t                  <a href=\"";
-        // line 193
+        // line 190
         echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("laravel5.2/eloquentRelationships");
         echo "\">Releationships</a>
 \t\t\t                </li>
@@ -295,7 +292,7 @@ class __TwigTemplate_6d365c650291313f739fd2d224f46922334c95079c02abcd7276f6941b7
 \t\t\t              <ul>
 \t\t\t                <li>
 \t\t\t                  <a href=\"";
-        // line 234
+        // line 231
         echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("laravel5.2/repositoryPattern");
         echo "\">Repository Pattern</a>
 \t\t\t                </li>
@@ -342,18 +339,21 @@ class __TwigTemplate_6d365c650291313f739fd2d224f46922334c95079c02abcd7276f6941b7
 \t\t\t              <ul>
 \t\t\t                <li>
 \t\t\t                  <a href=\"";
-        // line 278
+        // line 275
         echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("laravel5.2/routeModelBinding");
         echo "\">Route Model Binding</a>
 \t\t\t                </li>
 \t\t\t                <li>
 \t\t\t                  <a href=\"";
-        // line 281
+        // line 278
         echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("laravel5.2/namingResourceRouteParameters");
         echo "\">Naming Resource Route Parameters</a>
 \t\t\t                </li>
 \t\t\t                <li>
-\t\t\t                  <a href=\"\">Other Topic3</a>
+\t\t\t                  <a href=\"";
+        // line 281
+        echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("laravel5.2/namingResourceRoutes");
+        echo "\">Naming Resource Routes</a>
 \t\t\t                </li>
 \t\t\t                <li>
 \t\t\t                  <a href=\"\">Other Topic4</a>
@@ -370,9 +370,9 @@ class __TwigTemplate_6d365c650291313f739fd2d224f46922334c95079c02abcd7276f6941b7
 \t\t        <!-- Content -->
 \t\t        <div class=\"col-md-10 main\">
 \t\t            ";
-        // line 300
+        // line 297
         echo $this->env->getExtension('CMS')->pageFunction();
-        // line 301
+        // line 298
         echo "\t\t        </div>
 \t\t        <!-- Content -->
 \t\t    </div>             <!-- Start of Row1 -->
@@ -381,39 +381,39 @@ class __TwigTemplate_6d365c650291313f739fd2d224f46922334c95079c02abcd7276f6941b7
         <!-- Footer -->
         <footer id=\"layout-footer\">
             ";
-        // line 308
+        // line 305
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('CMS')->partialFunction("site/ninjaFooter"        , $context['__cms_partial_params']        );
         unset($context['__cms_partial_params']);
-        // line 309
+        // line 306
         echo "        </footer>
 
         <!-- Scripts -->
         <script src=\"";
-        // line 312
+        // line 309
         echo $this->env->getExtension('Cms\Twig\Extension')->themeFilter("assets/vendor/jquery.js");
         echo "\"></script>
         <script src=\"";
-        // line 313
+        // line 310
         echo $this->env->getExtension('Cms\Twig\Extension')->themeFilter("assets/vendor/bootstrap.js");
         echo "\"></script>
         <script src=\"";
-        // line 314
+        // line 311
         echo $this->env->getExtension('Cms\Twig\Extension')->themeFilter("assets/javascript/app.js");
         echo "\"></script>
         ";
-        // line 315
+        // line 312
         echo '<script src="'. Request::getBasePath()
                 .'/modules/system/assets/js/framework.js"></script>'.PHP_EOL;
         echo '<script src="'. Request::getBasePath()
                     .'/modules/system/assets/js/framework.extras.js"></script>'.PHP_EOL;
         echo '<link rel="stylesheet" property="stylesheet" href="'. Request::getBasePath()
                     .'/modules/system/assets/css/framework.extras.css">'.PHP_EOL;
-        // line 316
+        // line 313
         echo "        ";
         echo $this->env->getExtension('CMS')->assetsFunction('js');
         echo $this->env->getExtension('CMS')->displayBlock('scripts');
-        // line 317
+        // line 314
         echo "
     </body>
 </html>";
@@ -431,7 +431,7 @@ class __TwigTemplate_6d365c650291313f739fd2d224f46922334c95079c02abcd7276f6941b7
 
     public function getDebugInfo()
     {
-        return array (  417 => 317,  413 => 316,  406 => 315,  402 => 314,  398 => 313,  394 => 312,  389 => 309,  385 => 308,  376 => 301,  374 => 300,  352 => 281,  346 => 278,  299 => 234,  255 => 193,  249 => 190,  230 => 174,  160 => 107,  119 => 69,  113 => 66,  81 => 36,  77 => 35,  56 => 16,  53 => 15,  48 => 13,  44 => 12,  40 => 11,  33 => 7,  29 => 6,  25 => 5,  19 => 1,);
+        return array (  417 => 314,  413 => 313,  406 => 312,  402 => 311,  398 => 310,  394 => 309,  389 => 306,  385 => 305,  376 => 298,  374 => 297,  355 => 281,  349 => 278,  343 => 275,  296 => 231,  252 => 190,  246 => 187,  227 => 171,  157 => 104,  119 => 69,  113 => 66,  81 => 36,  77 => 35,  56 => 16,  53 => 15,  48 => 13,  44 => 12,  40 => 11,  33 => 7,  29 => 6,  25 => 5,  19 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -533,9 +533,6 @@ class __TwigTemplate_6d365c650291313f739fd2d224f46922334c95079c02abcd7276f6941b7
 \t\t\t            <li class=\"active\">
 \t\t\t              <a>Security</a>
 \t\t\t              <ul>
-\t\t\t                <li>
-\t\t\t                  <a href=\"\">Middleware</a>
-\t\t\t                </li>
 \t\t\t                <li>
 \t\t\t                  <a href=\"\">Encryption</a>
 \t\t\t                </li>
@@ -727,7 +724,7 @@ class __TwigTemplate_6d365c650291313f739fd2d224f46922334c95079c02abcd7276f6941b7
 \t\t\t                  <a href=\"{{'laravel5.2/namingResourceRouteParameters'|page}}\">Naming Resource Route Parameters</a>
 \t\t\t                </li>
 \t\t\t                <li>
-\t\t\t                  <a href=\"\">Other Topic3</a>
+\t\t\t                  <a href=\"{{'laravel5.2/namingResourceRoutes'|page}}\">Naming Resource Routes</a>
 \t\t\t                </li>
 \t\t\t                <li>
 \t\t\t                  <a href=\"\">Other Topic4</a>

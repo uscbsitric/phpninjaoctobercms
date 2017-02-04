@@ -1,4 +1,4 @@
-1486164682a:1:{s:29:"laravel5-2TutorialsLayout.htm";a:6:{s:8:"fileName";s:29:"laravel5-2TutorialsLayout.htm";s:7:"content";s:10845:"description = "Laravel 5.2 Tutorials Layout"
+1486167664a:1:{s:29:"laravel5-2TutorialsLayout.htm";a:6:{s:8:"fileName";s:29:"laravel5-2TutorialsLayout.htm";s:7:"content";s:10798:"description = "Laravel 5.2 Tutorials Layout"
 ==
 <!DOCTYPE html>
 <html>
@@ -90,9 +90,6 @@
 			              <a>Security</a>
 			              <ul>
 			                <li>
-			                  <a href="">Middleware</a>
-			                </li>
-			                <li>
 			                  <a href="">Encryption</a>
 			                </li>
 			                <li>
@@ -283,7 +280,7 @@
 			                  <a href="{{'laravel5.2/namingResourceRouteParameters'|page}}">Naming Resource Route Parameters</a>
 			                </li>
 			                <li>
-			                  <a href="">Other Topic3</a>
+			                  <a href="{{'laravel5.2/namingResourceRoutes'|page}}">Naming Resource Routes</a>
 			                </li>
 			                <li>
 			                  <a href="">Other Topic4</a>
@@ -318,7 +315,7 @@
         {% scripts %}
 
     </body>
-</html>";s:5:"mtime";i:1486161527;s:6:"markup";s:10797:"<!DOCTYPE html>
+</html>";s:5:"mtime";i:1486164709;s:6:"markup";s:10750:"<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -408,9 +405,6 @@
 			              <a>Security</a>
 			              <ul>
 			                <li>
-			                  <a href="">Middleware</a>
-			                </li>
-			                <li>
 			                  <a href="">Encryption</a>
 			                </li>
 			                <li>
@@ -601,7 +595,7 @@
 			                  <a href="{{'laravel5.2/namingResourceRouteParameters'|page}}">Naming Resource Route Parameters</a>
 			                </li>
 			                <li>
-			                  <a href="">Other Topic3</a>
+			                  <a href="{{'laravel5.2/namingResourceRoutes'|page}}">Naming Resource Routes</a>
 			                </li>
 			                <li>
 			                  <a href="">Other Topic4</a>
