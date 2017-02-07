@@ -1,0 +1,951 @@
+1486436728a:1:{s:20:"laravel5.2/views.htm";a:10:{s:8:"fileName";s:20:"laravel5.2/views.htm";s:7:"content";s:17720:"title = "Views"
+url = "/views"
+layout = "laravel5-2TutorialsLayout"
+description = "Views"
+is_hidden = 0
+==
+<div class="row"> <!-- Laravel Feature -->
+  <div class="green4 tutorialPages">
+    <h1 class="fontColorWhite1 noMargin">Laravel Feature</h1>
+    <h3 class="fontColorGrey3 noMargin"> <span class="icon-tasks icon-2x"></span> Views -> Basic Usage </h3>
+  </div>
+</div>            <!-- Laravel Feature -->
+
+<div class="row"> <!-- What Does It Do -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">What Does It Do</h1>
+    <p class="fontColorWhite2 noMargin">
+      Contains the <code>HTML</code> served by your application and separate your <code>controller / application</code>  logic from <code>presentation</code> logic.
+      Views are stored in the <code>resources/views</code> directory.
+    </p>
+  </div>
+</div>            <!-- What Does It Do -->
+
+<div class="row"> <!-- Note -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">NOTE: <span class="icon-warning-sign icon-1x"></span></h1>
+    <div class="well">
+      None
+    </div>
+  </div>
+</div>            <!-- Note -->
+
+<div class="row"> <!-- When To Do It -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">When To Do It</h1>
+    <p class="fontColorWhite2 noMargin">
+      When you need to separate logic from presentation.  When you want to produce views.
+    </p>
+  </div>
+</div>            <!-- When To Do It -->
+
+<div class="row"> <!-- How To Do It -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">How To Do It</h1>
+    <p class="fontColorWhite2 noMargin">
+      <ol>
+        <li>
+          In <code>RootProjectDirectory/app/Http/routes.php</code>
+          <pre>
+            <code>
+              &lt;?php
+                //...
+                Route::get('greeting', 'GreetingsController@greeting');
+            </code>
+          </pre>
+        
+          In <code>RootProjectDirectory/resources/views/greeting.blade.php</code>
+          
+          <pre>
+            <code>
+              &lt;html&gt;
+                &lt;body&gt;
+                  &lt;h1&gt;
+                    Hello, &#123;&#123; $name &#125;&#125;
+                  &lt;/h1&gt;
+                &lt;/body&gt;
+              &lt;/html&gt;
+            </code>
+          </pre>
+          
+          In the <code>Controller</code>
+          <pre>
+            <code>
+              &lt;?php
+              public function greeting()
+              &#123
+                 return view('greeting', 
+                             ['name' => 'Bond']
+                            );
+              &#125
+            </code>
+            
+            Access it in the browser <strong>http://startingpoint/greeting</strong>
+          </pre>
+        </li>
+
+        <li>
+          Determining if a <code>view</code> exists. <br>
+          In any <code>controller</code> :
+          <pre>
+            <code>
+              $result = view()->exists('greeting'); // When the <strong>view helper</strong> is called without arguments, an instance of
+              <strong>Illuminate\Contracts\View\Factory</strong> is returned, giving you accecss to any of the factory's method.
+            </code>
+          </pre>
+        </li>
+      </ol>
+    </p>
+  </div>
+</div>            <!-- How To Do It -->
+
+
+
+<div class="row"> <!-- Laravel Feature -->
+  <div class="green4 tutorialPages">
+    <h1 class="fontColorWhite1 noMargin">Laravel Feature</h1>
+    <h3 class="fontColorGrey3 noMargin"> <span class="icon-tasks icon-2x"></span> Views -> Data </h3>
+  </div>
+</div>            <!-- Laravel Feature -->
+
+<div class="row"> <!-- What Does It Do -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">What Does It Do</h1>
+    <p class="fontColorWhite2 noMargin">
+      Passes data to views
+    </p>
+  </div>
+</div>            <!-- What Does It Do -->
+
+<div class="row"> <!-- Note -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">NOTE: <span class="icon-warning-sign icon-1x"></span></h1>
+    <div class="well">
+      None
+    </div>
+  </div>
+</div>            <!-- Note -->
+
+<div class="row"> <!-- When To Do It -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">When To Do It</h1>
+    <p class="fontColorWhite2 noMargin">
+      When you need to pass data from the controller to the view.
+    </p>
+  </div>
+</div>            <!-- When To Do It -->
+
+<div class="row"> <!-- How To Do It -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">How To Do It</h1>
+    <p class="fontColorWhite2 noMargin">
+      <ol>
+        <li>
+          In any <code>controller</code>:
+          <pre>
+            <code>
+              &lt;?php
+              
+              public function index()
+              {
+                return view('index', ['name' => 'Victoria']);
+                //$name = 'Victoria';
+                //return view('index', compact(['name']));
+                
+                //return view('index')->with(['name' => 'Victoria']);
+              }
+            </code>
+          </pre>
+        </li>
+
+        <li>
+          In any <code>view</code>.
+          <pre>
+            <code>
+              &lt;!-- 
+              ...
+              --&gt;
+              &lt;h1&gt; the data is &#123;&#123; $name &#125;&#125; &lt;/h1&gt;
+            </code>
+          </pre>
+        </li>
+      </ol>
+    </p>
+  </div>
+</div>            <!-- How To Do It -->
+
+
+
+<div class="row"> <!-- Laravel Feature -->
+  <div class="green4 tutorialPages">
+    <h1 class="fontColorWhite1 noMargin">Laravel Feature</h1>
+    <h3 class="fontColorGrey3 noMargin"> <span class="icon-tasks icon-2x"></span> Views -> Sharing Data With All Views </h3>
+  </div>
+</div>            <!-- Laravel Feature -->
+
+<div class="row"> <!-- What Does It Do -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">What Does It Do</h1>
+    <p class="fontColorWhite2 noMargin">
+      Shares a piece of data with all <code>views</code> that are rendered bye your application
+    </p>
+  </div>
+</div>            <!-- What Does It Do -->
+
+<div class="row"> <!-- Note -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">NOTE: <span class="icon-warning-sign icon-1x"></span></h1>
+    <div class="well">
+      None
+    </div>
+  </div>
+</div>            <!-- Note -->
+
+<div class="row"> <!-- When To Do It -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">When To Do It</h1>
+    <p class="fontColorWhite2 noMargin">
+      When you want to share data accross your application
+    </p>
+  </div>
+</div>            <!-- When To Do It -->
+
+<div class="row"> <!-- How To Do It -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">How To Do It</h1>
+    <p class="fontColorWhite2 noMargin">
+      <ol>
+        <li>
+          In a <code>Service Provide's</code> boot method:
+          <pre>
+            <code>
+              &lt;?php
+              namespace App\Providers;
+              
+              class AppServiceProvider extends ServiceProvider
+              {
+                  public function boot()
+                  {
+                    view()->share('key', 'value');
+                  }
+              }
+            </code>
+          </pre>
+        </li>
+
+        <li>
+          In any <code>view</code>.
+          <pre>
+            <code>
+              &lt;!-- 
+              ...
+              --&gt;
+              &lt;h1&gt; the shared data is &#123;&#123; $key &#125;&#125; &lt;/h1&gt;
+            </code>
+          </pre>
+        </li>
+      </ol>
+    </p>
+  </div>
+</div>            <!-- How To Do It -->
+
+
+
+<div class="row"> <!-- Laravel Feature -->
+  <div class="green4 tutorialPages">
+    <h1 class="fontColorWhite1 noMargin">Laravel Feature</h1>
+    <h3 class="fontColorGrey3 noMargin"> <span class="icon-tasks icon-2x"></span> Views -> View Composers </h3>
+  </div>
+</div>            <!-- Laravel Feature -->
+
+<div class="row"> <!-- What Does It Do -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">What Does It Do</h1>
+    <p class="fontColorWhite2 noMargin">
+      Binds data to a view each time that view is rendered.  Calls class methods when a view is rendered.
+    </p>
+  </div>
+</div>            <!-- What Does It Do -->
+
+<div class="row"> <!-- Note -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">NOTE: <span class="icon-warning-sign icon-1x"></span></h1>
+    <div class="well">
+      This is one of the excemptions of my personal documentatins, <code>I have NOT USED this, not even once</code>
+    </div>
+  </div>
+</div>            <!-- Note -->
+
+<div class="row"> <!-- When To Do It -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">When To Do It</h1>
+    <p class="fontColorWhite2 noMargin">
+      When you want to bind data to a view each time that view is rendered.
+    </p>
+  </div>
+</div>            <!-- When To Do It -->
+
+<div class="row"> <!-- How To Do It -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">How To Do It</h1>
+    <p class="fontColorWhite2 noMargin">
+    Since Laravel 5.2.29 does not include a default directory for <code>view composers</code>, lets designate the the <code>App\Http\ViewComposers</code> directory.  When creating a 
+    new <code>Service Provider</code> to contain <code>View Composer</code> registrations, you need to add the <code>Service Provider</code> to the providers array in the <code>RootProjectDirectory/config/app.php</code>
+    configuration file.
+      <ol>
+        <li>
+          Register the <code>view composer</code> within a <code>service provider</code>.  Use the <code>view helper</code> to access the underlying <code>Illuminate\Contracts\View\Factory</code> contract implementation.
+          In this example, lets put it in <code>RootProjectDirectory\App\Providers\ComposerServiceProvider.php</code>.
+          <pre>
+            <code>
+              &lt;?php
+              namespace App\Providers;
+              use Illuminate\Support\ServiceProvider;
+
+              class ComposerServiceProvider extends ServiceProvider
+              {
+                  public function boot() // register bindings in the container
+                  {
+                      //using class based composers.
+                      view()->composers('profile', 'App\Http\ViewComposers\ProfileComposer');
+                  }
+                  
+                  public function register() //register the service provider
+                  {
+                      //
+                  }
+              }
+
+              // now that the <strong>view composer</strong> has been registered, the <strong>ProfileComposer@compose</strong> method will be executed each time the <strong>profile view</strong> is being rendered.
+            </code>
+          </pre>
+        </li>
+
+        <li>
+          Define the <code>composer class</code>
+          <pre>
+            <code>
+              &lt?php
+              namespace App\Http\ViewComposers;
+              use App\Repositories\UserRepository;
+              
+              class ProfileComposer
+              {
+                  protected $users; // The user repository implementation
+                  
+                  public function __construct(UserRespository $users)
+                  {
+                    $this->users = $user; // dependencies automatically resolved by the <strong>service container</strong>
+                  }
+                  
+                  public function compose(View $view) // bind data to the view
+                  {
+                    $view->with('count', $this->users->count());
+                  }
+              }
+              
+              // just before the <strong>view</strong> is rendered, the <strong>composer</strong>'s compose method is called with the 
+              // <strong>Illuminate\View\View</strong> instance.  You may use the <strong>with</strong> method to bind data to the view.
+            </code>
+          </pre>
+        </li>
+      </ol>
+    </p>
+  </div>
+</div>            <!-- How To Do It -->
+
+
+
+<div class="row"> <!-- Laravel Feature -->
+  <div class="green4 tutorialPages">
+    <h1 class="fontColorWhite1 noMargin">Laravel Feature</h1>
+    <h3 class="fontColorGrey3 noMargin"> <span class="icon-tasks icon-2x"></span> Views -> Attaching a composer to Multiple Views </h3>
+  </div>
+</div>            <!-- Laravel Feature -->
+
+<div class="row"> <!-- What Does It Do -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">What Does It Do</h1>
+    <p class="fontColorWhite2 noMargin">
+      Attaches a view composer to multiple views at once by passing an array of views as the first argument to the <code>composer</code> method.
+    </p>
+  </div>
+</div>            <!-- What Does It Do -->
+
+<div class="row"> <!-- Note -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">NOTE: <span class="icon-warning-sign icon-1x"></span></h1>
+    <div class="well">
+      Yet another technique <code>I have NOT USED at all.</code>
+    </div>
+  </div>
+</div>            <!-- Note -->
+
+<div class="row"> <!-- When To Do It -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">When To Do It</h1>
+    <p class="fontColorWhite2 noMargin">
+      When you want to attach multiple views at once.
+    </p>
+  </div>
+</div>            <!-- When To Do It -->
+
+<div class="row"> <!-- How To Do It -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">How To Do It</h1>
+    <p class="fontColorWhite2 noMargin">
+      <ol>
+        <li>
+          In the <code>RootProjectDirectory\App\Providers\ComposerServiceProvider.php</code> -&gt; public function boot(); ...
+          <pre>
+            <code>
+            view()-&gt;composer(['profile', 'dashboard'],
+                                'App\Http\ViewComposers\MyViewComposer'
+                               );
+            </code>
+            
+            // the <strong>composer</strong> method accepts the "*" character as a wildcard, allowing you to attach a <strong>view composer</strong> to all views.
+          </pre>
+        </li>
+      </ol>
+    </p>
+  </div>
+</div>            <!-- How To Do It -->
+
+
+
+<div class="row"> <!-- Laravel Feature -->
+  <div class="green4 tutorialPages">
+    <h1 class="fontColorWhite1 noMargin">Laravel Feature</h1>
+    <h3 class="fontColorGrey3 noMargin"> <span class="icon-tasks icon-2x"></span> Views -> View Creators </h3>
+  </div>
+</div>            <!-- Laravel Feature -->
+
+<div class="row"> <!-- What Does It Do -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">What Does It Do</h1>
+    <p class="fontColorWhite2 noMargin">
+      <code>View creators</code> are very similar to <code>View Composers</code>.  However, they are fired immediately when the <code>view</code> is instantiated instead of waiting until the <code>view</code> is about to render.
+    </p>
+  </div>
+</div>            <!-- What Does It Do -->
+
+<div class="row"> <!-- Note -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">NOTE: <span class="icon-warning-sign icon-1x"></span></h1>
+    <div class="well">
+      And another technique <code>I have NOT USED at all.</code>
+    </div>
+  </div>
+</div>            <!-- Note -->
+
+<div class="row"> <!-- When To Do It -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">When To Do It</h1>
+    <p class="fontColorWhite2 noMargin">
+      When you want to bind data to a view, right after it is instantiated, and bind that data everytime that view is instantiated.
+    </p>
+  </div>
+</div>            <!-- When To Do It -->
+
+<div class="row"> <!-- How To Do It -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">How To Do It</h1>
+    <p class="fontColorWhite2 noMargin">
+      <ol>
+        <li>
+          Similarly to <code>View Composers</code>... in the <code>RootProjectDirectory\app\Providers\ComposerServiceProvider.php</code> -&gt; public function boot()
+          <pre>
+            <code>
+            &lt;?php
+            //...
+            class ComposerServiceProvider extends ServiceProvider
+            {
+                //...
+                public function boot()
+                {
+                  view()->creator('profile', 'App\Http\ViewCreators\ProfileCreator');
+                }
+                //...
+            }
+            </code>
+            
+            // the <strong>composer</strong> method accepts the "*" character as a wildcard, allowing you to attach a <strong>view composer</strong> to all views.
+          </pre>
+        </li>
+      </ol>
+    </p>
+  </div>
+</div>            <!-- How To Do It -->";s:5:"mtime";i:1486352552;s:6:"markup";s:17613:"<div class="row"> <!-- Laravel Feature -->
+  <div class="green4 tutorialPages">
+    <h1 class="fontColorWhite1 noMargin">Laravel Feature</h1>
+    <h3 class="fontColorGrey3 noMargin"> <span class="icon-tasks icon-2x"></span> Views -> Basic Usage </h3>
+  </div>
+</div>            <!-- Laravel Feature -->
+
+<div class="row"> <!-- What Does It Do -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">What Does It Do</h1>
+    <p class="fontColorWhite2 noMargin">
+      Contains the <code>HTML</code> served by your application and separate your <code>controller / application</code>  logic from <code>presentation</code> logic.
+      Views are stored in the <code>resources/views</code> directory.
+    </p>
+  </div>
+</div>            <!-- What Does It Do -->
+
+<div class="row"> <!-- Note -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">NOTE: <span class="icon-warning-sign icon-1x"></span></h1>
+    <div class="well">
+      None
+    </div>
+  </div>
+</div>            <!-- Note -->
+
+<div class="row"> <!-- When To Do It -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">When To Do It</h1>
+    <p class="fontColorWhite2 noMargin">
+      When you need to separate logic from presentation.  When you want to produce views.
+    </p>
+  </div>
+</div>            <!-- When To Do It -->
+
+<div class="row"> <!-- How To Do It -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">How To Do It</h1>
+    <p class="fontColorWhite2 noMargin">
+      <ol>
+        <li>
+          In <code>RootProjectDirectory/app/Http/routes.php</code>
+          <pre>
+            <code>
+              &lt;?php
+                //...
+                Route::get('greeting', 'GreetingsController@greeting');
+            </code>
+          </pre>
+        
+          In <code>RootProjectDirectory/resources/views/greeting.blade.php</code>
+          
+          <pre>
+            <code>
+              &lt;html&gt;
+                &lt;body&gt;
+                  &lt;h1&gt;
+                    Hello, &#123;&#123; $name &#125;&#125;
+                  &lt;/h1&gt;
+                &lt;/body&gt;
+              &lt;/html&gt;
+            </code>
+          </pre>
+          
+          In the <code>Controller</code>
+          <pre>
+            <code>
+              &lt;?php
+              public function greeting()
+              &#123
+                 return view('greeting', 
+                             ['name' => 'Bond']
+                            );
+              &#125
+            </code>
+            
+            Access it in the browser <strong>http://startingpoint/greeting</strong>
+          </pre>
+        </li>
+
+        <li>
+          Determining if a <code>view</code> exists. <br>
+          In any <code>controller</code> :
+          <pre>
+            <code>
+              $result = view()->exists('greeting'); // When the <strong>view helper</strong> is called without arguments, an instance of
+              <strong>Illuminate\Contracts\View\Factory</strong> is returned, giving you accecss to any of the factory's method.
+            </code>
+          </pre>
+        </li>
+      </ol>
+    </p>
+  </div>
+</div>            <!-- How To Do It -->
+
+
+
+<div class="row"> <!-- Laravel Feature -->
+  <div class="green4 tutorialPages">
+    <h1 class="fontColorWhite1 noMargin">Laravel Feature</h1>
+    <h3 class="fontColorGrey3 noMargin"> <span class="icon-tasks icon-2x"></span> Views -> Data </h3>
+  </div>
+</div>            <!-- Laravel Feature -->
+
+<div class="row"> <!-- What Does It Do -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">What Does It Do</h1>
+    <p class="fontColorWhite2 noMargin">
+      Passes data to views
+    </p>
+  </div>
+</div>            <!-- What Does It Do -->
+
+<div class="row"> <!-- Note -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">NOTE: <span class="icon-warning-sign icon-1x"></span></h1>
+    <div class="well">
+      None
+    </div>
+  </div>
+</div>            <!-- Note -->
+
+<div class="row"> <!-- When To Do It -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">When To Do It</h1>
+    <p class="fontColorWhite2 noMargin">
+      When you need to pass data from the controller to the view.
+    </p>
+  </div>
+</div>            <!-- When To Do It -->
+
+<div class="row"> <!-- How To Do It -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">How To Do It</h1>
+    <p class="fontColorWhite2 noMargin">
+      <ol>
+        <li>
+          In any <code>controller</code>:
+          <pre>
+            <code>
+              &lt;?php
+              
+              public function index()
+              {
+                return view('index', ['name' => 'Victoria']);
+                //$name = 'Victoria';
+                //return view('index', compact(['name']));
+                
+                //return view('index')->with(['name' => 'Victoria']);
+              }
+            </code>
+          </pre>
+        </li>
+
+        <li>
+          In any <code>view</code>.
+          <pre>
+            <code>
+              &lt;!-- 
+              ...
+              --&gt;
+              &lt;h1&gt; the data is &#123;&#123; $name &#125;&#125; &lt;/h1&gt;
+            </code>
+          </pre>
+        </li>
+      </ol>
+    </p>
+  </div>
+</div>            <!-- How To Do It -->
+
+
+
+<div class="row"> <!-- Laravel Feature -->
+  <div class="green4 tutorialPages">
+    <h1 class="fontColorWhite1 noMargin">Laravel Feature</h1>
+    <h3 class="fontColorGrey3 noMargin"> <span class="icon-tasks icon-2x"></span> Views -> Sharing Data With All Views </h3>
+  </div>
+</div>            <!-- Laravel Feature -->
+
+<div class="row"> <!-- What Does It Do -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">What Does It Do</h1>
+    <p class="fontColorWhite2 noMargin">
+      Shares a piece of data with all <code>views</code> that are rendered bye your application
+    </p>
+  </div>
+</div>            <!-- What Does It Do -->
+
+<div class="row"> <!-- Note -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">NOTE: <span class="icon-warning-sign icon-1x"></span></h1>
+    <div class="well">
+      None
+    </div>
+  </div>
+</div>            <!-- Note -->
+
+<div class="row"> <!-- When To Do It -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">When To Do It</h1>
+    <p class="fontColorWhite2 noMargin">
+      When you want to share data accross your application
+    </p>
+  </div>
+</div>            <!-- When To Do It -->
+
+<div class="row"> <!-- How To Do It -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">How To Do It</h1>
+    <p class="fontColorWhite2 noMargin">
+      <ol>
+        <li>
+          In a <code>Service Provide's</code> boot method:
+          <pre>
+            <code>
+              &lt;?php
+              namespace App\Providers;
+              
+              class AppServiceProvider extends ServiceProvider
+              {
+                  public function boot()
+                  {
+                    view()->share('key', 'value');
+                  }
+              }
+            </code>
+          </pre>
+        </li>
+
+        <li>
+          In any <code>view</code>.
+          <pre>
+            <code>
+              &lt;!-- 
+              ...
+              --&gt;
+              &lt;h1&gt; the shared data is &#123;&#123; $key &#125;&#125; &lt;/h1&gt;
+            </code>
+          </pre>
+        </li>
+      </ol>
+    </p>
+  </div>
+</div>            <!-- How To Do It -->
+
+
+
+<div class="row"> <!-- Laravel Feature -->
+  <div class="green4 tutorialPages">
+    <h1 class="fontColorWhite1 noMargin">Laravel Feature</h1>
+    <h3 class="fontColorGrey3 noMargin"> <span class="icon-tasks icon-2x"></span> Views -> View Composers </h3>
+  </div>
+</div>            <!-- Laravel Feature -->
+
+<div class="row"> <!-- What Does It Do -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">What Does It Do</h1>
+    <p class="fontColorWhite2 noMargin">
+      Binds data to a view each time that view is rendered.  Calls class methods when a view is rendered.
+    </p>
+  </div>
+</div>            <!-- What Does It Do -->
+
+<div class="row"> <!-- Note -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">NOTE: <span class="icon-warning-sign icon-1x"></span></h1>
+    <div class="well">
+      This is one of the excemptions of my personal documentatins, <code>I have NOT USED this, not even once</code>
+    </div>
+  </div>
+</div>            <!-- Note -->
+
+<div class="row"> <!-- When To Do It -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">When To Do It</h1>
+    <p class="fontColorWhite2 noMargin">
+      When you want to bind data to a view each time that view is rendered.
+    </p>
+  </div>
+</div>            <!-- When To Do It -->
+
+<div class="row"> <!-- How To Do It -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">How To Do It</h1>
+    <p class="fontColorWhite2 noMargin">
+    Since Laravel 5.2.29 does not include a default directory for <code>view composers</code>, lets designate the the <code>App\Http\ViewComposers</code> directory.  When creating a 
+    new <code>Service Provider</code> to contain <code>View Composer</code> registrations, you need to add the <code>Service Provider</code> to the providers array in the <code>RootProjectDirectory/config/app.php</code>
+    configuration file.
+      <ol>
+        <li>
+          Register the <code>view composer</code> within a <code>service provider</code>.  Use the <code>view helper</code> to access the underlying <code>Illuminate\Contracts\View\Factory</code> contract implementation.
+          In this example, lets put it in <code>RootProjectDirectory\App\Providers\ComposerServiceProvider.php</code>.
+          <pre>
+            <code>
+              &lt;?php
+              namespace App\Providers;
+              use Illuminate\Support\ServiceProvider;
+
+              class ComposerServiceProvider extends ServiceProvider
+              {
+                  public function boot() // register bindings in the container
+                  {
+                      //using class based composers.
+                      view()->composers('profile', 'App\Http\ViewComposers\ProfileComposer');
+                  }
+                  
+                  public function register() //register the service provider
+                  {
+                      //
+                  }
+              }
+
+              // now that the <strong>view composer</strong> has been registered, the <strong>ProfileComposer@compose</strong> method will be executed each time the <strong>profile view</strong> is being rendered.
+            </code>
+          </pre>
+        </li>
+
+        <li>
+          Define the <code>composer class</code>
+          <pre>
+            <code>
+              &lt?php
+              namespace App\Http\ViewComposers;
+              use App\Repositories\UserRepository;
+              
+              class ProfileComposer
+              {
+                  protected $users; // The user repository implementation
+                  
+                  public function __construct(UserRespository $users)
+                  {
+                    $this->users = $user; // dependencies automatically resolved by the <strong>service container</strong>
+                  }
+                  
+                  public function compose(View $view) // bind data to the view
+                  {
+                    $view->with('count', $this->users->count());
+                  }
+              }
+              
+              // just before the <strong>view</strong> is rendered, the <strong>composer</strong>'s compose method is called with the 
+              // <strong>Illuminate\View\View</strong> instance.  You may use the <strong>with</strong> method to bind data to the view.
+            </code>
+          </pre>
+        </li>
+      </ol>
+    </p>
+  </div>
+</div>            <!-- How To Do It -->
+
+
+
+<div class="row"> <!-- Laravel Feature -->
+  <div class="green4 tutorialPages">
+    <h1 class="fontColorWhite1 noMargin">Laravel Feature</h1>
+    <h3 class="fontColorGrey3 noMargin"> <span class="icon-tasks icon-2x"></span> Views -> Attaching a composer to Multiple Views </h3>
+  </div>
+</div>            <!-- Laravel Feature -->
+
+<div class="row"> <!-- What Does It Do -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">What Does It Do</h1>
+    <p class="fontColorWhite2 noMargin">
+      Attaches a view composer to multiple views at once by passing an array of views as the first argument to the <code>composer</code> method.
+    </p>
+  </div>
+</div>            <!-- What Does It Do -->
+
+<div class="row"> <!-- Note -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">NOTE: <span class="icon-warning-sign icon-1x"></span></h1>
+    <div class="well">
+      Yet another technique <code>I have NOT USED at all.</code>
+    </div>
+  </div>
+</div>            <!-- Note -->
+
+<div class="row"> <!-- When To Do It -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">When To Do It</h1>
+    <p class="fontColorWhite2 noMargin">
+      When you want to attach multiple views at once.
+    </p>
+  </div>
+</div>            <!-- When To Do It -->
+
+<div class="row"> <!-- How To Do It -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">How To Do It</h1>
+    <p class="fontColorWhite2 noMargin">
+      <ol>
+        <li>
+          In the <code>RootProjectDirectory\App\Providers\ComposerServiceProvider.php</code> -&gt; public function boot(); ...
+          <pre>
+            <code>
+            view()-&gt;composer(['profile', 'dashboard'],
+                                'App\Http\ViewComposers\MyViewComposer'
+                               );
+            </code>
+            
+            // the <strong>composer</strong> method accepts the "*" character as a wildcard, allowing you to attach a <strong>view composer</strong> to all views.
+          </pre>
+        </li>
+      </ol>
+    </p>
+  </div>
+</div>            <!-- How To Do It -->
+
+
+
+<div class="row"> <!-- Laravel Feature -->
+  <div class="green4 tutorialPages">
+    <h1 class="fontColorWhite1 noMargin">Laravel Feature</h1>
+    <h3 class="fontColorGrey3 noMargin"> <span class="icon-tasks icon-2x"></span> Views -> View Creators </h3>
+  </div>
+</div>            <!-- Laravel Feature -->
+
+<div class="row"> <!-- What Does It Do -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">What Does It Do</h1>
+    <p class="fontColorWhite2 noMargin">
+      <code>View creators</code> are very similar to <code>View Composers</code>.  However, they are fired immediately when the <code>view</code> is instantiated instead of waiting until the <code>view</code> is about to render.
+    </p>
+  </div>
+</div>            <!-- What Does It Do -->
+
+<div class="row"> <!-- Note -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">NOTE: <span class="icon-warning-sign icon-1x"></span></h1>
+    <div class="well">
+      And another technique <code>I have NOT USED at all.</code>
+    </div>
+  </div>
+</div>            <!-- Note -->
+
+<div class="row"> <!-- When To Do It -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">When To Do It</h1>
+    <p class="fontColorWhite2 noMargin">
+      When you want to bind data to a view, right after it is instantiated, and bind that data everytime that view is instantiated.
+    </p>
+  </div>
+</div>            <!-- When To Do It -->
+
+<div class="row"> <!-- How To Do It -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">How To Do It</h1>
+    <p class="fontColorWhite2 noMargin">
+      <ol>
+        <li>
+          Similarly to <code>View Composers</code>... in the <code>RootProjectDirectory\app\Providers\ComposerServiceProvider.php</code> -&gt; public function boot()
+          <pre>
+            <code>
+            &lt;?php
+            //...
+            class ComposerServiceProvider extends ServiceProvider
+            {
+                //...
+                public function boot()
+                {
+                  view()->creator('profile', 'App\Http\ViewCreators\ProfileCreator');
+                }
+                //...
+            }
+            </code>
+            
+            // the <strong>composer</strong> method accepts the "*" character as a wildcard, allowing you to attach a <strong>view composer</strong> to all views.
+          </pre>
+        </li>
+      </ol>
+    </p>
+  </div>
+</div>            <!-- How To Do It -->";s:4:"code";N;s:5:"title";s:5:"Views";s:3:"url";s:6:"/views";s:6:"layout";s:25:"laravel5-2TutorialsLayout";s:11:"description";s:5:"Views";s:9:"is_hidden";s:1:"0";}}
