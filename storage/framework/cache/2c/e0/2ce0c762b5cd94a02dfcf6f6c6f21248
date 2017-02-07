@@ -1,4 +1,4 @@
-1486436728a:1:{s:27:"laravel5.2/templatePage.htm";a:10:{s:8:"fileName";s:27:"laravel5.2/templatePage.htm";s:7:"content";s:1861:"title = "TemplatePage"
+1486440878a:1:{s:27:"laravel5.2/templatePage.htm";a:10:{s:8:"fileName";s:27:"laravel5.2/templatePage.htm";s:7:"content";s:1861:"title = "TemplatePage"
 url = "/templatepage"
 layout = "default"
 description = "Template Page which contains the following sections: \"Laravel Feature\", \"What Does It Do?\", \"When To Do It?\", \"How To Do It?\""

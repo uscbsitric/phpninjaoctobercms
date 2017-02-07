@@ -257,11 +257,30 @@ is_hidden = 0
         <li>
           <pre class="preOverride1">
             <code>
-              <strong></strong>
+              <strong>Binding Primitives</strong>: Sometimes yoiu may have a class that receives some injected classes, but also needs an injected primitive value such as an integer.
+              You may easily use contextual binding to inject any value your class may need.
             </code>
           </pre>
           <pre>
             <code>
+              &lt;?php
+
+              namespace App\Providers;
+
+              use Illuminate\Support\ServiceProvider;
+              use SomewhereElse\SomethingElse;
+
+              class SomeServiceProvider extends ServiceProvider
+              &#123;
+                protected $defer = true;
+                
+                public function register()
+                &#123;
+                  $this->app->when('App\Handlers\Commands\CreateOrderHandler')
+                            ->needs('$maxOrderCount')
+                            ->give( 10 );
+                &#125;
+              &#125;
             </code>
           </pre>
         </li>
@@ -269,11 +288,71 @@ is_hidden = 0
         <li>
           <pre class="preOverride1">
             <code>
-              <strong></strong>
+              <strong>Tagging</strong>:  Occasionally, you may need to resolve all of a certain <strong>category</strong> of binding.  For example, you are building a report aggregator
+              that receives an array of many diffrent Report interface implementations.  After registering the Report implementations, you can assign them a tag using the 
+              <strong>tag</strong> method.
             </code>
           </pre>
           <pre>
             <code>
+              &lt;?php
+
+              namespace App\Providers;
+
+              use Illuminate\Support\ServiceProvider;
+              use SomewhereElse\SomethingElse;
+
+              class SomeServiceProvider extends ServiceProvider
+              &#123;
+                protected $defer = true;
+                
+                public function register()
+                &#123;
+                  $this->app->bind('SpeedReport', function()
+                                                  {
+                                                    // do plenty of stuff here
+                                                  }
+                                  );
+                  $this->app->bind('MemoryReport', function()
+                                                   {
+                                                     // do plenty of stuff here
+                                                   }
+                                  );
+                  $this->app->tag(['SpeedReport', 'MemoryReport'], 'reports');
+                &#125;
+              &#125;
+            </code>
+          </pre>
+          
+          <pre class="preOverride1">
+            <code>
+            once the services have been tagged, you may easily resolve them all via the <strong>tagged</strong> method.
+            </code>
+          </pre>
+          
+          <pre>
+            <code>
+              &lt;?php
+
+              namespace App\Providers;
+
+              use Illuminate\Support\ServiceProvider;
+              use SomewhereElse\SomethingElse;
+
+              class SomeServiceProvider extends ServiceProvider
+              &#123;
+                protected $defer = true;
+                
+                public function register()
+                &#123;
+                  $this->app->bind('ReportAggregator', 
+                                   function($app)
+                                   {
+                                     return new ReportAggregator( $app->tagged('reports') );
+                                   }
+                                  );
+                &#125;
+              &#125;
             </code>
           </pre>
         </li>
@@ -281,11 +360,44 @@ is_hidden = 0
         <li>
           <pre class="preOverride1">
             <code>
-              <strong></strong>
+              <strong>Resolving</strong>: Ways to resolve something out of the <strong>container</strong>
+              The <strong>make</strong> method, which accepts the name of the class or interface you wish to resolve.
+              // inside a service provider...
+              $foobar = $this->app->make('Foobar');
+
+             Access the container like an array since it implements PHP's ArrayAccess interface
+             // inside a service provider...
+             $foobar = $this->app['FooBar'];
+
+              <strong>Type-hint</strong> the dependency in the constructor of a class that is resolved by the container including <strong>controllers, event listeners, queue jobs, middleware</strong> and more
+              In practice, this is how most of your objects are resolved by the container.
+
+              The container will automatically inject dependencies for the classes it resolves.  For example, you may type-hint a repository defined by your application 
+              in a controller's constructor.  The repository will automatically be resolved and injected into the class.
             </code>
           </pre>
           <pre>
             <code>
+              &lt;?php
+
+              namespace App\Http\Controllers;
+
+              use App\Users\Repository as UserRepository;
+
+              class UserController extends Controller
+              &#123;
+                protected $users;
+
+                public function __construct(UserRepository $users)
+                &#123;
+                  $this->$users = $users;
+                &#125;
+
+                public function show($id)
+                &#123;
+                  // some code here...;
+                &#125;
+              &#125;
             </code>
           </pre>
         </li>
