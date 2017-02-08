@@ -405,11 +405,41 @@ is_hidden = 0
         <li>
           <pre class="preOverride1">
             <code>
-              <strong></strong>
+              <strong>Container Events</strong>: The <strong>service container</strong> fires an event each time it resolves an object.  You may listen to this even using <strong>resolving</strong> method.
             </code>
           </pre>
           <pre>
             <code>
+              &lt;?php
+
+              namespace App\Providers;
+
+              use Illuminate\Support\ServiceProvider;
+              use SomewhereElse\SomethingElse;
+
+              class SomeServiceProvider extends ServiceProvider
+              &#123;
+                protected $defer = true;
+                
+                public function register()
+                &#123;
+                  $this->app->resolving( function()
+                                         {
+                                           // called when the container resolves object of any type...
+                                         }
+                                       );
+
+                  $this->app->resolving( FooBar::class,
+                                         function( FooBar $fooBar, $app )
+                                         {
+                                           // called when container resolves objects of type "FooBar"...
+                                         }
+                                       );
+
+                  //As you can see, the object being resolved will be passed to the callback, allowing you to set any additional properties on the object before
+                  //it is given to its consumer.
+                &#125;
+              &#125;
             </code>
           </pre>
         </li>

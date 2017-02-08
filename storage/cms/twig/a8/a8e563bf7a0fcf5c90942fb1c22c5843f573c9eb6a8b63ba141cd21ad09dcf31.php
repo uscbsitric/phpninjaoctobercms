@@ -315,7 +315,10 @@ class __TwigTemplate_6d365c650291313f739fd2d224f46922334c95079c02abcd7276f6941b7
         echo "\">Repository Pattern</a>
 \t\t\t                </li>
 \t\t\t                <li>
-\t\t\t                  <a href=\"\">Registry Pattern</a>
+\t\t\t                  <a href=\"";
+        // line 237
+        echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("laravel5.2/registryPattern");
+        echo "\">Registry Pattern</a>
 \t\t\t                </li>
 \t\t\t                <li>
 \t\t\t                  <a href=\"\">Design Pattern3</a>
@@ -449,7 +452,7 @@ class __TwigTemplate_6d365c650291313f739fd2d224f46922334c95079c02abcd7276f6941b7
 
     public function getDebugInfo()
     {
-        return array (  435 => 317,  431 => 316,  424 => 315,  420 => 314,  416 => 313,  412 => 312,  407 => 309,  403 => 308,  394 => 301,  392 => 300,  373 => 284,  367 => 281,  361 => 278,  314 => 234,  289 => 212,  267 => 193,  261 => 190,  242 => 174,  172 => 107,  143 => 81,  137 => 78,  125 => 69,  119 => 66,  100 => 50,  94 => 47,  81 => 36,  77 => 35,  56 => 16,  53 => 15,  48 => 13,  44 => 12,  40 => 11,  33 => 7,  29 => 6,  25 => 5,  19 => 1,);
+        return array (  438 => 317,  434 => 316,  427 => 315,  423 => 314,  419 => 313,  415 => 312,  410 => 309,  406 => 308,  397 => 301,  395 => 300,  376 => 284,  370 => 281,  364 => 278,  320 => 237,  314 => 234,  289 => 212,  267 => 193,  261 => 190,  242 => 174,  172 => 107,  143 => 81,  137 => 78,  125 => 69,  119 => 66,  100 => 50,  94 => 47,  81 => 36,  77 => 35,  56 => 16,  53 => 15,  48 => 13,  44 => 12,  40 => 11,  33 => 7,  29 => 6,  25 => 5,  19 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -698,7 +701,7 @@ class __TwigTemplate_6d365c650291313f739fd2d224f46922334c95079c02abcd7276f6941b7
 \t\t\t                  <a href=\"{{'laravel5.2/repositoryPattern'|page}}\">Repository Pattern</a>
 \t\t\t                </li>
 \t\t\t                <li>
-\t\t\t                  <a href=\"\">Registry Pattern</a>
+\t\t\t                  <a href=\"{{'laravel5.2/registryPattern'|page}}\">Registry Pattern</a>
 \t\t\t                </li>
 \t\t\t                <li>
 \t\t\t                  <a href=\"\">Design Pattern3</a>

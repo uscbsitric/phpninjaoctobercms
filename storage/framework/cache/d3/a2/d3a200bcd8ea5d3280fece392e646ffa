@@ -1,4 +1,4 @@
-1486440969a:1:{s:31:"laravel5.2/ServiceContainer.htm";a:10:{s:8:"fileName";s:31:"laravel5.2/ServiceContainer.htm";s:7:"content";s:15934:"title = "Service Container"
+1486540303a:1:{s:31:"laravel5.2/ServiceContainer.htm";a:10:{s:8:"fileName";s:31:"laravel5.2/ServiceContainer.htm";s:7:"content";s:17606:"title = "Service Container"
 url = "/service-container"
 layout = "laravel5-2TutorialsLayout"
 description = "Service Container"
@@ -365,6 +365,10 @@ is_hidden = 0
               // inside a service provider...
               $foobar = $this->app->make('Foobar');
 
+             Access the container like an array since it implements PHP's ArrayAccess interface
+             // inside a service provider...
+             $foobar = $this->app['FooBar'];
+
               <strong>Type-hint</strong> the dependency in the constructor of a class that is resolved by the container including <strong>controllers, event listeners, queue jobs, middleware</strong> and more
               In practice, this is how most of your objects are resolved by the container.
 
@@ -401,18 +405,48 @@ is_hidden = 0
         <li>
           <pre class="preOverride1">
             <code>
-              <strong></strong>
+              <strong>Container Events</strong>: The <strong>service container</strong> fires an event each time it resolves an object.  You may listen to this even using <strong>resolving</strong> method.
             </code>
           </pre>
           <pre>
             <code>
+              &lt;?php
+
+              namespace App\Providers;
+
+              use Illuminate\Support\ServiceProvider;
+              use SomewhereElse\SomethingElse;
+
+              class SomeServiceProvider extends ServiceProvider
+              &#123;
+                protected $defer = true;
+                
+                public function register()
+                &#123;
+                  $this->app->resolving( function()
+                                         {
+                                           // called when the container resolves object of any type...
+                                         }
+                                       );
+
+                  $this->app->resolving( FooBar::class,
+                                         function( FooBar $fooBar, $app )
+                                         {
+                                           // called when container resolves objects of type "FooBar"...
+                                         }
+                                       );
+
+                  //As you can see, the object being resolved will be passed to the callback, allowing you to set any additional properties on the object before
+                  //it is given to its consumer.
+                &#125;
+              &#125;
             </code>
           </pre>
         </li>
       </ul>
     </p>
   </div>
-</div>            <!-- How To Do It -->";s:5:"mtime";i:1486440367;s:6:"markup";s:15791:"<div class="row"> <!-- Laravel Feature -->
+</div>            <!-- How To Do It -->";s:5:"mtime";i:1486517756;s:6:"markup";s:17463:"<div class="row"> <!-- Laravel Feature -->
   <div class="green4 tutorialPages">
     <h1 class="fontColorWhite1 noMargin">Laravel Feature</h1>
     <h3 class="fontColorGrey3 noMargin"> <span class="icon-tasks icon-2x"></span> Service Container </h3>
@@ -773,6 +807,10 @@ is_hidden = 0
               // inside a service provider...
               $foobar = $this->app->make('Foobar');
 
+             Access the container like an array since it implements PHP's ArrayAccess interface
+             // inside a service provider...
+             $foobar = $this->app['FooBar'];
+
               <strong>Type-hint</strong> the dependency in the constructor of a class that is resolved by the container including <strong>controllers, event listeners, queue jobs, middleware</strong> and more
               In practice, this is how most of your objects are resolved by the container.
 
@@ -809,11 +847,41 @@ is_hidden = 0
         <li>
           <pre class="preOverride1">
             <code>
-              <strong></strong>
+              <strong>Container Events</strong>: The <strong>service container</strong> fires an event each time it resolves an object.  You may listen to this even using <strong>resolving</strong> method.
             </code>
           </pre>
           <pre>
             <code>
+              &lt;?php
+
+              namespace App\Providers;
+
+              use Illuminate\Support\ServiceProvider;
+              use SomewhereElse\SomethingElse;
+
+              class SomeServiceProvider extends ServiceProvider
+              &#123;
+                protected $defer = true;
+                
+                public function register()
+                &#123;
+                  $this->app->resolving( function()
+                                         {
+                                           // called when the container resolves object of any type...
+                                         }
+                                       );
+
+                  $this->app->resolving( FooBar::class,
+                                         function( FooBar $fooBar, $app )
+                                         {
+                                           // called when container resolves objects of type "FooBar"...
+                                         }
+                                       );
+
+                  //As you can see, the object being resolved will be passed to the callback, allowing you to set any additional properties on the object before
+                  //it is given to its consumer.
+                &#125;
+              &#125;
             </code>
           </pre>
         </li>

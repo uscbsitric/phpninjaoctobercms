@@ -377,6 +377,10 @@ class __TwigTemplate_6d20bfb6c02731e23746c36ca8ed725e7f32e168fd5b30e503483ffc8f5
               // inside a service provider...
               \$foobar = \$this->app->make('Foobar');
 
+             Access the container like an array since it implements PHP's ArrayAccess interface
+             // inside a service provider...
+             \$foobar = \$this->app['FooBar'];
+
               <strong>Type-hint</strong> the dependency in the constructor of a class that is resolved by the container including <strong>controllers, event listeners, queue jobs, middleware</strong> and more
               In practice, this is how most of your objects are resolved by the container.
 
@@ -413,11 +417,41 @@ class __TwigTemplate_6d20bfb6c02731e23746c36ca8ed725e7f32e168fd5b30e503483ffc8f5
         <li>
           <pre class=\"preOverride1\">
             <code>
-              <strong></strong>
+              <strong>Container Events</strong>: The <strong>service container</strong> fires an event each time it resolves an object.  You may listen to this even using <strong>resolving</strong> method.
             </code>
           </pre>
           <pre>
             <code>
+              &lt;?php
+
+              namespace App\\Providers;
+
+              use Illuminate\\Support\\ServiceProvider;
+              use SomewhereElse\\SomethingElse;
+
+              class SomeServiceProvider extends ServiceProvider
+              &#123;
+                protected \$defer = true;
+                
+                public function register()
+                &#123;
+                  \$this->app->resolving( function()
+                                         {
+                                           // called when the container resolves object of any type...
+                                         }
+                                       );
+
+                  \$this->app->resolving( FooBar::class,
+                                         function( FooBar \$fooBar, \$app )
+                                         {
+                                           // called when container resolves objects of type \"FooBar\"...
+                                         }
+                                       );
+
+                  //As you can see, the object being resolved will be passed to the callback, allowing you to set any additional properties on the object before
+                  //it is given to its consumer.
+                &#125;
+              &#125;
             </code>
           </pre>
         </li>
@@ -808,6 +842,10 @@ class __TwigTemplate_6d20bfb6c02731e23746c36ca8ed725e7f32e168fd5b30e503483ffc8f5
               // inside a service provider...
               \$foobar = \$this->app->make('Foobar');
 
+             Access the container like an array since it implements PHP's ArrayAccess interface
+             // inside a service provider...
+             \$foobar = \$this->app['FooBar'];
+
               <strong>Type-hint</strong> the dependency in the constructor of a class that is resolved by the container including <strong>controllers, event listeners, queue jobs, middleware</strong> and more
               In practice, this is how most of your objects are resolved by the container.
 
@@ -844,11 +882,41 @@ class __TwigTemplate_6d20bfb6c02731e23746c36ca8ed725e7f32e168fd5b30e503483ffc8f5
         <li>
           <pre class=\"preOverride1\">
             <code>
-              <strong></strong>
+              <strong>Container Events</strong>: The <strong>service container</strong> fires an event each time it resolves an object.  You may listen to this even using <strong>resolving</strong> method.
             </code>
           </pre>
           <pre>
             <code>
+              &lt;?php
+
+              namespace App\\Providers;
+
+              use Illuminate\\Support\\ServiceProvider;
+              use SomewhereElse\\SomethingElse;
+
+              class SomeServiceProvider extends ServiceProvider
+              &#123;
+                protected \$defer = true;
+                
+                public function register()
+                &#123;
+                  \$this->app->resolving( function()
+                                         {
+                                           // called when the container resolves object of any type...
+                                         }
+                                       );
+
+                  \$this->app->resolving( FooBar::class,
+                                         function( FooBar \$fooBar, \$app )
+                                         {
+                                           // called when container resolves objects of type \"FooBar\"...
+                                         }
+                                       );
+
+                  //As you can see, the object being resolved will be passed to the callback, allowing you to set any additional properties on the object before
+                  //it is given to its consumer.
+                &#125;
+              &#125;
             </code>
           </pre>
         </li>
