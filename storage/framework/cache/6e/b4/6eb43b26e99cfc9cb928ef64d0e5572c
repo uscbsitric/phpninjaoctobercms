@@ -1,4 +1,4 @@
-1486540303a:1:{s:44:"laravel5.2/namingResourceRouteParameters.htm";a:10:{s:8:"fileName";s:44:"laravel5.2/namingResourceRouteParameters.htm";s:7:"content";s:3935:"title = "Naming Resource Route Parameters"
+1486707849a:1:{s:44:"laravel5.2/namingResourceRouteParameters.htm";a:10:{s:8:"fileName";s:44:"laravel5.2/namingResourceRouteParameters.htm";s:7:"content";s:3935:"title = "Naming Resource Route Parameters"
 url = "/naming-resource-route-parameters"
 layout = "laravel5-2TutorialsLayout"
 description = "Naming Resource Route Parameters"
@@ -78,7 +78,7 @@ is_hidden = 0
       </ol>
     </p>
   </div>
-</div>            <!-- How To Do It -->";s:5:"mtime";i:1486163819;s:6:"markup";s:3747:"<div class="row"> <!-- Laravel Feature -->
+</div>            <!-- How To Do It -->";s:5:"mtime";i:1486540219;s:6:"markup";s:3747:"<div class="row"> <!-- Laravel Feature -->
   <div class="green4 tutorialPages">
     <h1 class="fontColorWhite1 noMargin">Laravel Feature</h1>
     <h3 class="fontColorGrey3 noMargin"> <span class="icon-tasks icon-2x"></span> Naming Resource Route Parameters </h3>

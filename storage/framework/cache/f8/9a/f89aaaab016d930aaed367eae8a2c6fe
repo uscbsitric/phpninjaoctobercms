@@ -1,4 +1,4 @@
-1486540303a:1:{s:30:"laravel5.2/serviceProvider.htm";a:9:{s:8:"fileName";s:30:"laravel5.2/serviceProvider.htm";s:7:"content";s:16384:"title = "Service Provider"
+1486707850a:1:{s:30:"laravel5.2/serviceProvider.htm";a:9:{s:8:"fileName";s:30:"laravel5.2/serviceProvider.htm";s:7:"content";s:16384:"title = "Service Provider"
 url = "/service-provider"
 layout = "laravel5-2TutorialsLayout"
 is_hidden = 0
@@ -339,7 +339,7 @@ is_hidden = 0
       </ol>
     </p>
   </div>
-</div>            <!-- How To Do It -->";s:5:"mtime";i:1486377494;s:6:"markup";s:16277:"<div class="row"> <!-- Laravel Feature -->
+</div>            <!-- How To Do It -->";s:5:"mtime";i:1486540219;s:6:"markup";s:16277:"<div class="row"> <!-- Laravel Feature -->
   <div class="green4 tutorialPages">
     <h1 class="fontColorWhite1 noMargin">Laravel Feature</h1>
     <h3 class="fontColorGrey3 noMargin"> <span class="icon-tasks icon-2x"></span> Service Provider </h3>

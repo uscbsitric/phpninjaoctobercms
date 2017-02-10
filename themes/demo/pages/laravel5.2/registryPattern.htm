@@ -43,27 +43,214 @@ is_hidden = 0
     <p class="fontColorWhite2 noMargin">
       <ol>
         <li>
-          Make a base interface.
+          Make a base interface.  In <code>RootProjectDirectory\App\MyInterfaces</code>
           
           <pre>
             <code>
             &lt;?php
-            
-            namespace App
+            namespace App\MyInterfaces;
+
+            interface PaymentGateway
+            &#123;
+	          function pay();
+            &#125;
             </code>
           </pre>
         </li>
 
         <li>
-          Step 2:
+          Make 2 <code>concrete classes</code>
+
+          <pre>
+            <code>
+                &lt;?php
+                namespace App\MyConcreteClasses;
+
+                use App\MyInterfaces\PaymentGateway;
+
+                class PaypalPaymentGateway implements PaymentGateway
+                &#123;
+	              protected $apiKey;
+	
+	              public function __construct($apiKey)
+	              &#123;
+		            $this->apiKey = $apiKey;
+	              &#125;
+	
+	              public function pay()
+	              &#123;
+		            echo 'this is the pay function of PayPalPaymentGateway';
+		            exit();
+	              &#125;
+                &#125;
+                
+                ===============================================================
+                
+                &lt;?php
+                namespace App\MyConcreteClasses;
+
+                use App\MyInterfaces\PaymentGateway;
+
+                class SomeOtherPaymentGateway implements PaymentGateway
+                &#123;
+	              protected $apiKey;
+	
+	              public function __construct($apiKey)
+	              &#123;
+		            $this->apiKey = $apiKey;
+	              &#125;
+
+	              public function pay()
+	              &#123;
+		            echo 'this is the pay function of SomeOtherPaymentGateway';
+		            exit();
+	              &#125;
+                &#125;
+            </code>
+          </pre>
         </li>
 
         <li>
-          Step 3:
+          Make a <code>Registry Class</code>
+          
+          <pre>
+            <code>
+              &lt;?php
+              namespace App\MyRegistries;
+
+              use App\MyInterfaces\PaymentGateway;
+
+              class PaymentGatewayRegistry
+              &#123;
+	            protected $gateways = [];
+
+	            function register($name, PaymentGateway $instance)
+	            &#123;
+		          $this->gateways[$name] = $instance;
+
+		          return $this;
+	            &#125;
+	
+	            function get($name)
+	            &#123;
+		          if( array_key_exists($name, $this->gateways) )
+		          &#123;
+			        return $this->gateways[$name];
+		          &#125;
+		          else
+		          &#123;
+			        throw new Exception('Invalid Gateway');
+		          &#125;
+
+		          return $this->gateways[$name];
+	           &#125;
+	
+	           function getAll()
+	           &#123;
+		         return $this->gateways;
+	           &#125;
+              &#125;
+            </code>
+          </pre>
         </li>
 
         <li>
-		  Step 4:
+		  Make a <code>Service Provider</code>
+		  
+		  <pre>
+		    <code>
+              &lt;?php
+              namespace App\Providers;
+
+              use Illuminate\Support\ServiceProvider;
+              use App\MyRegistries\PaymentGatewayRegistry;
+              use App\MyConcreteClasses\PaypalPaymentGateway;
+              use App\MyConcreteClasses\SomeOtherPaymentGateway;
+
+              class PaymentServiceProvider extends ServiceProvider
+              &#123;
+	            function register()  // binding location
+	            &#123;
+		          $this->app->singleton( PaymentGatewayRegistry::class );
+	            &#125;
+
+	            function boot()  // all other service providers are available
+	            &#123;
+		          $this->app->make( PaymentGatewayRegistry::class )
+		                    ->register('PayPal', new PaypalPaymentGateway('theAPIKey12341'))
+		                    ->register('SomeOther', new SomeOtherPaymentGateway('theAPIKey12342'));
+	            &#125;
+              &#125;
+		    </code>
+		  </pre>
+        </li>
+        
+        <li>
+		  In the <code>Controller</code>...
+		  
+		  <pre>
+		    <code>
+		      &lt;?php
+
+                namespace App\Http\Controllers;
+
+                use App\Http\Requests;
+                use Illuminate\Http\Request;
+                use App\Http\Requests\TaskRequest;
+                use App\Http\Controllers\Controller;
+                use App\Repositories\TaskRepository;
+                use App\MyRegistries\PaymentGatewayRegistry;
+
+                class FrederickController extends Controller
+                &#123;
+	              protected $gatewayRegistry;
+
+	              public function __construct( PaymentGatewayRegistry $registry )
+	              &#123;
+		            $this->gatewayRegistry = $registry;
+	              &#125;
+	
+	              function pay(Request $request)
+	              &#123;
+		            $input = $request['input'];
+		            $this->gatewayRegistry->get( $input )->pay();
+
+		            return 'this is the pay function of the FrederickController';
+	              &#125;
+              &#125;
+		    </code>
+		  </pre>
+        </li>
+        
+        <li>
+		  Register the Service Provider in RootProjectDirectory\config\app.php
+		  
+		  
+		  <pre>
+		    <code>
+		      /*
+               * Application Service Providers...
+               */
+               App\Providers\AppServiceProvider::class,
+               App\Providers\AuthServiceProvider::class,
+               App\Providers\EventServiceProvider::class,
+               App\Providers\RouteServiceProvider::class,
+    	       App\Providers\RocketShipServiceProvider::class,
+    	       App\Providers\PaymentServiceProvider::class,  // &#123;--- the PaymentServiceProvider
+		    </code>
+		  </pre>
+        </li>
+
+        <li>
+		  Access and check it in the browser, the is the user input based, runtime resolution
+		  
+		  <pre>
+		    <code>
+		      http://startingpoint/registryPatternTest?input=SomeOther
+		      or
+		      http://startingpoint/registryPatternTest?input=PayPal
+		    </code>
+		  </pre>
         </li>
       </ol>
     </p>

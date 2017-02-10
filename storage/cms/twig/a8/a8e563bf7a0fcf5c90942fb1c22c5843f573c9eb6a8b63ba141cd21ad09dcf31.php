@@ -101,10 +101,16 @@ class __TwigTemplate_6d365c650291313f739fd2d224f46922334c95079c02abcd7276f6941b7
         echo "\">Service Provider</a>
 \t\t\t                </li>
 \t\t\t                <li>
-\t\t\t                  <a href=\"\">Facades</a>
+\t\t\t                  <a href=\"";
+        // line 53
+        echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("laravel5.2/facades");
+        echo "\">Facades</a>
 \t\t\t                </li>
 \t\t\t                <li>
-\t\t\t                  <a href=\"\">Contracts</a>
+\t\t\t                  <a href=\"";
+        // line 56
+        echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("laravel5.2/contracts");
+        echo "\">Contracts</a>
 \t\t\t                </li>
 \t\t\t              </ul>
 \t\t\t            </li>
@@ -173,9 +179,6 @@ class __TwigTemplate_6d365c650291313f739fd2d224f46922334c95079c02abcd7276f6941b7
         echo "\">Authorization</a>
 \t\t\t                </li>
 \t\t\t                <li>
-\t\t\t                  <a href=\"\">JWT Based Authentication</a>
-\t\t\t                </li>
-\t\t\t                <li>
 \t\t\t                  <a href=\"\">Artisan Console</a>
 \t\t\t                </li>
 \t\t\t                <li>
@@ -238,7 +241,7 @@ class __TwigTemplate_6d365c650291313f739fd2d224f46922334c95079c02abcd7276f6941b7
 \t\t\t                </li>
 \t\t\t                <li>
 \t\t\t                  <a href=\"";
-        // line 174
+        // line 171
         echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("laravel5.2/databaseMigration");
         echo "\">Migrations</a>
 \t\t\t                </li>
@@ -257,13 +260,13 @@ class __TwigTemplate_6d365c650291313f739fd2d224f46922334c95079c02abcd7276f6941b7
 \t\t\t                </li>
 \t\t\t                <li>
 \t\t\t                  <a href=\"";
-        // line 190
+        // line 187
         echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("laravel5.2/eloquentORMModels");
         echo "\">Eloquent ORM Models</a>
 \t\t\t                </li>
 \t\t\t                <li>
 \t\t\t                  <a href=\"";
-        // line 193
+        // line 190
         echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("laravel5.2/eloquentRelationships");
         echo "\">Releationships</a>
 \t\t\t                </li>
@@ -285,7 +288,7 @@ class __TwigTemplate_6d365c650291313f739fd2d224f46922334c95079c02abcd7276f6941b7
 \t\t\t              <ul>
 \t\t\t                <li>
 \t\t\t                  <a href=\"";
-        // line 212
+        // line 209
         echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("laravel5.2/routeCaching");
         echo "\">Route Caching</a>
 \t\t\t                </li>
@@ -310,13 +313,13 @@ class __TwigTemplate_6d365c650291313f739fd2d224f46922334c95079c02abcd7276f6941b7
 \t\t\t              <ul>
 \t\t\t                <li>
 \t\t\t                  <a href=\"";
-        // line 234
+        // line 231
         echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("laravel5.2/repositoryPattern");
         echo "\">Repository Pattern</a>
 \t\t\t                </li>
 \t\t\t                <li>
 \t\t\t                  <a href=\"";
-        // line 237
+        // line 234
         echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("laravel5.2/registryPattern");
         echo "\">Registry Pattern</a>
 \t\t\t                </li>
@@ -337,7 +340,10 @@ class __TwigTemplate_6d365c650291313f739fd2d224f46922334c95079c02abcd7276f6941b7
 \t\t\t              <a>Approach</a>
 \t\t\t              <ul>
 \t\t\t                <li>
-\t\t\t                  <a href=\"\">Jason Web Token(JWT) based Authentication</a>
+\t\t\t                  <a href=\"";
+        // line 253
+        echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("laravel5.2/jwt");
+        echo "\">Jason Web Token(JWT) based Authentication</a>
 \t\t\t                </li>
 \t\t\t                <li>
 \t\t\t                  <a href=\"\">Role Based Permission</a>
@@ -360,19 +366,19 @@ class __TwigTemplate_6d365c650291313f739fd2d224f46922334c95079c02abcd7276f6941b7
 \t\t\t              <ul>
 \t\t\t                <li>
 \t\t\t                  <a href=\"";
-        // line 278
+        // line 275
         echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("laravel5.2/routeModelBinding");
         echo "\">Route Model Binding</a>
 \t\t\t                </li>
 \t\t\t                <li>
 \t\t\t                  <a href=\"";
-        // line 281
+        // line 278
         echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("laravel5.2/namingResourceRouteParameters");
         echo "\">Naming Resource Route Parameters</a>
 \t\t\t                </li>
 \t\t\t                <li>
 \t\t\t                  <a href=\"";
-        // line 284
+        // line 281
         echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("laravel5.2/namingResourceRoutes");
         echo "\">Naming Resource Routes</a>
 \t\t\t                </li>
@@ -391,9 +397,9 @@ class __TwigTemplate_6d365c650291313f739fd2d224f46922334c95079c02abcd7276f6941b7
 \t\t        <!-- Content -->
 \t\t        <div class=\"col-md-10 main\">
 \t\t            ";
-        // line 300
+        // line 297
         echo $this->env->getExtension('CMS')->pageFunction();
-        // line 301
+        // line 298
         echo "\t\t        </div>
 \t\t        <!-- Content -->
 \t\t    </div>             <!-- Start of Row1 -->
@@ -402,39 +408,39 @@ class __TwigTemplate_6d365c650291313f739fd2d224f46922334c95079c02abcd7276f6941b7
         <!-- Footer -->
         <footer id=\"layout-footer\">
             ";
-        // line 308
+        // line 305
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('CMS')->partialFunction("site/ninjaFooter"        , $context['__cms_partial_params']        );
         unset($context['__cms_partial_params']);
-        // line 309
+        // line 306
         echo "        </footer>
 
         <!-- Scripts -->
         <script src=\"";
-        // line 312
+        // line 309
         echo $this->env->getExtension('Cms\Twig\Extension')->themeFilter("assets/vendor/jquery.js");
         echo "\"></script>
         <script src=\"";
-        // line 313
+        // line 310
         echo $this->env->getExtension('Cms\Twig\Extension')->themeFilter("assets/vendor/bootstrap.js");
         echo "\"></script>
         <script src=\"";
-        // line 314
+        // line 311
         echo $this->env->getExtension('Cms\Twig\Extension')->themeFilter("assets/javascript/app.js");
         echo "\"></script>
         ";
-        // line 315
+        // line 312
         echo '<script src="'. Request::getBasePath()
                 .'/modules/system/assets/js/framework.js"></script>'.PHP_EOL;
         echo '<script src="'. Request::getBasePath()
                     .'/modules/system/assets/js/framework.extras.js"></script>'.PHP_EOL;
         echo '<link rel="stylesheet" property="stylesheet" href="'. Request::getBasePath()
                     .'/modules/system/assets/css/framework.extras.css">'.PHP_EOL;
-        // line 316
+        // line 313
         echo "        ";
         echo $this->env->getExtension('CMS')->assetsFunction('js');
         echo $this->env->getExtension('CMS')->displayBlock('scripts');
-        // line 317
+        // line 314
         echo "
     </body>
 </html>";
@@ -452,7 +458,7 @@ class __TwigTemplate_6d365c650291313f739fd2d224f46922334c95079c02abcd7276f6941b7
 
     public function getDebugInfo()
     {
-        return array (  438 => 317,  434 => 316,  427 => 315,  423 => 314,  419 => 313,  415 => 312,  410 => 309,  406 => 308,  397 => 301,  395 => 300,  376 => 284,  370 => 281,  364 => 278,  320 => 237,  314 => 234,  289 => 212,  267 => 193,  261 => 190,  242 => 174,  172 => 107,  143 => 81,  137 => 78,  125 => 69,  119 => 66,  100 => 50,  94 => 47,  81 => 36,  77 => 35,  56 => 16,  53 => 15,  48 => 13,  44 => 12,  40 => 11,  33 => 7,  29 => 6,  25 => 5,  19 => 1,);
+        return array (  444 => 314,  440 => 313,  433 => 312,  429 => 311,  425 => 310,  421 => 309,  416 => 306,  412 => 305,  403 => 298,  401 => 297,  382 => 281,  376 => 278,  370 => 275,  345 => 253,  323 => 234,  317 => 231,  292 => 209,  270 => 190,  264 => 187,  245 => 171,  178 => 107,  149 => 81,  143 => 78,  131 => 69,  125 => 66,  112 => 56,  106 => 53,  100 => 50,  94 => 47,  81 => 36,  77 => 35,  56 => 16,  53 => 15,  48 => 13,  44 => 12,  40 => 11,  33 => 7,  29 => 6,  25 => 5,  19 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -517,10 +523,10 @@ class __TwigTemplate_6d365c650291313f739fd2d224f46922334c95079c02abcd7276f6941b7
 \t\t\t                  <a href=\"{{'laravel5.2/serviceProvider'|page}}\">Service Provider</a>
 \t\t\t                </li>
 \t\t\t                <li>
-\t\t\t                  <a href=\"\">Facades</a>
+\t\t\t                  <a href=\"{{'laravel5.2/facades'|page}}\">Facades</a>
 \t\t\t                </li>
 \t\t\t                <li>
-\t\t\t                  <a href=\"\">Contracts</a>
+\t\t\t                  <a href=\"{{'laravel5.2/contracts'|page}}\">Contracts</a>
 \t\t\t                </li>
 \t\t\t              </ul>
 \t\t\t            </li>
@@ -572,9 +578,6 @@ class __TwigTemplate_6d365c650291313f739fd2d224f46922334c95079c02abcd7276f6941b7
 \t\t\t              <ul>
 \t\t\t                <li>
 \t\t\t                  <a href=\"{{'laravel5.2/authorization'|page}}\">Authorization</a>
-\t\t\t                </li>
-\t\t\t                <li>
-\t\t\t                  <a href=\"\">JWT Based Authentication</a>
 \t\t\t                </li>
 \t\t\t                <li>
 \t\t\t                  <a href=\"\">Artisan Console</a>
@@ -720,7 +723,7 @@ class __TwigTemplate_6d365c650291313f739fd2d224f46922334c95079c02abcd7276f6941b7
 \t\t\t              <a>Approach</a>
 \t\t\t              <ul>
 \t\t\t                <li>
-\t\t\t                  <a href=\"\">Jason Web Token(JWT) based Authentication</a>
+\t\t\t                  <a href=\"{{'laravel5.2/jwt'|page}}\">Jason Web Token(JWT) based Authentication</a>
 \t\t\t                </li>
 \t\t\t                <li>
 \t\t\t                  <a href=\"\">Role Based Permission</a>

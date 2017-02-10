@@ -1,4 +1,4 @@
-1486540303a:1:{s:32:"laravel5.2/eloquentORMModels.htm";a:10:{s:8:"fileName";s:32:"laravel5.2/eloquentORMModels.htm";s:7:"content";s:2761:"title = "Eloquent ORM Models"
+1486707849a:1:{s:32:"laravel5.2/eloquentORMModels.htm";a:10:{s:8:"fileName";s:32:"laravel5.2/eloquentORMModels.htm";s:7:"content";s:2761:"title = "Eloquent ORM Models"
 url = "/eloquent-orm-models"
 layout = "laravel5-2TutorialsLayout"
 description = "The Eloquent ORM Models Notes"
@@ -75,7 +75,7 @@ is_hidden = 0
       </ol>
     </p>
   </div>
-</div>            <!-- How To Do It -->";s:5:"mtime";i:1486163874;s:6:"markup";s:2602:"<div class="row"> <!-- Laravel Feature -->
+</div>            <!-- How To Do It -->";s:5:"mtime";i:1486540219;s:6:"markup";s:2602:"<div class="row"> <!-- Laravel Feature -->
   <div class="green4 tutorialPages">
     <h1 class="fontColorWhite1 noMargin">Laravel Feature</h1>
     <h3 class="fontColorGrey3 noMargin"> <span class="icon-tasks icon-2x"></span> Eloquent ORM Models </h3>

@@ -1,4 +1,4 @@
-1486540303a:1:{s:32:"laravel5.2/databaseMigration.htm";a:10:{s:8:"fileName";s:32:"laravel5.2/databaseMigration.htm";s:7:"content";s:5371:"title = "Database Migration"
+1486707849a:1:{s:32:"laravel5.2/databaseMigration.htm";a:10:{s:8:"fileName";s:32:"laravel5.2/databaseMigration.htm";s:7:"content";s:5371:"title = "Database Migration"
 url = "/database-migration"
 layout = "laravel5-2TutorialsLayout"
 description = "Laravel Feature: Database Migration"
@@ -119,7 +119,7 @@ is_hidden = 0
       </ol>
     </p>
   </div>
-</div>            <!-- How To Do It -->";s:5:"mtime";i:1486090483;s:6:"markup";s:5208:"<div class="row"> <!-- Laravel Feature -->
+</div>            <!-- How To Do It -->";s:5:"mtime";i:1486540219;s:6:"markup";s:5208:"<div class="row"> <!-- Laravel Feature -->
   <div class="green4 tutorialPages">
     <h1 class="fontColorWhite1 noMargin">Laravel Feature</h1>
     <h3 class="fontColorGrey3 noMargin"> <span class="icon-tasks icon-2x"></span> Database Migrations</h3>
