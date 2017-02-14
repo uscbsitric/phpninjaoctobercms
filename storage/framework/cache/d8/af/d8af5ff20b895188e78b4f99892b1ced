@@ -1,4 +1,4 @@
-1486707849a:1:{s:22:"laravel5.2/facades.htm";a:10:{s:8:"fileName";s:22:"laravel5.2/facades.htm";s:7:"content";s:3216:"title = "Facades"
+1486875036a:1:{s:22:"laravel5.2/facades.htm";a:10:{s:8:"fileName";s:22:"laravel5.2/facades.htm";s:7:"content";s:3216:"title = "Facades"
 url = "/facades"
 layout = "laravel5-2TutorialsLayout"
 description = "Facades"
@@ -77,7 +77,7 @@ is_hidden = 0
       </ol>
     </p>
   </div>
-</div>            <!-- How To Do It -->";s:5:"mtime";i:1486624238;s:6:"markup";s:3103:"<div class="row"> <!-- Laravel Feature -->
+</div>            <!-- How To Do It -->";s:5:"mtime";i:1486709917;s:6:"markup";s:3103:"<div class="row"> <!-- Laravel Feature -->
   <div class="green4 tutorialPages">
     <h1 class="fontColorWhite1 noMargin">Laravel Feature</h1>
     <h3 class="fontColorGrey3 noMargin"> <span class="icon-tasks icon-2x"></span> Facades </h3>

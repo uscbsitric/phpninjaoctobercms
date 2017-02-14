@@ -1,4 +1,4 @@
-1486707850a:1:{s:29:"laravel5-2TutorialsLayout.htm";a:6:{s:8:"fileName";s:29:"laravel5-2TutorialsLayout.htm";s:7:"content";s:11073:"description = "Laravel 5.2 Tutorials Layout"
+1486875036a:1:{s:29:"laravel5-2TutorialsLayout.htm";a:6:{s:8:"fileName";s:29:"laravel5-2TutorialsLayout.htm";s:7:"content";s:11149:"description = "Laravel 5.2 Tutorials Layout"
 ==
 <!DOCTYPE html>
 <html>
@@ -112,16 +112,13 @@
 			                  <a href="">Artisan Console</a>
 			                </li>
 			                <li>
-			                  <a href="">Cache</a>
+			                  <a href="{{'laravel5.2/cache'|page}}">Cache</a>
 			                </li>
 			                <li>
-			                  <a href="">Collections</a>
+			                  <a href="{{'laravel5.2/encryption'|page}}">Encryption</a>
 			                </li>
 			                <li>
-			                  <a href="">Encryption</a>
-			                </li>
-			                <li>
-			                  <a href="">Events</a>
+			                  <a href="{{'laravel5.2/events'|page}}">Events</a>
 			                </li>
 			                <li>
 			                  <a href="">Filesystem / Cloud Storage</a>
@@ -192,7 +189,7 @@
 			                  <a href="{{'laravel5.2/eloquentRelationships'|page}}">Releationships</a>
 			                </li>
 			                <li>
-			                  <a href="">Collections</a>
+			                  <a href="{{'laravel5.2/collections'|page}}">Collections</a>
 			                </li>
 			                <li>
 			                  <a href="">Mutators</a>
@@ -255,7 +252,7 @@
 			                  <a href="{{'laravel5.2/jwt'|page}}">Jason Web Token(JWT) based Authentication</a>
 			                </li>
 			                <li>
-			                  <a href="">Role Based Permission</a>
+			                  <a href="{{'laravel5.2/entrustRoleBasedPermission'|page}}">Entrust Role Based Permission</a>
 			                </li>
 			                <li>
 			                  <a href="">Approach3</a>
@@ -315,7 +312,7 @@
         {% scripts %}
 
     </body>
-</html>";s:5:"mtime";i:1486663709;s:6:"markup";s:11025:"<!DOCTYPE html>
+</html>";s:5:"mtime";i:1486874390;s:6:"markup";s:11101:"<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -427,16 +424,13 @@
 			                  <a href="">Artisan Console</a>
 			                </li>
 			                <li>
-			                  <a href="">Cache</a>
+			                  <a href="{{'laravel5.2/cache'|page}}">Cache</a>
 			                </li>
 			                <li>
-			                  <a href="">Collections</a>
+			                  <a href="{{'laravel5.2/encryption'|page}}">Encryption</a>
 			                </li>
 			                <li>
-			                  <a href="">Encryption</a>
-			                </li>
-			                <li>
-			                  <a href="">Events</a>
+			                  <a href="{{'laravel5.2/events'|page}}">Events</a>
 			                </li>
 			                <li>
 			                  <a href="">Filesystem / Cloud Storage</a>
@@ -507,7 +501,7 @@
 			                  <a href="{{'laravel5.2/eloquentRelationships'|page}}">Releationships</a>
 			                </li>
 			                <li>
-			                  <a href="">Collections</a>
+			                  <a href="{{'laravel5.2/collections'|page}}">Collections</a>
 			                </li>
 			                <li>
 			                  <a href="">Mutators</a>
@@ -570,7 +564,7 @@
 			                  <a href="{{'laravel5.2/jwt'|page}}">Jason Web Token(JWT) based Authentication</a>
 			                </li>
 			                <li>
-			                  <a href="">Role Based Permission</a>
+			                  <a href="{{'laravel5.2/entrustRoleBasedPermission'|page}}">Entrust Role Based Permission</a>
 			                </li>
 			                <li>
 			                  <a href="">Approach3</a>

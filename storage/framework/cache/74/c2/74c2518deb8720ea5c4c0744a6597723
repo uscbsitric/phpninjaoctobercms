@@ -1,0 +1,450 @@
+1486875036a:1:{s:41:"laravel5.2/entrustRoleBasedPermission.htm";a:9:{s:8:"fileName";s:41:"laravel5.2/entrustRoleBasedPermission.htm";s:7:"content";s:8426:"title = "Entrust Role Based Permission"
+url = "/entrust-role-based-permission"
+layout = "laravel5-2TutorialsLayout"
+is_hidden = 0
+==
+<div class="row"> <!-- Laravel Feature -->
+  <div class="green4 tutorialPages">
+    <h1 class="fontColorWhite1 noMargin">Laravel Feature</h1>
+    <h3 class="fontColorGrey3 noMargin"> <span class="icon-tasks icon-2x"></span> Entrust Role Based Permission (zizaco entrust https://github.com/zizaco/entrust)</h3>
+  </div>
+</div>            <!-- Laravel Feature -->
+
+<div class="row"> <!-- What Does It Do -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">What Does It Do</h1>
+    <p class="fontColorWhite2 noMargin">
+      Its a succinct and flexible way to add Role-based Permissions to Laravel 5.2
+    </p>
+  </div>
+</div>            <!-- What Does It Do -->
+
+<div class="row"> <!-- Note -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">NOTE: <span class="icon-warning-sign icon-1x"></span></h1>
+    <div class="well">
+      None
+    </div>
+  </div>
+</div>            <!-- Note -->
+
+<div class="row"> <!-- When To Do It -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">When To Do It</h1>
+    <p class="fontColorWhite2 noMargin">
+      When you need to assign users certain roles and limit their capabilities with permissions.
+    </p>
+  </div>
+</div>            <!-- When To Do It -->
+
+<div class="row"> <!-- How To Do It -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">How To Do It</h1>
+    <p class="fontColorWhite2 noMargin">
+      <ol>
+        <li>
+          Install <code>Laravel 5 Entrust</code>
+          <pre>
+            <code>
+              In the <strong>RootProjectDirectory\composer.json</strong> file, add the following line of code in the <strong>require</strong> index of the json configuration file.
+
+              "require": {"php": ">=5.5.9",
+                          "laravel/framework": "5.2.*",
+                          "tymon/jwt-auth": "^0.5.9",
+                          "zizaco/entrust": "5.2.x-dev"  //<--- this line
+                         },
+            </code>
+          </pre>
+        </li>
+
+        <li>
+          In the terminal in the RootProjectDirectory, run <span class="icon-terminal"></span>: <code>composer update</code>
+          
+        </li>
+
+        <li>
+          Add the <code>EntrustServiceProvider</code> to custom providers in <code>RootProjectDirectory/config/app.php</code>
+          
+          <pre>
+            <code>
+            //...
+            /*
+             * Custom Providers
+             */
+            'Tymon\JWTAuth\Providers\JWTAuthServiceProvider',
+            Zizaco\Entrust\EntrustServiceProvider::class,  // <--- this line here
+            </code>
+          </pre>
+        </li>
+
+        <li>
+		  <code>Publish</code> the Entrust package config file.(RootProjectDirectory\config\entrust.php)
+
+		  <pre>
+		    <code>
+		      in the terminal in the <strong>ProjectRootDirectory</strong>, run <span class="icon-terminal"></span>: <strong>php artisan vendor:publish</strong>
+		    </code>
+		  </pre>
+        </li>
+
+        <li>
+          Update the ProjectRootDirectory\config\auth.php
+          <pre>
+            <code>
+              //...
+              'providers' => ['users' => ['driver' => 'eloquent',
+                                          'model' => App\User::class,
+        	                              'table' => 'users',
+                                         ],
+                             ]
+            </code>
+          </pre>
+        </li>
+        
+        <li>
+          Generate <code>Entrust Migration</code> then run it afterwards.
+          <pre>
+            <code>
+              In the terminal in the RootProjectDirectory, run <span class="icon-terminal"></span>: <code>php artisan entrust:migration</code> then after that <code>php artisan migrate</code>
+            </code>
+          </pre>
+        </li>
+
+        <li>
+          Add the <code>Role Model</code>.
+          <pre>
+            create the file <strong>ProjectRootDirectory\app\Role.php</strong>
+            <code>
+              &lt;?php
+              namespace App;
+              use Zizaco\Entrust\EntrustRole;
+
+              class Role extends EntrustRole
+              {
+	
+              }
+            </code>
+          </pre>
+        </li>
+
+        <li>
+          Add the <code>Permission Model</code>
+          <pre>
+            create the file ProjectRootDirectory\app\Permission.php and put in the following codes.
+            <code>
+              &lt;?php
+              namespace App;
+              use Zizaco\Entrust\EntrustPermission;
+
+              class Permission extends EntrustPermission
+              {
+
+              }
+            </code>
+          </pre>
+        </li>
+
+        <li>
+          In the <code>.env</code> file, update the value for the setting <code>CACHE_DRIVER</code> to <code>memcached</code>
+          <pre>
+            <code>
+              CACHE_DRIVER=memcached
+            </code>
+          </pre>
+        </li>
+
+        <li>
+          Dump Composer Autoload
+          <pre>
+            <code>
+            In the terminal in the RootProjectDirectory, run <span class="icon_terminal"></span>: <strong>composer dump_autoload</strong>
+            </code>
+          </pre>
+        </li>
+        
+        <li>
+          Usage, in my case, I was test driving this in Tinker
+          <pre>
+            In the terminal, in the ProjectRootDirectory, run <span class="icon_terminal"></span>: <strong>php artisan tinker</strong>
+            <code>
+              use App\Role;
+              use App\User;
+              use App\Permission;
+
+              $owner = new Role();
+              $owner->name         = 'owner';
+              $owner->display_name = 'Project Owner'; // optional
+              $owner->description  = 'User is the owner of a given project'; // optional
+              $owner->save();
+
+              $admin = new Role();
+              $admin->name         = 'admin';
+              $admin->display_name = 'User Administrator'; // optional
+              $admin->description  = 'User is allowed to manage and edit other users'; // optional
+              $admin->save();
+              
+              $user = User::where('id', '=', '1')->first();
+              // role attach alias
+              $user->attachRole($admin); // parameter can be an Role object, array, or id
+
+              // or eloquent's original technique
+              $user->roles()->attach($admin->id); // id only
+
+              $createPost = new Permission();
+              $createPost->name         = 'create-post';
+              $createPost->display_name = 'Create Posts'; // optional
+              // Allow a user to...
+              $createPost->description  = 'create new blog posts'; // optional
+              $createPost->save();
+
+              $editUser = new Permission();
+              $editUser->name         = 'edit-user';
+              $editUser->display_name = 'Edit Users'; // optional
+              // Allow a user to...
+              $editUser->description  = 'edit existing users'; // optional
+              $editUser->save();
+
+              // attach permissions to roles
+              $admin->attachPermission($createPost);
+                // equivalent to $admin->perms()->sync(array($createPost->id));
+
+              $owner->attachPermissions(array($createPost, $editUser));
+                // equivalent to $owner->perms()->sync(array($createPost->id, $editUser->id));
+
+
+
+              // Checking Roles and Permissions (in my case, this will be done in the controller since I am API based, so there isnt a <strong>currently logged in user</strong>, 
+              because that is session based, if that was the case, checking would be done in the middleware.)
+              $user->hasRole('owner');   // false
+              $user->hasRole('admin');   // true
+              $user->can('edit-user');   // false
+              $user->can('create-post'); // true
+            </code>
+          </pre>
+        </li>
+      </ol>
+    </p>
+  </div>
+</div>            <!-- How To Do It -->";s:5:"mtime";i:1486726160;s:6:"markup";s:8293:"<div class="row"> <!-- Laravel Feature -->
+  <div class="green4 tutorialPages">
+    <h1 class="fontColorWhite1 noMargin">Laravel Feature</h1>
+    <h3 class="fontColorGrey3 noMargin"> <span class="icon-tasks icon-2x"></span> Entrust Role Based Permission (zizaco entrust https://github.com/zizaco/entrust)</h3>
+  </div>
+</div>            <!-- Laravel Feature -->
+
+<div class="row"> <!-- What Does It Do -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">What Does It Do</h1>
+    <p class="fontColorWhite2 noMargin">
+      Its a succinct and flexible way to add Role-based Permissions to Laravel 5.2
+    </p>
+  </div>
+</div>            <!-- What Does It Do -->
+
+<div class="row"> <!-- Note -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">NOTE: <span class="icon-warning-sign icon-1x"></span></h1>
+    <div class="well">
+      None
+    </div>
+  </div>
+</div>            <!-- Note -->
+
+<div class="row"> <!-- When To Do It -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">When To Do It</h1>
+    <p class="fontColorWhite2 noMargin">
+      When you need to assign users certain roles and limit their capabilities with permissions.
+    </p>
+  </div>
+</div>            <!-- When To Do It -->
+
+<div class="row"> <!-- How To Do It -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">How To Do It</h1>
+    <p class="fontColorWhite2 noMargin">
+      <ol>
+        <li>
+          Install <code>Laravel 5 Entrust</code>
+          <pre>
+            <code>
+              In the <strong>RootProjectDirectory\composer.json</strong> file, add the following line of code in the <strong>require</strong> index of the json configuration file.
+
+              "require": {"php": ">=5.5.9",
+                          "laravel/framework": "5.2.*",
+                          "tymon/jwt-auth": "^0.5.9",
+                          "zizaco/entrust": "5.2.x-dev"  //<--- this line
+                         },
+            </code>
+          </pre>
+        </li>
+
+        <li>
+          In the terminal in the RootProjectDirectory, run <span class="icon-terminal"></span>: <code>composer update</code>
+          
+        </li>
+
+        <li>
+          Add the <code>EntrustServiceProvider</code> to custom providers in <code>RootProjectDirectory/config/app.php</code>
+          
+          <pre>
+            <code>
+            //...
+            /*
+             * Custom Providers
+             */
+            'Tymon\JWTAuth\Providers\JWTAuthServiceProvider',
+            Zizaco\Entrust\EntrustServiceProvider::class,  // <--- this line here
+            </code>
+          </pre>
+        </li>
+
+        <li>
+		  <code>Publish</code> the Entrust package config file.(RootProjectDirectory\config\entrust.php)
+
+		  <pre>
+		    <code>
+		      in the terminal in the <strong>ProjectRootDirectory</strong>, run <span class="icon-terminal"></span>: <strong>php artisan vendor:publish</strong>
+		    </code>
+		  </pre>
+        </li>
+
+        <li>
+          Update the ProjectRootDirectory\config\auth.php
+          <pre>
+            <code>
+              //...
+              'providers' => ['users' => ['driver' => 'eloquent',
+                                          'model' => App\User::class,
+        	                              'table' => 'users',
+                                         ],
+                             ]
+            </code>
+          </pre>
+        </li>
+        
+        <li>
+          Generate <code>Entrust Migration</code> then run it afterwards.
+          <pre>
+            <code>
+              In the terminal in the RootProjectDirectory, run <span class="icon-terminal"></span>: <code>php artisan entrust:migration</code> then after that <code>php artisan migrate</code>
+            </code>
+          </pre>
+        </li>
+
+        <li>
+          Add the <code>Role Model</code>.
+          <pre>
+            create the file <strong>ProjectRootDirectory\app\Role.php</strong>
+            <code>
+              &lt;?php
+              namespace App;
+              use Zizaco\Entrust\EntrustRole;
+
+              class Role extends EntrustRole
+              {
+	
+              }
+            </code>
+          </pre>
+        </li>
+
+        <li>
+          Add the <code>Permission Model</code>
+          <pre>
+            create the file ProjectRootDirectory\app\Permission.php and put in the following codes.
+            <code>
+              &lt;?php
+              namespace App;
+              use Zizaco\Entrust\EntrustPermission;
+
+              class Permission extends EntrustPermission
+              {
+
+              }
+            </code>
+          </pre>
+        </li>
+
+        <li>
+          In the <code>.env</code> file, update the value for the setting <code>CACHE_DRIVER</code> to <code>memcached</code>
+          <pre>
+            <code>
+              CACHE_DRIVER=memcached
+            </code>
+          </pre>
+        </li>
+
+        <li>
+          Dump Composer Autoload
+          <pre>
+            <code>
+            In the terminal in the RootProjectDirectory, run <span class="icon_terminal"></span>: <strong>composer dump_autoload</strong>
+            </code>
+          </pre>
+        </li>
+        
+        <li>
+          Usage, in my case, I was test driving this in Tinker
+          <pre>
+            In the terminal, in the ProjectRootDirectory, run <span class="icon_terminal"></span>: <strong>php artisan tinker</strong>
+            <code>
+              use App\Role;
+              use App\User;
+              use App\Permission;
+
+              $owner = new Role();
+              $owner->name         = 'owner';
+              $owner->display_name = 'Project Owner'; // optional
+              $owner->description  = 'User is the owner of a given project'; // optional
+              $owner->save();
+
+              $admin = new Role();
+              $admin->name         = 'admin';
+              $admin->display_name = 'User Administrator'; // optional
+              $admin->description  = 'User is allowed to manage and edit other users'; // optional
+              $admin->save();
+              
+              $user = User::where('id', '=', '1')->first();
+              // role attach alias
+              $user->attachRole($admin); // parameter can be an Role object, array, or id
+
+              // or eloquent's original technique
+              $user->roles()->attach($admin->id); // id only
+
+              $createPost = new Permission();
+              $createPost->name         = 'create-post';
+              $createPost->display_name = 'Create Posts'; // optional
+              // Allow a user to...
+              $createPost->description  = 'create new blog posts'; // optional
+              $createPost->save();
+
+              $editUser = new Permission();
+              $editUser->name         = 'edit-user';
+              $editUser->display_name = 'Edit Users'; // optional
+              // Allow a user to...
+              $editUser->description  = 'edit existing users'; // optional
+              $editUser->save();
+
+              // attach permissions to roles
+              $admin->attachPermission($createPost);
+                // equivalent to $admin->perms()->sync(array($createPost->id));
+
+              $owner->attachPermissions(array($createPost, $editUser));
+                // equivalent to $owner->perms()->sync(array($createPost->id, $editUser->id));
+
+
+
+              // Checking Roles and Permissions (in my case, this will be done in the controller since I am API based, so there isnt a <strong>currently logged in user</strong>, 
+              because that is session based, if that was the case, checking would be done in the middleware.)
+              $user->hasRole('owner');   // false
+              $user->hasRole('admin');   // true
+              $user->can('edit-user');   // false
+              $user->can('create-post'); // true
+            </code>
+          </pre>
+        </li>
+      </ol>
+    </p>
+  </div>
+</div>            <!-- How To Do It -->";s:4:"code";N;s:5:"title";s:29:"Entrust Role Based Permission";s:3:"url";s:30:"/entrust-role-based-permission";s:6:"layout";s:25:"laravel5-2TutorialsLayout";s:9:"is_hidden";s:1:"0";}}
