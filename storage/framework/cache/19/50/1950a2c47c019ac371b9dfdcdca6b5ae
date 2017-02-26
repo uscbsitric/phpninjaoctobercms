@@ -1,4 +1,4 @@
-1486874962a:1:{s:25:"laravel5.2/encryption.htm";a:10:{s:8:"fileName";s:25:"laravel5.2/encryption.htm";s:7:"content";s:1123:"title = "Encryption"
+1488082979a:1:{s:25:"laravel5.2/encryption.htm";a:10:{s:8:"fileName";s:25:"laravel5.2/encryption.htm";s:7:"content";s:1123:"title = "Encryption"
 url = "/encryption"
 layout = "laravel5-2TutorialsLayout"
 description = "Encryption"
@@ -27,7 +27,7 @@ is_hidden = 0
       Please refer to <code>https://laravel.com/docs/5.2/encryption</code> since this service is trivial.
     </div>
   </div>
-</div>            <!-- Note -->";s:5:"mtime";i:1486874359;s:6:"markup";s:1001:"<div class="row"> <!-- Laravel Feature -->
+</div>            <!-- Note -->";s:5:"mtime";i:1487033276;s:6:"markup";s:1001:"<div class="row"> <!-- Laravel Feature -->
   <div class="green4 tutorialPages">
     <h1 class="fontColorWhite1 noMargin">Laravel Feature</h1>
     <h3 class="fontColorGrey3 noMargin"> <span class="icon-tasks icon-2x"></span> Encryption </h3>

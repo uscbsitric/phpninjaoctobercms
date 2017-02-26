@@ -1,7 +1,7 @@
 <?php
 
-/* /home/vagrant/Code/octobercms/themes/demo/pages/laravel5.2/collections.htm */
-class __TwigTemplate_172627b32b807c4026e569bf18b93e072e3fb41f1fabe23ca207eebf587dc5af extends Twig_Template
+/* /home/vagrant/Code/octobercms/themes/demo/pages/laravel5.2/laravel5.2.htm */
+class __TwigTemplate_a2ccee47f73a63b68b0cdc19383992e1ed5c4f2440dcea4dbac65e5fdddad42d extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -19,32 +19,32 @@ class __TwigTemplate_172627b32b807c4026e569bf18b93e072e3fb41f1fabe23ca207eebf587
         echo "<div class=\"row\"> <!-- Laravel Feature -->
   <div class=\"green4 tutorialPages\">
     <h1 class=\"fontColorWhite1 noMargin\">Laravel Feature</h1>
-    <h3 class=\"fontColorGrey3 noMargin\"> <span class=\"icon-tasks icon-2x\"></span> Collections </h3>
+    <h3 class=\"fontColorGrey3 noMargin\">The subject Feature</h3>
   </div>
 </div>            <!-- Laravel Feature -->
-
 <div class=\"row\"> <!-- What Does It Do -->
   <div class=\"grey2 tutorialPages withBorderBottom\">
     <h1 class=\"noMargin fontColorGreen3\">What Does It Do</h1>
-    <p class=\"fontColorWhite2 noMargin\">
-      The Illuminate\\Support\\Collection class provides a fluent, convenient wrapper for working with arrays of data.
-    </p>
+    <p class=\"fontColorWhite2 noMargin\">exactly what does it do?</p>
   </div>
 </div>            <!-- What Does It Do -->
-
-<div class=\"row\"> <!-- Note -->
+<div class=\"row\"> <!-- When To Do It -->
   <div class=\"grey2 tutorialPages withBorderBottom\">
-    <h1 class=\"noMargin fontColorGreen3\">NOTE: <span class=\"icon-warning-sign icon-1x\"></span></h1>
-    <div class=\"well\">
-      Please refer to <code>https://laravel.com/docs/5.2/collections</code> since this service is trivial.
-    </div>
+    <h1 class=\"noMargin fontColorGreen3\">When To Do It</h1>
+    <p class=\"fontColorWhite2 noMargin\">just because you know what it does, doesn't mean you can go trigger happy.</p>
   </div>
-</div>            <!-- Note -->";
+</div>            <!-- When To Do It -->
+<div class=\"row\"> <!-- How To Do It -->
+  <div class=\"grey2 tutorialPages\">
+    <h1 class=\"noMargin fontColorGreen3\">How To Do It</h1>
+    <p class=\"fontColorWhite2 noMargin\">step-by-step procedures.</p>
+  </div>
+</div>            <!-- How To Do It -->";
     }
 
     public function getTemplateName()
     {
-        return "/home/vagrant/Code/octobercms/themes/demo/pages/laravel5.2/collections.htm";
+        return "/home/vagrant/Code/octobercms/themes/demo/pages/laravel5.2/laravel5.2.htm";
     }
 
     public function getDebugInfo()
@@ -65,26 +65,26 @@ class __TwigTemplate_172627b32b807c4026e569bf18b93e072e3fb41f1fabe23ca207eebf587
         return new Twig_Source("<div class=\"row\"> <!-- Laravel Feature -->
   <div class=\"green4 tutorialPages\">
     <h1 class=\"fontColorWhite1 noMargin\">Laravel Feature</h1>
-    <h3 class=\"fontColorGrey3 noMargin\"> <span class=\"icon-tasks icon-2x\"></span> Collections </h3>
+    <h3 class=\"fontColorGrey3 noMargin\">The subject Feature</h3>
   </div>
 </div>            <!-- Laravel Feature -->
-
 <div class=\"row\"> <!-- What Does It Do -->
   <div class=\"grey2 tutorialPages withBorderBottom\">
     <h1 class=\"noMargin fontColorGreen3\">What Does It Do</h1>
-    <p class=\"fontColorWhite2 noMargin\">
-      The Illuminate\\Support\\Collection class provides a fluent, convenient wrapper for working with arrays of data.
-    </p>
+    <p class=\"fontColorWhite2 noMargin\">exactly what does it do?</p>
   </div>
 </div>            <!-- What Does It Do -->
-
-<div class=\"row\"> <!-- Note -->
+<div class=\"row\"> <!-- When To Do It -->
   <div class=\"grey2 tutorialPages withBorderBottom\">
-    <h1 class=\"noMargin fontColorGreen3\">NOTE: <span class=\"icon-warning-sign icon-1x\"></span></h1>
-    <div class=\"well\">
-      Please refer to <code>https://laravel.com/docs/5.2/collections</code> since this service is trivial.
-    </div>
+    <h1 class=\"noMargin fontColorGreen3\">When To Do It</h1>
+    <p class=\"fontColorWhite2 noMargin\">just because you know what it does, doesn't mean you can go trigger happy.</p>
   </div>
-</div>            <!-- Note -->", "/home/vagrant/Code/octobercms/themes/demo/pages/laravel5.2/collections.htm", "");
+</div>            <!-- When To Do It -->
+<div class=\"row\"> <!-- How To Do It -->
+  <div class=\"grey2 tutorialPages\">
+    <h1 class=\"noMargin fontColorGreen3\">How To Do It</h1>
+    <p class=\"fontColorWhite2 noMargin\">step-by-step procedures.</p>
+  </div>
+</div>            <!-- How To Do It -->", "/home/vagrant/Code/octobercms/themes/demo/pages/laravel5.2/laravel5.2.htm", "");
     }
 }

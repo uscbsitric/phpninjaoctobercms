@@ -1,4 +1,4 @@
-1486875036a:1:{s:21:"laravel5.2/events.htm";a:10:{s:8:"fileName";s:21:"laravel5.2/events.htm";s:7:"content";s:1735:"title = "Events"
+1488082979a:1:{s:21:"laravel5.2/events.htm";a:10:{s:8:"fileName";s:21:"laravel5.2/events.htm";s:7:"content";s:2060:"title = "Events"
 url = "/events"
 layout = "laravel5-2TutorialsLayout"
 description = "Events"
@@ -15,7 +15,8 @@ is_hidden = 0
   <div class="grey2 tutorialPages withBorderBottom">
     <h1 class="noMargin fontColorGreen3">What Does It Do</h1>
     <p class="fontColorWhite2 noMargin">
-      The Details 1
+      Laravel's events provides a simple observer implementation, allowing you to subscribe and listen for events in your application.
+      Event classes are typically stored in the app/Events directory, while their listeners are stored in app/Listeners.
     </p>
   </div>
 </div>            <!-- What Does It Do -->
@@ -24,7 +25,7 @@ is_hidden = 0
   <div class="grey2 tutorialPages withBorderBottom">
     <h1 class="noMargin fontColorGreen3">NOTE: <span class="icon-warning-sign icon-1x"></span></h1>
     <div class="well">
-      None
+      I am using Pusher as my broadcast receiver.
     </div>
   </div>
 </div>            <!-- Note -->
@@ -33,7 +34,7 @@ is_hidden = 0
   <div class="grey2 tutorialPages withBorderBottom">
     <h1 class="noMargin fontColorGreen3">When To Do It</h1>
     <p class="fontColorWhite2 noMargin">
-      The Details 2
+      When you need a certain logic to kick in when an event occurs.
     </p>
   </div>
 </div>            <!-- When To Do It -->
@@ -61,7 +62,7 @@ is_hidden = 0
       </ol>
     </p>
   </div>
-</div>            <!-- How To Do It -->";s:5:"mtime";i:1486874433;s:6:"markup";s:1625:"<div class="row"> <!-- Laravel Feature -->
+</div>            <!-- How To Do It -->";s:5:"mtime";i:1487414967;s:6:"markup";s:1950:"<div class="row"> <!-- Laravel Feature -->
   <div class="green4 tutorialPages">
     <h1 class="fontColorWhite1 noMargin">Laravel Feature</h1>
     <h3 class="fontColorGrey3 noMargin"> <span class="icon-tasks icon-2x"></span> Events </h3>
@@ -72,7 +73,8 @@ is_hidden = 0
   <div class="grey2 tutorialPages withBorderBottom">
     <h1 class="noMargin fontColorGreen3">What Does It Do</h1>
     <p class="fontColorWhite2 noMargin">
-      The Details 1
+      Laravel's events provides a simple observer implementation, allowing you to subscribe and listen for events in your application.
+      Event classes are typically stored in the app/Events directory, while their listeners are stored in app/Listeners.
     </p>
   </div>
 </div>            <!-- What Does It Do -->
@@ -81,7 +83,7 @@ is_hidden = 0
   <div class="grey2 tutorialPages withBorderBottom">
     <h1 class="noMargin fontColorGreen3">NOTE: <span class="icon-warning-sign icon-1x"></span></h1>
     <div class="well">
-      None
+      I am using Pusher as my broadcast receiver.
     </div>
   </div>
 </div>            <!-- Note -->
@@ -90,7 +92,7 @@ is_hidden = 0
   <div class="grey2 tutorialPages withBorderBottom">
     <h1 class="noMargin fontColorGreen3">When To Do It</h1>
     <p class="fontColorWhite2 noMargin">
-      The Details 2
+      When you need a certain logic to kick in when an event occurs.
     </p>
   </div>
 </div>            <!-- When To Do It -->

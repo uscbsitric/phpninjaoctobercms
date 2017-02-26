@@ -27,7 +27,8 @@ class __TwigTemplate_5f7788b7aba1465b4244e74303ee3db88369d5c994cd304c541d578528a
   <div class=\"grey2 tutorialPages withBorderBottom\">
     <h1 class=\"noMargin fontColorGreen3\">What Does It Do</h1>
     <p class=\"fontColorWhite2 noMargin\">
-      The Details 1
+      Laravel's events provides a simple observer implementation, allowing you to subscribe and listen for events in your application.
+      Event classes are typically stored in the app/Events directory, while their listeners are stored in app/Listeners.
     </p>
   </div>
 </div>            <!-- What Does It Do -->
@@ -36,7 +37,7 @@ class __TwigTemplate_5f7788b7aba1465b4244e74303ee3db88369d5c994cd304c541d578528a
   <div class=\"grey2 tutorialPages withBorderBottom\">
     <h1 class=\"noMargin fontColorGreen3\">NOTE: <span class=\"icon-warning-sign icon-1x\"></span></h1>
     <div class=\"well\">
-      None
+      I am using Pusher as my broadcast receiver.
     </div>
   </div>
 </div>            <!-- Note -->
@@ -45,7 +46,7 @@ class __TwigTemplate_5f7788b7aba1465b4244e74303ee3db88369d5c994cd304c541d578528a
   <div class=\"grey2 tutorialPages withBorderBottom\">
     <h1 class=\"noMargin fontColorGreen3\">When To Do It</h1>
     <p class=\"fontColorWhite2 noMargin\">
-      The Details 2
+      When you need a certain logic to kick in when an event occurs.
     </p>
   </div>
 </div>            <!-- When To Do It -->
@@ -107,7 +108,8 @@ class __TwigTemplate_5f7788b7aba1465b4244e74303ee3db88369d5c994cd304c541d578528a
   <div class=\"grey2 tutorialPages withBorderBottom\">
     <h1 class=\"noMargin fontColorGreen3\">What Does It Do</h1>
     <p class=\"fontColorWhite2 noMargin\">
-      The Details 1
+      Laravel's events provides a simple observer implementation, allowing you to subscribe and listen for events in your application.
+      Event classes are typically stored in the app/Events directory, while their listeners are stored in app/Listeners.
     </p>
   </div>
 </div>            <!-- What Does It Do -->
@@ -116,7 +118,7 @@ class __TwigTemplate_5f7788b7aba1465b4244e74303ee3db88369d5c994cd304c541d578528a
   <div class=\"grey2 tutorialPages withBorderBottom\">
     <h1 class=\"noMargin fontColorGreen3\">NOTE: <span class=\"icon-warning-sign icon-1x\"></span></h1>
     <div class=\"well\">
-      None
+      I am using Pusher as my broadcast receiver.
     </div>
   </div>
 </div>            <!-- Note -->
@@ -125,7 +127,7 @@ class __TwigTemplate_5f7788b7aba1465b4244e74303ee3db88369d5c994cd304c541d578528a
   <div class=\"grey2 tutorialPages withBorderBottom\">
     <h1 class=\"noMargin fontColorGreen3\">When To Do It</h1>
     <p class=\"fontColorWhite2 noMargin\">
-      The Details 2
+      When you need a certain logic to kick in when an event occurs.
     </p>
   </div>
 </div>            <!-- When To Do It -->

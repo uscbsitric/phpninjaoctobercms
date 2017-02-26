@@ -1,4 +1,4 @@
-1486875036a:1:{s:29:"laravel5-2TutorialsLayout.htm";a:6:{s:8:"fileName";s:29:"laravel5-2TutorialsLayout.htm";s:7:"content";s:11149:"description = "Laravel 5.2 Tutorials Layout"
+1488082984a:1:{s:29:"laravel5-2TutorialsLayout.htm";a:6:{s:8:"fileName";s:29:"laravel5-2TutorialsLayout.htm";s:7:"content";s:11233:"description = "Laravel 5.2 Tutorials Layout"
 ==
 <!DOCTYPE html>
 <html>
@@ -142,7 +142,7 @@
 			                  <a href="">Pagination</a>
 			                </li>
 			                <li>
-			                  <a href="">Queues</a>
+			                  <a href="{{'laravel5.2/queue'|page}}">Queues</a>
 			                </li>
 			                <li>
 			                  <a href="">Redis</a>
@@ -208,7 +208,7 @@
 			                  <a href="{{'laravel5.2/routeCaching'|page}}">Route Caching</a>
 			                </li>
 			                <li>
-			                  <a href="">Approach2</a>
+			                  <a href="{{'laravel5.2/caching'|page}}">Caching</a>
 			                </li>
 			                <li>
 			                  <a href="">Approach3</a>
@@ -268,7 +268,7 @@
 			          </ul>
 			          <ul class="nav nav-sidebar">
 			            <li class="active">
-			              <a>Other Topcis I Cant Categorize</a>
+			              <a>Other Topics I Cant Categorize</a>
 			              <ul>
 			                <li>
 			                  <a href="{{'laravel5.2/routeModelBinding'|page}}">Route Model Binding</a>
@@ -280,7 +280,7 @@
 			                  <a href="{{'laravel5.2/namingResourceRoutes'|page}}">Naming Resource Routes</a>
 			                </li>
 			                <li>
-			                  <a href="">Other Topic4</a>
+			                  <a href="{{'laravel5.2/supervisor'|page}}">Supervisor</a>
 			                </li>
 			                <li>
 			                  <a href="">Other Topic5</a>
@@ -312,7 +312,7 @@
         {% scripts %}
 
     </body>
-</html>";s:5:"mtime";i:1486874390;s:6:"markup";s:11101:"<!DOCTYPE html>
+</html>";s:5:"mtime";i:1487438284;s:6:"markup";s:11185:"<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -454,7 +454,7 @@
 			                  <a href="">Pagination</a>
 			                </li>
 			                <li>
-			                  <a href="">Queues</a>
+			                  <a href="{{'laravel5.2/queue'|page}}">Queues</a>
 			                </li>
 			                <li>
 			                  <a href="">Redis</a>
@@ -520,7 +520,7 @@
 			                  <a href="{{'laravel5.2/routeCaching'|page}}">Route Caching</a>
 			                </li>
 			                <li>
-			                  <a href="">Approach2</a>
+			                  <a href="{{'laravel5.2/caching'|page}}">Caching</a>
 			                </li>
 			                <li>
 			                  <a href="">Approach3</a>
@@ -580,7 +580,7 @@
 			          </ul>
 			          <ul class="nav nav-sidebar">
 			            <li class="active">
-			              <a>Other Topcis I Cant Categorize</a>
+			              <a>Other Topics I Cant Categorize</a>
 			              <ul>
 			                <li>
 			                  <a href="{{'laravel5.2/routeModelBinding'|page}}">Route Model Binding</a>
@@ -592,7 +592,7 @@
 			                  <a href="{{'laravel5.2/namingResourceRoutes'|page}}">Naming Resource Routes</a>
 			                </li>
 			                <li>
-			                  <a href="">Other Topic4</a>
+			                  <a href="{{'laravel5.2/supervisor'|page}}">Supervisor</a>
 			                </li>
 			                <li>
 			                  <a href="">Other Topic5</a>

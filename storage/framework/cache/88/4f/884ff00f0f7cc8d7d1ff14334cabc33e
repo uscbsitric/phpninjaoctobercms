@@ -1,4 +1,4 @@
-1486874592a:1:{s:20:"laravel5.2/cache.htm";a:9:{s:8:"fileName";s:20:"laravel5.2/cache.htm";s:7:"content";s:1348:"title = "Cache"
+1488082978a:1:{s:20:"laravel5.2/cache.htm";a:9:{s:8:"fileName";s:20:"laravel5.2/cache.htm";s:7:"content";s:1348:"title = "Cache"
 url = "/cache"
 layout = "laravel5-2TutorialsLayout"
 is_hidden = 0
@@ -28,7 +28,7 @@ is_hidden = 0
       Please refer to <code>https://laravel.com/docs/5.2/cache</code> since this service is trivial.
     </div>
   </div>
-</div>            <!-- Note -->";s:5:"mtime";i:1486873841;s:6:"markup";s:1263:"<div class="row"> <!-- Laravel Feature -->
+</div>            <!-- Note -->";s:5:"mtime";i:1487033276;s:6:"markup";s:1263:"<div class="row"> <!-- Laravel Feature -->
   <div class="green4 tutorialPages">
     <h1 class="fontColorWhite1 noMargin">Laravel Feature</h1>
     <h3 class="fontColorGrey3 noMargin"> <span class="icon-tasks icon-2x"></span> Cache </h3>

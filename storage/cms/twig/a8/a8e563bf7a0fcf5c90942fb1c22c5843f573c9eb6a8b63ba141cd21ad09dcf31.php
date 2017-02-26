@@ -221,7 +221,10 @@ class __TwigTemplate_6d365c650291313f739fd2d224f46922334c95079c02abcd7276f6941b7
 \t\t\t                  <a href=\"\">Pagination</a>
 \t\t\t                </li>
 \t\t\t                <li>
-\t\t\t                  <a href=\"\">Queues</a>
+\t\t\t                  <a href=\"";
+        // line 143
+        echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("laravel5.2/queue");
+        echo "\">Queues</a>
 \t\t\t                </li>
 \t\t\t                <li>
 \t\t\t                  <a href=\"\">Redis</a>
@@ -302,7 +305,10 @@ class __TwigTemplate_6d365c650291313f739fd2d224f46922334c95079c02abcd7276f6941b7
         echo "\">Route Caching</a>
 \t\t\t                </li>
 \t\t\t                <li>
-\t\t\t                  <a href=\"\">Approach2</a>
+\t\t\t                  <a href=\"";
+        // line 209
+        echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("laravel5.2/caching");
+        echo "\">Caching</a>
 \t\t\t                </li>
 \t\t\t                <li>
 \t\t\t                  <a href=\"\">Approach3</a>
@@ -374,7 +380,7 @@ class __TwigTemplate_6d365c650291313f739fd2d224f46922334c95079c02abcd7276f6941b7
 \t\t\t          </ul>
 \t\t\t          <ul class=\"nav nav-sidebar\">
 \t\t\t            <li class=\"active\">
-\t\t\t              <a>Other Topcis I Cant Categorize</a>
+\t\t\t              <a>Other Topics I Cant Categorize</a>
 \t\t\t              <ul>
 \t\t\t                <li>
 \t\t\t                  <a href=\"";
@@ -395,7 +401,10 @@ class __TwigTemplate_6d365c650291313f739fd2d224f46922334c95079c02abcd7276f6941b7
         echo "\">Naming Resource Routes</a>
 \t\t\t                </li>
 \t\t\t                <li>
-\t\t\t                  <a href=\"\">Other Topic4</a>
+\t\t\t                  <a href=\"";
+        // line 281
+        echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("laravel5.2/supervisor");
+        echo "\">Supervisor</a>
 \t\t\t                </li>
 \t\t\t                <li>
 \t\t\t                  <a href=\"\">Other Topic5</a>
@@ -470,7 +479,7 @@ class __TwigTemplate_6d365c650291313f739fd2d224f46922334c95079c02abcd7276f6941b7
 
     public function getDebugInfo()
     {
-        return array (  456 => 311,  452 => 310,  445 => 309,  441 => 308,  437 => 307,  433 => 306,  428 => 303,  424 => 302,  415 => 295,  413 => 294,  394 => 278,  388 => 275,  382 => 272,  360 => 253,  354 => 250,  332 => 231,  326 => 228,  301 => 206,  282 => 190,  276 => 187,  270 => 184,  251 => 168,  199 => 119,  193 => 116,  187 => 113,  178 => 107,  149 => 81,  143 => 78,  131 => 69,  125 => 66,  112 => 56,  106 => 53,  100 => 50,  94 => 47,  81 => 36,  77 => 35,  56 => 16,  53 => 15,  48 => 13,  44 => 12,  40 => 11,  33 => 7,  29 => 6,  25 => 5,  19 => 1,);
+        return array (  465 => 311,  461 => 310,  454 => 309,  450 => 308,  446 => 307,  442 => 306,  437 => 303,  433 => 302,  424 => 295,  422 => 294,  406 => 281,  400 => 278,  394 => 275,  388 => 272,  366 => 253,  360 => 250,  338 => 231,  332 => 228,  310 => 209,  304 => 206,  285 => 190,  279 => 187,  273 => 184,  254 => 168,  226 => 143,  199 => 119,  193 => 116,  187 => 113,  178 => 107,  149 => 81,  143 => 78,  131 => 69,  125 => 66,  112 => 56,  106 => 53,  100 => 50,  94 => 47,  81 => 36,  77 => 35,  56 => 16,  53 => 15,  48 => 13,  44 => 12,  40 => 11,  33 => 7,  29 => 6,  25 => 5,  19 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -625,7 +634,7 @@ class __TwigTemplate_6d365c650291313f739fd2d224f46922334c95079c02abcd7276f6941b7
 \t\t\t                  <a href=\"\">Pagination</a>
 \t\t\t                </li>
 \t\t\t                <li>
-\t\t\t                  <a href=\"\">Queues</a>
+\t\t\t                  <a href=\"{{'laravel5.2/queue'|page}}\">Queues</a>
 \t\t\t                </li>
 \t\t\t                <li>
 \t\t\t                  <a href=\"\">Redis</a>
@@ -691,7 +700,7 @@ class __TwigTemplate_6d365c650291313f739fd2d224f46922334c95079c02abcd7276f6941b7
 \t\t\t                  <a href=\"{{'laravel5.2/routeCaching'|page}}\">Route Caching</a>
 \t\t\t                </li>
 \t\t\t                <li>
-\t\t\t                  <a href=\"\">Approach2</a>
+\t\t\t                  <a href=\"{{'laravel5.2/caching'|page}}\">Caching</a>
 \t\t\t                </li>
 \t\t\t                <li>
 \t\t\t                  <a href=\"\">Approach3</a>
@@ -751,7 +760,7 @@ class __TwigTemplate_6d365c650291313f739fd2d224f46922334c95079c02abcd7276f6941b7
 \t\t\t          </ul>
 \t\t\t          <ul class=\"nav nav-sidebar\">
 \t\t\t            <li class=\"active\">
-\t\t\t              <a>Other Topcis I Cant Categorize</a>
+\t\t\t              <a>Other Topics I Cant Categorize</a>
 \t\t\t              <ul>
 \t\t\t                <li>
 \t\t\t                  <a href=\"{{'laravel5.2/routeModelBinding'|page}}\">Route Model Binding</a>
@@ -763,7 +772,7 @@ class __TwigTemplate_6d365c650291313f739fd2d224f46922334c95079c02abcd7276f6941b7
 \t\t\t                  <a href=\"{{'laravel5.2/namingResourceRoutes'|page}}\">Naming Resource Routes</a>
 \t\t\t                </li>
 \t\t\t                <li>
-\t\t\t                  <a href=\"\">Other Topic4</a>
+\t\t\t                  <a href=\"{{'laravel5.2/supervisor'|page}}\">Supervisor</a>
 \t\t\t                </li>
 \t\t\t                <li>
 \t\t\t                  <a href=\"\">Other Topic5</a>
