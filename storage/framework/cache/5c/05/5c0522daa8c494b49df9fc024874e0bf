@@ -1,4 +1,4 @@
-1488082979a:1:{s:20:"laravel5.2/queue.htm";a:10:{s:8:"fileName";s:20:"laravel5.2/queue.htm";s:7:"content";s:15051:"title = "Queue"
+1488335888a:1:{s:20:"laravel5.2/queue.htm";a:10:{s:8:"fileName";s:20:"laravel5.2/queue.htm";s:7:"content";s:15051:"title = "Queue"
 url = "/queue"
 layout = "laravel5-2TutorialsLayout"
 description = "Queue Service"
@@ -384,7 +384,7 @@ is_hidden = 0
       </ol>
     </p>
   </div>
-</div>            <!-- How To Do It -->";s:5:"mtime";i:1487411964;s:6:"markup";s:14936:"<div class="row"> <!-- Laravel Feature -->
+</div>            <!-- How To Do It -->";s:5:"mtime";i:1488086991;s:6:"markup";s:14936:"<div class="row"> <!-- Laravel Feature -->
   <div class="green4 tutorialPages">
     <h1 class="fontColorWhite1 noMargin">Laravel Feature</h1>
     <h3 class="fontColorGrey3 noMargin"> <span class="icon-tasks icon-2x"></span> Queue </h3>

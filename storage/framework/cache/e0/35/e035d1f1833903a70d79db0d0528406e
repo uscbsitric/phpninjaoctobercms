@@ -1,4 +1,4 @@
-1488082984a:1:{s:29:"laravel5-2TutorialsLayout.htm";a:6:{s:8:"fileName";s:29:"laravel5-2TutorialsLayout.htm";s:7:"content";s:11233:"description = "Laravel 5.2 Tutorials Layout"
+1488335889a:1:{s:29:"laravel5-2TutorialsLayout.htm";a:6:{s:8:"fileName";s:29:"laravel5-2TutorialsLayout.htm";s:7:"content";s:11308:"description = "Laravel 5.2 Tutorials Layout"
 ==
 <!DOCTYPE html>
 <html>
@@ -255,7 +255,7 @@
 			                  <a href="{{'laravel5.2/entrustRoleBasedPermission'|page}}">Entrust Role Based Permission</a>
 			                </li>
 			                <li>
-			                  <a href="">Approach3</a>
+			                  <a href="{{'laravel5.2/pusherIntegration'|page}}">Pusher Integration (Simple Push Notification)</a>
 			                </li>
 			                <li>
 			                  <a href="">Approach4</a>
@@ -312,7 +312,7 @@
         {% scripts %}
 
     </body>
-</html>";s:5:"mtime";i:1487438284;s:6:"markup";s:11185:"<!DOCTYPE html>
+</html>";s:5:"mtime";i:1488095724;s:6:"markup";s:11260:"<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -567,7 +567,7 @@
 			                  <a href="{{'laravel5.2/entrustRoleBasedPermission'|page}}">Entrust Role Based Permission</a>
 			                </li>
 			                <li>
-			                  <a href="">Approach3</a>
+			                  <a href="{{'laravel5.2/pusherIntegration'|page}}">Pusher Integration (Simple Push Notification)</a>
 			                </li>
 			                <li>
 			                  <a href="">Approach4</a>

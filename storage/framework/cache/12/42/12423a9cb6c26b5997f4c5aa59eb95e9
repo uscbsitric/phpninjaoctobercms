@@ -1,4 +1,4 @@
-1488082979a:1:{s:25:"laravel5.2/supervisor.htm";a:10:{s:8:"fileName";s:25:"laravel5.2/supervisor.htm";s:7:"content";s:3194:"title = "Supervisor"
+1488335889a:1:{s:25:"laravel5.2/supervisor.htm";a:10:{s:8:"fileName";s:25:"laravel5.2/supervisor.htm";s:7:"content";s:3194:"title = "Supervisor"
 url = "/supervisor"
 layout = "laravel5-2TutorialsLayout"
 description = "Supervisor"
@@ -80,7 +80,7 @@ is_hidden = 0
       </ol>
     </p>
   </div>
-</div>            <!-- How To Do It -->";s:5:"mtime";i:1487063246;s:6:"markup";s:3072:"<div class="row"> <!-- Laravel Feature -->
+</div>            <!-- How To Do It -->";s:5:"mtime";i:1488086991;s:6:"markup";s:3072:"<div class="row"> <!-- Laravel Feature -->
   <div class="green4 tutorialPages">
     <h1 class="fontColorWhite1 noMargin">Laravel Feature</h1>
     <h3 class="fontColorGrey3 noMargin"> <span class="icon-tasks icon-2x"></span> Supervisor D </h3>

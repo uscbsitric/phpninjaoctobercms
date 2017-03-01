@@ -1,4 +1,4 @@
-1488082979a:1:{s:22:"laravel5.2/caching.htm";a:9:{s:8:"fileName";s:22:"laravel5.2/caching.htm";s:7:"content";s:2149:"title = "Caching"
+1488335888a:1:{s:22:"laravel5.2/caching.htm";a:9:{s:8:"fileName";s:22:"laravel5.2/caching.htm";s:7:"content";s:2149:"title = "Caching"
 url = "/caching"
 layout = "laravel5-2TutorialsLayout"
 is_hidden = 0
@@ -68,7 +68,7 @@ is_hidden = 0
       </ol>
     </p>
   </div>
-</div>            <!-- How To Do It -->";s:5:"mtime";i:1487438446;s:6:"markup";s:2060:"<div class="row"> <!-- Laravel Feature -->
+</div>            <!-- How To Do It -->";s:5:"mtime";i:1488086991;s:6:"markup";s:2060:"<div class="row"> <!-- Laravel Feature -->
   <div class="green4 tutorialPages">
     <h1 class="fontColorWhite1 noMargin">Laravel Feature</h1>
     <h3 class="fontColorGrey3 noMargin"> <span class="icon-fire icon-2x"></span> Caching </h3>

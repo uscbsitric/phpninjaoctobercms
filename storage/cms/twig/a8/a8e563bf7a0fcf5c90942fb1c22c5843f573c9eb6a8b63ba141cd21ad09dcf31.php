@@ -367,7 +367,10 @@ class __TwigTemplate_6d365c650291313f739fd2d224f46922334c95079c02abcd7276f6941b7
         echo "\">Entrust Role Based Permission</a>
 \t\t\t                </li>
 \t\t\t                <li>
-\t\t\t                  <a href=\"\">Approach3</a>
+\t\t\t                  <a href=\"";
+        // line 256
+        echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("laravel5.2/pusherIntegration");
+        echo "\">Pusher Integration (Simple Push Notification)</a>
 \t\t\t                </li>
 \t\t\t                <li>
 \t\t\t                  <a href=\"\">Approach4</a>
@@ -479,7 +482,7 @@ class __TwigTemplate_6d365c650291313f739fd2d224f46922334c95079c02abcd7276f6941b7
 
     public function getDebugInfo()
     {
-        return array (  465 => 311,  461 => 310,  454 => 309,  450 => 308,  446 => 307,  442 => 306,  437 => 303,  433 => 302,  424 => 295,  422 => 294,  406 => 281,  400 => 278,  394 => 275,  388 => 272,  366 => 253,  360 => 250,  338 => 231,  332 => 228,  310 => 209,  304 => 206,  285 => 190,  279 => 187,  273 => 184,  254 => 168,  226 => 143,  199 => 119,  193 => 116,  187 => 113,  178 => 107,  149 => 81,  143 => 78,  131 => 69,  125 => 66,  112 => 56,  106 => 53,  100 => 50,  94 => 47,  81 => 36,  77 => 35,  56 => 16,  53 => 15,  48 => 13,  44 => 12,  40 => 11,  33 => 7,  29 => 6,  25 => 5,  19 => 1,);
+        return array (  468 => 311,  464 => 310,  457 => 309,  453 => 308,  449 => 307,  445 => 306,  440 => 303,  436 => 302,  427 => 295,  425 => 294,  409 => 281,  403 => 278,  397 => 275,  391 => 272,  372 => 256,  366 => 253,  360 => 250,  338 => 231,  332 => 228,  310 => 209,  304 => 206,  285 => 190,  279 => 187,  273 => 184,  254 => 168,  226 => 143,  199 => 119,  193 => 116,  187 => 113,  178 => 107,  149 => 81,  143 => 78,  131 => 69,  125 => 66,  112 => 56,  106 => 53,  100 => 50,  94 => 47,  81 => 36,  77 => 35,  56 => 16,  53 => 15,  48 => 13,  44 => 12,  40 => 11,  33 => 7,  29 => 6,  25 => 5,  19 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -747,7 +750,7 @@ class __TwigTemplate_6d365c650291313f739fd2d224f46922334c95079c02abcd7276f6941b7
 \t\t\t                  <a href=\"{{'laravel5.2/entrustRoleBasedPermission'|page}}\">Entrust Role Based Permission</a>
 \t\t\t                </li>
 \t\t\t                <li>
-\t\t\t                  <a href=\"\">Approach3</a>
+\t\t\t                  <a href=\"{{'laravel5.2/pusherIntegration'|page}}\">Pusher Integration (Simple Push Notification)</a>
 \t\t\t                </li>
 \t\t\t                <li>
 \t\t\t                  <a href=\"\">Approach4</a>
