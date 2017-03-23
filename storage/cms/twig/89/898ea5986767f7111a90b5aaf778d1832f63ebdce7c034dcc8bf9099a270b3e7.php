@@ -44,6 +44,14 @@ class __TwigTemplate_6fffeab72ac7aeba8988da2bb99c7dd6a08e4b28575f63f30cda2030155
         echo "\">Laravel 5.2</a></li>
                 <li class=\"";
         // line 17
+        if (($this->getAttribute($this->getAttribute(($context["this"] ?? null), "page", array()), "id", array()) == "laravel5.4-laravel5.4")) {
+            echo "active";
+        }
+        echo "\">    <a href=\"";
+        echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("laravel5.4/laravel5.4.htm");
+        echo "\">Laravel 5.4</a></li>
+                <li class=\"";
+        // line 18
         if (($this->getAttribute($this->getAttribute(($context["this"] ?? null), "page", array()), "id", array()) == "ajax")) {
             echo "active";
         }
@@ -51,7 +59,7 @@ class __TwigTemplate_6fffeab72ac7aeba8988da2bb99c7dd6a08e4b28575f63f30cda2030155
         echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("laravel1.6");
         echo "\">Angular 1.6</a></li>
                 <li class=\"";
-        // line 18
+        // line 19
         if (($this->getAttribute($this->getAttribute(($context["this"] ?? null), "page", array()), "id", array()) == "plugins")) {
             echo "active";
         }
@@ -76,7 +84,7 @@ class __TwigTemplate_6fffeab72ac7aeba8988da2bb99c7dd6a08e4b28575f63f30cda2030155
 
     public function getDebugInfo()
     {
-        return array (  55 => 18,  47 => 17,  39 => 16,  31 => 11,  19 => 1,);
+        return array (  63 => 19,  55 => 18,  47 => 17,  39 => 16,  31 => 11,  19 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -105,6 +113,7 @@ class __TwigTemplate_6fffeab72ac7aeba8988da2bb99c7dd6a08e4b28575f63f30cda2030155
             <ul class=\"nav navbar-nav\">
                 <li class=\"separator hidden-xs\"></li>
                 <li class=\"{% if this.page.id == 'laravel5.2-laravel5.2' %}active{% endif %}\">    <a href=\"{{ 'laravel5.2/laravel5.2.htm'|page }}\">Laravel 5.2</a></li>
+                <li class=\"{% if this.page.id == 'laravel5.4-laravel5.4' %}active{% endif %}\">    <a href=\"{{ 'laravel5.4/laravel5.4.htm'|page }}\">Laravel 5.4</a></li>
                 <li class=\"{% if this.page.id == 'ajax' %}active{% endif %}\">    <a href=\"{{ 'laravel1.6'|page }}\">Angular 1.6</a></li>
                 <li class=\"{% if this.page.id == 'plugins' %}active{% endif %}\"> <a href=\"{{ 'amazonWebServices'|page }}\">Amazon Web Services</a></li>
             </ul>

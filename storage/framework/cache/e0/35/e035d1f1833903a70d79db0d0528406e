@@ -1,0 +1,627 @@
+1490241745a:1:{s:29:"laravel5-2TutorialsLayout.htm";a:6:{s:8:"fileName";s:29:"laravel5-2TutorialsLayout.htm";s:7:"content";s:11341:"description = "Laravel 5.2 Tutorials Layout"
+==
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>October CMS - {{ this.page.title }}</title>
+        <meta name="description" content="{{ this.page.meta_description }}">
+        <meta name="title" content="{{ this.page.meta_title }}">
+        <meta name="author" content="OctoberCMS">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="generator" content="OctoberCMS">
+        <link rel="icon" type="image/png" href="{{ 'assets/images/Ninja.png'|theme }}">
+        <link href="{{ 'assets/css/vendor.css'|theme }}" rel="stylesheet">
+        <link href="{{ 'assets/css/theme.css'|theme }}" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+        {% styles %}
+    </head>
+    <body>
+        <!--
+        Color Codes:
+          Green (lightest to darkest):
+            #93D4AC #26BF64 #26C667 #29AC5E
+
+          Blue: (lightest to darkest)
+            #13BBB1 #326A67
+
+          White:
+            #CCD1D1
+
+          Grey: (lightest to darkest):
+            #9FA7A9 #3E5050 #353D3F #2C533C
+        -->
+
+        <!-- Header -->
+        <header id="tutorialsLayout-header">
+            {% partial 'site/ninjaHeader.htm' %}
+        </header>
+
+		<div class="container-fluid">
+            <div class="row">  <!-- Start of Row1 -->
+				<!-- SideNav -->
+			    <div class="col-md-2 sidebar">
+			          <ul class="nav nav-sidebar">
+			            <li class="active">
+			              <a>Core Concepts</a>
+			              <ul>
+			                <li>
+			                  <a href="{{'laravel5.2/ServiceContainer'|page}}">Service Container</a>
+			                </li>
+			                <li>
+			                  <a href="{{'laravel5.2/serviceProvider'|page}}">Service Provider</a>
+			                </li>
+			                <li>
+			                  <a href="{{'laravel5.2/facades'|page}}">Facades</a>
+			                </li>
+			                <li>
+			                  <a href="{{'laravel5.2/contracts'|page}}">Contracts</a>
+			                </li>
+			              </ul>
+			            </li>
+			          </ul>
+			          <ul class="nav nav-sidebar">
+			            <li class="active">
+			              <a>The HTTP Layer</a>
+			              <ul>
+			                <li>
+			                  <a href="{{'laravel5.2/routing'|page}}">Routing</a>
+			                </li>
+			                <li>
+			                  <a href="{{'laravel5.2/middlewares'|page}}">Middleware</a>
+			                </li>
+			                <li>
+			                  <a href="">Controllers</a>
+			                </li>
+			                <li>
+			                  <a href="">Requests</a>
+			                </li>
+			                 <li>
+			                  <a href="{{'laravel5.2/httpResponses'|page}}">Responses</a>
+			                </li>
+			                 <li>
+			                  <a href="{{'laravel5.2/views'|page}}">Views</a>
+			                </li>
+			                 <li>
+			                  <a href="">Validation</a>
+			                </li>
+			              </ul>
+			            </li>
+			          </ul>
+			          <ul class="nav nav-sidebar">
+			            <li class="active">
+			              <a>Security</a>
+			              <ul>
+			                <li>
+			                  <a href="">Encryption</a>
+			                </li>
+			                <li>
+			                  <a href="">Hashing</a>
+			                </li>
+			              </ul>
+			            </li>
+			          </ul>
+			          <ul class="nav nav-sidebar">
+			            <li class="active">
+			              <a>Services</a>
+			              <ul>
+			                <li>
+			                  <a href="{{'laravel5.2/authorization'|page}}">Authorization</a>
+			                </li>
+			                <li>
+			                  <a href="">Artisan Console</a>
+			                </li>
+			                <li>
+			                  <a href="{{'laravel5.2/cache'|page}}">Cache</a>
+			                </li>
+			                <li>
+			                  <a href="{{'laravel5.2/encryption'|page}}">Encryption</a>
+			                </li>
+			                <li>
+			                  <a href="{{'laravel5.2/events'|page}}">Events</a>
+			                </li>
+			                <li>
+			                  <a href="{{'laravel5.2/filesystem' |page}}">Filesystem / Cloud Storage</a>
+			                </li>
+			                <li>
+			                  <a href="">Hashing</a>
+			                </li>
+			                <li>
+			                  <a href="">Helpers</a>
+			                </li>
+			                <li>
+			                  <a href="">Localization</a>
+			                </li>
+			                <li>
+			                  <a href="">Mail</a>
+			                </li>
+			                <li>
+			                  <a href="">Package Development</a>
+			                </li>
+			                <li>
+			                  <a href="">Pagination</a>
+			                </li>
+			                <li>
+			                  <a href="{{'laravel5.2/queue'|page}}">Queues</a>
+			                </li>
+			                <li>
+			                  <a href="">Redis</a>
+			                </li>
+			                <li>
+			                  <a href="">Task Scheduling</a>
+			                </li>
+			                <li>
+			                  <a href="">Validation</a>
+			                </li>
+			              </ul>
+			            </li>
+			          </ul>
+			          <ul class="nav nav-sidebar">
+			            <li class="active">
+			              <a>Database</a>
+			              <ul>
+			                <li>
+			                  <a href="">Getting Started</a>
+			                </li>
+			                <li>
+			                  <a href="">Query Builder</a>
+			                </li>
+			                <li>
+			                  <a href="{{'laravel5.2/databaseMigration'|page}}">Migrations</a>
+			                </li>
+			                <li>
+			                  <a href="">Seeding</a>
+			                </li>
+			                </ul>
+			            </li>
+			          </ul>
+			          <ul class="nav nav-sidebar">
+			            <li class="active">
+			              <a>Eloquent ORM</a>
+			              <ul>
+			                <li>
+			                  <a href="">Getting Started</a>
+			                </li>
+			                <li>
+			                  <a href="{{'laravel5.2/eloquentORMModels'|page}}">Eloquent ORM Models</a>
+			                </li>
+			                <li>
+			                  <a href="{{'laravel5.2/eloquentRelationships'|page}}">Releationships</a>
+			                </li>
+			                <li>
+			                  <a href="{{'laravel5.2/collections'|page}}">Collections</a>
+			                </li>
+			                <li>
+			                  <a href="">Mutators</a>
+			                </li>
+			                <li>
+			                  <a href="">Serialization</a>
+			                </li>
+			              </ul>
+			            </li>
+			          </ul>
+			          <ul class="nav nav-sidebar">
+			            <li class="active">
+			              <a>Performance Improvement</a>
+			              <ul>
+			                <li>
+			                  <a href="{{'laravel5.2/routeCaching'|page}}">Route Caching</a>
+			                </li>
+			                <li>
+			                  <a href="{{'laravel5.2/caching'|page}}">Caching</a>
+			                </li>
+			                <li>
+			                  <a href="">Approach3</a>
+			                </li>
+			                <li>
+			                  <a href="">Approach4</a>
+			                </li>
+			                <li>
+			                  <a href="">Approach5</a>
+			                </li>
+			              </ul>
+			            </li>
+			          </ul>
+			          <ul class="nav nav-sidebar">
+			            <li class="active">
+			              <a>Design Patterns</a>
+			              <ul>
+			                <li>
+			                  <a href="{{'laravel5.2/repositoryPattern'|page}}">Repository Pattern</a>
+			                </li>
+			                <li>
+			                  <a href="{{'laravel5.2/registryPattern'|page}}">Registry Pattern</a>
+			                </li>
+			                <li>
+			                  <a href="">Design Pattern3</a>
+			                </li>
+			                <li>
+			                  <a href="">Design Pattern4</a>
+			                </li>
+			                <li>
+			                  <a href="">Design Pattern5</a>
+			                </li>
+			              </ul>
+			            </li>
+			          </ul>
+			          <ul class="nav nav-sidebar">
+			            <li class="active">
+			              <a>Approach</a>
+			              <ul>
+			                <li>
+			                  <a href="{{'laravel5.2/jwt'|page}}">Jason Web Token(JWT) based Authentication</a>
+			                </li>
+			                <li>
+			                  <a href="{{'laravel5.2/entrustRoleBasedPermission'|page}}">Entrust Role Based Permission</a>
+			                </li>
+			                <li>
+			                  <a href="{{'laravel5.2/pusherIntegration'|page}}">Pusher Integration (Simple Push Notification)</a>
+			                </li>
+			                <li>
+			                  <a href="">Approach4</a>
+			                </li>
+			                <li>
+			                  <a href="">Approach5</a>
+			                </li>
+			              </ul>
+			            </li>
+			          </ul>
+			          <ul class="nav nav-sidebar">
+			            <li class="active">
+			              <a>Other Topics I Cant Categorize</a>
+			              <ul>
+			                <li>
+			                  <a href="{{'laravel5.2/routeModelBinding'|page}}">Route Model Binding</a>
+			                </li>
+			                <li>
+			                  <a href="{{'laravel5.2/namingResourceRouteParameters'|page}}">Naming Resource Route Parameters</a>
+			                </li>
+			                <li>
+			                  <a href="{{'laravel5.2/namingResourceRoutes'|page}}">Naming Resource Routes</a>
+			                </li>
+			                <li>
+			                  <a href="{{'laravel5.2/supervisor'|page}}">Supervisor</a>
+			                </li>
+			                <li>
+			                  <a href="">Other Topic5</a>
+			                </li>
+			              </ul>
+			            </li>
+			          </ul>
+			    </div>
+				<!-- SideNav -->
+
+		        <!-- Content -->
+		        <div class="col-md-10 main">
+		            {% page %}
+		        </div>
+		        <!-- Content -->
+		    </div>             <!-- Start of Row1 -->
+        </div>
+
+        <!-- Footer -->
+        <footer id="layout-footer">
+            {% partial 'site/ninjaFooter' %}
+        </footer>
+
+        <!-- Scripts -->
+        <script src="{{ 'assets/vendor/jquery.js'|theme }}"></script>
+        <script src="{{ 'assets/vendor/bootstrap.js'|theme }}"></script>
+        <script src="{{ 'assets/javascript/app.js'|theme }}"></script>
+        {% framework extras %}
+        {% scripts %}
+
+    </body>
+</html>";s:5:"mtime";i:1490230894;s:6:"markup";s:11293:"<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>October CMS - {{ this.page.title }}</title>
+        <meta name="description" content="{{ this.page.meta_description }}">
+        <meta name="title" content="{{ this.page.meta_title }}">
+        <meta name="author" content="OctoberCMS">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="generator" content="OctoberCMS">
+        <link rel="icon" type="image/png" href="{{ 'assets/images/Ninja.png'|theme }}">
+        <link href="{{ 'assets/css/vendor.css'|theme }}" rel="stylesheet">
+        <link href="{{ 'assets/css/theme.css'|theme }}" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+        {% styles %}
+    </head>
+    <body>
+        <!--
+        Color Codes:
+          Green (lightest to darkest):
+            #93D4AC #26BF64 #26C667 #29AC5E
+
+          Blue: (lightest to darkest)
+            #13BBB1 #326A67
+
+          White:
+            #CCD1D1
+
+          Grey: (lightest to darkest):
+            #9FA7A9 #3E5050 #353D3F #2C533C
+        -->
+
+        <!-- Header -->
+        <header id="tutorialsLayout-header">
+            {% partial 'site/ninjaHeader.htm' %}
+        </header>
+
+		<div class="container-fluid">
+            <div class="row">  <!-- Start of Row1 -->
+				<!-- SideNav -->
+			    <div class="col-md-2 sidebar">
+			          <ul class="nav nav-sidebar">
+			            <li class="active">
+			              <a>Core Concepts</a>
+			              <ul>
+			                <li>
+			                  <a href="{{'laravel5.2/ServiceContainer'|page}}">Service Container</a>
+			                </li>
+			                <li>
+			                  <a href="{{'laravel5.2/serviceProvider'|page}}">Service Provider</a>
+			                </li>
+			                <li>
+			                  <a href="{{'laravel5.2/facades'|page}}">Facades</a>
+			                </li>
+			                <li>
+			                  <a href="{{'laravel5.2/contracts'|page}}">Contracts</a>
+			                </li>
+			              </ul>
+			            </li>
+			          </ul>
+			          <ul class="nav nav-sidebar">
+			            <li class="active">
+			              <a>The HTTP Layer</a>
+			              <ul>
+			                <li>
+			                  <a href="{{'laravel5.2/routing'|page}}">Routing</a>
+			                </li>
+			                <li>
+			                  <a href="{{'laravel5.2/middlewares'|page}}">Middleware</a>
+			                </li>
+			                <li>
+			                  <a href="">Controllers</a>
+			                </li>
+			                <li>
+			                  <a href="">Requests</a>
+			                </li>
+			                 <li>
+			                  <a href="{{'laravel5.2/httpResponses'|page}}">Responses</a>
+			                </li>
+			                 <li>
+			                  <a href="{{'laravel5.2/views'|page}}">Views</a>
+			                </li>
+			                 <li>
+			                  <a href="">Validation</a>
+			                </li>
+			              </ul>
+			            </li>
+			          </ul>
+			          <ul class="nav nav-sidebar">
+			            <li class="active">
+			              <a>Security</a>
+			              <ul>
+			                <li>
+			                  <a href="">Encryption</a>
+			                </li>
+			                <li>
+			                  <a href="">Hashing</a>
+			                </li>
+			              </ul>
+			            </li>
+			          </ul>
+			          <ul class="nav nav-sidebar">
+			            <li class="active">
+			              <a>Services</a>
+			              <ul>
+			                <li>
+			                  <a href="{{'laravel5.2/authorization'|page}}">Authorization</a>
+			                </li>
+			                <li>
+			                  <a href="">Artisan Console</a>
+			                </li>
+			                <li>
+			                  <a href="{{'laravel5.2/cache'|page}}">Cache</a>
+			                </li>
+			                <li>
+			                  <a href="{{'laravel5.2/encryption'|page}}">Encryption</a>
+			                </li>
+			                <li>
+			                  <a href="{{'laravel5.2/events'|page}}">Events</a>
+			                </li>
+			                <li>
+			                  <a href="{{'laravel5.2/filesystem' |page}}">Filesystem / Cloud Storage</a>
+			                </li>
+			                <li>
+			                  <a href="">Hashing</a>
+			                </li>
+			                <li>
+			                  <a href="">Helpers</a>
+			                </li>
+			                <li>
+			                  <a href="">Localization</a>
+			                </li>
+			                <li>
+			                  <a href="">Mail</a>
+			                </li>
+			                <li>
+			                  <a href="">Package Development</a>
+			                </li>
+			                <li>
+			                  <a href="">Pagination</a>
+			                </li>
+			                <li>
+			                  <a href="{{'laravel5.2/queue'|page}}">Queues</a>
+			                </li>
+			                <li>
+			                  <a href="">Redis</a>
+			                </li>
+			                <li>
+			                  <a href="">Task Scheduling</a>
+			                </li>
+			                <li>
+			                  <a href="">Validation</a>
+			                </li>
+			              </ul>
+			            </li>
+			          </ul>
+			          <ul class="nav nav-sidebar">
+			            <li class="active">
+			              <a>Database</a>
+			              <ul>
+			                <li>
+			                  <a href="">Getting Started</a>
+			                </li>
+			                <li>
+			                  <a href="">Query Builder</a>
+			                </li>
+			                <li>
+			                  <a href="{{'laravel5.2/databaseMigration'|page}}">Migrations</a>
+			                </li>
+			                <li>
+			                  <a href="">Seeding</a>
+			                </li>
+			                </ul>
+			            </li>
+			          </ul>
+			          <ul class="nav nav-sidebar">
+			            <li class="active">
+			              <a>Eloquent ORM</a>
+			              <ul>
+			                <li>
+			                  <a href="">Getting Started</a>
+			                </li>
+			                <li>
+			                  <a href="{{'laravel5.2/eloquentORMModels'|page}}">Eloquent ORM Models</a>
+			                </li>
+			                <li>
+			                  <a href="{{'laravel5.2/eloquentRelationships'|page}}">Releationships</a>
+			                </li>
+			                <li>
+			                  <a href="{{'laravel5.2/collections'|page}}">Collections</a>
+			                </li>
+			                <li>
+			                  <a href="">Mutators</a>
+			                </li>
+			                <li>
+			                  <a href="">Serialization</a>
+			                </li>
+			              </ul>
+			            </li>
+			          </ul>
+			          <ul class="nav nav-sidebar">
+			            <li class="active">
+			              <a>Performance Improvement</a>
+			              <ul>
+			                <li>
+			                  <a href="{{'laravel5.2/routeCaching'|page}}">Route Caching</a>
+			                </li>
+			                <li>
+			                  <a href="{{'laravel5.2/caching'|page}}">Caching</a>
+			                </li>
+			                <li>
+			                  <a href="">Approach3</a>
+			                </li>
+			                <li>
+			                  <a href="">Approach4</a>
+			                </li>
+			                <li>
+			                  <a href="">Approach5</a>
+			                </li>
+			              </ul>
+			            </li>
+			          </ul>
+			          <ul class="nav nav-sidebar">
+			            <li class="active">
+			              <a>Design Patterns</a>
+			              <ul>
+			                <li>
+			                  <a href="{{'laravel5.2/repositoryPattern'|page}}">Repository Pattern</a>
+			                </li>
+			                <li>
+			                  <a href="{{'laravel5.2/registryPattern'|page}}">Registry Pattern</a>
+			                </li>
+			                <li>
+			                  <a href="">Design Pattern3</a>
+			                </li>
+			                <li>
+			                  <a href="">Design Pattern4</a>
+			                </li>
+			                <li>
+			                  <a href="">Design Pattern5</a>
+			                </li>
+			              </ul>
+			            </li>
+			          </ul>
+			          <ul class="nav nav-sidebar">
+			            <li class="active">
+			              <a>Approach</a>
+			              <ul>
+			                <li>
+			                  <a href="{{'laravel5.2/jwt'|page}}">Jason Web Token(JWT) based Authentication</a>
+			                </li>
+			                <li>
+			                  <a href="{{'laravel5.2/entrustRoleBasedPermission'|page}}">Entrust Role Based Permission</a>
+			                </li>
+			                <li>
+			                  <a href="{{'laravel5.2/pusherIntegration'|page}}">Pusher Integration (Simple Push Notification)</a>
+			                </li>
+			                <li>
+			                  <a href="">Approach4</a>
+			                </li>
+			                <li>
+			                  <a href="">Approach5</a>
+			                </li>
+			              </ul>
+			            </li>
+			          </ul>
+			          <ul class="nav nav-sidebar">
+			            <li class="active">
+			              <a>Other Topics I Cant Categorize</a>
+			              <ul>
+			                <li>
+			                  <a href="{{'laravel5.2/routeModelBinding'|page}}">Route Model Binding</a>
+			                </li>
+			                <li>
+			                  <a href="{{'laravel5.2/namingResourceRouteParameters'|page}}">Naming Resource Route Parameters</a>
+			                </li>
+			                <li>
+			                  <a href="{{'laravel5.2/namingResourceRoutes'|page}}">Naming Resource Routes</a>
+			                </li>
+			                <li>
+			                  <a href="{{'laravel5.2/supervisor'|page}}">Supervisor</a>
+			                </li>
+			                <li>
+			                  <a href="">Other Topic5</a>
+			                </li>
+			              </ul>
+			            </li>
+			          </ul>
+			    </div>
+				<!-- SideNav -->
+
+		        <!-- Content -->
+		        <div class="col-md-10 main">
+		            {% page %}
+		        </div>
+		        <!-- Content -->
+		    </div>             <!-- Start of Row1 -->
+        </div>
+
+        <!-- Footer -->
+        <footer id="layout-footer">
+            {% partial 'site/ninjaFooter' %}
+        </footer>
+
+        <!-- Scripts -->
+        <script src="{{ 'assets/vendor/jquery.js'|theme }}"></script>
+        <script src="{{ 'assets/vendor/bootstrap.js'|theme }}"></script>
+        <script src="{{ 'assets/javascript/app.js'|theme }}"></script>
+        {% framework extras %}
+        {% scripts %}
+
+    </body>
+</html>";s:4:"code";N;s:11:"description";s:28:"Laravel 5.2 Tutorials Layout";}}
