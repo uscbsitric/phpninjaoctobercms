@@ -1,0 +1,493 @@
+1491720023a:1:{s:21:"laravel5.4/queues.htm";a:10:{s:8:"fileName";s:21:"laravel5.4/queues.htm";s:7:"content";s:9670:"title = "Queues"
+url = "/queues5.4"
+layout = "laravel5-4TutorialsLayout"
+description = "Queues 5.4"
+is_hidden = 0
+==
+<div class="row"> <!-- Laravel Feature -->
+  <div class="green4 tutorialPages">
+    <h1 class="fontColorWhite1 noMargin">Laravel Feature</h1>
+    <h3 class="fontColorGrey3 noMargin"> <span class="icon-tasks icon-2x"></span> Queues </h3>
+  </div>
+</div>            <!-- Laravel Feature -->
+
+<div class="row"> <!-- What Does It Do -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">What Does It Do</h1>
+    <p class="fontColorWhite2 noMargin">
+      Laravel queues provide a unified API across a variety of different queue backends, such as Beanstalk, Amazon SQS, Redis, or even a relational database. 
+      Queues allow you to defer the processing of a time consuming task, such as sending an email, until a later time. 
+      Deferring these time consuming tasks drastically speeds up web requests to your application.
+    </p>
+  </div>
+</div>            <!-- What Does It Do -->
+
+<div class="row"> <!-- Note -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">NOTE: <span class="icon-warning-sign icon-1x"></span></h1>
+    <div class="well">
+      <p>
+      I am using the "database" driver for this example. startingpoint is the name of my project.
+      <code>Try-Catch</code> and proper handling of possible exception occurence. Design the job to succeed, because some failures are not recoverable for us.
+      </p>
+    </div>
+  </div>
+</div>            <!-- Note -->
+
+<div class="row"> <!-- When To Do It -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">When To Do It</h1>
+    <p class="fontColorWhite2 noMargin">
+      When there is a long running piece of Task. Make a job for it, and dispatch it to the Queue Service. The entire application will run faster if it is designed this way.
+    </p>
+  </div>
+</div>            <!-- When To Do It -->
+
+<div class="row"> <!-- How To Do It -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">How To Do It</h1>
+    <p class="fontColorWhite2 noMargin">
+      <ul>
+        <li>
+          Step 1: In the <code>RootProjectDirectory\.env</code>, set <code>QUEUE_DRIVER=database</code>.
+        </li>
+
+        <li>
+          Step 2: Since I am using the database driver
+          <pre>
+            In the terminal, in the <strong>RootProjectDirectory</strong>, run <span class="icon-terminal"></span>: <strong>php artisan queue:table</strong>
+            This will create the <strong>timestamp_create_jobs_table.php migration</strong>.
+            Then run <span class="icon-terminal"></span>: <strong>php artisan migrate</strong>
+          </pre>
+        </li>
+
+        <li>
+          Step 3: Prepare for failed job contingency
+          <pre>
+            In the terminal, in the <strong>RootProjectDirectory</strong>, run <span class="icon-terminal"></span>: <strong>php artisan queue:failed-table</strong>
+            This will create the <strong>timestamp_create_failed_jobs_table.php migration</strong>.
+            Then run <span class="icon-terminal"></span>: <strong>php artisan migrate</strong>
+          </pre>
+        </li>
+
+        <li>
+          Step 4: Install Supervisord
+          <pre>
+            sudo apt-get install -y supervisor
+          </pre>
+        </li>
+        
+        <li>
+          Step 5: Configure Supervisord
+          <pre>
+            In /etc/supervisor
+
+            <code>
+              ; supervisor config file
+              
+              [unix_http_server]
+              file=/var/run/supervisor.sock   ; (the path to the socket file)
+              chmod=0700                      ; sockef file mode (default 0700)
+
+              [supervisord]
+              logfile=/var/log/supervisor/supervisord.log ; (main log file;default $CWD/supervisord.log)
+              pidfile=/var/run/supervisord.pid ; (supervisord pidfile;default supervisord.pid)
+              childlogdir=/var/log/supervisor            ; ('AUTO' child log dir, default $TEMP)
+
+              ; the below section must remain in the config file for RPC
+              ; (supervisorctl/web interface) to work, additional interfaces may be
+              ; added by defining them in separate rpcinterface: sections              [rpcinterface:supervisor]
+              supervisor.rpcinterface_factory = supervisor.rpcinterface:make_main_rpcinterface
+              
+              [supervisorctl]
+              serverurl=unix:///var/run/supervisor.sock ; use a unix:// URL  for a unix socket
+
+              ; The [include] section can just contain the "files" setting.  This
+              ; setting can list multiple files (separated by whitespace or
+              ; newlines).  It can also contain wildcards.  The filenames are
+              ; interpreted as relative to this file.  Included files *cannot*
+              ; include files themselves.
+
+              [include]
+              files = /etc/supervisor/conf.d/*.conf
+
+              [inet_http_server]
+              port = 9001
+              username = user
+              password = pass
+            </code>
+          </pre>
+        </li>
+        
+        <li>
+          Step 6: Create a Queue Worker Configuration File
+          <pre>
+            <code>
+            [program:laravel5-4MeetupPracticeWorker1]
+            process_name=%(program_name)s_%(process_num)02d
+            command=php /home/vagrant/Code/PersonalProjects/laravel5.4MeetupPractice/artisan queue:listen database --sleep=3 --tries=3
+            autostart=true
+            autorestart=true
+            user=root
+            numprocs=2
+            redirect_stderr=true
+            stdout_logfile=/var/log/laravel5-4MeetupPracticeWorker1.log
+            </code>
+          </pre>
+        </li>
+        
+        <li>
+          Step 7: Restart Supervisor
+          <pre>
+            in the terminal, run <span class="icon-terminal"></span>: <strong>service supervisor restart</strong>
+          </pre>
+        </li>
+        
+        <li>
+          Step 8: Check Installation
+          <pre>
+            Check its installation at http://localhost:9001 , in my case http://192.168.10.10:9001/
+          </pre>
+        </li>
+
+        <li>
+		  Step 9: Create a <code>route</code> for testing.
+		  <pre>
+		    In <strong>rootProjectDirectory\routes\web.php</strong>
+		    <code>
+		    ...
+            Route::get('/queueTesting',
+                       'QueueTestController@queueTesting'
+                      );
+		    </code>
+		  </pre>
+        </li>
+
+        <li>
+          Step 10:  Create a <code>QueueTestController</code>
+          <pre>
+            In <strong>rootProjectDirectory\app\Http\Controllers\QueueTestController.php</strong>
+            <code>
+            ...
+            &lt;?php
+            namespace App\Http\Controllers;
+            use Illuminate\Http\Request;
+            use Illuminate\Support\Facades\App;
+            use Illuminate\Support\Facades\Session;
+            use Illuminate\Support\Facades\Log;
+            use App\User;
+            use App\Jobs\TestJob1;
+
+            class QueueTestController extends Controller
+            {
+              public function queueTesting()
+              {
+                $user = User::find(1);
+                $testVariable = "test value";
+                dispatch(new TestJob1(array($user, $testVariable)));
+                exit('done dispatching TestJob1');
+              }
+            }
+            </code>
+          </pre>
+        </li>
+
+        <li>
+          Step 11: Generate a <code>Job Class</code>
+          <pre>
+            In the terminal, in the rootProjectDirectory, run <span class="icon-terminal"></span>: <strong>php artisan make:job TestJob1</strong>
+            This will create the file <strong>RootProjectDirectory\app\Jobs\TestJob1.php</strong>, this is how I adjusted my code after running the code above:
+            <code>
+              &lt;?php
+
+              namespace App\Jobs;
+
+              use Illuminate\Bus\Queueable;
+              use Illuminate\Queue\SerializesModels;
+              use Illuminate\Queue\InteractsWithQueue;
+              use Illuminate\Contracts\Queue\ShouldQueue;
+              use Illuminate\Foundation\Bus\Dispatchable;
+
+              use App\User;
+              use Illuminate\Support\Facades\Log;
+
+              class TestJob1 implements ShouldQueue
+              {
+                use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
+	
+	            protected $user;
+	            protected $testVariable;
+
+                public function __construct( $parameters )
+                {
+                  $this->user = $parameters[0];
+		          $this->testVariable = $parameters[1];
+                }
+
+                public function handle()
+                {
+                  sleep(10);
+		          $id = $this->user->id;
+		          $testVariable = $this->testVariable;
+		          $message = "User ID: $id and testVariable: $testVariable";
+                  Log::info($message);
+                }
+              }
+            </code>
+          </pre>
+        </li>
+
+        <li>
+          Step 12: Access <code>http://laravel5.4meetuppractice/queueTesting</code>
+        </li>
+
+        <li>
+		  Step 13: Check the <code>jobs</code> table
+        </li>
+      </ul>
+    </p>
+  </div>
+</div>            <!-- How To Do It -->";s:5:"mtime";i:1490764897;s:6:"markup";s:9553:"<div class="row"> <!-- Laravel Feature -->
+  <div class="green4 tutorialPages">
+    <h1 class="fontColorWhite1 noMargin">Laravel Feature</h1>
+    <h3 class="fontColorGrey3 noMargin"> <span class="icon-tasks icon-2x"></span> Queues </h3>
+  </div>
+</div>            <!-- Laravel Feature -->
+
+<div class="row"> <!-- What Does It Do -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">What Does It Do</h1>
+    <p class="fontColorWhite2 noMargin">
+      Laravel queues provide a unified API across a variety of different queue backends, such as Beanstalk, Amazon SQS, Redis, or even a relational database. 
+      Queues allow you to defer the processing of a time consuming task, such as sending an email, until a later time. 
+      Deferring these time consuming tasks drastically speeds up web requests to your application.
+    </p>
+  </div>
+</div>            <!-- What Does It Do -->
+
+<div class="row"> <!-- Note -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">NOTE: <span class="icon-warning-sign icon-1x"></span></h1>
+    <div class="well">
+      <p>
+      I am using the "database" driver for this example. startingpoint is the name of my project.
+      <code>Try-Catch</code> and proper handling of possible exception occurence. Design the job to succeed, because some failures are not recoverable for us.
+      </p>
+    </div>
+  </div>
+</div>            <!-- Note -->
+
+<div class="row"> <!-- When To Do It -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">When To Do It</h1>
+    <p class="fontColorWhite2 noMargin">
+      When there is a long running piece of Task. Make a job for it, and dispatch it to the Queue Service. The entire application will run faster if it is designed this way.
+    </p>
+  </div>
+</div>            <!-- When To Do It -->
+
+<div class="row"> <!-- How To Do It -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">How To Do It</h1>
+    <p class="fontColorWhite2 noMargin">
+      <ul>
+        <li>
+          Step 1: In the <code>RootProjectDirectory\.env</code>, set <code>QUEUE_DRIVER=database</code>.
+        </li>
+
+        <li>
+          Step 2: Since I am using the database driver
+          <pre>
+            In the terminal, in the <strong>RootProjectDirectory</strong>, run <span class="icon-terminal"></span>: <strong>php artisan queue:table</strong>
+            This will create the <strong>timestamp_create_jobs_table.php migration</strong>.
+            Then run <span class="icon-terminal"></span>: <strong>php artisan migrate</strong>
+          </pre>
+        </li>
+
+        <li>
+          Step 3: Prepare for failed job contingency
+          <pre>
+            In the terminal, in the <strong>RootProjectDirectory</strong>, run <span class="icon-terminal"></span>: <strong>php artisan queue:failed-table</strong>
+            This will create the <strong>timestamp_create_failed_jobs_table.php migration</strong>.
+            Then run <span class="icon-terminal"></span>: <strong>php artisan migrate</strong>
+          </pre>
+        </li>
+
+        <li>
+          Step 4: Install Supervisord
+          <pre>
+            sudo apt-get install -y supervisor
+          </pre>
+        </li>
+        
+        <li>
+          Step 5: Configure Supervisord
+          <pre>
+            In /etc/supervisor
+
+            <code>
+              ; supervisor config file
+              
+              [unix_http_server]
+              file=/var/run/supervisor.sock   ; (the path to the socket file)
+              chmod=0700                      ; sockef file mode (default 0700)
+
+              [supervisord]
+              logfile=/var/log/supervisor/supervisord.log ; (main log file;default $CWD/supervisord.log)
+              pidfile=/var/run/supervisord.pid ; (supervisord pidfile;default supervisord.pid)
+              childlogdir=/var/log/supervisor            ; ('AUTO' child log dir, default $TEMP)
+
+              ; the below section must remain in the config file for RPC
+              ; (supervisorctl/web interface) to work, additional interfaces may be
+              ; added by defining them in separate rpcinterface: sections              [rpcinterface:supervisor]
+              supervisor.rpcinterface_factory = supervisor.rpcinterface:make_main_rpcinterface
+              
+              [supervisorctl]
+              serverurl=unix:///var/run/supervisor.sock ; use a unix:// URL  for a unix socket
+
+              ; The [include] section can just contain the "files" setting.  This
+              ; setting can list multiple files (separated by whitespace or
+              ; newlines).  It can also contain wildcards.  The filenames are
+              ; interpreted as relative to this file.  Included files *cannot*
+              ; include files themselves.
+
+              [include]
+              files = /etc/supervisor/conf.d/*.conf
+
+              [inet_http_server]
+              port = 9001
+              username = user
+              password = pass
+            </code>
+          </pre>
+        </li>
+        
+        <li>
+          Step 6: Create a Queue Worker Configuration File
+          <pre>
+            <code>
+            [program:laravel5-4MeetupPracticeWorker1]
+            process_name=%(program_name)s_%(process_num)02d
+            command=php /home/vagrant/Code/PersonalProjects/laravel5.4MeetupPractice/artisan queue:listen database --sleep=3 --tries=3
+            autostart=true
+            autorestart=true
+            user=root
+            numprocs=2
+            redirect_stderr=true
+            stdout_logfile=/var/log/laravel5-4MeetupPracticeWorker1.log
+            </code>
+          </pre>
+        </li>
+        
+        <li>
+          Step 7: Restart Supervisor
+          <pre>
+            in the terminal, run <span class="icon-terminal"></span>: <strong>service supervisor restart</strong>
+          </pre>
+        </li>
+        
+        <li>
+          Step 8: Check Installation
+          <pre>
+            Check its installation at http://localhost:9001 , in my case http://192.168.10.10:9001/
+          </pre>
+        </li>
+
+        <li>
+		  Step 9: Create a <code>route</code> for testing.
+		  <pre>
+		    In <strong>rootProjectDirectory\routes\web.php</strong>
+		    <code>
+		    ...
+            Route::get('/queueTesting',
+                       'QueueTestController@queueTesting'
+                      );
+		    </code>
+		  </pre>
+        </li>
+
+        <li>
+          Step 10:  Create a <code>QueueTestController</code>
+          <pre>
+            In <strong>rootProjectDirectory\app\Http\Controllers\QueueTestController.php</strong>
+            <code>
+            ...
+            &lt;?php
+            namespace App\Http\Controllers;
+            use Illuminate\Http\Request;
+            use Illuminate\Support\Facades\App;
+            use Illuminate\Support\Facades\Session;
+            use Illuminate\Support\Facades\Log;
+            use App\User;
+            use App\Jobs\TestJob1;
+
+            class QueueTestController extends Controller
+            {
+              public function queueTesting()
+              {
+                $user = User::find(1);
+                $testVariable = "test value";
+                dispatch(new TestJob1(array($user, $testVariable)));
+                exit('done dispatching TestJob1');
+              }
+            }
+            </code>
+          </pre>
+        </li>
+
+        <li>
+          Step 11: Generate a <code>Job Class</code>
+          <pre>
+            In the terminal, in the rootProjectDirectory, run <span class="icon-terminal"></span>: <strong>php artisan make:job TestJob1</strong>
+            This will create the file <strong>RootProjectDirectory\app\Jobs\TestJob1.php</strong>, this is how I adjusted my code after running the code above:
+            <code>
+              &lt;?php
+
+              namespace App\Jobs;
+
+              use Illuminate\Bus\Queueable;
+              use Illuminate\Queue\SerializesModels;
+              use Illuminate\Queue\InteractsWithQueue;
+              use Illuminate\Contracts\Queue\ShouldQueue;
+              use Illuminate\Foundation\Bus\Dispatchable;
+
+              use App\User;
+              use Illuminate\Support\Facades\Log;
+
+              class TestJob1 implements ShouldQueue
+              {
+                use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
+	
+	            protected $user;
+	            protected $testVariable;
+
+                public function __construct( $parameters )
+                {
+                  $this->user = $parameters[0];
+		          $this->testVariable = $parameters[1];
+                }
+
+                public function handle()
+                {
+                  sleep(10);
+		          $id = $this->user->id;
+		          $testVariable = $this->testVariable;
+		          $message = "User ID: $id and testVariable: $testVariable";
+                  Log::info($message);
+                }
+              }
+            </code>
+          </pre>
+        </li>
+
+        <li>
+          Step 12: Access <code>http://laravel5.4meetuppractice/queueTesting</code>
+        </li>
+
+        <li>
+		  Step 13: Check the <code>jobs</code> table
+        </li>
+      </ul>
+    </p>
+  </div>
+</div>            <!-- How To Do It -->";s:4:"code";N;s:5:"title";s:6:"Queues";s:3:"url";s:10:"/queues5.4";s:6:"layout";s:25:"laravel5-4TutorialsLayout";s:11:"description";s:10:"Queues 5.4";s:9:"is_hidden";s:1:"0";}}
