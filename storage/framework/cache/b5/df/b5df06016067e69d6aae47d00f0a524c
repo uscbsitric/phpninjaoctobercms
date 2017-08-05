@@ -1,4 +1,4 @@
-1491720021a:1:{s:8:"ajax.htm";a:8:{s:8:"fileName";s:8:"ajax.htm";s:7:"content";s:2207:"title = "AJAX framework"
+1501891873a:1:{s:8:"ajax.htm";a:8:{s:8:"fileName";s:8:"ajax.htm";s:7:"content";s:2207:"title = "AJAX framework"
 url = "/demo/ajax"
 layout = "default"
 ==
@@ -71,7 +71,7 @@ function onTest()
 <div class="text-center">
     <p><a href="{{ 'plugins'|page }}" class="btn btn-lg btn-default">Continue to Plugin components</a></p>
 </div>
-";s:5:"mtime";i:1485317930;s:6:"markup";s:1627:"<div class="jumbotron title-js">
+";s:5:"mtime";i:1485317932;s:6:"markup";s:1627:"<div class="jumbotron title-js">
     <div class="container">
         <div class="row">
             <div class="col-8">

@@ -1,9 +1,13 @@
-1491720023a:1:{s:21:"laravel5.4/events.htm";a:10:{s:8:"fileName";s:21:"laravel5.4/events.htm";s:7:"content";s:20385:"title = "Events"
+1501891874a:1:{s:21:"laravel5.4/events.htm";a:11:{s:8:"fileName";s:21:"laravel5.4/events.htm";s:7:"content";s:20445:"title = "Events"
 url = "/events5.4"
 layout = "laravel5-4TutorialsLayout"
 description = "Laravel 5.4 Events"
 is_hidden = 0
+
+[siteSearchInclude]
 ==
+{% component 'siteSearchInclude' %}
+
 <div class="row"> <!-- Laravel Feature -->
   <div class="green4 tutorialPages">
     <h1 class="fontColorWhite1 noMargin">Laravel Feature</h1>
@@ -579,7 +583,9 @@ is_hidden = 0
       </ul>
     </p>
   </div>
-</div>            <!-- How To Do It -->";s:5:"mtime";i:1490783895;s:6:"markup";s:20260:"<div class="row"> <!-- Laravel Feature -->
+</div>            <!-- How To Do It -->";s:5:"mtime";i:1497008510;s:6:"markup";s:20299:"{% component 'siteSearchInclude' %}
+
+<div class="row"> <!-- Laravel Feature -->
   <div class="green4 tutorialPages">
     <h1 class="fontColorWhite1 noMargin">Laravel Feature</h1>
     <h3 class="fontColorGrey3 noMargin"> <span class="icon-tasks icon-2x"></span> Laravel 5.4 Events </h3>
@@ -1154,4 +1160,4 @@ is_hidden = 0
       </ul>
     </p>
   </div>
-</div>            <!-- How To Do It -->";s:4:"code";N;s:5:"title";s:6:"Events";s:3:"url";s:10:"/events5.4";s:6:"layout";s:25:"laravel5-4TutorialsLayout";s:11:"description";s:18:"Laravel 5.4 Events";s:9:"is_hidden";s:1:"0";}}
+</div>            <!-- How To Do It -->";s:4:"code";N;s:5:"title";s:6:"Events";s:3:"url";s:10:"/events5.4";s:6:"layout";s:25:"laravel5-4TutorialsLayout";s:11:"description";s:18:"Laravel 5.4 Events";s:9:"is_hidden";s:1:"0";s:17:"siteSearchInclude";a:0:{}}}

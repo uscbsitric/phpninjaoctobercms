@@ -1,4 +1,4 @@
-1491720022a:1:{s:25:"laravel5.2/filesystem.htm";a:10:{s:8:"fileName";s:25:"laravel5.2/filesystem.htm";s:7:"content";s:4507:"title = "FileSystem"
+1501891873a:1:{s:25:"laravel5.2/filesystem.htm";a:10:{s:8:"fileName";s:25:"laravel5.2/filesystem.htm";s:7:"content";s:4507:"title = "FileSystem"
 url = "/filesystem"
 layout = "laravel5-2TutorialsLayout"
 description = "Laravel FileSystem"
@@ -113,7 +113,7 @@ is_hidden = 0
       </ol>
     </p>
   </div>
-</div>            <!-- How To Do It -->";s:5:"mtime";i:1490241322;s:6:"markup";s:4377:"<div class="row"> <!-- Laravel Feature -->
+</div>            <!-- How To Do It -->";s:5:"mtime";i:1495315972;s:6:"markup";s:4377:"<div class="row"> <!-- Laravel Feature -->
   <div class="green4 tutorialPages">
     <h1 class="fontColorWhite1 noMargin">Laravel Feature</h1>
     <h3 class="fontColorGrey3 noMargin"> <span class="icon-tasks icon-2x"></span> FileSystem / Cloud Storage </h3>

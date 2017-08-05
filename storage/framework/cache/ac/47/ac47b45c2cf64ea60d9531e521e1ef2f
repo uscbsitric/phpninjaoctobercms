@@ -1,4 +1,4 @@
-1491720022a:1:{s:26:"laravel5.2/middlewares.htm";a:10:{s:8:"fileName";s:26:"laravel5.2/middlewares.htm";s:7:"content";s:9480:"title = "Middlewares"
+1501891873a:1:{s:26:"laravel5.2/middlewares.htm";a:10:{s:8:"fileName";s:26:"laravel5.2/middlewares.htm";s:7:"content";s:9480:"title = "Middlewares"
 url = "/middlewares"
 layout = "laravel5-2TutorialsLayout"
 description = "Laravel 5.2 Middlewares"
@@ -222,7 +222,7 @@ is_hidden = 0
       </ol>
     </p>
   </div>
-</div>            <!-- How To Do It -->";s:5:"mtime";i:1486540219;s:6:"markup";s:9343:"<div class="row"> <!-- Laravel Feature -->
+</div>            <!-- How To Do It -->";s:5:"mtime";i:1486540220;s:6:"markup";s:9343:"<div class="row"> <!-- Laravel Feature -->
   <div class="green4 tutorialPages">
     <h1 class="fontColorWhite1 noMargin">Laravel Feature</h1>
     <h3 class="fontColorGrey3 noMargin"> <span class="icon-tasks icon-2x"></span> Middlewares </h3>

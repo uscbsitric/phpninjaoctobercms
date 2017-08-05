@@ -1,4 +1,4 @@
-1491720022a:1:{s:27:"laravel5.2/routeCaching.htm";a:9:{s:8:"fileName";s:27:"laravel5.2/routeCaching.htm";s:7:"content";s:2511:"title = "Route Caching"
+1501891874a:1:{s:27:"laravel5.2/routeCaching.htm";a:9:{s:8:"fileName";s:27:"laravel5.2/routeCaching.htm";s:7:"content";s:2511:"title = "Route Caching"
 url = "/route-caching"
 layout = "laravel5-2TutorialsLayout"
 is_hidden = 0
@@ -52,7 +52,7 @@ is_hidden = 0
       </ol>
     </p>
   </div>
-</div>            <!-- How To Do It -->";s:5:"mtime";i:1486540219;s:6:"markup";s:2410:"<div class="row"> <!-- Laravel Feature -->
+</div>            <!-- How To Do It -->";s:5:"mtime";i:1486540220;s:6:"markup";s:2410:"<div class="row"> <!-- Laravel Feature -->
   <div class="green4 tutorialPages">
     <h1 class="fontColorWhite1 noMargin">Laravel Feature</h1>
     <h3 class="fontColorGrey3 noMargin"> <span class="icon-fire icon-2x"></span> Route Caching </h3>

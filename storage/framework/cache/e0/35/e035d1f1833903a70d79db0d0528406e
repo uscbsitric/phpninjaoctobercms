@@ -1,4 +1,4 @@
-1491720023a:1:{s:29:"laravel5-2TutorialsLayout.htm";a:6:{s:8:"fileName";s:29:"laravel5-2TutorialsLayout.htm";s:7:"content";s:11341:"description = "Laravel 5.2 Tutorials Layout"
+1501659237a:1:{s:29:"laravel5-2TutorialsLayout.htm";a:6:{s:8:"fileName";s:29:"laravel5-2TutorialsLayout.htm";s:7:"content";s:11341:"description = "Laravel 5.2 Tutorials Layout"
 ==
 <!DOCTYPE html>
 <html>
@@ -312,7 +312,7 @@
         {% scripts %}
 
     </body>
-</html>";s:5:"mtime";i:1490230894;s:6:"markup";s:11293:"<!DOCTYPE html>
+</html>";s:5:"mtime";i:1495315972;s:6:"markup";s:11293:"<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">

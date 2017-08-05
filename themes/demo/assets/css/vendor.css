@@ -7553,5 +7553,17 @@ ul,ol li{
   margin-left: -91px;
   display: block;
 }
+
+#quote-carousel-quotes2 .item blockquote div{
+  color: #000000 !important;
+}
+
+.quote-carousel small{
+  color: #000000 !important;
+}
+
+a .fa-chevron-left, a .fa-chevron-right{
+  color: #222;
+}
 /*************************  Frederick Sandalo configurations 
 *************************/

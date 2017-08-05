@@ -1,0 +1,73 @@
+1501891874a:1:{s:18:"search-results.htm";a:9:{s:8:"fileName";s:18:"search-results.htm";s:7:"content";s:774:"title = "Search Results"
+url = "/search-results"
+is_hidden = 0
+
+[searchResults]
+resultsPerPage = 10
+showProviderBadge = 1
+noResultsMessage = "Your search returned no results."
+visitPageMessage = "Visit page"
+==
+<style>
+  .ss-result {
+    margin-bottom: 2em;
+  }
+  .ss-result__aside {
+    float: right;
+    margin-left: .5em;
+  }
+  .ss-result__title {
+    font-weight: bold;
+    margin-bottom: .5em;
+  }
+  .ss-result__badge {
+    font-size: .7em;
+    padding: .2em .5em;
+    border-radius: 4px;
+    margin-left: .75em;
+    background: #eee;
+    display: inline-block;
+  }
+  .ss-result__text {
+    margin-bottom: .5em;
+  }
+  .ss-result__url {
+  }
+</style>
+
+
+
+<h2>Search results for {{ searchResults.query }}</h2>
+
+{% component 'searchResults' %}";s:5:"mtime";i:1497022177;s:6:"markup";s:563:"<style>
+  .ss-result {
+    margin-bottom: 2em;
+  }
+  .ss-result__aside {
+    float: right;
+    margin-left: .5em;
+  }
+  .ss-result__title {
+    font-weight: bold;
+    margin-bottom: .5em;
+  }
+  .ss-result__badge {
+    font-size: .7em;
+    padding: .2em .5em;
+    border-radius: 4px;
+    margin-left: .75em;
+    background: #eee;
+    display: inline-block;
+  }
+  .ss-result__text {
+    margin-bottom: .5em;
+  }
+  .ss-result__url {
+  }
+</style>
+
+
+
+<h2>Search results for {{ searchResults.query }}</h2>
+
+{% component 'searchResults' %}";s:4:"code";N;s:5:"title";s:14:"Search Results";s:3:"url";s:15:"/search-results";s:9:"is_hidden";s:1:"0";s:13:"searchResults";a:4:{s:14:"resultsPerPage";s:2:"10";s:17:"showProviderBadge";s:1:"1";s:16:"noResultsMessage";s:32:"Your search returned no results.";s:16:"visitPageMessage";s:10:"Visit page";}}}

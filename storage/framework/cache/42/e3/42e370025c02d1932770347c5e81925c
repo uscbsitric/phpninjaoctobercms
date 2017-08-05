@@ -1,4 +1,4 @@
-1491720022a:1:{s:21:"laravel5.2/events.htm";a:10:{s:8:"fileName";s:21:"laravel5.2/events.htm";s:7:"content";s:11558:"title = "Events"
+1501891873a:1:{s:21:"laravel5.2/events.htm";a:10:{s:8:"fileName";s:21:"laravel5.2/events.htm";s:7:"content";s:11558:"title = "Events"
 url = "/events"
 layout = "laravel5-2TutorialsLayout"
 description = "Events"
@@ -325,7 +325,7 @@ is_hidden = 0
       </ol>
     </p>
   </div>
-</div>            <!-- How To Do It -->";s:5:"mtime";i:1488336536;s:6:"markup";s:11448:"<div class="row"> <!-- Laravel Feature -->
+</div>            <!-- How To Do It -->";s:5:"mtime";i:1488336538;s:6:"markup";s:11448:"<div class="row"> <!-- Laravel Feature -->
   <div class="green4 tutorialPages">
     <h1 class="fontColorWhite1 noMargin">Laravel Feature</h1>
     <h3 class="fontColorGrey3 noMargin"> <span class="icon-tasks icon-2x"></span> Events </h3>

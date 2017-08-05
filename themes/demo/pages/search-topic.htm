@@ -1,0 +1,10 @@
+title = "Search Topic"
+url = "/search-topic"
+layout = "default"
+description = "Test Search Form"
+is_hidden = 0
+==
+<form action="{{ 'search-results' | page }}" method="get">
+    <input name="q" type="text" placeholder="What are you looking for?" autocomplete="off">
+    <button type="submit">Search</button>
+</form>

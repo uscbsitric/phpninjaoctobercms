@@ -1,4 +1,4 @@
-1491720022a:1:{s:30:"laravel5.2/registryPattern.htm";a:9:{s:8:"fileName";s:30:"laravel5.2/registryPattern.htm";s:7:"content";s:7868:"title = "Registry Pattern"
+1501891874a:1:{s:30:"laravel5.2/registryPattern.htm";a:9:{s:8:"fileName";s:30:"laravel5.2/registryPattern.htm";s:7:"content";s:7868:"title = "Registry Pattern"
 url = "/registry-pattern"
 layout = "laravel5-2TutorialsLayout"
 is_hidden = 0
@@ -255,7 +255,7 @@ is_hidden = 0
       </ol>
     </p>
   </div>
-</div>            <!-- How To Do It -->";s:5:"mtime";i:1486709917;s:6:"markup";s:7761:"<div class="row"> <!-- Laravel Feature -->
+</div>            <!-- How To Do It -->";s:5:"mtime";i:1486709918;s:6:"markup";s:7761:"<div class="row"> <!-- Laravel Feature -->
   <div class="green4 tutorialPages">
     <h1 class="fontColorWhite1 noMargin">Laravel Feature</h1>
     <h3 class="fontColorGrey3 noMargin"> <span class="icon-tasks icon-2x"></span> Registry Pattern </h3>

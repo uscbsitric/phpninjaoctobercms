@@ -1,4 +1,4 @@
-1491720021a:1:{s:22:"laravel5.2/caching.htm";a:9:{s:8:"fileName";s:22:"laravel5.2/caching.htm";s:7:"content";s:2149:"title = "Caching"
+1501891873a:1:{s:22:"laravel5.2/caching.htm";a:9:{s:8:"fileName";s:22:"laravel5.2/caching.htm";s:7:"content";s:2365:"title = "Caching"
 url = "/caching"
 layout = "laravel5-2TutorialsLayout"
 is_hidden = 0
@@ -23,7 +23,8 @@ is_hidden = 0
   <div class="grey2 tutorialPages withBorderBottom">
     <h1 class="noMargin fontColorGreen3">NOTE: <span class="icon-warning-sign icon-1x"></span></h1>
     <div class="well">
-      <p>
+      <pre>
+        (REDIS almost always beats MEMCACHED)
         Refer to these articles:
         
         https://github.com/memcached/memcached/wiki/TutorialCachingStory
@@ -31,7 +32,9 @@ is_hidden = 0
         https://en.wikipedia.org/wiki/Memcached
         https://www.digitalocean.com/community/tutorials/how-to-install-and-use-memcache-on-ubuntu-14-04
         https://github.com/memcached/memcached/wiki/TutorialCachingStory
-      </p>
+        
+        http://www.infoworld.com/article/3063161/application-development/why-redis-beats-memcached-for-caching.html (REDIS almost always beats MEMCACHED)
+      </pre>
     </div>
   </div>
 </div>            <!-- Note -->
@@ -68,7 +71,7 @@ is_hidden = 0
       </ol>
     </p>
   </div>
-</div>            <!-- How To Do It -->";s:5:"mtime";i:1488086991;s:6:"markup";s:2060:"<div class="row"> <!-- Laravel Feature -->
+</div>            <!-- How To Do It -->";s:5:"mtime";i:1501500501;s:6:"markup";s:2276:"<div class="row"> <!-- Laravel Feature -->
   <div class="green4 tutorialPages">
     <h1 class="fontColorWhite1 noMargin">Laravel Feature</h1>
     <h3 class="fontColorGrey3 noMargin"> <span class="icon-fire icon-2x"></span> Caching </h3>
@@ -88,7 +91,8 @@ is_hidden = 0
   <div class="grey2 tutorialPages withBorderBottom">
     <h1 class="noMargin fontColorGreen3">NOTE: <span class="icon-warning-sign icon-1x"></span></h1>
     <div class="well">
-      <p>
+      <pre>
+        (REDIS almost always beats MEMCACHED)
         Refer to these articles:
         
         https://github.com/memcached/memcached/wiki/TutorialCachingStory
@@ -96,7 +100,9 @@ is_hidden = 0
         https://en.wikipedia.org/wiki/Memcached
         https://www.digitalocean.com/community/tutorials/how-to-install-and-use-memcache-on-ubuntu-14-04
         https://github.com/memcached/memcached/wiki/TutorialCachingStory
-      </p>
+        
+        http://www.infoworld.com/article/3063161/application-development/why-redis-beats-memcached-for-caching.html (REDIS almost always beats MEMCACHED)
+      </pre>
     </div>
   </div>
 </div>            <!-- Note -->
