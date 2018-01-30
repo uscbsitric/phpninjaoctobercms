@@ -1,0 +1,41 @@
+1517271710a:1:{s:20:"site/ninjaFooter.htm";a:6:{s:8:"fileName";s:20:"site/ninjaFooter.htm";s:7:"content";s:825:"description = "PHP Ninja's Footer"
+==
+<div id="footer">
+    <div class="container">
+        <hr />
+        <!--
+        <p class="muted credit">&copy; 2017 - {{ "now"|date("Y") }} Alexey Bobkov &amp; Samuel Georges.</p>
+        -->
+        <p class="muted credit text-center">
+          &copy; 2017 Frederick G. Sandalo &nbsp
+          <span class="icon-terminal"></span><code>ThePHP Ninja</code> |
+           <a href="https://ph.linkedin.com/in/frederick-sandalo-b2512626" style="text-decoration:none;">
+             <span class="icon-linkedin"></span>
+             LinkedIn
+           </a> |
+           <a href="https://web.facebook.com/frederick.sandalo" style="text-decoration:none;">
+             <span class="icon-facebook"></span>
+             Facebook
+           </a>
+        </p>
+    </div>
+</div>";s:5:"mtime";i:1486540220;s:6:"markup";s:787:"<div id="footer">
+    <div class="container">
+        <hr />
+        <!--
+        <p class="muted credit">&copy; 2017 - {{ "now"|date("Y") }} Alexey Bobkov &amp; Samuel Georges.</p>
+        -->
+        <p class="muted credit text-center">
+          &copy; 2017 Frederick G. Sandalo &nbsp
+          <span class="icon-terminal"></span><code>ThePHP Ninja</code> |
+           <a href="https://ph.linkedin.com/in/frederick-sandalo-b2512626" style="text-decoration:none;">
+             <span class="icon-linkedin"></span>
+             LinkedIn
+           </a> |
+           <a href="https://web.facebook.com/frederick.sandalo" style="text-decoration:none;">
+             <span class="icon-facebook"></span>
+             Facebook
+           </a>
+        </p>
+    </div>
+</div>";s:4:"code";N;s:11:"description";s:18:"PHP Ninja's Footer";}}

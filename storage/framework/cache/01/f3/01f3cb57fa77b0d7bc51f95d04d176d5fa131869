@@ -1,0 +1,104 @@
+1517271708a:1:{s:27:"laravel5.2/routeCaching.htm";a:9:{s:8:"fileName";s:27:"laravel5.2/routeCaching.htm";s:7:"content";s:2511:"title = "Route Caching"
+url = "/route-caching"
+layout = "laravel5-2TutorialsLayout"
+is_hidden = 0
+==
+<div class="row"> <!-- Laravel Feature -->
+  <div class="green4 tutorialPages">
+    <h1 class="fontColorWhite1 noMargin">Laravel Feature</h1>
+    <h3 class="fontColorGrey3 noMargin"> <span class="icon-fire icon-2x"></span> Route Caching </h3>
+  </div>
+</div>            <!-- Laravel Feature -->
+
+<div class="row"> <!-- What Does It Do -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">What Does It Do</h1>
+    <p class="fontColorWhite2 noMargin">
+      If the application isexclusively using controller based routes, you should take advantage of Laravel's route cache.  Using the route cache will drastically decrease the amount of time it takes
+      to register all of your application's routes.  In some cases, your route registration may even be <strong>up to 100x faster</strong>.
+    </p>
+  </div>
+</div>            <!-- What Does It Do -->
+
+<div class="row"> <!-- Note -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">NOTE: <span class="icon-warning-sign icon-1x"></span></h1>
+    <div class="well">
+      If you add any new routes, you will need to generate a fresh <code>route cache</code>.  Because of this, you should only run the <code>php artisan route:cache</code> command during your project's deployment.
+      To remove the cached routes file without generating a new cache, use the <code>php artisan route:clear</code> command.
+      
+      I have yet to find a benchmarking tool or process for this so I can see the difference.
+    </div>
+  </div>
+</div>            <!-- Note -->
+
+<div class="row"> <!-- When To Do It -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">When To Do It</h1>
+    <p class="fontColorWhite2 noMargin">
+      When the application is exclusively using controller based routes.
+    </p>
+  </div>
+</div>            <!-- When To Do It -->
+
+<div class="row"> <!-- How To Do It -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">How To Do It</h1>
+    <p class="fontColorWhite2 noMargin">
+      <ol>
+        <li>
+          In the terminal, in the Root Project Directory, run <span class="icon-terminal"></span>: <code>php artisan route:cache</code>
+        </li>
+      </ol>
+    </p>
+  </div>
+</div>            <!-- How To Do It -->";s:5:"mtime";i:1486540220;s:6:"markup";s:2410:"<div class="row"> <!-- Laravel Feature -->
+  <div class="green4 tutorialPages">
+    <h1 class="fontColorWhite1 noMargin">Laravel Feature</h1>
+    <h3 class="fontColorGrey3 noMargin"> <span class="icon-fire icon-2x"></span> Route Caching </h3>
+  </div>
+</div>            <!-- Laravel Feature -->
+
+<div class="row"> <!-- What Does It Do -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">What Does It Do</h1>
+    <p class="fontColorWhite2 noMargin">
+      If the application isexclusively using controller based routes, you should take advantage of Laravel's route cache.  Using the route cache will drastically decrease the amount of time it takes
+      to register all of your application's routes.  In some cases, your route registration may even be <strong>up to 100x faster</strong>.
+    </p>
+  </div>
+</div>            <!-- What Does It Do -->
+
+<div class="row"> <!-- Note -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">NOTE: <span class="icon-warning-sign icon-1x"></span></h1>
+    <div class="well">
+      If you add any new routes, you will need to generate a fresh <code>route cache</code>.  Because of this, you should only run the <code>php artisan route:cache</code> command during your project's deployment.
+      To remove the cached routes file without generating a new cache, use the <code>php artisan route:clear</code> command.
+      
+      I have yet to find a benchmarking tool or process for this so I can see the difference.
+    </div>
+  </div>
+</div>            <!-- Note -->
+
+<div class="row"> <!-- When To Do It -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">When To Do It</h1>
+    <p class="fontColorWhite2 noMargin">
+      When the application is exclusively using controller based routes.
+    </p>
+  </div>
+</div>            <!-- When To Do It -->
+
+<div class="row"> <!-- How To Do It -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">How To Do It</h1>
+    <p class="fontColorWhite2 noMargin">
+      <ol>
+        <li>
+          In the terminal, in the Root Project Directory, run <span class="icon-terminal"></span>: <code>php artisan route:cache</code>
+        </li>
+      </ol>
+    </p>
+  </div>
+</div>            <!-- How To Do It -->";s:4:"code";N;s:5:"title";s:13:"Route Caching";s:3:"url";s:14:"/route-caching";s:6:"layout";s:25:"laravel5-2TutorialsLayout";s:9:"is_hidden";s:1:"0";}}

@@ -2,26 +2,17 @@
 
 use Str;
 use Backend\Classes\FormField;
+use October\Rain\Halcyon\Model as HalcyonModel;
+use October\Rain\Database\Model as DatabaseModel;
 
 /**
- * Form Model Saver Trait
- *
- * Special logic for applying form data (usually from postback) and
- * applying it to a model and its relationships. This is a customized,
- * safer and simplified version of $model->push().
- *
- * Usage:
- *
- *    $modelsToSave = $this->prepareModelsToSave($model, [...]);
- * 
- *    foreach ($modelsToSave as $modelToSave) {
- *        $modelToSave->save();
- *    }
+ * Implements special logic for processing form data, typically from from postback, and
+ * filling the model attributes and attributes of any related models. This is a
+ * customized, safer and simplified version of `$model->push()`.
  *
  * @package october\backend
  * @author Alexey Bobkov, Samuel Georges
  */
-
 trait FormModelSaver
 {
     /**
@@ -29,24 +20,46 @@ trait FormModelSaver
      */
     protected $modelsToSave = [];
 
+    /**
+     * Takes a model and fills it with data from a multidimensional array.
+     * If an attribute is found to be a relationship, that relationship
+     * is also filled.
+     *
+     *     $modelsToSave = $this->prepareModelsToSave($model, [...]);
+     *
+     *     foreach ($modelsToSave as $modelToSave) {
+     *         $modelToSave->save();
+     *     }
+     *
+     * @param \October\Rain\Database\Model $model Model to fill.
+     * @param array $saveData Attribute values to fill model.
+     * @return array The collection of models to save.
+     */
     protected function prepareModelsToSave($model, $saveData)
     {
         $this->modelsToSave = [];
         $this->setModelAttributes($model, $saveData);
+        $this->modelsToSave = array_reverse($this->modelsToSave);
         return $this->modelsToSave;
     }
 
     /**
-     * Sets a data collection to a model attributes, relations will also be set.
-     * @param array $saveData Data to save.
-     * @param \October\Rain\Database\Model $model Model to save to
-     * @return array The collection of models to save.
+     * Sets a data collection to a model attributes, relations are also set.
+     *
+     * @param \October\Rain\Database\Model $model Model to fill.
+     * @param array $saveData Attribute values to fill model.
+     * @return void
      */
     protected function setModelAttributes($model, $saveData)
     {
         $this->modelsToSave[] = $model;
 
         if (!is_array($saveData)) {
+            return;
+        }
+
+        if ($model instanceof HalcyonModel) {
+            $model->fill($saveData);
             return;
         }
 
@@ -75,6 +88,14 @@ trait FormModelSaver
         }
     }
 
+    /**
+     * Removes an array of attributes from the model. If the model implements
+     * the Purgeable trait, this is preferred over the internal logic.
+     *
+     * @param \October\Rain\Database\Model $model Model to adjust.
+     * @param array $attributesToPurge Attribute values to remove from the model.
+     * @return void
+     */
     protected function deferPurgedSaveAttributes($model, $attributesToPurge)
     {
         if (!is_array($attributesToPurge)) {
@@ -90,7 +111,7 @@ trait FormModelSaver
             $model->addPurgeable($attributesToPurge);
         }
         else {
-            $model->bindEventOnce('model.saveInternal', function() use ($model, $attributesToPurge) {
+            $model->bindEventOnce('model.saveInternal', function () use ($model, $attributesToPurge) {
                 foreach ($attributesToPurge as $attribute) {
                     unset($model->attributes[$attribute]);
                 }

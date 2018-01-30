@@ -1,0 +1,52 @@
+1517271709a:1:{s:26:"laravel5.2/collections.htm";a:9:{s:8:"fileName";s:26:"laravel5.2/collections.htm";s:7:"content";s:1159:"title = "Collections"
+url = "/collections"
+layout = "laravel5-2TutorialsLayout"
+is_hidden = 0
+==
+<div class="row"> <!-- Laravel Feature -->
+  <div class="green4 tutorialPages">
+    <h1 class="fontColorWhite1 noMargin">Laravel Feature</h1>
+    <h3 class="fontColorGrey3 noMargin"> <span class="icon-tasks icon-2x"></span> Collections </h3>
+  </div>
+</div>            <!-- Laravel Feature -->
+
+<div class="row"> <!-- What Does It Do -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">What Does It Do</h1>
+    <p class="fontColorWhite2 noMargin">
+      The Illuminate\Support\Collection class provides a fluent, convenient wrapper for working with arrays of data.
+    </p>
+  </div>
+</div>            <!-- What Does It Do -->
+
+<div class="row"> <!-- Note -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">NOTE: <span class="icon-warning-sign icon-1x"></span></h1>
+    <div class="well">
+      Please refer to <code>https://laravel.com/docs/5.2/collections</code> since this service is trivial.
+    </div>
+  </div>
+</div>            <!-- Note -->";s:5:"mtime";i:1487033278;s:6:"markup";s:1062:"<div class="row"> <!-- Laravel Feature -->
+  <div class="green4 tutorialPages">
+    <h1 class="fontColorWhite1 noMargin">Laravel Feature</h1>
+    <h3 class="fontColorGrey3 noMargin"> <span class="icon-tasks icon-2x"></span> Collections </h3>
+  </div>
+</div>            <!-- Laravel Feature -->
+
+<div class="row"> <!-- What Does It Do -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">What Does It Do</h1>
+    <p class="fontColorWhite2 noMargin">
+      The Illuminate\Support\Collection class provides a fluent, convenient wrapper for working with arrays of data.
+    </p>
+  </div>
+</div>            <!-- What Does It Do -->
+
+<div class="row"> <!-- Note -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">NOTE: <span class="icon-warning-sign icon-1x"></span></h1>
+    <div class="well">
+      Please refer to <code>https://laravel.com/docs/5.2/collections</code> since this service is trivial.
+    </div>
+  </div>
+</div>            <!-- Note -->";s:4:"code";N;s:5:"title";s:11:"Collections";s:3:"url";s:12:"/collections";s:6:"layout";s:25:"laravel5-2TutorialsLayout";s:9:"is_hidden";s:1:"0";}}

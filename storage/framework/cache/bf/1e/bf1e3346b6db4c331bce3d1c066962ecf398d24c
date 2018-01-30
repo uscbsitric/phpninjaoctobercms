@@ -1,0 +1,210 @@
+1517271709a:1:{s:33:"vagrant/howToExportVagrantBox.htm";a:14:{s:8:"fileName";s:33:"vagrant/howToExportVagrantBox.htm";s:7:"content";s:4171:"title = "How To Export Vagrant Box"
+url = "/how-to-export-vagrant-box"
+layout = "vagrantLayout"
+description = "How To Export Vagrant Box"
+meta_title = "how to export vagrant box"
+meta_description = "how to export vagrant box"
+is_hidden = 0
+
+[quotes quotes2]
+interval = 15000
+pause = 1
+jquery = "maxcdn"
+bootstrap = "maxcdn"
+fa = "maxcdn"
+
+[siteSearchInclude]
+==
+<div class="row">
+  <div class="green4 tutorialPages">
+    <p>
+      {% component 'quotes2' %}
+    </p>
+    <p>
+      {% component 'siteSearchInclude' %}
+    </p>
+  </div>
+</div>
+
+<div class="row"> <!-- Laravel Feature -->
+  <div class="green4 tutorialPages">
+    <h1 class="fontColorWhite1 noMargin">Vagrant Topic</h1>
+    <h3 class="fontColorGrey3 noMargin"> <span class="icon-tasks icon-2x"></span> How To Export Vagrant Box </h3>
+  </div>
+</div>            <!-- Laravel Feature -->
+
+<div class="row"> <!-- What Does It Do -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">What Does It Do</h1>
+    <p class="fontColorWhite2 noMargin">
+      Exports an existing Vagrant Box for use or customization.
+    </p>
+  </div>
+</div>            <!-- What Does It Do -->
+
+<div class="row"> <!-- Note -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">NOTE: <span class="icon-warning-sign icon-1x"></span></h1>
+    <div class="well">
+      Details From: https://scotch.io/tutorials/how-to-create-a-vagrant-base-box-from-an-existing-one </br>
+      I did not follow the exact steps, I just figured out what a step does and made my own custom steps.
+    </div>
+  </div>
+</div>            <!-- Note -->
+
+<div class="row"> <!-- When To Do It -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">When To Do It</h1>
+    <p class="fontColorWhite2 noMargin">
+      When You Need Duplicate an Existing Vagrant Box for Custom Development Version out of a Base Development Box
+    </p>
+  </div>
+</div>            <!-- When To Do It -->
+
+<div class="row"> <!-- How To Do It -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">How To Do It</h1>
+    <p class="fontColorWhite2 noMargin">
+      <ol>
+        <li>
+          Step 1: sudo vagrant global-status to see the IDs of the boxes
+        </li>
+
+        <li>
+          Step 2: Repackage the VM into a new Vagrant Box:  sudo vagrant package 091dafc --output /Users/uchihamadara/Boxes/MyNewBox/mynew.box
+        </li>
+
+        <li>
+          Step 3: Add the Box into your Vagrant Install: sudo vagrant box add mynewbox /Users/uchihamadara/Boxes/MyNewBox/mynew.box
+        </li>
+
+        <li>
+		  Step 4: Copy all contents of /Users/uchihamadara/Boxes/HomesteadConfigs/ to /Users/uchihamadara/Boxes/MyNewBox/
+        </li>
+
+        <li>
+          Step 5: go to /Users/uchihamadara/Boxes/HomesteadConfigs and edit init.sh, set the target for homesteadRoot to /Users/uchihamadara/Boxes/MyNewBox/.homestead
+        </li>
+
+        <li>
+          Step 6: run bash init.sh
+        </li>
+
+        <li>
+		  Step 7: replace all instances of “homestead-7” to “mynewbox” of “/Users/uchihamadara/Boxes/MyNewBox/scripts/homestead.rb” (about 4 instances)
+        </li>
+        <li>
+          Step 8: 8. change the ip address of the # Configure A Private Network IP config.vm.network :private_network, ip: settings["ip"] ||= "192.168.10.10" in the  scripts/homestead.rb
+        </li>
+
+        <li>
+          Step 9: inside /Users/uchihamadara/Boxes/MyNewBox, edit the file Vagrantfile , add the line   confDir = "/Users/uchihamadara/Boxes/LaravelFiveFour/.homestead" right below the line   confDir = $confDir ||= File.expand_path(File.join(Dir.home, ".homestead"))
+        </li>
+
+        <li>
+		  Step 10: configure the /Users/uchihamadara/Boxes/MyNewBox/.homestead/Homestead.yaml file to suit the needs of the new box
+        </li>
+
+        <li>
+		  Step 11: inside /Users/uchihamadara/Boxes/MyNewBox , sudo vagrant up
+        </li>
+      </ol>
+    </p>
+  </div>
+</div>            <!-- How To Do It -->";s:5:"mtime";i:1500551905;s:6:"markup";s:3809:"<div class="row">
+  <div class="green4 tutorialPages">
+    <p>
+      {% component 'quotes2' %}
+    </p>
+    <p>
+      {% component 'siteSearchInclude' %}
+    </p>
+  </div>
+</div>
+
+<div class="row"> <!-- Laravel Feature -->
+  <div class="green4 tutorialPages">
+    <h1 class="fontColorWhite1 noMargin">Vagrant Topic</h1>
+    <h3 class="fontColorGrey3 noMargin"> <span class="icon-tasks icon-2x"></span> How To Export Vagrant Box </h3>
+  </div>
+</div>            <!-- Laravel Feature -->
+
+<div class="row"> <!-- What Does It Do -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">What Does It Do</h1>
+    <p class="fontColorWhite2 noMargin">
+      Exports an existing Vagrant Box for use or customization.
+    </p>
+  </div>
+</div>            <!-- What Does It Do -->
+
+<div class="row"> <!-- Note -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">NOTE: <span class="icon-warning-sign icon-1x"></span></h1>
+    <div class="well">
+      Details From: https://scotch.io/tutorials/how-to-create-a-vagrant-base-box-from-an-existing-one </br>
+      I did not follow the exact steps, I just figured out what a step does and made my own custom steps.
+    </div>
+  </div>
+</div>            <!-- Note -->
+
+<div class="row"> <!-- When To Do It -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">When To Do It</h1>
+    <p class="fontColorWhite2 noMargin">
+      When You Need Duplicate an Existing Vagrant Box for Custom Development Version out of a Base Development Box
+    </p>
+  </div>
+</div>            <!-- When To Do It -->
+
+<div class="row"> <!-- How To Do It -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">How To Do It</h1>
+    <p class="fontColorWhite2 noMargin">
+      <ol>
+        <li>
+          Step 1: sudo vagrant global-status to see the IDs of the boxes
+        </li>
+
+        <li>
+          Step 2: Repackage the VM into a new Vagrant Box:  sudo vagrant package 091dafc --output /Users/uchihamadara/Boxes/MyNewBox/mynew.box
+        </li>
+
+        <li>
+          Step 3: Add the Box into your Vagrant Install: sudo vagrant box add mynewbox /Users/uchihamadara/Boxes/MyNewBox/mynew.box
+        </li>
+
+        <li>
+		  Step 4: Copy all contents of /Users/uchihamadara/Boxes/HomesteadConfigs/ to /Users/uchihamadara/Boxes/MyNewBox/
+        </li>
+
+        <li>
+          Step 5: go to /Users/uchihamadara/Boxes/HomesteadConfigs and edit init.sh, set the target for homesteadRoot to /Users/uchihamadara/Boxes/MyNewBox/.homestead
+        </li>
+
+        <li>
+          Step 6: run bash init.sh
+        </li>
+
+        <li>
+		  Step 7: replace all instances of “homestead-7” to “mynewbox” of “/Users/uchihamadara/Boxes/MyNewBox/scripts/homestead.rb” (about 4 instances)
+        </li>
+        <li>
+          Step 8: 8. change the ip address of the # Configure A Private Network IP config.vm.network :private_network, ip: settings["ip"] ||= "192.168.10.10" in the  scripts/homestead.rb
+        </li>
+
+        <li>
+          Step 9: inside /Users/uchihamadara/Boxes/MyNewBox, edit the file Vagrantfile , add the line   confDir = "/Users/uchihamadara/Boxes/LaravelFiveFour/.homestead" right below the line   confDir = $confDir ||= File.expand_path(File.join(Dir.home, ".homestead"))
+        </li>
+
+        <li>
+		  Step 10: configure the /Users/uchihamadara/Boxes/MyNewBox/.homestead/Homestead.yaml file to suit the needs of the new box
+        </li>
+
+        <li>
+		  Step 11: inside /Users/uchihamadara/Boxes/MyNewBox , sudo vagrant up
+        </li>
+      </ol>
+    </p>
+  </div>
+</div>            <!-- How To Do It -->";s:4:"code";N;s:5:"title";s:25:"How To Export Vagrant Box";s:3:"url";s:26:"/how-to-export-vagrant-box";s:6:"layout";s:13:"vagrantLayout";s:11:"description";s:25:"How To Export Vagrant Box";s:10:"meta_title";s:25:"how to export vagrant box";s:16:"meta_description";s:25:"how to export vagrant box";s:9:"is_hidden";s:1:"0";s:14:"quotes quotes2";a:5:{s:8:"interval";s:5:"15000";s:5:"pause";s:1:"1";s:6:"jquery";s:6:"maxcdn";s:9:"bootstrap";s:6:"maxcdn";s:2:"fa";s:6:"maxcdn";}s:17:"siteSearchInclude";a:0:{}}}

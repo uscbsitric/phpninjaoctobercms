@@ -10,8 +10,19 @@ use October\Rain\Database\Model;
 use ApplicationException;
 
 /**
- * Relation Controller Behavior
  * Uses a combination of lists and forms for managing Model relations.
+ *
+ * This behavior is implemented in the controller like so:
+ *
+ *     public $implement = [
+ *         'Backend.Behaviors.RelationController',
+ *     ];
+ *
+ *     public $relationConfig = 'config_relation.yaml';
+ *
+ * The `$relationConfig` property makes reference to the configuration
+ * values as either a YAML file, located in the controller view directory,
+ * or directly as a PHP array.
  *
  * @package october\backend
  * @author Alexey Bobkov, Samuel Georges
@@ -36,12 +47,12 @@ class RelationController extends ControllerBehavior
     const PARAM_EXTRA_CONFIG = '_relation_extra_config';
 
     /**
-     * @var Backend\Classes\WidgetBase Reference to the search widget object.
+     * @var Backend\Widgets\Search Reference to the search widget object.
      */
     protected $searchWidget;
 
     /**
-     * @var Backend\Classes\WidgetBase Reference to the toolbar widget object.
+     * @var Backend\Widgets\Toolbar Reference to the toolbar widget object.
      */
     protected $toolbarWidget;
 
@@ -61,7 +72,7 @@ class RelationController extends ControllerBehavior
     protected $pivotWidget;
 
     /**
-     * {@inheritDoc}
+     * @inheritDoc
      */
     protected $requiredProperties = ['relationConfig'];
 
@@ -330,10 +341,10 @@ class RelationController extends ControllerBehavior
         $this->foreignId = post('foreign_id');
         $this->readOnly = $this->getConfig('readOnly');
         $this->deferredBinding = $this->getConfig('deferredBinding') || !$this->model->exists;
-        $this->toolbarButtons = $this->evalToolbarButtons();
         $this->viewMode = $this->evalViewMode();
         $this->manageMode = $this->evalManageMode();
         $this->manageTitle = $this->evalManageTitle();
+        $this->toolbarButtons = $this->evalToolbarButtons();
 
         /*
          * Toolbar widget
@@ -639,17 +650,17 @@ class RelationController extends ControllerBehavior
              * Apply defined constraints
              */
             if ($sqlConditions = $this->getConfig('view[conditions]')) {
-                $widget->bindEvent('list.extendQueryBefore', function($query) use ($sqlConditions) {
+                $widget->bindEvent('list.extendQueryBefore', function ($query) use ($sqlConditions) {
                     $query->whereRaw($sqlConditions);
                 });
             }
             elseif ($scopeMethod = $this->getConfig('view[scope]')) {
-                $widget->bindEvent('list.extendQueryBefore', function($query) use ($scopeMethod) {
+                $widget->bindEvent('list.extendQueryBefore', function ($query) use ($scopeMethod) {
                     $query->$scopeMethod($this->model);
                 });
             }
             else {
-                $widget->bindEvent('list.extendQueryBefore', function($query) {
+                $widget->bindEvent('list.extendQueryBefore', function ($query) {
                     $this->relationObject->addDefinedConstraintsToQuery($query);
                 });
             }
@@ -769,17 +780,17 @@ class RelationController extends ControllerBehavior
              * Apply defined constraints
              */
             if ($sqlConditions = $this->getConfig('manage[conditions]')) {
-                $widget->bindEvent('list.extendQueryBefore', function($query) use ($sqlConditions) {
+                $widget->bindEvent('list.extendQueryBefore', function ($query) use ($sqlConditions) {
                     $query->whereRaw($sqlConditions);
                 });
             }
             elseif ($scopeMethod = $this->getConfig('manage[scope]')) {
-                $widget->bindEvent('list.extendQueryBefore', function($query) use ($scopeMethod) {
+                $widget->bindEvent('list.extendQueryBefore', function ($query) use ($scopeMethod) {
                     $query->$scopeMethod($this->model);
                 });
             }
             else {
-                $widget->bindEvent('list.extendQueryBefore', function($query) {
+                $widget->bindEvent('list.extendQueryBefore', function ($query) {
                     $this->relationObject->addDefinedConstraintsToQuery($query);
                 });
             }
@@ -905,12 +916,14 @@ class RelationController extends ControllerBehavior
     public function onRelationButtonAdd()
     {
         $this->eventTarget = 'button-add';
+
         return $this->onRelationManageForm();
     }
 
     public function onRelationButtonCreate()
     {
         $this->eventTarget = 'button-create';
+
         return $this->onRelationManageForm();
     }
 
@@ -922,6 +935,7 @@ class RelationController extends ControllerBehavior
     public function onRelationButtonLink()
     {
         $this->eventTarget = 'button-link';
+
         return $this->onRelationManageForm();
     }
 
@@ -938,6 +952,7 @@ class RelationController extends ControllerBehavior
     public function onRelationButtonUpdate()
     {
         $this->eventTarget = 'button-update';
+
         return $this->onRelationManageForm();
     }
 
@@ -977,6 +992,7 @@ class RelationController extends ControllerBehavior
         $this->vars['newSessionKey'] = str_random(40);
 
         $view = 'manage_' . $this->manageMode;
+
         return $this->relationMakePartial($view);
     }
 
@@ -1000,7 +1016,7 @@ class RelationController extends ControllerBehavior
              */
             if (in_array($this->relationType, ['hasOne', 'hasMany'])) {
                 $newModel->setAttribute(
-                    $this->relationObject->getPlainForeignKey(),
+                    $this->relationObject->getForeignKeyName(),
                     $this->relationObject->getParentKey()
                 );
             }
@@ -1058,10 +1074,10 @@ class RelationController extends ControllerBehavior
         }
         elseif ($this->viewMode == 'single') {
             $this->viewWidget->setFormValues($saveData);
-            $this->viewModel->save();
+            $this->viewModel->save(null, $this->manageWidget->getSessionKey());
         }
 
-        return ['#'.$this->relationGetId('view') => $this->relationRenderView()];
+        return $this->relationRefresh();
     }
 
     /**
@@ -1222,6 +1238,7 @@ class RelationController extends ControllerBehavior
         $this->beforeAjax();
 
         $this->vars['foreignId'] = $this->foreignId ?: post('checked');
+
         return $this->relationMakePartial('pivot_form');
     }
 
@@ -1371,6 +1388,10 @@ class RelationController extends ControllerBehavior
             return $buttons;
         }
 
+        if ($this->manageMode == 'pivot') {
+            return ['add', 'remove'];
+        }
+
         switch ($this->relationType) {
             case 'hasMany':
             case 'morphMany':
@@ -1430,7 +1451,6 @@ class RelationController extends ControllerBehavior
                 else {
                     return 'backend::lang.relation.add_a_new';
                 }
-                break;
             case 'form':
                 if ($this->readOnly) {
                     return 'backend::lang.relation.preview_name';
@@ -1441,7 +1461,6 @@ class RelationController extends ControllerBehavior
                 else {
                     return 'backend::lang.relation.create_name';
                 }
-                break;
         }
     }
 
@@ -1475,16 +1494,26 @@ class RelationController extends ControllerBehavior
             case 'morphToMany':
             case 'morphedByMany':
             case 'belongsToMany':
-                if (isset($this->config->pivot)) return 'pivot';
-                elseif ($this->eventTarget == 'list') return 'form';
-                else return 'list';
+                if (isset($this->config->pivot)) {
+                    return 'pivot';
+                }
+                elseif ($this->eventTarget == 'list') {
+                    return 'form';
+                }
+                else {
+                    return 'list';
+                }
 
             case 'hasOne':
             case 'morphOne':
             case 'hasMany':
             case 'morphMany':
-                if ($this->eventTarget == 'button-add') return 'list';
-                else return 'form';
+                if ($this->eventTarget == 'button-add') {
+                    return 'list';
+                }
+                else {
+                    return 'form';
+                }
         }
     }
 

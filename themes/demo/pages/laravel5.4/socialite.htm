@@ -107,9 +107,54 @@ is_hidden = 0
             </code>
           </pre>
         </li>
+        
+        <li>
+          Step 6: Create <code>migration</code> create_social_accounts_table and run it afterwards with <code>php artisan migrate</code>
+          <pre>
+            <code>
+                &lt;?php
+                
+                use Illuminate\Support\Facades\Schema;
+                use Illuminate\Database\Schema\Blueprint;
+                use Illuminate\Database\Migrations\Migration;
+                
+                class CreateSocialAccountsTable extends Migration
+                {
+                    /**
+                     * Run the migrations.
+                     *
+                     * @return void
+                     */
+                    public function up()
+                    {
+                        Schema::create('social_accounts',
+                                       function (Blueprint $table)
+                                       {
+                                         $table->integer('user_id');
+                                         $table->string('provider_user_id');
+                                         $table->string('provider');
+                                         $table->timestamps();
+                                       }
+                                      );
+                    }
+                
+                    /**
+                     * Reverse the migrations.
+                     *
+                     * @return void
+                     */
+                    public function down()
+                    {
+                        Schema::dropIfExists('social_accounts');
+                    }
+                }
+
+            </code>
+          </pre>
+        </li>
 
         <li>
-		  Step 6: Added <code>GithubLoginController</code>
+		  Step 7: Added <code>GithubLoginController</code>
           <pre>
             In <strong>rootProjectDirectory\app\Http\Controllers\GithubLoginController.php</strong>
             <code>
@@ -146,7 +191,7 @@ is_hidden = 0
         </li>
 
         <li>
-		  Step 7: Added SocialAccountService.php to register a user or login if account already exists.
+		  Step 8: Added SocialAccountService.php to register a user or login if account already exists.
           <pre>
             In <strong>rootProjectDirectory\app\SocialAccountService.php</strong>
             <code>
@@ -198,25 +243,25 @@ is_hidden = 0
         </li>
 
         <li>
-		  Step 8: Created a migraton to update the users table by having the email field nullable, running <code>php artisan make:migration update_users_table --table=users</code> <code>you may skip this, if you dont want to change the email field to be nullable</code>
+		  Step 9: Created a migraton to update the users table by having the email field nullable, running <code>php artisan make:migration update_users_table --table=users</code> <code>you may skip this, if you dont want to change the email field to be nullable</code>
           <pre>
           </pre>
         </li>
         
         <li>
-		  Step 9: Installed doctrine/dbal to enable column updates with migrations, by running <code>composer require doctrine/dbal</code>  <code>you may skip this, if you dont want to change the email field to be nullable</code>
+		  Step 10: Installed doctrine/dbal to enable column updates with migrations, by running <code>composer require doctrine/dbal</code>  <code>you may skip this, if you dont want to change the email field to be nullable</code>
           <pre>
           </pre>
         </li>
 
         <li>
-		  Step 10: Updated the update_users_table migration and ran it. <code>you may skip this,  if you dont want to change the email field to be nullable</code>
+		  Step 11: Updated the update_users_table migration and ran it. <code>you may skip this,  if you dont want to change the email field to be nullable</code>
           <pre>
           </pre>
         </li>
 
         <li>
-		  Step 11: Added SocialAccount Model.
+		  Step 12: Added SocialAccount Model.
           <pre>
             In <strong>rootProjectDirectory\app\SocialAccount.php</strong>
             <code>
@@ -240,7 +285,7 @@ is_hidden = 0
         </li>
 
         <li>
-		  Step 12: Added <code>routes</code> for github social authentication.
+		  Step 13: Added <code>routes</code> for github social authentication.
           <pre>
             In <strong>rootProjectDirectory\routes\web.php</strong>
             <code>
@@ -252,7 +297,7 @@ is_hidden = 0
         </li>
 
         <li>
-		  Step 13: Added the stored github user to the HomeController and passed to home.blade.php
+		  Step 14: Added the stored github user to the HomeController and passed to home.blade.php
           <pre>
             <code>
             In <strong>rootProjectDirectory\app\Http\Controllers\HomeController.php</strong>

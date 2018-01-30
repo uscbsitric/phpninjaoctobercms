@@ -1,7 +1,8 @@
 <?php
+
 namespace OFFLINE\SiteSearch\Classes\Providers;
 
-use Illuminate\Database\Eloquent\Collection;
+use October\Rain\Halcyon\Collection;
 use OFFLINE\SiteSearch\Classes\Result;
 use OFFLINE\SiteSearch\Models\Settings;
 use RainLab\Pages\Classes\Page;
@@ -27,12 +28,14 @@ class RainlabPagesResultsProvider extends ResultsProvider
 
         foreach ($this->pages() as $page) {
             // Make this result more relevant, if the query is found in the title
-            $relevance = $this->containsQuery($page->viewBag['title']) ? 2 : 1;
+            $title     = isset($page->viewBag['title']) ? $page->viewBag['title'] : '';
+            $relevance = $this->containsQuery($title) ? 2 : 1;
 
             $result        = new Result($this->query, $relevance);
-            $result->title = $page->viewBag['title'];
+            $result->title = $title;
             $result->text  = $page->parsedMarkup;
             $result->url   = $this->getUrl($page);
+            $result->model = $page;
 
             $this->addResult($result);
         }
@@ -47,13 +50,17 @@ class RainlabPagesResultsProvider extends ResultsProvider
      */
     protected function pages()
     {
+        return Page::all()->filter(function ($page) {
+            $viewBag  = $page->viewBag;
+            $isHidden = isset($viewBag['is_hidden']) ? (bool)$viewBag['is_hidden'] : false;
 
-        $pages = Page::all()->filter(function ($page) {
+            if ($isHidden) {
+                return false;
+            }
+
             return $this->containsQuery($page->parsedMarkup)
-            || $this->viewBagContainsQuery($page->viewBag);
+                || $this->viewBagContainsQuery($viewBag);
         });
-
-        return $pages;
     }
 
     /**
@@ -65,7 +72,7 @@ class RainlabPagesResultsProvider extends ResultsProvider
     protected function isInstalledAndEnabled()
     {
         return $this->isPluginAvailable($this->identifier)
-        && Settings::get('rainlab_pages_enabled', true);
+            && Settings::get('rainlab_pages_enabled', true);
     }
 
     /**

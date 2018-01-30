@@ -1,0 +1,1341 @@
+1517271708a:1:{s:28:"laravel5.2/httpResponses.htm";a:10:{s:8:"fileName";s:28:"laravel5.2/httpResponses.htm";s:7:"content";s:26720:"title = "HTTP Responses"
+url = "/http-responses"
+layout = "laravel5-2TutorialsLayout"
+description = "HTTP Responses"
+is_hidden = 0
+==
+<div class="row"> <!-- Laravel Feature -->
+  <div class="green4 tutorialPages">
+    <h1 class="fontColorWhite1 noMargin">Laravel Feature</h1>
+    <h3 class="fontColorGrey3 noMargin"> <span class="icon-tasks icon-2x"></span> HTTP Responses -&gt; Basic Responses </h3>
+  </div>
+</div>            <!-- Laravel Feature -->
+
+<div class="row"> <!-- What Does It Do -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">What Does It Do</h1>
+    <p class="fontColorWhite2 noMargin">
+      This is what all routes and controllers return back to the browser
+    </p>
+  </div>
+</div>            <!-- What Does It Do -->
+
+<div class="row"> <!-- Note -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">NOTE: <span class="icon-warning-sign icon-1x"></span></h1>
+    <div class="well">
+      The name of my project is <strong>startingpoint</strong>
+    </div>
+  </div>
+</div>            <!-- Note -->
+
+<div class="row"> <!-- When To Do It -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">When To Do It</h1>
+    <p class="fontColorWhite2 noMargin">
+      When we need to respond back to the browser
+    </p>
+  </div>
+</div>            <!-- When To Do It -->
+
+<div class="row"> <!-- How To Do It -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">How To Do It</h1>
+    <p class="fontColorWhite2 noMargin">
+      <ol>
+        <li>
+          In the <code>RootProjectDirectory/app/Http/routes.php</code>
+          <pre>
+            <code>
+              &lt;?php
+              // ...
+              Route::get('/',
+                         function()
+                         {
+                           return 'Hello world';
+                         }
+                        );
+            </code>
+            
+            In the browser, access <strong>http://startingpoint/</strong>
+          </pre>
+        </li>
+      </ol>
+    </p>
+  </div>
+</div>            <!-- How To Do It -->
+
+
+
+<div class="row"> <!-- Laravel Feature -->
+  <div class="green4 tutorialPages">
+    <h1 class="fontColorWhite1 noMargin">Laravel Feature</h1>
+    <h3 class="fontColorGrey3 noMargin"> <span class="icon-tasks icon-2x"></span> HTTP Responses -&gt; Response Objects </h3>
+  </div>
+</div>            <!-- Laravel Feature -->
+
+<div class="row"> <!-- What Does It Do -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">What Does It Do</h1>
+    <p class="fontColorWhite2 noMargin">
+      Allows you to customize the response's HTTP status code and headers
+    </p>
+  </div>
+</div>            <!-- What Does It Do -->
+
+<div class="row"> <!-- When To Do It -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">When To Do It</h1>
+    <p class="fontColorWhite2 noMargin">
+      When you want to customize the response's HTTP status code and headers.
+    </p>
+  </div>
+</div>            <!-- When To Do It -->
+
+<div class="row"> <!-- How To Do It -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">How To Do It</h1>
+    <p class="fontColorWhite2 noMargin">
+      <ol>
+        <li>
+          In the <code>RootProjectDirectory/app/Http/routes.php</code>
+          <pre>
+            <code>
+              &lt;?php
+              // ...
+              use Illuminate\Http\Response;
+              Route::get('/home',
+                         function()
+                         {
+                           return (new Response($content, $status))->header('Content-Type', $value);
+                         }
+                        );
+
+              // or use the response() helper function.
+              /*
+              Route::get('home',
+                         function()
+                         {
+                           return response($content, $status)->header('Content-Type', $value);
+                         }
+                        );
+              */
+            </code>
+            
+            In the browser, access <strong>http://startingpoint/home</strong>
+          </pre>
+        </li>
+      </ol>
+    </p>
+  </div>
+</div>            <!-- How To Do It -->
+
+
+
+<div class="row"> <!-- Laravel Feature -->
+  <div class="green4 tutorialPages">
+    <h1 class="fontColorWhite1 noMargin">Laravel Feature</h1>
+    <h3 class="fontColorGrey3 noMargin"> <span class="icon-tasks icon-2x"></span> HTTP Responses -&gt; Attaching Headers To Responses </h3>
+  </div>
+</div>            <!-- Laravel Feature -->
+
+<div class="row"> <!-- What Does It Do -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">What Does It Do</h1>
+    <p class="fontColorWhite2 noMargin">
+      Allows you to add a series of headers to the responses before sending it back to the browser
+    </p>
+  </div>
+</div>            <!-- What Does It Do -->
+
+<div class="row"> <!-- When To Do It -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">When To Do It</h1>
+    <p class="fontColorWhite2 noMargin">
+      When you need to add a series of headers to the response before sending the response back to the browser
+    </p>
+  </div>
+</div>            <!-- When To Do It -->
+
+<div class="row"> <!-- How To Do It -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">How To Do It</h1>
+    <p class="fontColorWhite2 noMargin">
+      <ol>
+        <li>
+          In the <code>RootProjectDirectory/app/Http/routes.php</code>
+          <pre>
+            <code>
+              &lt;?php
+              // ...
+              Route::get('home',
+                         function()
+                         {
+                           return response($content)->withHeaders(['Content-Type' => $type,
+                                                                   'X-Header-One' => 'headerval'
+                                                                  ]
+                                                                 );
+                         }
+                        );
+            </code>
+            
+            In the browser, access <strong>http://startingpoint/home</strong>
+          </pre>
+        </li>
+      </ol>
+    </p>
+  </div>
+</div>            <!-- How To Do It -->
+
+
+
+<div class="row"> <!-- Laravel Feature -->
+  <div class="green4 tutorialPages">
+    <h1 class="fontColorWhite1 noMargin">Laravel Feature</h1>
+    <h3 class="fontColorGrey3 noMargin"> <span class="icon-tasks icon-2x"></span> HTTP Responses -&gt; Attaching Cookies To Responses </h3>
+  </div>
+</div>            <!-- Laravel Feature -->
+
+<div class="row"> <!-- What Does It Do -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">What Does It Do</h1>
+    <p class="fontColorWhite2 noMargin">
+      Allows you to easily attach cookies to the responses
+    </p>
+  </div>
+</div>            <!-- What Does It Do -->
+
+<div class="row"> <!-- When To Do It -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">When To Do It</h1>
+    <p class="fontColorWhite2 noMargin">
+      When you need to attach cookies to the response.
+    </p>
+  </div>
+</div>            <!-- When To Do It -->
+
+<div class="row"> <!-- How To Do It -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">How To Do It</h1>
+    <p class="fontColorWhite2 noMargin">
+      <ol>
+        <li>
+          In the <code>RootProjectDirectory/app/Http/routes.php</code>
+          <pre>
+            <code>
+              &lt;?php
+              // ...
+              Route::get('home',
+                         function()
+                         {
+                           return response($content)->header('Content-Type', $type)
+                                                    ->cookie('name', 'value');
+                         }
+                        );
+            </code>
+            
+            In the browser, access <strong>http://startingpoint/home</strong>
+          </pre>
+        </li>
+
+        <li>
+          Alternatively, you may use the <code>queue</code> method on the Cookie facade to create a cookie that will be automatically added to the outgoing response.
+          <pre>
+            <code>
+              &lt;?php
+              namespace App\Http\Controllers;
+              
+              use Cookies;
+              use App\Http\Controllers\Controller;
+              
+              class DashboardController extends Controller
+              {
+                public function index()
+                {
+                  Cookie::queue('saw_dashboard', true, 15); // saw_dashboard cookie will automatically be added
+                                                            // to the outgoing response without forcing you to
+                  return view('dashboard');                 // manually attach the cookie
+                }                                           // to a specific response instance.
+              }
+            </code>
+          </pre>
+        </li>
+      </ol>
+    </p>
+  </div>
+</div>            <!-- How To Do It -->
+
+
+
+<div class="row"> <!-- Laravel Feature -->
+  <div class="green4 tutorialPages">
+    <h1 class="fontColorWhite1 noMargin">Laravel Feature</h1>
+    <h3 class="fontColorGrey3 noMargin"> <span class="icon-tasks icon-2x"></span> HTTP Responses -&gt; Cookies and Encryption </h3>
+  </div>
+</div>            <!-- Laravel Feature -->
+
+<div class="row"> <!-- What Does It Do -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">What Does It Do</h1>
+    <p class="fontColorWhite2 noMargin">
+      Allows you to disable cookie encryption for a certain subset of cookies generated by your application.
+    </p>
+  </div>
+</div>            <!-- What Does It Do -->
+
+<div class="row"> <!-- When To Do It -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">When To Do It</h1>
+    <p class="fontColorWhite2 noMargin">
+      When you want to disable encryption for a certain subset of cookies generated by your application.
+    </p>
+  </div>
+</div>            <!-- When To Do It -->
+
+<div class="row"> <!-- How To Do It -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">How To Do It</h1>
+    <p class="fontColorWhite2 noMargin">
+      <ol>
+        <li>
+          In the <code>RootProjectDirectory\App\Http\Middleware\EncryptCookies.php middleware</code>
+          <pre>
+            <code>
+              &lt;?php
+              // ...
+              /* The names of the cookies that should not be encrypted
+              *  @var arrray
+              */
+              protected $except = ['cookie_name'];
+            </code>
+            
+            In the browser, access <strong>http://startingpoint/home</strong>
+          </pre>
+        </li>
+      </ol>
+    </p>
+  </div>
+</div>            <!-- How To Do It -->
+
+
+
+<div class="row"> <!-- Laravel Feature -->
+  <div class="green4 tutorialPages">
+    <h1 class="fontColorWhite1 noMargin">Laravel Feature</h1>
+    <h3 class="fontColorGrey3 noMargin"> <span class="icon-tasks icon-2x"></span> HTTP Responses -&gt; Other Respones Types </h3>
+  </div>
+</div>            <!-- Laravel Feature -->
+
+<div class="row"> <!-- What Does It Do -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">What Does It Do</h1>
+    <p class="fontColorWhite2 noMargin">
+      The <code>response()</code> helper may be used to conviniently generate other types of response instances.  
+      When the <code>response()</code> helper is called without arguments, an implementation of the <code>Illuminate\Contacts\Routing\ResponseFactory</code> 
+      contract is returned.  This contract provides several helpful methods for generating responses.
+    </p>
+  </div>
+</div>            <!-- What Does It Do -->
+
+<div class="row"> <!-- When To Do It -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">When To Do It</h1>
+    <p class="fontColorWhite2 noMargin">
+      When you want to generate other types of response instances.
+    </p>
+  </div>
+</div>            <!-- When To Do It -->
+
+<div class="row"> <!-- How To Do It -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">How To Do It</h1>
+    <p class="fontColorWhite2 noMargin">
+      <ol>
+        <li>
+          For <code>View Responses</code> // If you need control over the response status and headers, but also need to return a view as a response content, you man use the view method. <br>
+          In <code>RootProjectDirectory/app/Http/routes.php</code>
+          <pre>
+            <code>
+              &lt;?php
+              //...
+              Route::get('home',
+                         function()
+                         {
+                           return response()->view('hello', $data)
+                                            ->header('Content-Type', $type);
+                         }
+                        );
+            </code>
+            
+            In the browser, access <strong>http://startingpoint/home</strong>
+          </pre>
+        </li>
+        
+        <li>
+          For <code>JSON Responses</code> // the <code>json</code> method will automatically set the <code>Content-Type</code> header to <code>application/json</code>, as well as convert the given
+          array into <code>JSON</code> using the <code>json_encode</code> PHP function. <br>
+          In <code>RootProjectDirectory/app/Http/routes.php</code>
+          <pre>
+            <code>
+              &lt;?php
+              //...
+              Route::get('home',
+                         function()
+                         {
+                           return response()->json(['name' => 'Abigail',
+                                                    'state' => 'CA'
+                                                   ]
+                                                  );
+                         }
+                        );
+              /* If you would like to create a JSONP responmse, you may use the <strong>json</strong> method in addition to <strong>setCallback</strong>
+                 return response()->json(['name'  => 'Abigail',
+                                          'state' => 'CA'
+                                         ]
+                                        )
+                                  ->setCallback($request->input('callback'));
+              */
+            </code>
+          </pre>
+        </li>
+
+        <li>
+          <pre class="preOverride1">
+          For File Downloads // the <strong>download</strong> method may be used to generate a response that forces the user's browser to download the file at the given path.
+                             // The <strong>download</strong> method accpets a filename as the second argument to the method, which will determine the filename that is seen 
+                             // by the user downloading the file
+          Finally, you may pass an array of HTTP headers as the third argument to the method.
+          </pre>
+          In the <code>RootProjectDirectory/app/Http/routes.php</code>
+          <pre>
+            <code>
+              &lt;?php
+              //...
+              Route::get('home',
+                         function()
+                         {
+                           return response()->file($pathToFile);
+                           // or return response()->file($pathToFile, $headers);
+                         }
+                        );
+            </code>
+          </pre>
+        </li>
+
+        <li>
+          <pre class="preOverride1">
+            For File Responses // the <strong>file</strong> method can be used to display a file, such as an image or PDF,
+                               // directly in the user's browser instead of initiating a downlaod.  This method accepts the
+                               // path to the file as its first argument and an array of headers as its second argument.
+          </pre>
+          In the <code>RootProjectDirectory/app/Http/routes.php</code>
+          <pre>
+            <code>
+              Route::get('home',
+                         function()
+                         {
+                           return response()->file($pathToFile);
+                           // or return response()->file($pathToFile, $headers);
+                         }
+                        );
+            </code>
+            In the browser, access <strong>http://startingpoint/home</strong>
+          </pre>
+        </li>
+      </ol>
+    </p>
+  </div>
+</div>            <!-- How To Do It -->
+
+
+
+<div class="row"> <!-- Laravel Feature -->
+  <div class="green4 tutorialPages">
+    <h1 class="fontColorWhite1 noMargin">Laravel Feature</h1>
+    <h3 class="fontColorGrey3 noMargin"> <span class="icon-tasks icon-2x"></span> HTTP Responses -&gt; Redirects </h3>
+  </div>
+</div>            <!-- Laravel Feature -->
+
+<div class="row"> <!-- What Does It Do -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">What Does It Do</h1>
+    <p class="fontColorWhite2 noMargin">
+      Redirect responses are instances of the <code>Illuminate\Http\RedirectResponse</code> class, and contain the proper headers needed to redirect the user to another <code>URL</code>.
+    </p>
+  </div>
+</div>            <!-- What Does It Do -->
+
+<div class="row"> <!-- When To Do It -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">When To Do It</h1>
+    <p class="fontColorWhite2 noMargin">
+      When you want to redirect a user to another URL.
+    </p>
+  </div>
+</div>            <!-- When To Do It -->
+
+<div class="row"> <!-- How To Do It -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">How To Do It</h1>
+    <p class="fontColorWhite2 noMargin">
+      <ol>
+        <li>
+          In the <code>RootProjectDirectory/app/Http/routes.php</code>
+          <pre>
+            <code>
+              &lt;?php
+              Route::get('home',
+                         function()
+                         {
+                           return redirect('home/dashboard');
+                           // or return redirect($nameOfRoute);
+                         }
+                        );
+
+              /* To redirect a user to their previous location, for example, after a form submission that is invalid.
+                Route::post('user/profile',
+                            function()
+                            {
+                              // validate the request
+                              return back()->withInput();
+                            }
+                           );
+                Since this is a <strong>POST</strong> based route, perform a <strong>POST request</strong> to http://startingpoint/user/profile
+                Make sure the route using the <strong>back</strong> function is using the <strong>web middleware</strong> or has all the <strong>session middleware</strong> applied.
+              */
+            </code>
+            
+            In the browser, access <strong>http://startingpoint/home</strong>
+          </pre>
+        </li>
+
+        <li>
+          <pre class="preOverride1">
+            For Redirecting To Named Routes // When you call the <strong>redirect</strong> helper with no parameters, an instance of <strong>Illuminate\Routing\Redirect</strong> is returned,
+            allowing yoiu to call any method on the <strong>Redirector</strong> instance.
+          </pre>
+          
+          In the <code>RootProjectDirectory/app/Http/routes.php</code>
+          
+          <pre>
+            <code>
+              &lt;?php
+              //...
+              Route::get('home',
+                         function()
+                         {
+                           return redirect()->route('login'); // or the name of the route as specified when you <strong>php artisan route:list</strong>
+                           
+                           /*
+                           if your routes has parameters, you may pass them as the second parameter/argument to the <strong>route method</strong>.
+                           example: <strong>return redirect->route('profile', ['id'] => 1);</strong>
+                           if redirecting to a route with an <strong>ID</strong> parameter that is being populated from an <strong>Eloquent Model</strong>,
+                           you may simply pass the model itself.  The <strong>ID</strong> will be extracted automatically.
+                           <strong>return redirect()->route('profile', [$user])</strong>
+                           */
+                         }
+                        );
+            </code>
+          </pre>
+        </li>
+        
+        <li>
+          <pre class="preOverride1">
+            For Redirecting to Controller Actions <br>
+          </pre>
+          
+          In the <code>RootProjectDirectory/app/Http/routes.php</code>
+          <pre>
+            <code>
+              &lt;?php
+              //...
+              Route:;get('home',
+                         function()
+                         {
+                           return redirect()->action('HomeController@index'); // if your conmtroller route requires parameters, you may pass
+                                                                              // them as second argument to the action method.
+                                                                              // return redirect()->action('UserController@profile',
+                                                                                                           ['id' => 1]
+                                                                                                          );
+                         }
+                        );
+            </code>
+          </pre>
+        </li>
+        
+        <li>
+          <pre class="preOverride1">
+            For Redirecting With Flashed Session Data
+          </pre>
+          
+          In the <code>RootProjectDirectory/app/Http/routes.php</code>
+          <pre>
+            <code>
+              &lt;?php
+              //...
+              Route::get('user/profile',
+                         function()
+                         {
+                           return redirect('dashboard')->with('status',
+                                                              'ProfileUpdated'
+                                                             );
+                         }
+                        );
+                        
+             //... then in the view
+             @if( session('status')  )
+               &lt;div class="alert alert-succcess"&gt;
+                 	&#123;&#123; session('status') &#125;&#125;
+               &lt;/div&gt;
+             @endif
+            </code>
+          </pre>
+        </li>
+      </ol>
+    </p>
+  </div>
+</div>            <!-- How To Do It -->
+
+
+
+<div class="row"> <!-- Laravel Feature -->
+  <div class="green4 tutorialPages">
+    <h1 class="fontColorWhite1 noMargin">Laravel Feature</h1>
+    <h3 class="fontColorGrey3 noMargin"> <span class="icon-tasks icon-2x"></span> HTTP Responses -&gt; Response Macros </h3>
+  </div>
+</div>            <!-- Laravel Feature -->
+
+<div class="row"> <!-- What Does It Do -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">What Does It Do</h1>
+    <p class="fontColorWhite2 noMargin">
+      Lets you define a custom response that you can re-use in a variety of your routes and controllers.
+      You may use the macro method on the <code>Response</code> facade or the implementation of <code>Illuminate\Contracts\Routing\ResponseFactory</code>
+    </p>
+  </div>
+</div>            <!-- What Does It Do -->
+
+<div class="row"> <!-- When To Do It -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">When To Do It</h1>
+    <p class="fontColorWhite2 noMargin">
+      When you want to define a custom response that you can re-use in a variety of your routes and controllers.
+    </p>
+  </div>
+</div>            <!-- When To Do It -->
+
+<div class="row"> <!-- How To Do It -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">How To Do It</h1>
+    <p class="fontColorWhite2 noMargin">
+      <ol>
+        <li>
+          In the <code>RootProjectDirectory\App\Providers\ResponseMacroServiceProviders.php</code>
+          <pre>
+            <code>
+              &lt;?php
+              // ...
+              namespace App\Providers
+              use Response;
+              use Illuminate\Support\ServiceProvider;
+              
+              class ResponseMacroServiceProvider extends ServiceProvider
+              {
+                public function boot()
+                {
+                  Response::macro('caps',
+                                  function($value)
+                                  {
+                                    return Response::make(strtoupper($value));
+                                  }
+                                 );
+                }
+              }
+            </code>
+          </pre>
+          
+          In the <code>RootProjectDirectory/app/Http/routes.php</code>
+          <pre>
+            <code>
+            //...
+            Route::get('home',
+                       function()
+                       {
+                         return response()->caps('foo');
+                       }
+                      );
+            </code>
+            In the browser, access <strong>http://startingpoint/home</strong>
+          </pre>
+        </li>
+      </ol>
+    </p>
+  </div>
+</div>            <!-- How To Do It -->";s:5:"mtime";i:1486540220;s:6:"markup";s:26586:"<div class="row"> <!-- Laravel Feature -->
+  <div class="green4 tutorialPages">
+    <h1 class="fontColorWhite1 noMargin">Laravel Feature</h1>
+    <h3 class="fontColorGrey3 noMargin"> <span class="icon-tasks icon-2x"></span> HTTP Responses -&gt; Basic Responses </h3>
+  </div>
+</div>            <!-- Laravel Feature -->
+
+<div class="row"> <!-- What Does It Do -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">What Does It Do</h1>
+    <p class="fontColorWhite2 noMargin">
+      This is what all routes and controllers return back to the browser
+    </p>
+  </div>
+</div>            <!-- What Does It Do -->
+
+<div class="row"> <!-- Note -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">NOTE: <span class="icon-warning-sign icon-1x"></span></h1>
+    <div class="well">
+      The name of my project is <strong>startingpoint</strong>
+    </div>
+  </div>
+</div>            <!-- Note -->
+
+<div class="row"> <!-- When To Do It -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">When To Do It</h1>
+    <p class="fontColorWhite2 noMargin">
+      When we need to respond back to the browser
+    </p>
+  </div>
+</div>            <!-- When To Do It -->
+
+<div class="row"> <!-- How To Do It -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">How To Do It</h1>
+    <p class="fontColorWhite2 noMargin">
+      <ol>
+        <li>
+          In the <code>RootProjectDirectory/app/Http/routes.php</code>
+          <pre>
+            <code>
+              &lt;?php
+              // ...
+              Route::get('/',
+                         function()
+                         {
+                           return 'Hello world';
+                         }
+                        );
+            </code>
+            
+            In the browser, access <strong>http://startingpoint/</strong>
+          </pre>
+        </li>
+      </ol>
+    </p>
+  </div>
+</div>            <!-- How To Do It -->
+
+
+
+<div class="row"> <!-- Laravel Feature -->
+  <div class="green4 tutorialPages">
+    <h1 class="fontColorWhite1 noMargin">Laravel Feature</h1>
+    <h3 class="fontColorGrey3 noMargin"> <span class="icon-tasks icon-2x"></span> HTTP Responses -&gt; Response Objects </h3>
+  </div>
+</div>            <!-- Laravel Feature -->
+
+<div class="row"> <!-- What Does It Do -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">What Does It Do</h1>
+    <p class="fontColorWhite2 noMargin">
+      Allows you to customize the response's HTTP status code and headers
+    </p>
+  </div>
+</div>            <!-- What Does It Do -->
+
+<div class="row"> <!-- When To Do It -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">When To Do It</h1>
+    <p class="fontColorWhite2 noMargin">
+      When you want to customize the response's HTTP status code and headers.
+    </p>
+  </div>
+</div>            <!-- When To Do It -->
+
+<div class="row"> <!-- How To Do It -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">How To Do It</h1>
+    <p class="fontColorWhite2 noMargin">
+      <ol>
+        <li>
+          In the <code>RootProjectDirectory/app/Http/routes.php</code>
+          <pre>
+            <code>
+              &lt;?php
+              // ...
+              use Illuminate\Http\Response;
+              Route::get('/home',
+                         function()
+                         {
+                           return (new Response($content, $status))->header('Content-Type', $value);
+                         }
+                        );
+
+              // or use the response() helper function.
+              /*
+              Route::get('home',
+                         function()
+                         {
+                           return response($content, $status)->header('Content-Type', $value);
+                         }
+                        );
+              */
+            </code>
+            
+            In the browser, access <strong>http://startingpoint/home</strong>
+          </pre>
+        </li>
+      </ol>
+    </p>
+  </div>
+</div>            <!-- How To Do It -->
+
+
+
+<div class="row"> <!-- Laravel Feature -->
+  <div class="green4 tutorialPages">
+    <h1 class="fontColorWhite1 noMargin">Laravel Feature</h1>
+    <h3 class="fontColorGrey3 noMargin"> <span class="icon-tasks icon-2x"></span> HTTP Responses -&gt; Attaching Headers To Responses </h3>
+  </div>
+</div>            <!-- Laravel Feature -->
+
+<div class="row"> <!-- What Does It Do -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">What Does It Do</h1>
+    <p class="fontColorWhite2 noMargin">
+      Allows you to add a series of headers to the responses before sending it back to the browser
+    </p>
+  </div>
+</div>            <!-- What Does It Do -->
+
+<div class="row"> <!-- When To Do It -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">When To Do It</h1>
+    <p class="fontColorWhite2 noMargin">
+      When you need to add a series of headers to the response before sending the response back to the browser
+    </p>
+  </div>
+</div>            <!-- When To Do It -->
+
+<div class="row"> <!-- How To Do It -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">How To Do It</h1>
+    <p class="fontColorWhite2 noMargin">
+      <ol>
+        <li>
+          In the <code>RootProjectDirectory/app/Http/routes.php</code>
+          <pre>
+            <code>
+              &lt;?php
+              // ...
+              Route::get('home',
+                         function()
+                         {
+                           return response($content)->withHeaders(['Content-Type' => $type,
+                                                                   'X-Header-One' => 'headerval'
+                                                                  ]
+                                                                 );
+                         }
+                        );
+            </code>
+            
+            In the browser, access <strong>http://startingpoint/home</strong>
+          </pre>
+        </li>
+      </ol>
+    </p>
+  </div>
+</div>            <!-- How To Do It -->
+
+
+
+<div class="row"> <!-- Laravel Feature -->
+  <div class="green4 tutorialPages">
+    <h1 class="fontColorWhite1 noMargin">Laravel Feature</h1>
+    <h3 class="fontColorGrey3 noMargin"> <span class="icon-tasks icon-2x"></span> HTTP Responses -&gt; Attaching Cookies To Responses </h3>
+  </div>
+</div>            <!-- Laravel Feature -->
+
+<div class="row"> <!-- What Does It Do -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">What Does It Do</h1>
+    <p class="fontColorWhite2 noMargin">
+      Allows you to easily attach cookies to the responses
+    </p>
+  </div>
+</div>            <!-- What Does It Do -->
+
+<div class="row"> <!-- When To Do It -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">When To Do It</h1>
+    <p class="fontColorWhite2 noMargin">
+      When you need to attach cookies to the response.
+    </p>
+  </div>
+</div>            <!-- When To Do It -->
+
+<div class="row"> <!-- How To Do It -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">How To Do It</h1>
+    <p class="fontColorWhite2 noMargin">
+      <ol>
+        <li>
+          In the <code>RootProjectDirectory/app/Http/routes.php</code>
+          <pre>
+            <code>
+              &lt;?php
+              // ...
+              Route::get('home',
+                         function()
+                         {
+                           return response($content)->header('Content-Type', $type)
+                                                    ->cookie('name', 'value');
+                         }
+                        );
+            </code>
+            
+            In the browser, access <strong>http://startingpoint/home</strong>
+          </pre>
+        </li>
+
+        <li>
+          Alternatively, you may use the <code>queue</code> method on the Cookie facade to create a cookie that will be automatically added to the outgoing response.
+          <pre>
+            <code>
+              &lt;?php
+              namespace App\Http\Controllers;
+              
+              use Cookies;
+              use App\Http\Controllers\Controller;
+              
+              class DashboardController extends Controller
+              {
+                public function index()
+                {
+                  Cookie::queue('saw_dashboard', true, 15); // saw_dashboard cookie will automatically be added
+                                                            // to the outgoing response without forcing you to
+                  return view('dashboard');                 // manually attach the cookie
+                }                                           // to a specific response instance.
+              }
+            </code>
+          </pre>
+        </li>
+      </ol>
+    </p>
+  </div>
+</div>            <!-- How To Do It -->
+
+
+
+<div class="row"> <!-- Laravel Feature -->
+  <div class="green4 tutorialPages">
+    <h1 class="fontColorWhite1 noMargin">Laravel Feature</h1>
+    <h3 class="fontColorGrey3 noMargin"> <span class="icon-tasks icon-2x"></span> HTTP Responses -&gt; Cookies and Encryption </h3>
+  </div>
+</div>            <!-- Laravel Feature -->
+
+<div class="row"> <!-- What Does It Do -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">What Does It Do</h1>
+    <p class="fontColorWhite2 noMargin">
+      Allows you to disable cookie encryption for a certain subset of cookies generated by your application.
+    </p>
+  </div>
+</div>            <!-- What Does It Do -->
+
+<div class="row"> <!-- When To Do It -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">When To Do It</h1>
+    <p class="fontColorWhite2 noMargin">
+      When you want to disable encryption for a certain subset of cookies generated by your application.
+    </p>
+  </div>
+</div>            <!-- When To Do It -->
+
+<div class="row"> <!-- How To Do It -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">How To Do It</h1>
+    <p class="fontColorWhite2 noMargin">
+      <ol>
+        <li>
+          In the <code>RootProjectDirectory\App\Http\Middleware\EncryptCookies.php middleware</code>
+          <pre>
+            <code>
+              &lt;?php
+              // ...
+              /* The names of the cookies that should not be encrypted
+              *  @var arrray
+              */
+              protected $except = ['cookie_name'];
+            </code>
+            
+            In the browser, access <strong>http://startingpoint/home</strong>
+          </pre>
+        </li>
+      </ol>
+    </p>
+  </div>
+</div>            <!-- How To Do It -->
+
+
+
+<div class="row"> <!-- Laravel Feature -->
+  <div class="green4 tutorialPages">
+    <h1 class="fontColorWhite1 noMargin">Laravel Feature</h1>
+    <h3 class="fontColorGrey3 noMargin"> <span class="icon-tasks icon-2x"></span> HTTP Responses -&gt; Other Respones Types </h3>
+  </div>
+</div>            <!-- Laravel Feature -->
+
+<div class="row"> <!-- What Does It Do -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">What Does It Do</h1>
+    <p class="fontColorWhite2 noMargin">
+      The <code>response()</code> helper may be used to conviniently generate other types of response instances.  
+      When the <code>response()</code> helper is called without arguments, an implementation of the <code>Illuminate\Contacts\Routing\ResponseFactory</code> 
+      contract is returned.  This contract provides several helpful methods for generating responses.
+    </p>
+  </div>
+</div>            <!-- What Does It Do -->
+
+<div class="row"> <!-- When To Do It -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">When To Do It</h1>
+    <p class="fontColorWhite2 noMargin">
+      When you want to generate other types of response instances.
+    </p>
+  </div>
+</div>            <!-- When To Do It -->
+
+<div class="row"> <!-- How To Do It -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">How To Do It</h1>
+    <p class="fontColorWhite2 noMargin">
+      <ol>
+        <li>
+          For <code>View Responses</code> // If you need control over the response status and headers, but also need to return a view as a response content, you man use the view method. <br>
+          In <code>RootProjectDirectory/app/Http/routes.php</code>
+          <pre>
+            <code>
+              &lt;?php
+              //...
+              Route::get('home',
+                         function()
+                         {
+                           return response()->view('hello', $data)
+                                            ->header('Content-Type', $type);
+                         }
+                        );
+            </code>
+            
+            In the browser, access <strong>http://startingpoint/home</strong>
+          </pre>
+        </li>
+        
+        <li>
+          For <code>JSON Responses</code> // the <code>json</code> method will automatically set the <code>Content-Type</code> header to <code>application/json</code>, as well as convert the given
+          array into <code>JSON</code> using the <code>json_encode</code> PHP function. <br>
+          In <code>RootProjectDirectory/app/Http/routes.php</code>
+          <pre>
+            <code>
+              &lt;?php
+              //...
+              Route::get('home',
+                         function()
+                         {
+                           return response()->json(['name' => 'Abigail',
+                                                    'state' => 'CA'
+                                                   ]
+                                                  );
+                         }
+                        );
+              /* If you would like to create a JSONP responmse, you may use the <strong>json</strong> method in addition to <strong>setCallback</strong>
+                 return response()->json(['name'  => 'Abigail',
+                                          'state' => 'CA'
+                                         ]
+                                        )
+                                  ->setCallback($request->input('callback'));
+              */
+            </code>
+          </pre>
+        </li>
+
+        <li>
+          <pre class="preOverride1">
+          For File Downloads // the <strong>download</strong> method may be used to generate a response that forces the user's browser to download the file at the given path.
+                             // The <strong>download</strong> method accpets a filename as the second argument to the method, which will determine the filename that is seen 
+                             // by the user downloading the file
+          Finally, you may pass an array of HTTP headers as the third argument to the method.
+          </pre>
+          In the <code>RootProjectDirectory/app/Http/routes.php</code>
+          <pre>
+            <code>
+              &lt;?php
+              //...
+              Route::get('home',
+                         function()
+                         {
+                           return response()->file($pathToFile);
+                           // or return response()->file($pathToFile, $headers);
+                         }
+                        );
+            </code>
+          </pre>
+        </li>
+
+        <li>
+          <pre class="preOverride1">
+            For File Responses // the <strong>file</strong> method can be used to display a file, such as an image or PDF,
+                               // directly in the user's browser instead of initiating a downlaod.  This method accepts the
+                               // path to the file as its first argument and an array of headers as its second argument.
+          </pre>
+          In the <code>RootProjectDirectory/app/Http/routes.php</code>
+          <pre>
+            <code>
+              Route::get('home',
+                         function()
+                         {
+                           return response()->file($pathToFile);
+                           // or return response()->file($pathToFile, $headers);
+                         }
+                        );
+            </code>
+            In the browser, access <strong>http://startingpoint/home</strong>
+          </pre>
+        </li>
+      </ol>
+    </p>
+  </div>
+</div>            <!-- How To Do It -->
+
+
+
+<div class="row"> <!-- Laravel Feature -->
+  <div class="green4 tutorialPages">
+    <h1 class="fontColorWhite1 noMargin">Laravel Feature</h1>
+    <h3 class="fontColorGrey3 noMargin"> <span class="icon-tasks icon-2x"></span> HTTP Responses -&gt; Redirects </h3>
+  </div>
+</div>            <!-- Laravel Feature -->
+
+<div class="row"> <!-- What Does It Do -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">What Does It Do</h1>
+    <p class="fontColorWhite2 noMargin">
+      Redirect responses are instances of the <code>Illuminate\Http\RedirectResponse</code> class, and contain the proper headers needed to redirect the user to another <code>URL</code>.
+    </p>
+  </div>
+</div>            <!-- What Does It Do -->
+
+<div class="row"> <!-- When To Do It -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">When To Do It</h1>
+    <p class="fontColorWhite2 noMargin">
+      When you want to redirect a user to another URL.
+    </p>
+  </div>
+</div>            <!-- When To Do It -->
+
+<div class="row"> <!-- How To Do It -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">How To Do It</h1>
+    <p class="fontColorWhite2 noMargin">
+      <ol>
+        <li>
+          In the <code>RootProjectDirectory/app/Http/routes.php</code>
+          <pre>
+            <code>
+              &lt;?php
+              Route::get('home',
+                         function()
+                         {
+                           return redirect('home/dashboard');
+                           // or return redirect($nameOfRoute);
+                         }
+                        );
+
+              /* To redirect a user to their previous location, for example, after a form submission that is invalid.
+                Route::post('user/profile',
+                            function()
+                            {
+                              // validate the request
+                              return back()->withInput();
+                            }
+                           );
+                Since this is a <strong>POST</strong> based route, perform a <strong>POST request</strong> to http://startingpoint/user/profile
+                Make sure the route using the <strong>back</strong> function is using the <strong>web middleware</strong> or has all the <strong>session middleware</strong> applied.
+              */
+            </code>
+            
+            In the browser, access <strong>http://startingpoint/home</strong>
+          </pre>
+        </li>
+
+        <li>
+          <pre class="preOverride1">
+            For Redirecting To Named Routes // When you call the <strong>redirect</strong> helper with no parameters, an instance of <strong>Illuminate\Routing\Redirect</strong> is returned,
+            allowing yoiu to call any method on the <strong>Redirector</strong> instance.
+          </pre>
+          
+          In the <code>RootProjectDirectory/app/Http/routes.php</code>
+          
+          <pre>
+            <code>
+              &lt;?php
+              //...
+              Route::get('home',
+                         function()
+                         {
+                           return redirect()->route('login'); // or the name of the route as specified when you <strong>php artisan route:list</strong>
+                           
+                           /*
+                           if your routes has parameters, you may pass them as the second parameter/argument to the <strong>route method</strong>.
+                           example: <strong>return redirect->route('profile', ['id'] => 1);</strong>
+                           if redirecting to a route with an <strong>ID</strong> parameter that is being populated from an <strong>Eloquent Model</strong>,
+                           you may simply pass the model itself.  The <strong>ID</strong> will be extracted automatically.
+                           <strong>return redirect()->route('profile', [$user])</strong>
+                           */
+                         }
+                        );
+            </code>
+          </pre>
+        </li>
+        
+        <li>
+          <pre class="preOverride1">
+            For Redirecting to Controller Actions <br>
+          </pre>
+          
+          In the <code>RootProjectDirectory/app/Http/routes.php</code>
+          <pre>
+            <code>
+              &lt;?php
+              //...
+              Route:;get('home',
+                         function()
+                         {
+                           return redirect()->action('HomeController@index'); // if your conmtroller route requires parameters, you may pass
+                                                                              // them as second argument to the action method.
+                                                                              // return redirect()->action('UserController@profile',
+                                                                                                           ['id' => 1]
+                                                                                                          );
+                         }
+                        );
+            </code>
+          </pre>
+        </li>
+        
+        <li>
+          <pre class="preOverride1">
+            For Redirecting With Flashed Session Data
+          </pre>
+          
+          In the <code>RootProjectDirectory/app/Http/routes.php</code>
+          <pre>
+            <code>
+              &lt;?php
+              //...
+              Route::get('user/profile',
+                         function()
+                         {
+                           return redirect('dashboard')->with('status',
+                                                              'ProfileUpdated'
+                                                             );
+                         }
+                        );
+                        
+             //... then in the view
+             @if( session('status')  )
+               &lt;div class="alert alert-succcess"&gt;
+                 	&#123;&#123; session('status') &#125;&#125;
+               &lt;/div&gt;
+             @endif
+            </code>
+          </pre>
+        </li>
+      </ol>
+    </p>
+  </div>
+</div>            <!-- How To Do It -->
+
+
+
+<div class="row"> <!-- Laravel Feature -->
+  <div class="green4 tutorialPages">
+    <h1 class="fontColorWhite1 noMargin">Laravel Feature</h1>
+    <h3 class="fontColorGrey3 noMargin"> <span class="icon-tasks icon-2x"></span> HTTP Responses -&gt; Response Macros </h3>
+  </div>
+</div>            <!-- Laravel Feature -->
+
+<div class="row"> <!-- What Does It Do -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">What Does It Do</h1>
+    <p class="fontColorWhite2 noMargin">
+      Lets you define a custom response that you can re-use in a variety of your routes and controllers.
+      You may use the macro method on the <code>Response</code> facade or the implementation of <code>Illuminate\Contracts\Routing\ResponseFactory</code>
+    </p>
+  </div>
+</div>            <!-- What Does It Do -->
+
+<div class="row"> <!-- When To Do It -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">When To Do It</h1>
+    <p class="fontColorWhite2 noMargin">
+      When you want to define a custom response that you can re-use in a variety of your routes and controllers.
+    </p>
+  </div>
+</div>            <!-- When To Do It -->
+
+<div class="row"> <!-- How To Do It -->
+  <div class="grey2 tutorialPages withBorderBottom">
+    <h1 class="noMargin fontColorGreen3">How To Do It</h1>
+    <p class="fontColorWhite2 noMargin">
+      <ol>
+        <li>
+          In the <code>RootProjectDirectory\App\Providers\ResponseMacroServiceProviders.php</code>
+          <pre>
+            <code>
+              &lt;?php
+              // ...
+              namespace App\Providers
+              use Response;
+              use Illuminate\Support\ServiceProvider;
+              
+              class ResponseMacroServiceProvider extends ServiceProvider
+              {
+                public function boot()
+                {
+                  Response::macro('caps',
+                                  function($value)
+                                  {
+                                    return Response::make(strtoupper($value));
+                                  }
+                                 );
+                }
+              }
+            </code>
+          </pre>
+          
+          In the <code>RootProjectDirectory/app/Http/routes.php</code>
+          <pre>
+            <code>
+            //...
+            Route::get('home',
+                       function()
+                       {
+                         return response()->caps('foo');
+                       }
+                      );
+            </code>
+            In the browser, access <strong>http://startingpoint/home</strong>
+          </pre>
+        </li>
+      </ol>
+    </p>
+  </div>
+</div>            <!-- How To Do It -->";s:4:"code";N;s:5:"title";s:14:"HTTP Responses";s:3:"url";s:15:"/http-responses";s:6:"layout";s:25:"laravel5-2TutorialsLayout";s:11:"description";s:14:"HTTP Responses";s:9:"is_hidden";s:1:"0";}}
